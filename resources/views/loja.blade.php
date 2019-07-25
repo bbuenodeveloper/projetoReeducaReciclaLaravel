@@ -27,9 +27,9 @@
                                         class="img-fluid"></a>
                             </figure>
                             <div class="block-4-text p-4">
-                                <h3><a href="shop-single.html">Tank Top</a></h3>
-                                <p class="mb-0">Finding perfect t-shirt</p>
-                                <p class="text-primary font-weight-bold">$50</p>
+                                <h3><a href="shop-single.html">Produto 1</a></h3>
+                                <p class="mb-0">Descrição</p>
+                                <p class="text-primary font-weight-bold">Preço</p>
                             </div>
                         </div>
                     </div>
