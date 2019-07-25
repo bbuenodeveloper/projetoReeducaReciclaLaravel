@@ -17,6 +17,7 @@ Route::get('/home','HomeController@home');
 Route::get('/sobre', 'SobreController@sobre');
 Route::get('/contato', 'ContatoController@contato');
 Route::get('/mapa', 'MapaController@mapa');
+Route::get('/faq', 'FaqController@faq');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
