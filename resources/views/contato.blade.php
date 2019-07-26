@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<?php 
+<?php
 
 $root = 'http://localhost/projetoreeducarecicla/';
 $foto = 'salveo%20planeta.png';
@@ -15,11 +15,11 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 <div class="container-fluid no-gutters p-0">
     <!-- Banner topo -->
 
-    <div class="card bg-dark text-white card-banner">
+    <div class="card card-banner">
   <img src="img/bannercontato1900x320.jpg" class="card-img" alt="...">
   <div class="card-img-overlay">
-    
-    
+
+
   </div>
 </div>
     <!-- <div class="col-md-12 contato-banner">
@@ -67,7 +67,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
 
         <!-- Inicio dados contato -->
-        <div class="col-md-4 col-sm-6 col-xs-12 dadosContato mb-4"> 
+        <div class="col-md-4 col-sm-6 col-xs-12 dadosContato mb-4">
 
             <div class="card">
                 <div class="card-body user-details-contact text-center ">
@@ -124,8 +124,8 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
     <!-- inicio frase -->
 
-    
-        
+
+
         <!-- fim frase -->
 
     </div>
@@ -147,4 +147,4 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
     </div>
 </div>
 
-@endsection 
+@endsection
