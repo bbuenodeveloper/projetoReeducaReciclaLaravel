@@ -28,6 +28,12 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
     <!-- Fim banner -->
 </div>
 
+@unless ( empty($msg) )
+    <script language="JavaScript">
+        alert('{{ $msg }}');
+    </script>
+@endunless
+
 <div class="container-fluid">
 
     <div class="row">
@@ -36,24 +42,26 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
         <div class="col-md-8">
             <div class="user-info-settings">
                 <h4 class="text-success">Contato</h4>
-                <form action="index.html" class="user-info-setting-form">
+                <form action="/contato" method="post" class="user-info-setting-form">
                     <div class="form-group">
                         <label class="text-label">Nome</label>
-                        <input type="text" class="form-control" placeholder="Nome">
+                        <input type="text" name="name" class="form-control" placeholder="Nome">
                     </div>
                     <div class="form-group">
                         <label class="text-label">Email</label>
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="email" name="email" class="form-control" placeholder="Email">
                     </div>
                     <div class="form-group">
                         <label class="text-label">Mensagem</label>
-                        <textarea class="form-control contato" cols="10" rows="5"></textarea>
+                        <textarea name="message" class="form-control contato" cols="10" rows="5"></textarea>
                     </div>
 
                     <div class="submit-buttons ">
                         <button type="submit" class="btn btn-card btn-primary">Enviar</button>
                         <button type="reset" class="btn btn-card btn-secondary">Limpar</button>
                     </div>
+
+                    {{csrf_field()}}
                 </form>
             </div>
             <!-- Fim Formulario -->

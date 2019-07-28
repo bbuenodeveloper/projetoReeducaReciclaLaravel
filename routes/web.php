@@ -12,10 +12,13 @@
 */
 
 
-
+Route::get('/','HomeController@home');
 Route::get('/home','HomeController@home');
 Route::get('/sobre', 'SobreController@sobre');
+
 Route::get('/contato', 'ContatoController@contato');
+Route::post('/contato', 'ContatoController@sendMail');
+
 Route::get('/mapa', 'MapaController@mapa');
 Route::get('/faq', 'FaqController@faq');
 Route::get('/loja', 'LojaController@loja');
