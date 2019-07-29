@@ -16,21 +16,20 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
 	<section class="container-fluid">
 
-		
+
 
 		<div class="clearfix"></div>
 
 		<div class="row mt-3">
-			
+
 				<div class="col-12 col-md-6 ">
-						
+
 					<img src="img/familiareciclado.jpg" alt="" class="img-fluid">
 
 				</div>
-				
+
 				<div class="col-12 col-md-6 ">
-					<div class="card border-success  card1-home">
-						<div class="card-body">
+
 							<h1 class="card-title titulo-card-home">Vai descartar seus <span class="color-title">resíduos?</span></h1>
 								<p class="card-text titulo-card-home">Você pode ajudar o planeta com uma ação simples, use o mapa interativo do
 								Reeduca Recicla mostrando pontos de reciclagem nas cidades. Funciona de maneira simples:
@@ -40,8 +39,6 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 								<!-- <h5>Saiba onde descartar seus resíduos</h5> -->
 								<p></p>
 								<a href="mapa.php" class="btn btn-success btn-card">Acessar o Mapa</a>
-						</div>
-					</div>
 
 				</div>
 		</div>
@@ -66,13 +63,13 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 						materiais que iam diretamente para os lixões, como plástico, papel, metais, vidro e madeira.
 						Este
 					processo recebe o nome de reciclagem.</p>
-					
+
 				</article>
 			</div>
 			<div class="col-md-6 img-texto">
 				<img src="img/nature2.png" class="img-fluid " alt="Por que reciclar?">
 			</div>
-			
+
 		</div>
 	</main>
 
@@ -95,7 +92,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 		</div> -->
 
 		<div class="row no-gutters recicla-texto">
-			
+
 			<div class="col-md-6 img-texto d-none d-sm-none d-md-block d-lg-block d-xl-block">
 				<img src="img/lojavirtual.jpg" class="img-fluid " alt="Loja virtual">
 			</div>
@@ -103,10 +100,10 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 				<article>
 					<h1 class="titulo-card-home-loja d-none d-sm-none d-md-block d-lg-block d-xl-block ">Visite nossa loja <span class="color-title">virtual!</span>
 					</h1>
-					
+
 					<p class="texto-card-home-loja">Trabalhamos com produtos feitos de material reciclado.</p>
 					<a href="loja.php" class="btn btn-success btn-card">Acessar a Loja</a>
-					
+
 				</article>
 			</div>
 		</div>
@@ -184,4 +181,4 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
         </div>
 
     </div>
-	@endsection 
+	@endsection
