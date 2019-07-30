@@ -17,7 +17,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
                <img src="img/salveoplaneta.jpg" class="img-fluid desktop" alt="Salve o planeta">
                <img src="img/salveoplanetaresponsivo.jpg" class="img-fluid responsivo" alt="Salve o planeta">
             </div>
-            
+
             <article class="col-md-6 texto">
                 <h1 id="margem">Quem <span class="color-title">Somos</span></h1>
                 <h3 class="space"><span class="color-title">Visão</span></h3>
@@ -56,5 +56,4 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
             </div>
         </div>
     </div>
-
-@endsection 
+@endsection

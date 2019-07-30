@@ -163,16 +163,17 @@
                                     </li>
                                 </ul>
                             </div>
-                            <li class="nav-item newsletter">
+                            <form class="nav-item newsletter" method="POST" action="/home">
+                                @csrf
                                 <label class="form-control newsletter-footer"> Assine nossa Newsletter!</label>
                                 <div class="input-group newsletter-email">
-                                    <input class="form-control" type="email" placeholder="email@email.com.br">
+                                    <input class="form-control" type="email" name="email" placeholder="email@email.com.br">
                                     <span class="input-group-btn ">
                                         <button class="btn btn-success" class="btn-newsletter" type="submit">Assine
                                             agora</button>
                                     </span>
                                 </div>
-                            </li>
+                            </form>
                         </ul>
                     </div>
             </nav>

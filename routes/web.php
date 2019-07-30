@@ -1,4 +1,6 @@
 <?php
+use App\Newsletter;
+use App\Http\Controllers\Newslettercontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +30,6 @@ Route::get('/dadoscompra', 'DadosCompraController@dadoscompra');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/home', 'NewsletterController@home');
+Route::post('/home', 'NewsletterController@home');
