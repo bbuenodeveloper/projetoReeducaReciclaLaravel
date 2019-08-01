@@ -175,6 +175,28 @@
                                 </div>
                             </form>
                         </ul>
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                        @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                        @endforeach
+                                </ul>
+
+                            </div>
+                        @endif
+
+                        @if(isset($resultado))
+                            @if($resultado)
+                            <div class="alert alert-success">
+                                <h1>E-mail cadastrado com sucesso</h1>
+                            </div>
+                            @else
+                                <h1>erro</h1>
+                            @endif
+                        @endif
+
+
                     </div>
             </nav>
 
