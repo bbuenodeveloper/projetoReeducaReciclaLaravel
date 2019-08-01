@@ -27,6 +27,7 @@ Route::get('/loja', 'LojaController@loja');
 Route::get('/carrinho', 'CarrinhoController@carrinho');
 Route::get('/finalizada', 'FinalizadaController@finalizada');
 Route::get('/dadoscompra', 'DadosCompraController@dadoscompra');
+Route::get('/internaLoja', 'InternaLojaController@interna');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

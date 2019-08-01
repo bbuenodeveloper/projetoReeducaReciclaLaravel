@@ -21,18 +21,45 @@
                 <div class="row mb-5">
 
                     <div class="col-sm-6 col-lg-4 mb-4 mt-5" data-aos="fade-up">
-                        <div class="block-4 text-center border">
+                        <div class="card text-center border">
                             <figure class="block-4-image">
-                                <a href="shop-single.html"><img src="images/cloth_1.jpg" alt="Image placeholder"
+                                <a href="shop-single.html"><img src="img/produtos_loja/Produto_1.jpg" alt="Image placeholder"
                                         class="img-fluid"></a>
                             </figure>
-                            <div class="block-4-text p-4">
-                                <h3><a href="shop-single.html">Produto 1</a></h3>
-                                <p class="mb-0">Descrição</p>
-                                <p class="text-primary font-weight-bold">Preço</p>
+                            <div class=" p-4">
+                                <h3><a href="shop-single.html" class="lojaProdutos">Produto 1</a></h3>
+                                <p class="precoLoja font-weight-bold">R$0,00</p>
+                                <button type="button" class="btn btn-success">VER PRODUTO</button>
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-6 col-lg-4 mb-4 mt-5" data-aos="fade-up">
+                        <div class="card text-center border">
+                            <figure class="block-4-image">
+                                <a href="shop-single.html"><img src="img/produtos_loja/Produto_1.jpg" alt="Image placeholder"
+                                        class="img-fluid"></a>
+                            </figure>
+                            <div class=" p-4">
+                                <h3><a href="shop-single.html" class="lojaProdutos">Produto 1</a></h3>
+                                <p class="precoLoja font-weight-bold">R$0,00</p>
+                                <button type="button" class="btn btn-success">VER PRODUTO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-4 mt-5" data-aos="fade-up">
+                        <div class="card text-center border">
+                            <figure class="block-4-image">
+                                <a href="shop-single.html"><img src="img/produtos_loja/Produto_1.jpg" alt="Image placeholder"
+                                        class="img-fluid"></a>
+                            </figure>
+                            <div class=" p-4">
+                                <h3><a href="shop-single.html" class="lojaProdutos">Produto 1</a></h3>
+                                <p class="precoLoja font-weight-bold">R$0,00</p>
+                                <a class="btn btn-success" href="/internaProduto">VER PRODUTO</button>
+                            </div>
+                        </div>
+                    </div>
+                    
                     
 
 
@@ -56,14 +83,14 @@
 
             <div class="col-md-3 order-1 mb-5 mb-md-0">
                 <div class="border p-4 rounded mb-4 mt-5">
-                    <h3 class="mb-3 h6 text-uppercase text-black d-block">Categories</h3>
+                    <h3 class="mb-3 h6 text-uppercase text-black d-block">CATEGORIAS</h3>
                     <ul class="list-unstyled mb-0">
-                        <li class="mb-1"><a href="#" class="d-flex"><span>Men</span> <span
-                                    class="text-black ml-auto">(2,220)</span></a></li>
-                        <li class="mb-1"><a href="#" class="d-flex"><span>Women</span> <span
-                                    class="text-black ml-auto">(2,550)</span></a></li>
-                        <li class="mb-1"><a href="#" class="d-flex"><span>Children</span> <span
-                                    class="text-black ml-auto">(2,124)</span></a></li>
+                        <li class="mb-1"><a href="#" class="d-flex"><span>Categoria 1</span> <span
+                                    class="text-black ml-auto">(5)</span></a></li>
+                        <li class="mb-1"><a href="#" class="d-flex"><span>Categoria 2</span> <span
+                                    class="text-black ml-auto">(5)</span></a></li>
+                        <li class="mb-1"><a href="#" class="d-flex"><span>Categoria 3</span> <span
+                                    class="text-black ml-auto">(5)</span></a></li>
                     </ul>
                 </div>
 

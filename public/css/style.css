@@ -1454,6 +1454,22 @@ a.efeitoTransicaoLoja:hover {
         -ms-transform: translate(-50%, -45%);
         transform: translate(-50%, -45%); }
 
+        .lojaProdutos {
+            color: black;
+        }
+
+
+        .precoLoja {
+            color: limegreen
+        }
+
+        .collapse-content .fa.fa-heart:hover {
+            color: #f44336 !important;
+          }
+          .collapse-content .fa.fa-share-alt:hover {
+            color: #0d47a1 !important;
+          }
+
 
 
 
