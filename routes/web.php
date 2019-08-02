@@ -25,6 +25,11 @@ Route::get('/loja', 'LojaController@loja');
 Route::get('/carrinho', 'CarrinhoController@carrinho');
 Route::get('/finalizada', 'FinalizadaController@finalizada');
 Route::get('/dadoscompra', 'DadosCompraController@dadoscompra');
+
+Route::get('/marcadores', 'MarcadoresController@marcadores');
+
+Route::get('/cidades', 'CidadesController@obterJson');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

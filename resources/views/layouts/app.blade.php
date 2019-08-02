@@ -184,26 +184,36 @@
     </div>
 
     <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Google Page Speed Insights") === false): ?>
-    <!-- O que tiver aqui dentro o page speed do Google não consegue ver -->
-    <?php endif ?>
+                    <!-- O que tiver aqui dentro o page speed do Google não consegue ver -->
+                <?php endif ?>
 
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
-
-    <link href="{{ asset('css/dropdown.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/jquery.fancybox.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/stylesa361.css?ver=2.3') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/beta-popup.css') }}" rel="stylesheet" type="text/css" />
+                <link rel="stylesheet" href="{{asset('css/app.css')}}">
+                <link rel="stylesheet" href="{{asset('css/style.css')}}">
+                <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
 
 
+                <!-- Fonts -->
+                {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
 
-    <!-- <script src="js/jquery.js"></script> -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/recicla.min.js') }}"></script>
+
+
+                {{-- <link href="{{asset('css/font-icons.css')}}" rel="stylesheet" type="text/css" /> --}}
+                <link href="{{asset('css/recicla-guide.css')}}" rel="stylesheet" type="text/css" />
+                <link href="{{asset('css/dropdown.min.css')}}" rel="stylesheet" type="text/css" />
+                <link href="{{asset('css/jquery.fancybox.min.css')}}" rel="stylesheet" type="text/css" />
+                <link href="{{asset('css/stylesa361.css?ver=2.3')}}" rel="stylesheet" type="text/css" />
+                <link href="{{asset('css/beta-popup.css')}}" rel="stylesheet" type="text/css" />
+
+
+
+                <script src="{{asset('js/jquery.js')}}"></script>
+                <script src="{{url('https://code.jquery.com/jquery-3.4.0.min.js')}}"></script>
+                <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+                <script src="{{asset('js/bootstrap.min.js')}}"></script>
+                {{-- <script src="{{asset('js/app.js') }}" defer></script> --}}
+                <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->
+                <script src="{{asset('js/recicla.min.js')}}"></script>
 </body>
 
 </html>
