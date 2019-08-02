@@ -5,7 +5,7 @@
 <div class="bg-light py-3">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <strong
+            <div class="col-md-12 mb-0"><a href="/home">Home</a> <span class="mx-2 mb-0">/</span> <strong
                     class="text-black">Loja</strong></div>
         </div>
     </div>
@@ -29,7 +29,7 @@
                             <div class=" p-4">
                                 <h3><a href="shop-single.html" class="lojaProdutos">Produto 1</a></h3>
                                 <p class="precoLoja font-weight-bold">R$0,00</p>
-                                <button type="button" class="btn btn-success">VER PRODUTO</button>
+                                <a class="btn btn-success" href="/internaProduto">VER PRODUTO</a>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                             <div class=" p-4">
                                 <h3><a href="shop-single.html" class="lojaProdutos">Produto 1</a></h3>
                                 <p class="precoLoja font-weight-bold">R$0,00</p>
-                                <button type="button" class="btn btn-success">VER PRODUTO</button>
+                                <a class="btn btn-success" href="/internaProduto">VER PRODUTO</a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                             <div class=" p-4">
                                 <h3><a href="shop-single.html" class="lojaProdutos">Produto 1</a></h3>
                                 <p class="precoLoja font-weight-bold">R$0,00</p>
-                                <a class="btn btn-success" href="/internaProduto">VER PRODUTO</button>
+                                <a class="btn btn-success" href="/internaProduto">VER PRODUTO</a>
                             </div>
                         </div>
                     </div>

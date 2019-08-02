@@ -1471,6 +1471,16 @@ a.efeitoTransicaoLoja:hover {
           }
 
 
+          .descInterna {
+              font-size: 0.8rem
+          }
+
+          .precoInterna {
+              color:#ff7e57;
+              font-weight: bolder;
+          }
+
+
 
 
 
