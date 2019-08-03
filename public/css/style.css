@@ -389,7 +389,7 @@ p#frase {
 /* Incio Configuração mapa */
 
 #map {
-    height: 100%;
+    height: 100vh;
   }
   html, body {
     height: 100%;
@@ -1453,6 +1453,32 @@ a.efeitoTransicaoLoja:hover {
         -webkit-transform: translate(-50%, -45%);
         -ms-transform: translate(-50%, -45%);
         transform: translate(-50%, -45%); }
+
+        .lojaProdutos {
+            color: black;
+        }
+
+
+        .precoLoja {
+            color: limegreen
+        }
+
+        .collapse-content .fa.fa-heart:hover {
+            color: #f44336 !important;
+          }
+          .collapse-content .fa.fa-share-alt:hover {
+            color: #0d47a1 !important;
+          }
+
+
+          .descInterna {
+              font-size: 0.8rem
+          }
+
+          .precoInterna {
+              color:#ff7e57;
+              font-weight: bolder;
+          }
 
 
 

@@ -32,6 +32,8 @@ class LoginController extends Controller
      *
      * @return void
      */
+
+    // Para não entrar na pagina de login direto, com isso abre o site normal.
     // public function __construct()
     // {
     //     $this->middleware('guest')->except('logout');

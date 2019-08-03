@@ -1,4 +1,6 @@
 <?php
+use App\Newsletter;
+use App\Http\Controllers\Newslettercontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,8 +30,24 @@ Route::get('/dadoscompra', 'DadosCompraController@dadoscompra');
 
 Route::get('/marcadores', 'MarcadoresController@marcadores');
 
-Route::get('/cidades', 'CidadesController@obterJson');
+Route::get('/cidades', 'CidadeController@obterJson');
 
+Route::get('/add-cidade', 'CidadeController@addCidade');
+
+Route::get('/add-material', 'MaterialController@addMaterial');
+
+Route::get('/add-empresa', 'EmpresaController@addEmpresa');
+
+Route::post('/cadastrarempresa', 'EmpresaController@cadastrarEmpresa')->name('empresa.cadastrar');
+
+Route::post('/cadastrarmaterial', 'MaterialController@cadastrarMaterial')->name('material.cadastrar');
+
+Route::post('/cadastrarcidade', 'CidadesController@cadastrarCidade')->name('cidade.cadastrar');
+
+Route::get('/internaProduto', 'InternaLojaController@interna');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/home', 'NewsletterController@home');
+Route::post('/home', 'NewsletterController@home');
