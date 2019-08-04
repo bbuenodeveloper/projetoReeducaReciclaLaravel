@@ -17,7 +17,7 @@ class EmpresaController extends Controller
     public function cadastrarEmpresa(Request $request){
         $empresa = new Empresa();
         $empresa->nome = $request->nome;
-        $empresa->endereço = $request->endereço;
+        $empresa->endereco = $request->endereco;
         $empresa->numero = $request->numero;
         $empresa->complemento = $request->complemento;
         $empresa->cep = $request->cep;
