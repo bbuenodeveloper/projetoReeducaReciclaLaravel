@@ -1480,7 +1480,9 @@ a.efeitoTransicaoLoja:hover {
               font-weight: bolder;
           }
 
-
-
+          .tamanhoFinalizada {
+              height: 22rem;
+              margin-top: 10rem;
+          }
 
 
