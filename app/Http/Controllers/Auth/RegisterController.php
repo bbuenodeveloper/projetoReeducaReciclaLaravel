@@ -49,10 +49,20 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'name' => ['required', 'string', 'max:200'],
+            'email' => ['required', 'string', 'email', 'max:200', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-
+            'sobrenome'=> ['required', 'string'],
+            'cep' => ['required', 'number', 'max:8'],
+            'endereco' => ['required', 'string', 'max:200'],
+            'numero' => ['required', 'number', 'max:45'],
+            'complemento' => ['string', 'max:100'],
+            'bairro' => ['required', 'string','max:100'],
+            'data_nascimento' => ['required', 'string', 'max:10'],
+            'estado' => ['required', 'string', 'max:100'],
+            'cidade' => ['required', 'string', 'max:100'],
+            'nivel_user' => ['required', 'tinyInteger'],
+            'telefone' => ['required','number', 'max:45']
         ]);
     }
 
@@ -68,7 +78,18 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'nivel_user'=> $data['nivel-user'],
+            'nivel_user'=> $data['nivel_user'],
+            'sobrenome'=> $data['sobrenome'],
+            'cep' => $data['cep'],
+            'endereco' => $data['endereco'],
+            'numero' => $data['numero'],
+            'complemento' => $data['complemento'],
+            'bairro' => $data['bairro'],
+            'data_nascimento' => $data['data_nascimento'],
+            'estado' => $data['estado'],
+            'cidade' => $data['cidade'],
+            'nivel_user' => $data['nivel_user'],
+            'telefone' => $data['telefone'],
         ]);
     }
 }
