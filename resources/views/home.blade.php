@@ -20,15 +20,15 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
 		<div class="clearfix"></div>
 
-		<div class="row mt-3">
+		<div class="row mt-3 px-3">
 
 				<div class="col-12 col-md-6 ">
 
-					<img src="img/familiareciclado.jpg" alt="" class="img-fluid">
+					<img src="img/mapahome.jpg" alt="" class="img-fluid">
 
 				</div>
 
-				<div class="col-12 col-md-6 ">
+				<div class="col-12 col-md-6 px-3">
 
 							<h1 class="card-title titulo-card-home">Vai descartar seus <span class="color-title">resíduos?</span></h1>
 								<p class="card-text titulo-card-home">Você pode ajudar o planeta com uma ação simples, use o mapa interativo do
@@ -91,14 +91,14 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
 		</div> -->
 
-		<div class="row no-gutters recicla-texto">
+		<div class="row no-gutters recicla-texto px-3">
 
-			<div class="col-md-6 img-texto d-none d-sm-none d-md-block d-lg-block d-xl-block">
+			<div class="col-md-6 img-texto order-2 order-md-1 order-sm-1 order-lg-1 order-xl-1 d-block d-sm-block d-md-block d-lg-block d-xl-block">
 				<img src="img/lojavirtual.jpg" class="img-fluid " alt="Loja virtual">
 			</div>
-			<div class="col-md-6 texto-info-home px-3 d-none d-sm-none d-md-block d-lg-block d-xl-block">
+			<div class="col-md-6 order-1 order-md-1 order-sm-1 order-lg-1 order-xl-1 texto-info-home px-3 d-block d-sm-block d-md-block d-lg-block d-xl-block px-3">
 				<article>
-					<h1 class="titulo-card-home-loja d-none d-sm-none d-md-block d-lg-block d-xl-block ">Visite nossa loja <span class="color-title">virtual!</span>
+					<h1 class="titulo-card-home-loja d-block d-sm-block d-md-block d-lg-block d-xl-block ">Visite nossa loja <span class="color-title">virtual!</span>
 					</h1>
 
 					<p class="texto-card-home-loja">Trabalhamos com produtos feitos de material reciclado.</p>
@@ -117,7 +117,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
 
 
-		<div class="d-block d-sm-block d-md-none d-lg-none d-xl-none">
+		{{-- <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12">
@@ -132,7 +132,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> --}}
 	</div>
 
 	<!-- fim propaganda loja -->

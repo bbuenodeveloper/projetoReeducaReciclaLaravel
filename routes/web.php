@@ -15,18 +15,47 @@ use App\Http\Controllers\Newslettercontroller;
 
 
 Route::get('/','HomeController@home');
+
 Route::get('/home','HomeController@home');
+
 Route::get('/sobre', 'SobreController@sobre');
 
 Route::get('/contato', 'ContatoController@contato');
+
 Route::post('/contato', 'ContatoController@sendMail');
 
 Route::get('/mapa', 'MapaController@mapa');
+
 Route::get('/faq', 'FaqController@faq');
+
 Route::get('/loja', 'LojaController@loja');
+
 Route::get('/carrinho', 'CarrinhoController@carrinho');
+
 Route::get('/finalizada', 'FinalizadaController@finalizada');
+
 Route::get('/dadoscompra', 'DadosCompraController@dadoscompra');
+
+Route::get('/privacidade', 'PrivacidadeController@privacidade');
+
+Route::get('/termos', 'TermosController@termos');
+
+Route::get('/marcadores', 'MarcadoresController@marcadores');
+
+Route::get('/cidades', 'CidadeController@obterJson');
+
+Route::get('/add-cidade', 'CidadeController@addCidade');
+
+Route::get('/add-material', 'MaterialController@addMaterial');
+
+Route::get('/add-empresa', 'EmpresaController@addEmpresa');
+
+Route::post('/cadastrarempresa', 'EmpresaController@cadastrarEmpresa')->name('empresa.cadastrar');
+
+Route::post('/cadastrarmaterial', 'MaterialController@cadastrarMaterial')->name('material.cadastrar');
+
+Route::post('/cadastrarcidade', 'CidadeController@cadastrarCidade')->name('cidade.cadastrar');
+
 Route::get('/internaProduto', 'InternaLojaController@interna');
 Auth::routes();
 

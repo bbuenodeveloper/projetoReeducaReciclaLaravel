@@ -83,9 +83,9 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
                         <img class="rounded-circle" src="img/1.jpg" alt="image">
                     </div>
                     <div class="user-intro">
-                        <h4 class="text-success card-intro-title mb-0">Reeduca Recicla</h4>
-                        <p><small>@reeducarecicla</small></p>
-                        <p>Reeduca Recicla é um projeto em constante desenvolvimento, cujo intuito é facilitar a busca por pontos de coleta   adequados ao descarte dos resíduos. Conheça o projeto e compartilhe sua ideias com nossa equipe!</p>
+                        <h4 class="text-success card-intro-title mb-0">Recicla Maps</h4>
+                        <p><small>@reciclamaps</small></p>
+                        <p>Recicla Maps é um projeto em constante desenvolvimento, cujo intuito é facilitar a busca por pontos de coleta   adequados ao descarte dos resíduos. Conheça o projeto e compartilhe sua ideias com nossa equipe!</p>
                     </div>
                     <div class="contact-addresses">
                         <ul class="contact-address-list">
@@ -97,7 +97,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
                                             Enviar e-mail
                                         </span>
                                         <span class="d-none d-sm-block">
-                                            contato@reeducarecicla.com
+                                            contato@reciclamaps.com.br
                                         </span>
                                     </a>
                                 </p>
