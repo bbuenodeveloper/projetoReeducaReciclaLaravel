@@ -131,21 +131,23 @@
                 <div class="col-md-9">
                     <div class="row">
                         <ul class="nav marginFooter">
-                            <li class="nav-item d-none d-sm-block">
+                            <li class="nav-item d-none d-sm-block align-footer">
                                 <a class="nav-link active menu-footer" href="/home">Home</a>
                                 <a class="nav-link active menu-footer" href="/sobre">Sobre</a>
                                 <a class="nav-link active menu-footer" href="/loja">Loja</a>
                             </li>
-                            <li class="nav-item d-none d-sm-block">
+                            <li class="nav-item d-none d-sm-block align-footer">
                                 <a class="nav-link active menu-footer" href="/mapa">Mapa</a>
                                 <a class="nav-link active menu-footer" href="/faq">FAQ</a>
-                            </li>
-                            <li class="nav-item d-none d-sm-block">
                                 <a class="nav-link active menu-footer" href="/contato">Contato</a>
+                            </li>
+                            <li class="nav-item d-none d-sm-block align-footer">
+                                <a class="nav-link active menu-footer" href="/privacidade">Privacidade</a>
+                                <a class="nav-link active menu-footer" href="/termos">Termos de Uso</a>
                             </li>
                             <div class="col-md-2 text-primary div-icones justify-content-center">
                                 <ul class="ul-icones-footer ">
-                                    <li class="nav-link active icones-footer">
+                                    <li class="nav-link active icones-footer ">
                                         <a href="https://twitter.com/reeducarecicla" target="_blank">
                                             <i class="fa fa-twitter text-white"> </i>
                                         </a>
@@ -163,17 +165,40 @@
                                     </li>
                                 </ul>
                             </div>
-                            <li class="nav-item newsletter">
+                            <form class="nav-item newsletter" method="POST" action="/home">
+                                @csrf
                                 <label class="form-control newsletter-footer"> Assine nossa Newsletter!</label>
                                 <div class="input-group newsletter-email">
-                                    <input class="form-control" type="email" placeholder="email@email.com.br">
+                                    <input class="form-control" type="email" name="email" placeholder="email@email.com.br">
                                     <span class="input-group-btn ">
                                         <button class="btn btn-success" class="btn-newsletter" type="submit">Assine
                                             agora</button>
                                     </span>
                                 </div>
-                            </li>
+                            </form>
                         </ul>
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                        @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                        @endforeach
+                                </ul>
+
+                            </div>
+                        @endif
+
+                        @if(isset($resultado))
+                            @if($resultado)
+                            <div class="alert alert-success">
+                                <h1>E-mail cadastrado com sucesso</h1>
+                            </div>
+                            @else
+                                <h1>erro</h1>
+                            @endif
+                        @endif
+
+
                     </div>
             </nav>
 
