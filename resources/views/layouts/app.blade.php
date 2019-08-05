@@ -131,21 +131,23 @@
                 <div class="col-md-9">
                     <div class="row">
                         <ul class="nav marginFooter">
-                            <li class="nav-item d-none d-sm-block">
+                            <li class="nav-item d-none d-sm-block align-footer">
                                 <a class="nav-link active menu-footer" href="/home">Home</a>
                                 <a class="nav-link active menu-footer" href="/sobre">Sobre</a>
                                 <a class="nav-link active menu-footer" href="/loja">Loja</a>
                             </li>
-                            <li class="nav-item d-none d-sm-block">
+                            <li class="nav-item d-none d-sm-block align-footer">
                                 <a class="nav-link active menu-footer" href="/mapa">Mapa</a>
                                 <a class="nav-link active menu-footer" href="/faq">FAQ</a>
+                                <a class="nav-link active menu-footer" href="/termos">Termos de Uso</a>
                             </li>
-                            <li class="nav-item d-none d-sm-block">
+                            <li class="nav-item d-none d-sm-block align-footer">
                                 <a class="nav-link active menu-footer" href="/contato">Contato</a>
+                                <a class="nav-link active menu-footer" href="/privacidade">Privacidade</a>
                             </li>
                             <div class="col-md-2 text-primary div-icones justify-content-center">
                                 <ul class="ul-icones-footer ">
-                                    <li class="nav-link active icones-footer">
+                                    <li class="nav-link active icones-footer ">
                                         <a href="https://twitter.com/reeducarecicla" target="_blank">
                                             <i class="fa fa-twitter text-white"> </i>
                                         </a>
