@@ -1489,4 +1489,18 @@ a.efeitoTransicaoLoja:hover {
               margin-top: 10rem;
           }
 
+          .heightBotao {
+              height: 5rem;
+          }
+
+          .widthHeightBtn {
+              width: 100%;
+              height: 3rem;
+          }
+          /* Tirando as sentinhas do input type number. */
+          input[type=number]::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+
+    }
+
 

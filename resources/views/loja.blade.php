@@ -17,14 +17,14 @@
         <div class="row mb-5">
             <div class="col-md-9 order-2">
 
-                
+
                 <div class="row mb-5">
 
                     <div class="col-sm-6 col-lg-4 mb-4 mt-5" data-aos="fade-up">
                         <div class="card text-center border">
                             <figure class="block-4-image">
-                                <a href="shop-single.html"><img src="img/produtos_loja/Produto_1.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
+                                <a href="shop-single.html"><img src="img/produtos_loja/Produto_1.jpg"
+                                        alt="Image placeholder" class="img-fluid"></a>
                             </figure>
                             <div class=" p-4">
                                 <h3><a href="shop-single.html" class="lojaProdutos">Produto 1</a></h3>
@@ -36,8 +36,8 @@
                     <div class="col-sm-6 col-lg-4 mb-4 mt-5" data-aos="fade-up">
                         <div class="card text-center border">
                             <figure class="block-4-image">
-                                <a href="shop-single.html"><img src="img/produtos_loja/Produto_1.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
+                                <a href="shop-single.html"><img src="img/produtos_loja/Produto_1.jpg"
+                                        alt="Image placeholder" class="img-fluid"></a>
                             </figure>
                             <div class=" p-4">
                                 <h3><a href="shop-single.html" class="lojaProdutos">Produto 1</a></h3>
@@ -49,8 +49,8 @@
                     <div class="col-sm-6 col-lg-4 mb-4 mt-5" data-aos="fade-up">
                         <div class="card text-center border">
                             <figure class="block-4-image">
-                                <a href="shop-single.html"><img src="img/produtos_loja/Produto_1.jpg" alt="Image placeholder"
-                                        class="img-fluid"></a>
+                                <a href="shop-single.html"><img src="img/produtos_loja/Produto_1.jpg"
+                                        alt="Image placeholder" class="img-fluid"></a>
                             </figure>
                             <div class=" p-4">
                                 <h3><a href="shop-single.html" class="lojaProdutos">Produto 1</a></h3>
@@ -59,26 +59,12 @@
                             </div>
                         </div>
                     </div>
-                    
-                    
+
+
 
 
                 </div>
-                <div class="row" data-aos="fade-up">
-                    <div class="col-md-12 text-center">
-                        <div class="site-block-27">
-                            <ul>
-                                <li><a href="#">&lt;</a></li>
-                                <li class="active"><span>1</span></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">&gt;</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
             </div>
 
             <div class="col-md-3 order-1 mb-5 mb-md-0">

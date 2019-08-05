@@ -133,7 +133,7 @@
                         <label for="number" class="col-md-4 col-form-label text-md-right">{{ __('Número') }}</label>
 
                         <div class="col-md-6">
-                            <input id="number" type="number" class="form-control @error('number') is-invalid @enderror" name="number" required autocomplete="number">
+                        <input id="number" type="number" class="form-control" @error('number') is-invalid @enderror" name="number" required autocomplete="number">
 
                             @error('number')
                                 <span class="invalid-feedback" role="alert">
