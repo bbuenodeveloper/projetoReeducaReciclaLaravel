@@ -22,7 +22,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
 		<div class="row mt-3 px-3">
 
-				<div class="col-12 col-md-6 ">
+				<div class="col-12 col-md-6 mt-5 ">
 
 					<img src="img/mapahome.jpg" alt="" class="img-fluid">
 
