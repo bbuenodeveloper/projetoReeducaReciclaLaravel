@@ -139,11 +139,11 @@
                             <li class="nav-item d-none d-sm-block align-footer">
                                 <a class="nav-link active menu-footer" href="/mapa">Mapa</a>
                                 <a class="nav-link active menu-footer" href="/faq">FAQ</a>
-                                <a class="nav-link active menu-footer" href="/termos">Termos de Uso</a>
+                                <a class="nav-link active menu-footer" href="/contato">Contato</a>
                             </li>
                             <li class="nav-item d-none d-sm-block align-footer">
-                                <a class="nav-link active menu-footer" href="/contato">Contato</a>
                                 <a class="nav-link active menu-footer" href="/privacidade">Privacidade</a>
+                                <a class="nav-link active menu-footer" href="/termos">Termos de Uso</a>
                             </li>
                             <div class="col-md-2 text-primary div-icones justify-content-center">
                                 <ul class="ul-icones-footer ">
