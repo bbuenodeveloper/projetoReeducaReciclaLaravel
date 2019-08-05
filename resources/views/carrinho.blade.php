@@ -70,12 +70,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="row mb-5">
-                        
+
                         <div class="col-12">
-                            <button class="btn btn-outline-primary btn-sm btn-block">Continuar comprando</button>
+                            <button class="btn btn-outline-primary btn-sm btn-block heightBotao">CONTINUAR COMPRANDO</button>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-12 pl-5 mb-5">
                     <div class="row justify-content-end">

@@ -1489,4 +1489,12 @@ a.efeitoTransicaoLoja:hover {
               margin-top: 10rem;
           }
 
+          .heightBotao {
+              height: 5rem;
+          }
+
+          .widthHeightBtn {
+              width: 100%;
+              height: 3rem;
+          }
 

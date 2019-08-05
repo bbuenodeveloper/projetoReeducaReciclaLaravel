@@ -50,6 +50,10 @@ Route::get('/add-material', 'MaterialController@addMaterial');
 
 Route::get('/add-empresa', 'EmpresaController@addEmpresa');
 
+Route::get('/add-produto', 'ProdutoController@addProduto');
+
+Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
+
 Route::post('/cadastrarempresa', 'EmpresaController@cadastrarEmpresa')->name('empresa.cadastrar');
 
 Route::post('/cadastrarmaterial', 'MaterialController@cadastrarMaterial')->name('material.cadastrar');
