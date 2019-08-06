@@ -24,12 +24,12 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="lastname" class="col-md-4 col-form-label text-md-right">{{ __('Sobrenome') }}</label>
+                        <label for="sobrenome" class="col-md-4 col-form-label text-md-right">{{ __('Sobrenome') }}</label>
 
                         <div class="col-md-6">
-                            <input id="lastname" type="text" class="form-control @error('name') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus>
+                            <input id="sobrenome" type="text" class="form-control @error('sobrenome') is-invalid @enderror" name="sobrenome" value="{{ old('sobrenome') }}" required autocomplete="sobrenome" autofocus>
 
-                            @error('lastname')
+                            @error('sobrenome')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -52,12 +52,12 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="birth" class="col-md-4 col-form-label text-md-right">{{ __('Data de Nascimento') }}</label>
+                        <label for="data_nascimento" class="col-md-4 col-form-label text-md-right">{{ __('Data de Nascimento') }}</label>
 
                         <div class="col-md-6">
-                            <input id="birth" type="text" class="form-control @error('birth') is-invalid @enderror" name="birth" value="{{ old('birth') }}" required autocomplete="birth">
+                            <input id="data_nascimento" type="text" class="form-control @error('data_nascimento') is-invalid @enderror" name="data_nascimento" value="{{ old('data_nascimento') }}" required autocomplete="data_nascimento">
 
-                            @error('birth')
+                            @error('data_nascimento')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -66,12 +66,12 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Telefone') }}</label>
+                        <label for="telefone" class="col-md-4 col-form-label text-md-right">{{ __('Telefone') }}</label>
 
                         <div class="col-md-6">
-                            <input id="phone" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone">
+                            <input id="telefone" type="text" class="form-control @error('telefone') is-invalid @enderror" name="telefone" value="{{ old('telefone') }}" required autocomplete="telefone">
 
-                            @error('phone')
+                            @error('telefone')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -102,10 +102,10 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="zipcode" class="col-md-4 col-form-label text-md-right">{{ __('CEP') }}</label>
+                        <label for="cep" class="col-md-4 col-form-label text-md-right">{{ __('CEP') }}</label>
 
                         <div class="col-md-6">
-                            <input id="zipcode" type="text" class="form-control @error('zipcode') is-invalid @enderror" name="zipcode" required autocomplete="zipcode">
+                            <input id="cep" type="text" class="form-control @error('cep') is-invalid @enderror" name="cep" required autocomplete="cep">
 
                             @error('cep')
                                 <span class="invalid-feedback" role="alert">
@@ -116,12 +116,12 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Endereço') }}</label>
+                        <label for="endereco" class="col-md-4 col-form-label text-md-right">{{ __('Endereço') }}</label>
 
                         <div class="col-md-6">
-                            <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" required autocomplete="address">
+                            <input id="endereco" type="text" class="form-control @error('endereco') is-invalid @enderror" name="endereco" required autocomplete="endereco">
 
-                            @error('address')
+                            @error('endereco')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -130,12 +130,12 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="number" class="col-md-4 col-form-label text-md-right">{{ __('Número') }}</label>
+                        <label for="numero" class="col-md-4 col-form-label text-md-right">{{ __('Número') }}</label>
 
                         <div class="col-md-6">
-                        <input id="number" type="number" class="form-control" @error('number') is-invalid @enderror" name="number" required autocomplete="number">
+                            <input id="numero" type="text" class="form-control @error('numero') is-invalid @enderror" name="numero" required autocomplete="numero">
 
-                            @error('number')
+                            @error('numero')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -144,12 +144,12 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="complement" class="col-md-4 col-form-label text-md-right">{{ __('Complemento') }}</label>
+                        <label for="complemento" class="col-md-4 col-form-label text-md-right">{{ __('Complemento') }}</label>
 
                         <div class="col-md-6">
-                            <input id="complement" type="text" class="form-control @error('complement') is-invalid @enderror" name="complement" required autocomplete="complement">
+                            <input id="complemento" type="text" class="form-control @error('complemento') is-invalid @enderror" name="complemento" required autocomplete="complemento">
 
-                            @error('complement')
+                            @error('complemento')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -158,12 +158,12 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="neighborhood" class="col-md-4 col-form-label text-md-right">{{ __('Bairro') }}</label>
+                        <label for="bairro" class="col-md-4 col-form-label text-md-right">{{ __('Bairro') }}</label>
 
                         <div class="col-md-6">
-                            <input id="neighborhood" type="text" class="form-control @error('neighborhood') is-invalid @enderror" name="neighborhood" required autocomplete="neighborhood">
+                            <input id="bairro" type="text" class="form-control @error('bairro') is-invalid @enderror" name="bairro" required autocomplete="bairro">
 
-                            @error('neighborhood')
+                            @error('bairro')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -172,13 +172,13 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="estate" class="col-md-4 col-form-label text-md-right">{{ _('Estado') }}</label>
+                        <label for="estado" class="col-md-4 col-form-label text-md-right">{{ _('Estado') }}</label>
                         <div class="col-md-6">
-                            <select id="estate" type="text" class="form-control @error('estate') is-invalid @enderror" name="estate" required autocomplete="estate">
+                            <select id="estado" type="text" class="form-control @error('estado') is-invalid @enderror" name="estado" required autocomplete="estado">
                             <option selected>Selecione</option>
-                            <option>...</option>
+                            <option>São Paulo</option>
                             </select>
-                            @error('estate')
+                            @error('estado')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -187,17 +187,24 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="city" class="col-md-4 col-form-label text-md-right">{{ _('Cidade') }}</label>
+                        <label for="cidade" class="col-md-4 col-form-label text-md-right">{{ _('Cidade') }}</label>
                         <div class="col-md-6">
-                            <select id="city" type="text" class="form-control @error('city') is-invalid @enderror" name="city" required autocomplete="city">
+                            <select id="cidade" type="text" class="form-control @error('cidade') is-invalid @enderror" name="cidade" required autocomplete="cidade">
                             <option selected>Selecione</option>
-                            <option>...</option>
+                            <option>São Paulo</option>
                             </select>
-                            @error('city')
+                            @error('cidade')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label style="display=none" for="nivelUser" class="col-md-4 col-form-label text-md-right">{{ __('Nivel usuário') }}</label>
+                        <div class="col-md-6">
+                            <input id="name" type="hidden" class="form-control ">
                         </div>
                     </div>
 
