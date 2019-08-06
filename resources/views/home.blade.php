@@ -1,18 +1,16 @@
 @extends('layouts.app')
+
 @section('content')
+
 <?php
+
 $root = 'http://localhost/projetoreeducarecicla/';
-$foto = 'salveo%20planeta.png';
+$foto = 'mapahome.png';
 
 $title = $facebook_title = "Home";
 $keywords = 'recicla,palavras,chave,separadas,por,virgula';
-$description = $facebook_description = substr(strip_tags('<p>A Reeduca, por sua atitude empresarial e pela qualidade das relações que busca desenvolver com os diversos agentes que articula, expressa sua marca na identidade com pessoas e empresas que se comprometem a atuar de maneira efetiva na colaboração por um mundo mais saudável para se habitar, em respeito ao meio ambiente do qual fazem parte e responsabilidade para com as gerações por vir.</p>'), 0, 200);
-$facebook_image = htmlentities($root . 'img/' . $foto);
-?>
-
-<!-- fim cabeçalho -->
-
-<!-- inicio banner -->
+$description = $facebook_description = substr(strip_tags('<p>A Recicla, por sua atitude empresarial e pela qualidade das relações que busca desenvolver com os diversos agentes que articula, expressa sua marca na identidade com pessoas e empresas que se comprometem a atuar de maneira efetiva na colaboração por um mundo mais saudável para se habitar, em respeito ao meio ambiente do qual fazem parte e responsabilidade para com as gerações por vir.</p>'), 0, 200);
+$facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 <section class="container-fluid">
 
@@ -31,10 +29,10 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 		<div class="col-12 col-md-6 px-3">
 
 			<h1 class="card-title titulo-card-home">Vai descartar seus <span class="color-title">resíduos?</span></h1>
-			<p class="card-text titulo-card-home">Você pode ajudar o planeta com uma ação simples, use o mapa interativo do
-				Reeduca Recicla mostrando pontos de reciclagem nas cidades. Funciona de maneira simples:
+			<p class="card-text-sem-margem" >Você pode ajudar o planeta com uma ação simples, use o mapa interativo do
+				Reeduca Recicla mostrando pontos de reciclagem nas cidades.<p class="card-text "> Funciona de maneira simples:
 				escolha a cidade na caixa de pesquisa e o mapa mostrará pontos de coleta nas
-				proximidades.
+				proximidades.</p>
 			</p>
 			<!-- <h5>Saiba onde descartar seus resíduos</h5> -->
 			<p></p>
@@ -57,7 +55,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 				</h1>
 				<h2 class="titulo-card-home d-block d-sm-block d-md-none d-lg-none d-xl-none">Por que <span class="color-title">reciclar ?</span>
 				</h2>
-				<p class="texto-card-home">Conforme a população do planeta aumenta, cresce também a quantidade de
+				<p class="card-text">Conforme a população do planeta aumenta, cresce também a quantidade de
 					lixo
 					produzido. Porém, ao longo das décadas, foram descobertas novas maneiras de reaproveitar estes
 					materiais que iam diretamente para os lixões, como plástico, papel, metais, vidro e madeira.
@@ -94,14 +92,14 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 		<div class="row no-gutters recicla-texto px-3">
 
 			<div class="col-md-6 img-texto order-2 order-md-1 order-sm-1 order-lg-1 order-xl-1 d-block d-sm-block d-md-block d-lg-block d-xl-block">
-				<img src="{{asset('img/lojavirtual.jpg'}}" class="img-fluid " alt="Loja virtual">
+				<img src="{{asset('img/lojavirtual.jpg')}}" class="img-fluid " alt="Loja virtual">
 			</div>
 			<div class="col-md-6 order-1 order-md-1 order-sm-1 order-lg-1 order-xl-1 texto-info-home px-3 d-block d-sm-block d-md-block d-lg-block d-xl-block px-3">
 				<article>
 					<h1 class="titulo-card-home-loja d-block d-sm-block d-md-block d-lg-block d-xl-block ">Visite nossa loja <span class="color-title">virtual!</span>
 					</h1>
 
-					<p class="texto-card-home-loja">Trabalhamos com produtos feitos de material reciclado.</p>
+					<p class="card-text">Trabalhamos com produtos feitos de material reciclado.</p>
 					<a href="loja.php" class="btn btn-success btn-card">Acessar a Loja</a>
 
 				</article>
@@ -117,7 +115,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
 
 
-	
+
 </div>
 
 <!-- fim propaganda loja -->
@@ -133,7 +131,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 				</h1>
 				<h2 class="titulo-card-home d-block d-sm-block d-md-none d-lg-none d-xl-none">Nossos <span class="color-title">Parceiros !</span>
 				</h2>
-				<p class="texto-card-home texto-home">Conheça nossos parceiros. A Reeduca Recicla entende que o sucesso de qualquer organização não se faz sozinho e que o trabalho em parceria é fundamental</p>
+				<p class="texto-card-home card-text">Conheça nossos parceiros. A Reeduca Recicla entende que o sucesso de qualquer organização não se faz sozinho e que o trabalho em parceria é fundamental</p>
 
 			</article>
 		</div>

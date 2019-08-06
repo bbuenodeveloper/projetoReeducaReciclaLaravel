@@ -106,7 +106,16 @@ h1.h1FAQ {
 }
 
 .card-text {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.card-text-sem-margem {
+
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
 }
 .card1-home {
     margin-bottom: 3rem;
