@@ -203,7 +203,7 @@
             </nav>
 
             <div class="foot5 mb-0 container-fluid justify-content-center">
-                <p class="mb-3">Copyrights © 2019 ReeducaRecicla</p>
+                <p class="mb-3">Copyrights © 2019 Reciclamaps</p>
             </div>
         </footer>
     </div>
