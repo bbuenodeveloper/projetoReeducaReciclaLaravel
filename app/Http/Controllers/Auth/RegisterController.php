@@ -53,16 +53,16 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:200', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'sobrenome'=> ['required', 'string'],
-            'cep' => ['required', 'numeric', 'max:8'],
+            'cep' => ['required', 'numeric'],
             'endereco' => ['required', 'string', 'max:200'],
-            'numero' => ['required', 'integer', 'max:45'],
+            'numero' => ['required', 'integer'],
             'complemento' => ['string', 'max:100'],
             'bairro' => ['required', 'string','max:100'],
             'data_nascimento' => ['required', 'string', 'max:10'],
             'estado' => ['required', 'string', 'max:100'],
             'cidade' => ['required', 'string', 'max:100'],
-            'nivel_user' => ['required', 'tinyInteger'],
-            'telefone' => ['required','integer', 'max:45']
+            //'nivel_user' => ['required', 'tinyInteger'],
+            'telefone' => ['required','integer']
         ]);
     }
 
@@ -78,7 +78,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'nivel_user'=> $data['nivel_user'],
+            'nivel_user'=> 1,
             'sobrenome'=> $data['sobrenome'],
             'cep' => $data['cep'],
             'endereco' => $data['endereco'],
@@ -88,7 +88,6 @@ class RegisterController extends Controller
             'data_nascimento' => $data['data_nascimento'],
             'estado' => $data['estado'],
             'cidade' => $data['cidade'],
-            'nivel_user' => $data['nivel_user'],
             'telefone' => $data['telefone'],
         ]);
     }
