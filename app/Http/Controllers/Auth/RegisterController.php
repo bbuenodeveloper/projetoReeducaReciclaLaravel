@@ -53,16 +53,16 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:200', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'sobrenome'=> ['required', 'string'],
-            'cep' => ['required', 'number', 'max:8'],
+            'cep' => ['required', 'numeric', 'max:8'],
             'endereco' => ['required', 'string', 'max:200'],
-            'numero' => ['required', 'number', 'max:45'],
+            'numero' => ['required', 'integer', 'max:45'],
             'complemento' => ['string', 'max:100'],
             'bairro' => ['required', 'string','max:100'],
             'data_nascimento' => ['required', 'string', 'max:10'],
             'estado' => ['required', 'string', 'max:100'],
             'cidade' => ['required', 'string', 'max:100'],
             'nivel_user' => ['required', 'tinyInteger'],
-            'telefone' => ['required','number', 'max:45']
+            'telefone' => ['required','integer', 'max:45']
         ]);
     }
 
