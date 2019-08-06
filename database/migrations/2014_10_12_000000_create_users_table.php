@@ -22,7 +22,6 @@ class CreateUsersTable extends Migration
     {
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
-<<<<<<< HEAD
             //$table->increments('id');
             $table->string('name', 200);
             $table->string('sobrenome', 200);
@@ -37,22 +36,6 @@ class CreateUsersTable extends Migration
             $table->string('estado', 100);
             $table->string('cidade', 100);
             $table->tinyInteger('nivel_user');
-=======
-            $table->increments('id');
-            $table->string('name', 200);
-            $table->string('sobrenome', 200);
-            $table->string('email', 100);
-            $table->string('password', 200);
-            $table->integer('cep');
-            $table->string('endereco', 200)->nullable();
-            $table->string('numero', 45)->nullable();
-            $table->string('complemento', 100)->nullable();
-            $table->string('bairro', 100)->nullable();
-            $table->date('data_nascimento')->nullable();
-            $table->string('estado', 100)->nullable();
-            $table->string('cidade', 100)->nullable();
-            $table->tinyInteger('nivel_user')->nullable();
->>>>>>> c1efc8e19e1011f7e3e97bc77a2f18a770bcac98
             $table->string('email_verified_at', 45)->nullable();
             $table->string('telefone')->nullable();
             $table->unique(["id"], 'id_UNIQUE');
