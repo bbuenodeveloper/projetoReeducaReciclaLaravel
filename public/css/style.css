@@ -489,7 +489,7 @@ p#frase {
 
 .menu-footer{
    color:white;
-   font-weight:bold;
+   font-weight:500;
 }
 
 .foot5{
@@ -500,6 +500,10 @@ p#frase {
     display:flex;
     justify-content: center;
 
+}
+
+.align-footer {
+    text-align: left !important;
 }
 
 .ul-icones-footer{
@@ -1480,7 +1484,23 @@ a.efeitoTransicaoLoja:hover {
               font-weight: bolder;
           }
 
+          .tamanhoFinalizada {
+              height: 22rem;
+              margin-top: 10rem;
+          }
 
+          .heightBotao {
+              height: 5rem;
+          }
 
+          .widthHeightBtn {
+              width: 100%;
+              height: 3rem;
+          }
+          /* Tirando as sentinhas do input type number. */
+          input[type=number]::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+
+    }
 
 

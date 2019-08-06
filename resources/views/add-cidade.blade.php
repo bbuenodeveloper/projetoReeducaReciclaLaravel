@@ -26,17 +26,17 @@
 </div>
 
 <script>
-    function enviarForm(event) {
-        event.preventDefault();
-        // enviar form pro servidor
-        let formData = $("form").serialize()
-        $.post("{{ route('cidade.cadastrar') }}", formData, function (data){
-            console.log(data);
-        })
-        // receber resposta e tratar
+    // function enviarForm(event) {
+    //     event.preventDefault();
+    //     // enviar form pro servidor
+    //     let formData = $("form").serialize()
+    //     $.post("{{ route('cidade.cadastrar') }}", formData, function (data){
+    //         console.log(data);
+    //     })
+    //     // receber resposta e tratar
 
 
-    }
+    // }
 </script>
 
 @endsection
