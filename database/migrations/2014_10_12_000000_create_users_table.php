@@ -22,10 +22,10 @@ class CreateUsersTable extends Migration
     {
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            //$table->increments('id');
+            $table->bigIncrements('id');
             $table->string('name', 200);
             $table->string('sobrenome', 200);
-            //$table->string('email', 100);
+            $table->string('email', 100)->unique();
             $table->string('password', 200);
             $table->integer('cep');
             $table->string('endereco', 200)->nullable();
@@ -38,8 +38,6 @@ class CreateUsersTable extends Migration
             $table->tinyInteger('nivel_user');
             $table->string('email_verified_at', 45)->nullable();
             $table->string('telefone')->nullable();
-            $table->unique(["id"], 'id_UNIQUE');
-            $table->unique(["email"], 'email_UNIQUE');
         });
     }
 
