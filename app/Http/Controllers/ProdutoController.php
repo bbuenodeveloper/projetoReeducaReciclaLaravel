@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Produto;
 
 
 class ProdutoController extends Controller
@@ -23,12 +24,6 @@ class ProdutoController extends Controller
     }
 
 
-    public function store(Request $request, ImageRepository $repo){
-        $product = Product::create($request->except('imagem'));
-
-        if ($request->hasFile('imagem')) {
-            $product->path_image = $repo->saveImage($request->primaryImage, $product->id, 'products', 250);
-    }
-  }
+   
 
 }
