@@ -31,7 +31,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 			<h1 class="card-title titulo-card-home">Vai descartar seus <span class="color-title">resíduos?</span></h1>
 			<p class="card-text-sem-margem" >Você pode ajudar o meio ambiente com uma ação muito simples. O mapa interativo do ReciclaMaps mostra os pontos de coleta mais próximos a você.
 
-			<p class="card-text "> 
+			<p class="card-text ">
 			É só escolher sua cidade na caixa de pesquisa e o mapa mostrará os pontos de coleta de acordo com tipo de resíduo que você quer descartar.</p>
 			</p>
 			<!-- <h5>Saiba onde descartar seus resíduos</h5> -->
@@ -95,7 +95,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 					</h1>
 
 					<p class="card-text"> Você já pensou que algum produto poderia ser feito com material reciclado? O ReciclaMaps pensou, e temos vários parceiros que pensam como a gente, por isso nossa loja virtual tem uma variedade enorme de produtos sustentáveis e com processo de produção consciente.</p>
-					<a href="loja.php" class="btn btn-success btn-card">Acessar a Loja</a>
+					<a href="\loja" class="btn btn-success btn-card">Acessar a Loja</a>
 
 				</article>
 			</div>
