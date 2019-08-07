@@ -5,8 +5,11 @@
 <div class="bg-light py-3">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 mb-0"><a href="/home">Home</a> <span class="mx-2 mb-0">/</span> <strong
+            <div class="col-6 mb-0"><a href="/home">Home</a> <span class="mx-2 mb-0">/</span> <strong
                     class="text-black">Loja</strong></div>
+            <div class="col-6 mb-0"><a href="/carrinho"><img src="img/produtos_loja/carrinho.png"
+                        class="sizeCarrinho pull-right" alt=""></a>
+            </div>
         </div>
     </div>
 </div>
