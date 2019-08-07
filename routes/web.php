@@ -68,4 +68,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/home', 'NewsletterController@home');
+Route::get('/painel', 'PainelController@paine')->name('painel');
 Route::post('/home', 'NewsletterController@home');

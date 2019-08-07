@@ -3,6 +3,10 @@
 // retorna um json estático com as cidades                        //
 // posteriormente deve retornar as cidades que possuem marcadores //
 ////////////////////////////////////////////////////////////////////
+
+$array = [];
+
+
 echo json_encode([
 	['id' => 1,		'nome' => 'São Paulo',					'imagem' => 'img/id_1.jpg'],
 	['id' => 2,		'nome' => 'Barueri',					'imagem' => 'https://dummyimage.com/75x76/b8b8b8/fff/?text=Barueri'],
