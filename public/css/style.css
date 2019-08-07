@@ -1525,4 +1525,20 @@ a.efeitoTransicaoLoja:hover {
         padding: 10px;
     }
 
+    .titulo-painel {
+        margin-left: 6.5rem;
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-weight: 600;
+    }
+
+
+    .sub-titulo-painel {
+        margin-left: 6.5rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+
+    }
+
 

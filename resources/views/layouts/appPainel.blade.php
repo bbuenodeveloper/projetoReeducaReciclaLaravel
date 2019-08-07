@@ -92,7 +92,8 @@
               </a>
               <div class="sub-item">
                 <ul>
-                  <li><a href="/add-produto">Cadastro de Usuários</a></li>
+                  <li><a href="/register">Cadastro de Usuários</a></li>
+                  <li><a href="/add-admin">Cadastro de Admin</a></li>
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
@@ -114,7 +115,7 @@
                 <ul>
                   <li><a href="/add-empresa">Cadastro de Empresas</a></li>
                   <li><a href="/add-cidade">Cadastro de Cidades</a></li>
-                  <li><a href="/add-material">Forma de Materiais</a></li>
+                  <li><a href="/add-material">Cadastro de Materiais</a></li>
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
@@ -156,7 +157,7 @@
               </a>
               <div class="sub-item">
                 <ul>
-                  <li><a href="/add-produto">Cadastro de Assinantes</a></li>
+                  <li><a href="/add-newsletter">Cadastro de Assinantes</a></li>
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
