@@ -12,7 +12,7 @@ class ProdutoController extends Controller
         return view ('add-produto');
     }
 
-    public function cadastrarEmpresa(Request $request){
+    public function cadastrarProduto(Request $request){
         $produto = new Produto();
         $produto->nome = $request->nome;
         $produto->descricao = $request->descricao;

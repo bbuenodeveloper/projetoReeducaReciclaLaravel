@@ -26,12 +26,12 @@
                     </div>
                     <div class="form-group">
                         <label for="quantidadeProduto">Quantidade em estoque</label>
-                        <input type="number" class="form-control" id="quantidadeProduto" name="quantidadeEstoque"
+                        <input type="number" class="form-control" id="quantidadeProduto" name="quantidade_estoque"
                             placeholder="Quantidade em estoque" required>
                     </div>
                     <div class="form-group">
                         <label for="categoriaProduto">Categoria do Produto</label>
-                        <select class="custom-select" id="categoriaProduto" name="categoria"
+                        <select class="custom-select" id="categoriaProduto" name="categorias_id"
                             aria-label="Example select with button addon" required>
                             <option selected disabled>Selecione</option>
                             <option value="1">Categoria 1</option>

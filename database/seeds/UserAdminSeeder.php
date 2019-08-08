@@ -25,7 +25,7 @@ class UserAdminSeeder extends Seeder
             'data_nascimento' =>date(now()),
             'estado' => "sao paulo",
             'cidade' => 'sao paulo', 
-            'nivel_user' => 1,
+            'nivel_user' => 0,
             'telefone' => 12345678
         
             

@@ -1,7 +1,6 @@
 <?php
 use App\Newsletter;
 use App\Http\Controllers\Newslettercontroller;
-use Illuminate\Routing\Route;
 
 /*
 |--------------------------------------------------------------------------

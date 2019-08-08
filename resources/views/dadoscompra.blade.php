@@ -97,17 +97,7 @@
                 </div>
                 @endif
                 @else
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link efeitoTransicao dropdown-toggle" href="#" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }} <span class="caret"></span>
-                    </a>
-
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('logout') }}"
-                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                            {{ __('Sair') }}
-                        </a>
+                
 
 
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -124,6 +114,10 @@
                                 <h2 class="h3 mb-3 text-black">Dados de compra</h2>
                                 <div class="p-3 p-lg-5 border">
                                   <h2>{{ Auth::user()->name }}, seus dados de compra já estão preenchidos!</h2>
+                                  <center>
+                                  <img src="img/produtos_loja/check.png" class="mt-5"width="45%" alt="">
+                                  </center>
+                                  
 
 
 
