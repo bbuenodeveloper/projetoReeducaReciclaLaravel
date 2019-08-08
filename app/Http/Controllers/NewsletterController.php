@@ -33,4 +33,11 @@ class NewsletterController extends Controller
             return view ('home',["resultado"=>$resultado]);
 
     }
+
+    public function addnewsletter(Request $request){
+        if($request->isMethod('GET')){
+            return view('add-newsletter');
+        }
+    }
+
 }

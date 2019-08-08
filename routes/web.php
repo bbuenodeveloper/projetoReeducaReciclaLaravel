@@ -1,6 +1,7 @@
 <?php
 use App\Newsletter;
 use App\Http\Controllers\Newslettercontroller;
+use Illuminate\Routing\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,6 +53,8 @@ Route::get('/add-empresa', 'EmpresaController@addEmpresa');
 
 Route::get('/add-produto', 'ProdutoController@addProduto');
 
+Route::get('/add-newsletter', 'NewsletterController@addnewsletter');
+
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
 
 Route::post('/cadastrarempresa', 'EmpresaController@cadastrarEmpresa')->name('empresa.cadastrar');
@@ -69,3 +72,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/home', 'NewsletterController@home');
 Route::post('/home', 'NewsletterController@home');
+
+
