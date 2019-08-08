@@ -28,13 +28,20 @@ class ProdutoController extends Controller
             $extension = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extension;
             $file->move('uploads/produtos/', $filename);
-            $cidade->imagem = $filename;
+            $produto->imagem = $filename;
         }
-        $cidade->save();
+        $produto->save();
 
         return response()->json(['produto' => "Produto cadastrado com sucesso!"]);
     }
+
+    public function exibirProdutos(Request $request){
+            $produtos = Produto::all();
+            return view("loja",['produtos'=>$produtos]);
+       
     }
+
+}
 
 
 
