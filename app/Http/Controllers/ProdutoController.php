@@ -37,10 +37,12 @@ class ProdutoController extends Controller
 
     public function exibirProdutos(Request $request){
             $produtos = Produto::all();
-           
+
             return view("loja",['produtos'=>$produtos]);
-       
+
     }
+
+
 
 }
 

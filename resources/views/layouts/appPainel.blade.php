@@ -220,7 +220,7 @@
 
   <div class="slim-footer">
     <div class="container">
-      <p>Copyright 2019 &copy; Recical Maps - Todos os Direitos Reservados.</p>
+      <p>Copyright 2019 &copy; Recicla Maps - Todos os Direitos Reservados.</p>
       <p>Produzido Por: <a href="#">Recicla Maps</a></p>
     </div>
   </div>
