@@ -9,7 +9,7 @@
         <div class="col-6 mx-auto">
 <div class="jumbotron">
     <h1 class="text-center mb-2">Cadastro de Administrador</h1>
-    <form action="{{ route('add-admin') }}" method="post" class="user-info-setting-form" enctype="multipart/form-data">
+    <form action="/add-admin" method="post" class="user-info-setting-form" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="nome">Nome</label>
