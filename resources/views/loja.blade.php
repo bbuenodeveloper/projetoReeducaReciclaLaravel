@@ -22,49 +22,23 @@
 
 
                 <div class="row mb-5">
-
                     <div class="col-sm-6 col-lg-4 mb-4 mt-5" data-aos="fade-up">
-                        <div class="card text-center border">
-                            <figure class="block-4-image">
-                                <a href="shop-single.html"><img src="img/produtos_loja/Produto_1.jpg"
-                                        alt="Image placeholder" class="img-fluid"></a>
-                            </figure>
-                            <div class=" p-4">
-                                <h3><a href="shop-single.html" class="lojaProdutos">Produto 1</a></h3>
-                                <p class="precoLoja font-weight-bold">R$0,00</p>
-                                <a class="btn btn-success" href="/internaProduto">VER PRODUTO</a>
+                        @foreach($produtos as $produto)
+                            <div class="card text-center border">
+                                <figure class="block-4-image">
+                                    <a href="shop-single.html"><img src="img/produtos_loja/Produto_1.jpg"
+                                            alt="Image placeholder" class="img-fluid"></a>
+                                </figure>
+                                <div class=" p-4">
+                                    <h3><a href="shop-single.html" class="lojaProdutos">{{$produto->nome}}</a></h3>
+                                    <p class="precoLoja font-weight-bold">R${{$produto->preco}}</p>
+                                    <a class="btn btn-success" href="/internaProduto">VER PRODUTO</a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 mt-5" data-aos="fade-up">
-                        <div class="card text-center border">
-                            <figure class="block-4-image">
-                                <a href="shop-single.html"><img src="img/produtos_loja/Produto_1.jpg"
-                                        alt="Image placeholder" class="img-fluid"></a>
-                            </figure>
-                            <div class=" p-4">
-                                <h3><a href="shop-single.html" class="lojaProdutos">Produto 1</a></h3>
-                                <p class="precoLoja font-weight-bold">R$0,00</p>
-                                <a class="btn btn-success" href="/internaProduto">VER PRODUTO</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 mb-4 mt-5" data-aos="fade-up">
-                        <div class="card text-center border">
-                            <figure class="block-4-image">
-                                <a href="shop-single.html"><img src="img/produtos_loja/Produto_1.jpg"
-                                        alt="Image placeholder" class="img-fluid"></a>
-                            </figure>
-                            <div class=" p-4">
-                                <h3><a href="shop-single.html" class="lojaProdutos">Produto 1</a></h3>
-                                <p class="precoLoja font-weight-bold">R$0,00</p>
-                                <a class="btn btn-success" href="/internaProduto">VER PRODUTO</a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
 
-
-
+                    
 
                 </div>
 
