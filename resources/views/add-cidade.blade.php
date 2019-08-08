@@ -18,7 +18,7 @@
         <label for="imagem">Imagem</label>
         <input type="file" name="imagem" class=" form-control" >
         </div>
-        <button type="submit" class="btn btn-card btn-primary" onclick="enviarForm(event)">Enviar</button>
+        <button type="submit" class="btn btn-card btn-primary" onclick="enviarForm(event)">Cadastrar</button>
     </form>
 </div>
 </div>

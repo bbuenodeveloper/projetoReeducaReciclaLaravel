@@ -9,7 +9,9 @@ class CidadeController extends Controller
 {
     public function obterJson(Request $request) {
         if($request->isMethod('GET')){
-            return view('cidades');
+            return view('cidades', [
+                'cidades' => cidade::All()
+            ]);
         }
     }
 

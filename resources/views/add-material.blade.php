@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appPainel')
 
 @section('content')
 
@@ -13,7 +13,7 @@
         @csrf
         <div class="form-group">
         <label for="tipoMaterial">Material</label>
-        <input type="text" name="tipoMaterial" class="form-control" placeholder="Digite a material">
+        <input type="text" name="tipoMaterial" class="form-control" placeholder="Digite o material">
         </div>
 
         <button type="submit" class="btn btn-card btn-primary">Enviar</button>
@@ -22,6 +22,7 @@
 </div>
 </div>
 </div>
+
 
 
 @endsection

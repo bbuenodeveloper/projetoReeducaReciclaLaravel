@@ -41,7 +41,7 @@ Route::get('/privacidade', 'PrivacidadeController@privacidade');
 
 Route::get('/termos', 'TermosController@termos');
 
-Route::get('/marcadores', 'MarcadoresController@marcadores');
+Route::get('/marcadores/{cidade}/{materiaisIds}', 'MarcadoresController@marcadores')->name('marcadores');
 
 // Route::get('/painel', 'PainelController@painel');
 
@@ -77,5 +77,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home', 'NewsletterController@home');
 
 Route::post('/home', 'NewsletterController@home');
+
+Route::get('/loja', 'ProdutoController@exibirProdutos');
 
 
