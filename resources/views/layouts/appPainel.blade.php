@@ -97,9 +97,8 @@
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
-                      <li><a href="#">Relatorio 1</a></li>
-                      <li><a href="#">Relatorio 2</a></li>
-                      <li><a href="#">Relatorio 3</a></li>
+                      <li><a href="/relatorio-Users">Relatorio de Usuários</a></li>
+
                     </ul>
                   </li>
 
@@ -119,9 +118,9 @@
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
-                      <li><a href="#">Relatorio 1</a></li>
-                      <li><a href="#">Relatorio 2</a></li>
-                      <li><a href="#">Relatorio 3</a></li>
+                      <li><a href="/relatorio-Empresas">Relatorio de Empresas</a></li>
+                      <li><a href="#">Relatorio de Cidades</a></li>
+                      <li><a href="#">Relatorio de Materiais</a></li>
                     </ul>
                   </li>
 
@@ -141,9 +140,9 @@
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
-                      <li><a href="#">Relatorio 1</a></li>
-                      <li><a href="#">Relatorio 2</a></li>
-                      <li><a href="#">Relatorio 3</a></li>
+                      <li><a href="#">Relatorio de Produtos</a></li>
+                      <li><a href="#">Relatorio de Categorias</a></li>
+                      <li><a href="#">Relatorio de Forma de Pagamento</a></li>
                     </ul>
                   </li>
 
@@ -161,9 +160,8 @@
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
-                      <li><a href="#">Relatorio 1</a></li>
-                      <li><a href="#">Relatorio 2</a></li>
-                      <li><a href="#">Relatorio 3</a></li>
+                      <li><a href="#">Relatorio de Assinantes</a></li>
+
                     </ul>
                   </li>
 
