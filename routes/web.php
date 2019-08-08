@@ -67,9 +67,18 @@ Route::post('/cadastrarmaterial', 'MaterialController@cadastrarMaterial')->name(
 
 Route::post('/cadastrarcidade', 'CidadeController@cadastrarCidade')->name('cidade.cadastrar');
 
+Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')->name('newsletter.cadastrar');
+
+
 Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers');
 
 Route::get('/relatorio-Empresas', 'RelatoriosController@relatorioEmpresas');
+
+Route::get('/relatorio-Cidades', 'RelatoriosController@relatorioCidades');
+
+Route::get('/relatorio-Materiais', 'RelatoriosController@relatorioMateriais');
+
+Route::get('/relatorio-Newsletter', 'RelatoriosController@relatorioNewsletter');
 
 Route::get('/internaProduto', 'InternaLojaController@interna');
 

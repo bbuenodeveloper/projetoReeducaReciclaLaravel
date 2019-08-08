@@ -119,8 +119,8 @@
                     <a href="#">Relatorios</a>
                     <ul>
                       <li><a href="/relatorio-Empresas">Relatorio de Empresas</a></li>
-                      <li><a href="#">Relatorio de Cidades</a></li>
-                      <li><a href="#">Relatorio de Materiais</a></li>
+                      <li><a href="/relatorio-Cidades">Relatorio de Cidades</a></li>
+                      <li><a href="/relatorio-Materiais">Relatorio de Materiais</a></li>
                     </ul>
                   </li>
 
@@ -160,7 +160,7 @@
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
-                      <li><a href="#">Relatorio de Assinantes</a></li>
+                      <li><a href="/relatorio-Newsletter">Relatorio de Assinantes</a></li>
 
                     </ul>
                   </li>
