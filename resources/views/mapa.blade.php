@@ -21,7 +21,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
                 </div>
                 <div class="main_cityinfo">
                     <div class="dropdown">
-                        <button class="btn btn-dark dropdown-toggle botao-pesquisa" type="button" data-toggle="dropdown"><span class="label" data-id="1">São Paulo</span><span class="caret"></span></button>
+                        <button class="btn btn-dark dropdown-toggle botao-pesquisa" type="button" data-toggle="dropdown"><span class="label" data-id="0">Selecione a cidade</span><span class="caret"></span></button>
                         <ul class="dropdown-menu lista-cidades">
                             <li><a>Selecione a cidade</a></li>
                         </ul>
@@ -34,66 +34,19 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
             <div class="panel_body">
                 <div class="panel_body_wrap">
                     <div class="trash_type">
-
-
                         <button class="btn btn-primary d-block d-sm-none mb-3" type="button" data-toggle="collapse" data-target="#seletorDeCategoria" style="font-size: 17px; width: 100%; text-align: center;">Escolher categoria</button>
-
                         <div class="collapse navbar-collapse d-sm-block " id="seletorDeCategoria">
                             <div class="trash_type_title">ESCOLHA O MATERIAL A SER RECICLADO:</div>
-
                             <div class="row">
-                                <div class="type_item col-3">
-                                    <a href="#" data-id="1" style="background-image: url(img/trash/trash1.png);"></a>
-                                    <span class="custom-tooltip">Papel</span>
-                                </div>
-                                <div class="type_item col-3">
-                                    <a href="#" data-id="2" style="background-image: url(img/trash/trash2.png);"></a>
-                                    <span class="custom-tooltip">Vidro</span>
-                                </div>
-                                <div class="type_item col-3">
-                                    <a href="#" data-id="3" style="background-image: url(img/trash/trash3.png);"></a>
-                                    <span class="custom-tooltip">Plástico</span>
-                                </div>
-                                <div class="type_item col-3">
-                                    <a href="#" data-id="4" style="background-image: url(img/trash/trash4.png);"></a>
-                                    <span class="custom-tooltip">Metal</span>
-                                </div>
-                                <div class="type_item col-3">
-                                    <a href="#" data-id="5" style="background-image: url(img/trash/trash5.png);"></a>
-                                    <span class="custom-tooltip">Roupas</span>
-                                </div>
-                                <div class="type_item col-3">
-                                    <a href="#" data-id="6" style="background-image: url(img/trash/trash6.png);"></a>
-                                    <span class="custom-tooltip">Celular</span>
-                                </div>
-                                <div class="type_item col-3">
-                                    <a href="#" data-id="7" style="background-image: url(img/trash/trash7.png);"></a>
-                                    <span class="custom-tooltip">Resíduos Perigosos</span>
-                                </div>
-                                <div class="type_item col-3">
-                                    <a href="#" data-id="8" style="background-image: url(img/trash/trash8.png);"></a>
-                                    <span class="custom-tooltip">Baterias</span>
-                                </div>
-                                <div class="type_item col-3">
-                                    <a href="#" data-id="9" style="background-image: url(img/trash/trash9.png);"></a>
-                                    <span class="custom-tooltip">Lampadas</span>
-                                </div>
-                                <div class="type_item col-3">
-                                    <a href="#" data-id="10" style="background-image: url(img/trash/trash10.png);"></a>
-                                    <span class="custom-tooltip">Eletrodomésticos</span>
-                                </div>
-                                <div class="type_item col-3">
-                                    <a href="#" data-id="11" style="background-image: url(img/trash/trash11.png);"></a>
-                                    <span class="custom-tooltip">Tetra Pack</span>
-                                </div>
+                            @foreach ($materiais as $material)
+                            <div class="type_item col-3">
+                                <a href="#" data-id="{{ $material->id }}" style="background-image: url(img/trash/{{ str_slug($material->tipoMaterial) }}.png);"></a>
+                                <span class="custom-tooltip">{{ $material->tipoMaterial }}</span>
+                            </div>
+                            @endforeach
                             </div>
                             <button class="btn btn-primary d-block d-sm-none mt-3" type="button" data-toggle="collapse" data-target="#seletorDeCategoria" style="font-size: 17px; width: 100%; text-align: center;"><i class="fa fa-chevron-up"></i></button>
                         </div>
-
-
-
-
-
                     </div>
                 </div>
             </div>
@@ -146,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
                      * faz uma solicitação ajax para obter um json com os novos marcadores
                      * @param  [url] passa a url do arquivo que retorna o json com os parâmetros da cidade e categorias selecionadas
                      */
-                     $.getJSON(`/marcadores?cidade=${cidade}&categoria=${categoria}`).then(function(response){
+                     $.getJSON(`/marcadores/${cidade}/${categoria}`).then(function(response){
                         // por ser uma requisição com Promise, é necessário que o        👆 then()
                         // tratamento do retorn o seja feito no método then()
                         // que é executado quando a requisição é bem sucedida
@@ -166,17 +119,17 @@ document.addEventListener('DOMContentLoaded', function() {
                                 // para cada iteração com o vetor, chama a função addMarker() para inserir os pontos no mapa //
                                 ///////////////////////////////////////////////////////////////////////////////////////////////
                                 mapa.addMarker({
-                                    latitude : window.marcadores[i].latitude,
-                                    longitude : window.marcadores[i].longitude,
-                                    title : window.marcadores[i].nome,
+                                    latitude : window.marcadores[i].empresas_latitude,
+                                    longitude : window.marcadores[i].empresas_longitude,
+                                    title : window.marcadores[i].empresas_nome,
                                     //////////////////////////////////////////////////////////////////////////////
                                     // 👇 aqui montamos o html que será exibido quando o usuário clicar no ponto //
                                     //////////////////////////////////////////////////////////////////////////////
                                     html : `
-                                    <p><b>${window.marcadores[i].nome}</b></p>
-                                    <p>${window.marcadores[i].endereco}</p>
-                                    <p>${window.marcadores[i].telefone}</p>
-                                    <p><a href="https://maps.google.com?saddr=Current+Location&daddr=${window.marcadores[i].latitude},${window.marcadores[i].longitude}" target="_blank" title="Clique nesse link para abrir o GPS">Abrir GPS</a></p>
+                                    <p><b>${window.marcadores[i].empresas_nome}</b></p>
+                                    <p>${window.marcadores[i].empresas_endereco}</p>
+                                    <p>${window.marcadores[i].empresas_telefone}</p>
+                                    <p><a href="https://maps.google.com?saddr=Current+Location&daddr=${window.marcadores[i].empresas_latitude},${window.marcadores[i].empresas_longitude}" target="_blank" title="Clique nesse link para abrir o GPS">Abrir GPS</a></p>
                                     `,
                                 });
                             }
@@ -196,12 +149,13 @@ document.addEventListener('DOMContentLoaded', function() {
                          $('ul.lista-cidades').append(
                              $('<li>').append(
                                  $('<a>')
-                                 .text(window.cidades[i].nome)
+                                 .text(window.cidades[i].cidade)
                                 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                 // é importante armazenar também a imagem e id para ser possível alterar a imagem ao mudar a cidade e para o ajax que obtém os marcadores //
                                 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                 .data('imagem', window.cidades[i].imagem)
                                 .data('id', window.cidades[i].id)
+                                .attr('href','javascript:')
                                 )
                              );
                      }
