@@ -57,6 +57,8 @@ Route::get('/add-produto', 'ProdutoController@addProduto');
 
 Route::get('/add-newsletter', 'NewsletterController@addnewsletter');
 
+Route::get('/add-admin','AdminController@addAdmin');
+
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
 
 Route::post('/cadastrarempresa', 'EmpresaController@cadastrarEmpresa')->name('empresa.cadastrar');
@@ -79,5 +81,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home', 'NewsletterController@home');
 
 Route::post('/home', 'NewsletterController@home');
+
+Route::get('/loja', 'ProdutoController@exibirProdutos');
 
 
