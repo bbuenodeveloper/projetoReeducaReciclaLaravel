@@ -124,6 +124,10 @@
                                 <h2 class="h3 mb-3 text-black">Dados de compra</h2>
                                 <div class="p-3 p-lg-5 border">
                                   <h2>{{ Auth::user()->name }}, seus dados de compra já estão preenchidos!</h2>
+                                  <center>
+                                  <img src="img/produtos_loja/check.png" class="mt-5"width="45%" alt="">
+                                  </center>
+                                  
 
 
 
