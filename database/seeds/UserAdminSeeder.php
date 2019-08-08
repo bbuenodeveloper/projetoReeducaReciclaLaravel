@@ -24,11 +24,11 @@ class UserAdminSeeder extends Seeder
             'bairro' => 'bairro tal',
             'data_nascimento' =>date(now()),
             'estado' => "sao paulo",
-            'cidade' => 'sao paulo', 
+            'cidade' => 'sao paulo',
             'nivel_user' => 0,
             'telefone' => 12345678
-        
-            
+
+
         ]);
     }
 }
