@@ -22,10 +22,22 @@ class CreateCategoriasTable extends Migration
     {
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->increments('id')->nullable();
-            $table->string('nome_categoria', 100)->nullable();
-
-            $table->unique(["id"], 'id_UNIQUE');
+            $table->bigIncrements('id');
+            $table->string('name',200);
+            $table->string('sobrenome',200);
+            $table->string('email', 100)->unique();
+            $table->string('password',200);
+            $table->integer('cep');
+            $table->string('endereco', 200)->nullable();
+            $table->string('numero',45);
+            $table->string('complemento', 100)->nullable();
+            $table->string('bairro',100);
+            $table->date('data_nascimento');
+            $table->string('estado',100);
+            $table->string('cidade',100);
+            $table->tinyInteger('nivel_user');
+            $table->string('email_verified_at',45)->nullable();
+            $table->string('telefone')->nullable();
         });
     }
 
