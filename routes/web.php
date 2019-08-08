@@ -41,7 +41,7 @@ Route::get('/privacidade', 'PrivacidadeController@privacidade');
 
 Route::get('/termos', 'TermosController@termos');
 
-Route::get('/marcadores', 'MarcadoresController@marcadores');
+Route::get('/marcadores/{cidade}/{materiaisIds}', 'MarcadoresController@marcadores')->name('marcadores');
 
 // Route::get('/painel', 'PainelController@painel');
 
@@ -56,6 +56,8 @@ Route::get('/add-empresa', 'EmpresaController@addEmpresa');
 Route::get('/add-produto', 'ProdutoController@addProduto');
 
 Route::get('/add-newsletter', 'NewsletterController@addnewsletter');
+
+Route::get('/add-admin','AdminController@addAdmin');
 
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
 
@@ -75,5 +77,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home', 'NewsletterController@home');
 
 Route::post('/home', 'NewsletterController@home');
+
+Route::get('/loja', 'ProdutoController@exibirProdutos');
 
 
