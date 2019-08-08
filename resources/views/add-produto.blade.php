@@ -7,6 +7,7 @@
         <div class="col-12 mt-5 mb-5">
             <div class="jumbotron">
                 <form action="{{ route('produto.cadastrar')}}" method="POST" enctype="multipart/form-data">
+                @csrf
                     <h1 class="mb-4">Cadastro de Produtos</h1>
                     <div class="form-group">
                         <label for="nomeProduto">Nome do produto</label>
