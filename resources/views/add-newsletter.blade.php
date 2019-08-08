@@ -14,7 +14,7 @@
         <label for="email">Newsletter</label>
         <input type="email" name="email" class="form-control" placeholder="email@email.com.br">
         </div>
-        <button type="submit" class="btn btn-card btn-primary">Assine Agora</button>
+        <button type="submit" class="btn btn-card btn-primary">Cadastrar</button>
     </form>
 </div>
 </div>

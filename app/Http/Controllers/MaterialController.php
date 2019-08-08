@@ -18,6 +18,9 @@ class MaterialController extends Controller
         $material->tipoMaterial = $request->tipoMaterial;
         $material->save();
 
-        return response()->json(['material' => "Material cadastrado com sucesso!"]);
+
+
+
+        return redirect()->back()->with('alert', 'Material cadastrado com sucesso!');
     }
 }

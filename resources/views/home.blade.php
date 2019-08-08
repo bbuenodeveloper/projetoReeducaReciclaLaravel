@@ -36,7 +36,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 			</p>
 			<!-- <h5>Saiba onde descartar seus resíduos</h5> -->
 			<p></p>
-			<a href="mapa.php" class="btn btn-success btn-card">Acessar o Mapa</a>
+			<a href="\mapa" class="btn btn-success btn-card">Acessar o Mapa</a>
 
 		</div>
 	</div>
