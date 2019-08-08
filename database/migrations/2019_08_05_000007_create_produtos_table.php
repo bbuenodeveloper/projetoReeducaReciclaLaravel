@@ -28,12 +28,17 @@ class CreateProdutosTable extends Migration
             $table->decimal('preco', 10, 2)->nullable();
             $table->string('imagem', 200)->nullable();
             $table->string('quantidade_estoque', 45)->nullable();
-            $table->integer('categorias_id')->references('id')->on('categorias');
+            $table->Biginteger('categorias_id')->references('id')->on('categorias');
 
             $table->index(["categorias_id"], 'fk_produtos_categorias1_idx');
 
             $table->unique(["id"], 'id_UNIQUE');
 
+
+            // $table->foreign('categorias_id', 'fk_produtos_categorias1_idx')
+
+            //     ->onDelete('no action')
+            //     ->onUpdate('no action');
         });
     }
 

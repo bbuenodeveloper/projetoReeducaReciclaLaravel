@@ -43,6 +43,8 @@ Route::get('/termos', 'TermosController@termos');
 
 Route::get('/marcadores', 'MarcadoresController@marcadores');
 
+// Route::get('/painel', 'PainelController@painel');
+
 Route::get('/cidades', 'CidadeController@obterJson');
 
 Route::get('/add-cidade', 'CidadeController@addCidade');
@@ -67,10 +69,11 @@ Route::get('/internaProduto', 'InternaLojaController@interna');
 
 // Rotas são definidas em ./vendor/laravel/framework/src/Illuminate/Routing/Router.php # auth
 Auth::routes();
-
+Route::get('/painel', 'PainelController@painel')->name('painel');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/home', 'NewsletterController@home');
+
 Route::post('/home', 'NewsletterController@home');
 
 

@@ -29,17 +29,17 @@ class CreateComprasTable extends Migration
             $table->decimal('preco', 10, 2)->nullable();
             $table->string('modo_pagamento', 50)->nullable();
             $table->date('data_compra')->nullable();
-            $table->unsignedInteger('users_id');
+            $table->unsignedInteger('users_id')->references('id')->on('users');
 
             $table->index(["users_id"], 'fk_compra_usuarios1_idx');
 
             $table->unique(["id"], 'id_UNIQUE');
 
 
-            $table->foreign('users_id', 'fk_compra_usuarios1_idx')
-                ->references('id')->on('users')
-                ->onDelete('no action')
-                ->onUpdate('no action');
+            // $table->foreign('users_id', 'fk_compra_usuarios1_idx')
+
+            //     ->onDelete('no action')
+            //     ->onUpdate('no action');
         });
     }
 

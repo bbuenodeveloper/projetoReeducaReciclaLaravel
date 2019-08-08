@@ -169,14 +169,14 @@ h1.h1FAQ {
 
 .titulo-card-home {
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 32px;
+    margin-top: 32px;
     line-height: 1.6;
 }
 
 .titulo-card-home-loja {
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 32px;
     margin-top: 100px;
     line-height: 1.6;
 }
@@ -1510,6 +1510,34 @@ a.efeitoTransicaoLoja:hover {
           /* Tirando as sentinhas do input type number. */
           input[type=number]::-webkit-inner-spin-button{
         -webkit-appearance: none;
+
+    }
+
+    .sizeCarrinho {
+        width: 1.5rem;
+    }
+
+
+    /* configuração painel */
+
+    .space-menu {
+
+        padding: 10px;
+    }
+
+    .titulo-painel {
+        margin-left: 6.5rem;
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-weight: 600;
+    }
+
+
+    .sub-titulo-painel {
+        margin-left: 6.5rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
 
     }
 

@@ -29,10 +29,10 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 		<div class="col-12 col-md-6 px-3">
 
 			<h1 class="card-title titulo-card-home">Vai descartar seus <span class="color-title">resíduos?</span></h1>
-			<p class="card-text-sem-margem" >Você pode ajudar o planeta com uma ação simples, use o mapa interativo do
-				Reeduca Recicla mostrando pontos de reciclagem nas cidades.<p class="card-text "> Funciona de maneira simples:
-				escolha a cidade na caixa de pesquisa e o mapa mostrará pontos de coleta nas
-				proximidades.</p>
+			<p class="card-text-sem-margem" >Você pode ajudar o meio ambiente com uma ação muito simples. O mapa interativo do ReciclaMaps mostra os pontos de coleta mais próximos a você.
+
+			<p class="card-text ">
+			É só escolher sua cidade na caixa de pesquisa e o mapa mostrará os pontos de coleta de acordo com tipo de resíduo que você quer descartar.</p>
 			</p>
 			<!-- <h5>Saiba onde descartar seus resíduos</h5> -->
 			<p></p>
@@ -55,12 +55,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 				</h1>
 				<h2 class="titulo-card-home d-block d-sm-block d-md-none d-lg-none d-xl-none">Por que <span class="color-title">reciclar ?</span>
 				</h2>
-				<p class="card-text">Conforme a população do planeta aumenta, cresce também a quantidade de
-					lixo
-					produzido. Porém, ao longo das décadas, foram descobertas novas maneiras de reaproveitar estes
-					materiais que iam diretamente para os lixões, como plástico, papel, metais, vidro e madeira.
-					Este
-				processo recebe o nome de reciclagem.</p>
+				<p class="card-text">  Sabemos que o consumo de recursos naturais já é maior do que o planeta pode fornecer e essa realidade tende a crescer cada vez mais rápido. A reciclagem é a saída para um consumo mais responsável e o ReciclaMaps facilita sua busca pelos pontos de coleta adequados. </p>
 
 			</article>
 		</div>
@@ -99,8 +94,8 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 					<h1 class="titulo-card-home-loja d-block d-sm-block d-md-block d-lg-block d-xl-block ">Visite nossa loja <span class="color-title">virtual!</span>
 					</h1>
 
-					<p class="card-text">Trabalhamos com produtos feitos de material reciclado.</p>
-					<a href="loja.php" class="btn btn-success btn-card">Acessar a Loja</a>
+					<p class="card-text"> Você já pensou que algum produto poderia ser feito com material reciclado? O ReciclaMaps pensou, e temos vários parceiros que pensam como a gente, por isso nossa loja virtual tem uma variedade enorme de produtos sustentáveis e com processo de produção consciente.</p>
+					<a href="\loja" class="btn btn-success btn-card">Acessar a Loja</a>
 
 				</article>
 			</div>
@@ -131,7 +126,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 				</h1>
 				<h2 class="titulo-card-home d-block d-sm-block d-md-none d-lg-none d-xl-none">Nossos <span class="color-title">Parceiros !</span>
 				</h2>
-				<p class="texto-card-home card-text">Conheça nossos parceiros. A Reeduca Recicla entende que o sucesso de qualquer organização não se faz sozinho e que o trabalho em parceria é fundamental</p>
+				<p class="texto-card-home card-text">Conheça nossos parceiros. A ReciclaMaps entende que o sucesso de qualquer organização não se faz sozinho e que o trabalho em parceria é fundamental. Por isso, nossas parcerias são feitas com base em valores e objetivos comuns e de acordo com modo de produção sustentável.</p>
 
 			</article>
 		</div>
