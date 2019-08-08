@@ -2,6 +2,7 @@
 use App\Newsletter;
 use App\Http\Controllers\Newslettercontroller;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
