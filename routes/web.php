@@ -76,4 +76,6 @@ Route::get('/home', 'NewsletterController@home');
 
 Route::post('/home', 'NewsletterController@home');
 
+Route::get('/loja', 'ProdutoController@exibirProdutos');
+
 
