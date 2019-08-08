@@ -22,6 +22,16 @@ class ProdutoController extends Controller
         $produto->categorias_id = $request->categorias_id;
         $produto->save();
 
+        if($request->hasfile('imagem'))
+        {
+            $file = $request->file('imagem');
+            $extension = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('uploads/produtos/', $filename);
+            $cidade->imagem = $filename;
+        }
+        $cidade->save();
+
         return response()->json(['produto' => "Produto cadastrado com sucesso!"]);
     }
     }
