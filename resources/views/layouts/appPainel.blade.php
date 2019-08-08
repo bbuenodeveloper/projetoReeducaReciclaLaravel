@@ -97,9 +97,8 @@
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
-                      <li><a href="#">Relatorio 1</a></li>
-                      <li><a href="#">Relatorio 2</a></li>
-                      <li><a href="#">Relatorio 3</a></li>
+                      <li><a href="/relatorio-Users">Relatorio de Usuários</a></li>
+
                     </ul>
                   </li>
 
@@ -119,9 +118,9 @@
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
-                      <li><a href="#">Relatorio 1</a></li>
-                      <li><a href="#">Relatorio 2</a></li>
-                      <li><a href="#">Relatorio 3</a></li>
+                      <li><a href="/relatorio-Empresas">Relatorio de Empresas</a></li>
+                      <li><a href="/relatorio-Cidades">Relatorio de Cidades</a></li>
+                      <li><a href="/relatorio-Materiais">Relatorio de Materiais</a></li>
                     </ul>
                   </li>
 
@@ -141,9 +140,9 @@
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
-                      <li><a href="#">Relatorio 1</a></li>
-                      <li><a href="#">Relatorio 2</a></li>
-                      <li><a href="#">Relatorio 3</a></li>
+                      <li><a href="#">Relatorio de Produtos</a></li>
+                      <li><a href="#">Relatorio de Categorias</a></li>
+                      <li><a href="#">Relatorio de Forma de Pagamento</a></li>
                     </ul>
                   </li>
 
@@ -161,9 +160,8 @@
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
-                      <li><a href="#">Relatorio 1</a></li>
-                      <li><a href="#">Relatorio 2</a></li>
-                      <li><a href="#">Relatorio 3</a></li>
+                      <li><a href="/relatorio-Newsletter">Relatorio de Assinantes</a></li>
+
                     </ul>
                   </li>
 
@@ -222,7 +220,7 @@
 
   <div class="slim-footer">
     <div class="container">
-      <p>Copyright 2019 &copy; Recical Maps - Todos os Direitos Reservados.</p>
+      <p>Copyright 2019 &copy; Recicla Maps - Todos os Direitos Reservados.</p>
       <p>Produzido Por: <a href="#">Recicla Maps</a></p>
     </div>
   </div>

@@ -7,7 +7,12 @@
 <div class="container">
     <div class="row">
         <div class="col-6 mx-auto">
-<div class="jumbotron">
+<div class="jumbotron border rounded border-success">
+        <center><div class="logoRegister mb-4">
+                <a href="index.html">
+                    <img class="logoRegister mb-3" src="img/logologin.png" alt>
+                </a>
+            <div></center>
     <h1 class="text-center mb-2">Cadastro de Empresas</h1>
     <form action="{{ route('empresa.cadastrar') }}" method="post" class="user-info-setting-form" enctype="multipart/form-data">
         @csrf
@@ -68,7 +73,7 @@
                                             <label for="longitude">Longitude</label>
                                             <input type="text" name="longitude" class="form-control" placeholder="Digite a longitude">
                                             </div>
-        <button type="submit" class="btn btn-card btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-card btn-primary">CADASTRAR</button>
     </form>
 </div>
 </div>

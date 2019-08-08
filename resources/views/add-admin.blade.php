@@ -28,8 +28,8 @@
             <label for="password-confirm">Confirmar Senha</label>
             <input type="password" name="password-confirm" class="form-control" placeholder="Confirmar Senha">
         </div>
-        
-        <button type="submit" class="btn btn-card btn-primary">Enviar</button>
+
+        <button type="submit" class="btn btn-card btn-primary">CADASTRAR</button>
     </form>
 </div>
 </div>

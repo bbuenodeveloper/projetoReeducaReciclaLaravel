@@ -5,7 +5,12 @@
 <div class="container">
     <div class="row">
         <div class="col-12 mt-5 mb-5">
-            <div class="jumbotron">
+            <div class="jumbotron  border rounded border-success">
+                    <center><div class="logoRegister mb-4">
+                            <a href="index.html">
+                                <img class="logoRegister mb-3" src="img/logologin.png" alt>
+                            </a>
+                        <div></center>
                 <form action="{{ route('produto.cadastrar')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                     <h1 class="mb-4">Cadastro de Produtos</h1>

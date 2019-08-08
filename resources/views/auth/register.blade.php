@@ -3,10 +3,11 @@
 @section('content')
 <div class="container p-4">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="jumbotron col-md-8 border rounded border-success">
+        <div class="col-md-12">
             <form method="POST" action="{{ route('register') }}">
                 @csrf
-                <div class="container border rounded border-success p-4 text-center">
+                <div class="col-md-12 container  p-4 text-center">
                 <div class="logoRegister mb-4">
                         <a href="index.html">
                             <img class="logoRegister mb-3" src="img/logologin.png" alt>
@@ -204,7 +205,7 @@
                             @enderror
                         </div>
                     </div>
-                    
+
                     <div class="form-group row">
                         <label style="display:none" for="nivelUser" class="col-md-4 col-form-label text-md-right">{{ __('Nivel usuário') }}</label>
                         <div class="col-md-6">
@@ -221,6 +222,7 @@
                     </div>
                 </div>
             </form>
+        </div>
         </div>
     </div>
 @endsection
