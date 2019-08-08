@@ -27,13 +27,13 @@
                         
                             <div class="card text-center border">
                                 <figure class="block-4-image">
-                                    <a href="shop-single.html"><img src="{{$produto->imagem}}"
+                                    <a href="shop-single.html"><img src="{{ asset("storage/app/public/produtos/{$produto->imagem}") }}"
                                             alt="Image placeholder" class="img-fluid"></a>
                                 </figure>
                                 <div class=" p-4">
                                     <h3><a href="shop-single.html" class="lojaProdutos">{{$produto->nome}}</a></h3>
                                     <p class="precoLoja font-weight-bold">R${{$produto->preco}}</p>
-                                    <a class="btn btn-success" href="/internaProduto ">VER PRODUTO</a>
+                                    <a class="btn btn-success" href="/internaProduto/{{$produto->id}} ">VER PRODUTO</a>
                                 </div>
                             </div>
                         

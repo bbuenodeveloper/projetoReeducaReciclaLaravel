@@ -54,9 +54,9 @@
 
                     <div class="shop-right col-lg-6">
                         <div class="title">
-                            <h1 class="shorter product-name">Eco Tanque 80 litros Casológica</h1>
+                            <h1 class="shorter product-name">{{$produtos->nome}}</h1>
                             
-                            <p class="availability in-stock">Disponibilidade: <span>Em estoque</span></p>
+                            <p class="availability in-stock">Disponibilidade: <span>unidades em estoque</span></p>
                             <div class="price-box">
                                 <span class="regular-price" id="product-price-1509">
                                     <span class="price">R$177,00</span> </span>

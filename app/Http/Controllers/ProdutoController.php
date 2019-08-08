@@ -27,11 +27,12 @@ class ProdutoController extends Controller
             $file = $request->file('imagem');
             $extension = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extension;
-            $file->move('uploads/produtos/', $filename);
+            $upload = $request->imagem->storeAs('produtos', $filename);
             $produto->imagem = $filename;
         }
         $produto->save();
 
+        
         return response()->json(['produto' => "Produto cadastrado com sucesso!"]);
     }
 

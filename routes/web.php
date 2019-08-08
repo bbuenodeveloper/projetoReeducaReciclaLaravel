@@ -57,6 +57,8 @@ Route::get('/add-produto', 'ProdutoController@addProduto');
 
 Route::get('/add-newsletter', 'NewsletterController@addnewsletter');
 
+Route::get('/add-categoria', 'CategoriaController@categorias');
+
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
 
 Route::post('/cadastrarempresa', 'EmpresaController@cadastrarEmpresa')->name('empresa.cadastrar');
@@ -65,7 +67,10 @@ Route::post('/cadastrarmaterial', 'MaterialController@cadastrarMaterial')->name(
 
 Route::post('/cadastrarcidade', 'CidadeController@cadastrarCidade')->name('cidade.cadastrar');
 
-Route::get('/internaProduto', 'InternaLojaController@interna');
+Route::post('/cadastrarcategoria', 'CategoriaController@cadastrarCategoria')->name('categoria.cadastrar'); 
+
+Route::get('/internaProduto/{id}', 'InternaLojaController@interna');
+Route::get('/internaProduto/{id}', 'InternaLojaController@exibirProdutoUnico');
 
 // Rotas são definidas em ./vendor/laravel/framework/src/Illuminate/Routing/Router.php # auth
 Auth::routes();
@@ -77,5 +82,10 @@ Route::get('/home', 'NewsletterController@home');
 Route::post('/home', 'NewsletterController@home');
 
 Route::get('/loja', 'ProdutoController@exibirProdutos');
+
+
+
+
+
 
 
