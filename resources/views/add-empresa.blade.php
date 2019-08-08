@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appPainel')
 
 @section('content')
 
@@ -16,8 +16,8 @@
         <input type="text" name="nome" class="form-control" placeholder="Digite a material">
         </div>
         <div class="form-group">
-            <label for="endereço">Endereço</label>
-            <input type="text" name="endereço" class="form-control" placeholder="Digite a material">
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" class="form-control" placeholder="Digite a material">
             </div>
             <div class="form-group">
                 <label for="numero">Numero</label>
