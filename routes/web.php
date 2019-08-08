@@ -69,6 +69,8 @@ Route::post('/cadastrarcidade', 'CidadeController@cadastrarCidade')->name('cidad
 
 Route::get('/internaProduto', 'InternaLojaController@interna');
 
+Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')-> name('admin.cadastrar');
+
 // Rotas são definidas em ./vendor/laravel/framework/src/Illuminate/Routing/Router.php # auth
 Auth::routes();
 Route::get('/painel', 'PainelController@painel')->name('painel');
