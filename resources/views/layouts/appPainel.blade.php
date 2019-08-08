@@ -59,7 +59,7 @@
     <div class="slim-header">
         <div class="container">
           <div class="slim-header-left">
-            <a href="index.html"><img src="img/logo_lado.png" class="logoMargin logoSize"alt=""></a>
+            <a href="\painel"><img src="img/logo_lado.png" class="logoMargin logoSize"alt=""></a>
           </div>
           <!-- slim-header-left -->
           <div class="slim-header-right">

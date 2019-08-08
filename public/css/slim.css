@@ -159,7 +159,7 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
-body {
+/* body {
   margin: 0;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.875rem;
@@ -167,7 +167,7 @@ body {
   line-height: 1.5;
   color: #868ba1;
   text-align: left;
-  background-color: #f0f2f7; }
+  background-color: #f0f2f7; } */
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -12391,7 +12391,7 @@ textarea.parsley-success:focus {
 /* ------------------------------------------------------ */
 .slim-navbar {
   padding: 15px 0;
-  background-color: #fff;
+  background-color: #3b3a3a;
   border-bottom: 1px solid #ced4da; }
   .slim-navbar .container {
     position: relative; }
@@ -12439,13 +12439,13 @@ textarea.parsley-success:focus {
     font-size: 13px;
     letter-spacing: .7px;
     font-weight: 500;
-    color: #656d75;
+    color: #ffffff;
     height: 46px;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #4f5752;
     border: 1px solid #dee2e6;
     border-right-width: 0; }
     .slim-navbar .nav-link .icon {
@@ -12899,8 +12899,9 @@ textarea.parsley-success:focus {
 /* ############### FOOTER ############### */
 /* -------------------------------------- */
 .slim-footer {
-  border-top: 1px solid #ced4da;
-  background-color: #e3e7eb;
+    color: white;
+  border-top: 1px solid black;
+  background-color: black;
   margin-top: 30px;
   padding: 15px 0; }
   @media (min-width: 992px) {
