@@ -47,6 +47,7 @@ Route::get('/cidades', 'CidadeController@obterJson');
 
 Route::get('/internaProduto/{id}', 'InternaLojaController@interna');
 
+
 Route::get('/add-cidade', 'CidadeController@addCidade');
 
 Route::get('/add-material', 'MaterialController@addMaterial');
@@ -60,6 +61,8 @@ Route::get('/add-newsletter', 'NewsletterController@addnewsletter');
 Route::get('/add-categoria', 'CategoriaController@categorias');
 
 Route::get('/add-admin','AdminController@addAdmin');
+
+Route::get('/registerPainel','Auth\RegisterController@addUser');
 
 
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
@@ -75,6 +78,10 @@ Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')-
 Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')->name('admin.cadastrar');
 
 Route::post('/cadastrarcategoria','CategoriaController@cadastrarCategoria')->name('categoria.cadastrar');
+
+Route::post('/cadastrarusuario','RegisterController@create');
+
+
 
 Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers');
 
