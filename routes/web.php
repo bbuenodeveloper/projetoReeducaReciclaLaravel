@@ -65,6 +65,8 @@ Route::get('/add-categoria', 'CategoriaController@categorias');
 
 Route::get('/add-admin','AdminController@addAdmin');
 
+Route::get('/registerPainel','Auth\RegisterController@addUser');
+
 
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
 
@@ -79,6 +81,10 @@ Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')-
 Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')->name('admin.cadastrar');
 
 Route::post('/cadastrarcategoria','CategoriaController@cadastrarCategoria')->name('categoria.cadastrar');
+
+Route::post('/cadastrarusuario','RegisterController@create');
+
+
 
 Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers');
 

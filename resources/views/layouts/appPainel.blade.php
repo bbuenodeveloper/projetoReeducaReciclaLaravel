@@ -92,7 +92,7 @@
               </a>
               <div class="sub-item">
                 <ul>
-                  <li><a href="/register">Cadastro de Usuários</a></li>
+                  <li><a href="/registerPainel">Cadastro de Usuários</a></li>
                   <li><a href="/add-admin">Cadastro de Admin</a></li>
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
