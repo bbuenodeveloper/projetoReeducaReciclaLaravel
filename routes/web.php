@@ -47,9 +47,9 @@ Route::get('/termos', 'TermosController@termos');
 
 Route::get('/marcadores/{cidade}/{materiaisIds}', 'MarcadoresController@marcadores')->name('marcadores');
 
-// Route::get('/painel', 'PainelController@painel');
-
 Route::get('/cidades', 'CidadeController@obterJson');
+
+Route::get('/internaProduto', 'InternaLojaController@interna');
 
 Route::get('/add-cidade', 'CidadeController@addCidade');
 
@@ -65,7 +65,11 @@ Route::get('/add-newsletter', 'NewsletterController@addnewsletter');
 Route::get('/add-categoria', 'CategoriaController@categorias');
 Route::get('/add-admin','AdminController@addAdmin');
 
+<<<<<<< HEAD
 Route::get('/add-produto', 'ProdutoController@exibirCategorias');
+=======
+
+>>>>>>> 91e2a579cb870f3c01e052dacb2df95b7cd4f40a
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
 
 Route::post('/cadastrarempresa', 'EmpresaController@cadastrarEmpresa')->name('empresa.cadastrar');
@@ -80,6 +84,7 @@ Route::get('/internaProduto/{id}', 'InternaLojaController@interna');
 Route::get('/internaProduto/{id}', 'InternaLojaController@exibirProdutoUnico');
 Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')->name('newsletter.cadastrar');
 
+Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')-> name('admin.cadastrar');
 
 Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers');
 
@@ -91,9 +96,13 @@ Route::get('/relatorio-Materiais', 'RelatoriosController@relatorioMateriais');
 
 Route::get('/relatorio-Newsletter', 'RelatoriosController@relatorioNewsletter');
 
+<<<<<<< HEAD
 Route::get('/internaProduto', 'InternaLojaController@interna');
 
 
+=======
+// Rotas são definidas em ./vendor/laravel/framework/src/Illuminate/Routing/Router.php # auth
+>>>>>>> 91e2a579cb870f3c01e052dacb2df95b7cd4f40a
 Auth::routes();
 Route::get('/painel', 'PainelController@painel')->name('painel');
 Route::get('/home', 'HomeController@index')->name('home');

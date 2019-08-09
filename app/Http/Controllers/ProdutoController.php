@@ -39,17 +39,21 @@ class ProdutoController extends Controller
 
     public function exibirProdutos(Request $request){
             $produtos = Produto::all();
-           
+
             return view("loja",['produtos'=>$produtos]);
-       
+
     }
 
+<<<<<<< HEAD
     public function exibirCategorias(Request $request){
         $categorias = Categoria::all();
       
         return view("add-produto",['categorias'=>$categorias]);
   
    }
+=======
+
+>>>>>>> 91e2a579cb870f3c01e052dacb2df95b7cd4f40a
 
 }
 
