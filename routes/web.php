@@ -45,7 +45,7 @@ Route::get('/marcadores/{cidade}/{materiaisIds}', 'MarcadoresController@marcador
 
 Route::get('/cidades', 'CidadeController@obterJson');
 
-Route::get('/internaProduto/{id}', 'InternaLojaController@interna');
+Route::get('/internaProduto/{id}', 'InternaLojaController@exibirProdutoUnico');
 
 
 Route::get('/add-cidade', 'CidadeController@addCidade');

@@ -4,7 +4,7 @@
 <div class="bg-light py-3">
     <div class="container">
         <div class="row">
-            <div class="col-6 mb-0"><a href="/home">Home</a> <span class="mx-2 mb-0">/</span> 
+            <div class="col-6 mb-0"><a href="/home">Home</a> <span class="mx-2 mb-0">/</span>
             <a href="/loja">Loja</a><span class="mx-2 mb-0">/</span>
             <strong class="text-black">Produto</strong></div>
             <div class="col-6 mb-0"><a href="/carrinho"><img src="{{ asset ('img/produtos_loja/carrinho.png') }}"
@@ -17,7 +17,7 @@
         <div class="shop_wrapper col-md-12 mt-5">
             <form action="" method="post" id="product_addtocart_form" class="cart">
                 <input name="form_key" type="hidden" value="mf810E7lRHb0jHHz" />
-                
+
                 <!-- inicio imagens -->
                 <div class="row">
                     <div class="shop-left shop_item col-md-6 ">
@@ -25,17 +25,9 @@
                             <div id="carouselExampleControls " class="carousel slide border-carousel" data-ride="carousel">
                                     <div class="carousel-inner">
                                       <div class="carousel-item active">
-                                        <img class="d-block w-100" src="img/IMG1400.png" alt="First slide">
+                                        <img class="d-block w-100" src="/storage/produtos/{{$produto->imagem}}" alt="First slide">
                                       </div>
-                                      <div class="carousel-item">
-                                        <img class="d-block w-100" src="img/capt2.png" alt="Second slide">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img class="d-block w-100" src="img/capt6.png" alt="Third slide">
-                                      </div>
-                                      <div class="carousel-item">
-                                            <img class="d-block w-100" src="img/capt3.png" alt="Third slide">
-                                          </div>
+
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -47,19 +39,19 @@
                                     </a>
                                   </div>
 
-                        
+
                     </div>
 
                     <!-- fim imagens -->
 
                     <div class="shop-right col-lg-6">
                         <div class="title">
-                            <h1 class="shorter product-name"></h1>
-                            
+                        <h1 class="shorter product-name">{{$produto->nome}}</h1>
+
                             <p class="availability in-stock">Disponibilidade: <span>unidades em estoque</span></p>
                             <div class="price-box">
                                 <span class="regular-price" id="product-price-1509">
-                                    <span class="price">R$177,00</span> </span>
+                                <span class="price">R$ {{$produto->preco}}</span> </span>
 
                             </div>
 
@@ -96,7 +88,7 @@
                             <div class="pull-right btn-comprar">
                                 <div class="btn-shop">
                                     <a class="btn woo_btn btn-success" href="/carrinho">Comprar</a>
-                                   
+
                                 </div>
                             </div>
                             <!-- fim botao comprar  -->
@@ -176,9 +168,9 @@
                 </div>
             </div>
         </div>
-        
-    </div>  
-    
-    
+
+    </div>
+
+
 
 @endsection
