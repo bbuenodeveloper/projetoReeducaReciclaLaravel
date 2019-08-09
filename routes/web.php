@@ -47,6 +47,10 @@ Route::get('/cidades', 'CidadeController@obterJson');
 
 Route::get('/internaProduto/{id}', 'InternaLojaController@exibirProdutoUnico');
 
+Route::get('/carrinho/{id}', 'CarrinhoController@carrinhoProduto');
+
+Route::get('/dadoscompra/{id}', 'DadosCompraController@dadosProduto');
+
 Route::get('/add-cidade', 'CidadeController@addCidade');
 
 Route::get('/add-material', 'MaterialController@addMaterial');

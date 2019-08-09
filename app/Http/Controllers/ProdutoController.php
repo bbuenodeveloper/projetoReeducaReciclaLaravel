@@ -41,7 +41,7 @@ class ProdutoController extends Controller
 
     public function exibirProdutos(Request $request){
         $produto = new Produto();
-        $produtos = $produto->all();
+        $produtos = $produto->paginate(9);
         $categorias = Categoria::all();
         return view("loja",['produtos'=>$produtos, 'categorias'=>$categorias]);
 

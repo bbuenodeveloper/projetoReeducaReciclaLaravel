@@ -48,19 +48,13 @@
                         <div class="title">
                         <h1 class="shorter product-name">{{$produto->nome}}</h1>
 
-                            <p class="availability in-stock">Disponibilidade: <span>unidades em estoque</span></p>
+                        <p class="availability in-stock">Disponibilidade:<span> {{$produto->quantidade_estoque}}  unidades em estoque</span></p>
                             <div class="price-box">
                                 <span class="regular-price" id="product-price-1509">
                                 <span class="price">R$ {{$produto->preco}}</span> </span>
 
                             </div>
 
-                        </div>
-                        <div class="shop_desc">
-                            <p>
-                                <p>O Eco Tanque permite que voc&ecirc; reutilize a &aacute;gua que seria
-                                    desperdi&ccedil;ada pela m&aacute;quina de lavar.</p>
-                            </p>
                         </div>
 
                         <!-- Adicionar quantidade -->
@@ -87,7 +81,7 @@
 
                             <div class="pull-right btn-comprar">
                                 <div class="btn-shop">
-                                    <a class="btn woo_btn btn-success" href="/carrinho">Comprar</a>
+                                    <a class="btn woo_btn btn-success" href="/carrinho/{{$produto->id}}">Comprar</a>
 
                                 </div>
                             </div>
@@ -111,58 +105,7 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="box-description">
                         <div class="std">
-                            <p>Al&eacute;m de armazenar a &aacute;gua que seria desperdi&ccedil;ada pela m&aacute;quina
-                                de lavar, trata-se de um tanque reciclado do transporte de azeitonas. Os tanques
-                                s&atilde;o restaurados pela equipe especializada Casol&oacute;gica, garantindo um
-                                destino nobre ao material e impedindo que o mesmo v&aacute; parar nos aterros, poluindo
-                                o meio ambiente.</p>
-                            <h2>Pronto para instala&ccedil;&atilde;o!</h2>
-                            <ul>
-                                <li>O EcoTanque 80 j&aacute; vem pronto para coletar a &aacute;gua de sua m&aacute;quina
-                                    de lavar.</li>
-                                <li>Basta retirar o plug da tampa do EcoTanque 80 e inserir a mangueira de sua
-                                    m&aacute;quina de lavar.</li>
-                                <li>O encaixe ser&aacute; perfeito!</li>
-                                <li>Ap&oacute;s o enchimento do tanque, retire a &aacute;gua atrav&eacute;s de sua
-                                    torneira estrategicamente instalada.</li>
-                                <li>Pronto! Acabamos de economizar 80 litros de &aacute;gua!</li>
-                            </ul>
-                            <h2>Sugest&atilde;o de uso:</h2>
-                            <ul>
-                                <li>Colete a &aacute;gua dos enxagues de sua m&aacute;quina, ela possui uma qualidade
-                                    melhor para ser reutilizada.</li>
-                                <li>80 Litros &eacute; o suficiente para armazenar o volume de &aacute;gua dos enxagues.
-                                </li>
-                                <li>Para as m&aacute;quinas mais modernas este volume pode ser menor e as mais antigas
-                                    um pouco maior.</li>
-                                <li>Coloque seu EcoTanque 80 pr&oacute;ximo a sua m&aacute;quina, desta forma n&atilde;o
-                                    precisar&aacute; comprar uma mangueira de maquina maior.</li>
-                                <li>Detalhe 1: O EcoTanque 80 cabe perfeitamente embaixo do seu tanque de lavar roupas!
-                                </li>
-                                <li>Detalhe 2: A torneirinha encaixa exatamente em uma lavadora de alta press&atilde;o.
-                                </li>
-                            </ul>
-                            <h2>Posso utilizar a &aacute;gua coletada para:</h2>
-                            <ul>
-                                <li>Lavagens de pisos, autom&oacute;veis e m&aacute;quinas.</li>
-                                <li>Descargas no vaso sanit&aacute;rio.</li>
-                            </ul>
-                            <h2>Como ele funciona:</h2>
-                            <ul>
-                                <li>Coloque a mangueira da m&aacute;quina de lavar na abertura presente na tampa e
-                                    colete a &aacute;gua!</li>
-                            </ul>
-                            <h2>Caracter&iacute;sticas do produto:</h2>
-                            <ul>
-                                <li>Capacidade: 80 litros.</li>
-                                <li>Altura com tampa: 70 cm</li>
-                                <li>Di&acirc;metro base: 35 cm</li>
-                                <li>Peso: 3 kg</li>
-                                <li>Material: Polietileno de alta densidade</li>
-                                <li>Cor: verde com tampa verde</li>
-                                <li>Inclusos: Torneira de 1/2 de ferro, plug de 50mm para encaixe da mangueira da
-                                    m&aacute;quina.</li>
-                            </ul>
+                        <p>{{$produto->descricao}}</p>
                         </div>
                     </div>
                 </div>
