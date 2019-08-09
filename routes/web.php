@@ -70,7 +70,7 @@ Route::post('/cadastrarcidade', 'CidadeController@cadastrarCidade')->name('cidad
 
 Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')->name('newsletter.cadastrar');
 
-Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')-> name('admin.cadastrar');
+Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')->name('admin.cadastrar');
 
 Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers');
 
