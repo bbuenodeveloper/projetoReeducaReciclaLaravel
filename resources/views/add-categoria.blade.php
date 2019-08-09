@@ -22,7 +22,7 @@
                     <h1 class="mb-4">Cadastro de Categorias</h1>
                     <div class="form-group">
                         <label for="nomeCategoria">Nome da Categoria</label>
-                        <input type="text" class="form-control" id="nomeCategoria" name="nome"
+                        <input type="text" class="form-control" id="nomeCategoria" name="nome_categoria"
                             placeholder="Nome da categoria" required>
                     </div>
                     <button type="submit" class="btn btn-primary pull-right widthHeightBtn">CADASTRAR CATEGORIA</button>
