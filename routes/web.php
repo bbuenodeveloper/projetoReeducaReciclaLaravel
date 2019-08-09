@@ -57,6 +57,8 @@ Route::get('/add-produto', 'ProdutoController@addProduto');
 
 Route::get('/add-newsletter', 'NewsletterController@addnewsletter');
 
+Route::get('/add-categoria', 'CategoriaController@categorias');
+
 Route::get('/add-admin','AdminController@addAdmin');
 
 
@@ -71,6 +73,8 @@ Route::post('/cadastrarcidade', 'CidadeController@cadastrarCidade')->name('cidad
 Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')->name('newsletter.cadastrar');
 
 Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')->name('admin.cadastrar');
+
+Route::post('/cadastrarcategoria','CategoriaController@cadastrarCategoria')->name('categoria.cadastrar');
 
 Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers');
 

@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                 // é importante armazenar também a imagem e id para ser possível alterar a imagem ao mudar a cidade e para o ajax que obtém os marcadores //
                                 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                                .data('imagem', "/public/uploads/cidades/" + window.cidades[i].imagem)
+                                .data('imagem', "/storage/img/" + window.cidades[i].imagem)
                                 .data('id', window.cidades[i].id)
                                 .attr('href','javascript:')
                                 )
