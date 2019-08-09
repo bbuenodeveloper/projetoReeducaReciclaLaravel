@@ -70,6 +70,7 @@ Route::post('/cadastrarcidade', 'CidadeController@cadastrarCidade')->name('cidad
 
 Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')->name('newsletter.cadastrar');
 
+Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')->name('admin.cadastrar');
 
 Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers');
 
@@ -81,8 +82,7 @@ Route::get('/relatorio-Materiais', 'RelatoriosController@relatorioMateriais');
 
 Route::get('/relatorio-Newsletter', 'RelatoriosController@relatorioNewsletter');
 
-
-
+// Rotas são definidas em ./vendor/laravel/framework/src/Illuminate/Routing/Router.php # auth
 Auth::routes();
 Route::get('/painel', 'PainelController@painel')->name('painel');
 Route::get('/home', 'HomeController@index')->name('home');

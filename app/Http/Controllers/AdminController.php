@@ -15,27 +15,14 @@ class AdminController extends Controller
         }
     }
 
-    protected function validator(array $data)
+    protected function cadastrarAdmin(array $data)
     {
-        
-        return Validator::make($data, [
-            'name' => ['required', 'string', 'max:100'],
-            'email' => ['required', 'string', 'email', 'max:50', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-            //'nivel_user' => ['required', 'tinyInteger'],          
-        ]);
-    }
-
-    
-    protected function create(array $data)
-    {
-        return User::create([
+        return User::cadastrarAdmin([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'nivel_user'=> 0,            
+            'nivel_user'=> 0,
         ]);
     }
 
-   
 }
