@@ -32,11 +32,13 @@ class CidadeController extends Controller
             $file = $request->file('imagem');
             $extension = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extension;
-            $file->move('storage/img', $filename);
+            $file->move('uploads/cidades/', $filename);
             $cidade->imagem = $filename;
         }
         $cidade->save();
 
-        return response()->json(['cidade' => "Cidade cadastrada com sucesso!"]);
+        return view('add-cidade', [
+            'sucesso' => "Cadastro realizado com sucesso!"
+        ]);
     }
 }

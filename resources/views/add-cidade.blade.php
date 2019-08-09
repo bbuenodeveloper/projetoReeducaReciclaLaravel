@@ -6,6 +6,11 @@
 <div class="container">
     <div class="row">
         <div class="col-6 mx-auto">
+                @if (isset($sucesso))
+                <div class="alert alert-success" role="alert">
+                    <strong>Muito bem!</strong> {{ $sucesso }}
+                </div>
+                @endif
 <div class="jumbotron border rounded border-success">
             <center><div class="logoRegister mb-4">
                 <a href="index.html">

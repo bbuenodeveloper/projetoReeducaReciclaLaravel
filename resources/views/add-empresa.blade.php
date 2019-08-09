@@ -7,6 +7,11 @@
 <div class="container">
     <div class="row">
         <div class="col-6 mx-auto">
+                @if (isset($sucesso))
+                <div class="alert alert-success" role="alert">
+                    <strong>Muito bem!</strong> {{ $sucesso }}
+                </div>
+                @endif
 <div class="jumbotron border rounded border-success">
         <center><div class="logoRegister mb-4">
                 <a href="index.html">
@@ -40,16 +45,7 @@
                             <label for="bairro">Bairro</label>
                             <input type="text" name="bairro" class="form-control" placeholder="Digite o bairro">
                             </div>
-                            <div class="form-group">
-                                <label for="cidade">Cidade</label>
-                                <select class="custom-select" id="cidade" name="cidade"
-                                    aria-label="Example select with button addon" required>
-                                    <option selected disabled>Selecione</option>
-                                    <option value="1">cidade 1</option>
-                                    <option value="2">cidade 2</option>
-                                    <option value="3">cidade 3</option>
-                                </select>
-                            </div>
+
                             <div class="form-group">
                                 <label for="estado">Estado</label>
                                 <input type="text" name="estado" class="form-control" placeholder="Digite o estado">
@@ -73,6 +69,31 @@
                                             <label for="longitude">Longitude</label>
                                             <input type="text" name="longitude" class="form-control" placeholder="Digite a longitude">
                                             </div>
+                                            <div class="form-group row">
+                                                    <label class="col-sm-2">Cidades</label>
+                                                    <div class="col-sm-10">
+                                                        @foreach ($cidades as $cidade)
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" name="cidade" id="cidade" value="{{ $cidade->id }}">
+                                                                {{ $cidade->cidade }}
+                                                            </label>
+                                                        </div>
+                                                        @endforeach
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2">Materiais</label>
+                                                    <div class="col-sm-10">
+                                                        @foreach ($materiais as $material)
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" name="materiais[]" value="{{ $material->id }}"> {{ $material->tipoMaterial }}
+                                                            </label>
+                                                        </div>
+                                                        @endforeach
+                                                    </div>
+                                                </div>
         <button type="submit" class="btn btn-card btn-primary">CADASTRAR</button>
     </form>
 </div>
