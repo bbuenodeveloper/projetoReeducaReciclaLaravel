@@ -11,11 +11,12 @@ class CategoriaController extends Controller
         return view ('add-categoria');
     }
 
-    public function cadastrarCategoria(){
+    public function cadastrarCategoria(Request $request){
         $categoria = new Categoria();
             $categoria->nome = $request->nome;
             $categoria->save();
 
             return response()->json(['categoria' => "Categoria cadastrada com sucesso!"]);
     }
+
 }

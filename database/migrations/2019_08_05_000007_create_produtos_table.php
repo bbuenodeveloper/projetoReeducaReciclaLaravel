@@ -28,9 +28,9 @@ class CreateProdutosTable extends Migration
             $table->decimal('preco', 10, 2)->nullable();
             $table->string('imagem', 200)->nullable();
             $table->string('quantidade_estoque', 45)->nullable();
-            $table->Biginteger('categorias_id')->references('id')->on('categorias');
+            $table->Biginteger('produtos_id')->references('id')->on('produtos');
 
-            $table->index(["categorias_id"], 'fk_produtos_categorias1_idx');
+            $table->index(["produtos_id"], 'fk_categorias_produtos1_idx');
 
             $table->unique(["id"], 'id_UNIQUE');
 

@@ -34,10 +34,23 @@ class NewsletterController extends Controller
 
     }
 
+    public function cadastrarNewsletter(Request $request){
+        $newsletter = new newsletter();
+        $newsletter->email = $request->email;
+        $newsletter->save();
+
+        return response()->json(['cidade' => "Newsletter cadastrada com sucesso!"]);
+
+
+
+    }
+
     public function addnewsletter(Request $request){
         if($request->isMethod('GET')){
             return view('add-newsletter');
         }
     }
+
+
 
 }

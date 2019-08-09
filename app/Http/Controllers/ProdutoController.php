@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Produto;
+use App\Categoria;
 
 
 class ProdutoController extends Controller
@@ -42,6 +43,13 @@ class ProdutoController extends Controller
             return view("loja",['produtos'=>$produtos]);
        
     }
+
+    public function exibirCategorias(Request $request){
+        $categorias = Categoria::all();
+      
+        return view("add-produto",['categorias'=>$categorias]);
+  
+   }
 
 }
 

@@ -8,7 +8,7 @@
 <div class="jumbotron">
     <h1 class="text-center mb-2">
         Cadastro de Newsletter</h1>
-    <form action="/home" method="post" class="user-info-setting-form" enctype="multipart/form-data">
+    <form action="{{ route('newsletter.cadastrar') }}" method="post" class="user-info-setting-form" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
         <label for="email">Newsletter</label>
