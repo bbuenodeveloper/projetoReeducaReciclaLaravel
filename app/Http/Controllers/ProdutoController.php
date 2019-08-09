@@ -44,16 +44,8 @@ class ProdutoController extends Controller
 
     }
 
-<<<<<<< HEAD
-    public function exibirCategorias(Request $request){
-        $categorias = Categoria::all();
-      
-        return view("add-produto",['categorias'=>$categorias]);
-  
-   }
-=======
+    
 
->>>>>>> 91e2a579cb870f3c01e052dacb2df95b7cd4f40a
 
 }
 

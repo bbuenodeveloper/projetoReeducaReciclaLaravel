@@ -79,6 +79,7 @@ Route::post('/cadastrarcategoria', 'CategoriaController@cadastrarCategoria')->na
 
 Route::get('/internaProduto/{id}', 'InternaLojaController@interna');
 Route::get('/internaProduto/{id}', 'InternaLojaController@exibirProdutoUnico');
+
 Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')->name('newsletter.cadastrar');
 
 Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')->name('admin.cadastrar');

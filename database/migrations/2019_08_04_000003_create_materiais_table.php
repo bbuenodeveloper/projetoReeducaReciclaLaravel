@@ -23,7 +23,7 @@ class CreateMateriaisTable extends Migration
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('tipoMaterial', 45)->nullable();
+            $table->string('tipoMaterial', 45)->nullable()->default(null);
 
             $table->unique(["id"], 'id_UNIQUE');
         });

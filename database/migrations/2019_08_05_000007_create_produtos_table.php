@@ -24,19 +24,19 @@ class CreateProdutosTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('nome', 200)->nullable();
-            $table->string('descricao')->nullable();
+            $table->string('descricao', 191)->nullable();
             $table->decimal('preco', 10, 2)->nullable();
             $table->string('imagem', 200)->nullable();
             $table->string('quantidade_estoque', 45)->nullable();
-            $table->Biginteger('produtos_id')->references('id')->on('produtos');
+            $table->Integer('categorias_id')->references('id')->on('categorias');
 
-            $table->index(["produtos_id"], 'fk_categorias_produtos1_idx');
+            $table->index(["categorias_id"], 'fk_produtos_categorias1_idx');
 
             $table->unique(["id"], 'id_UNIQUE');
 
 
             // $table->foreign('categorias_id', 'fk_produtos_categorias1_idx')
-
+                
             //     ->onDelete('no action')
             //     ->onUpdate('no action');
         });

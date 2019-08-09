@@ -23,7 +23,7 @@ class CreatePagamentosTable extends Migration
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('modo_pagamento', 200)->nullable();
+            $table->string('modo_pagamento', 200)->nullable()->default(null);
             $table->unsignedInteger('compra_id');
 
             $table->index(["compra_id"], 'fk_pagamento_compra1_idx');

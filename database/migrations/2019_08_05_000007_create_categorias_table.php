@@ -23,13 +23,9 @@ class CreateCategoriasTable extends Migration
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('nome', 45);
+            $table->string('nome_categoria', 100)->nullable()->default(null);
 
-            // $table->Biginteger('id')->references('id')->on('categorias');
-
-            // $table->index(["id"], 'fk_produtos_categorias1_idx');
-
-            // $table->unique(["id"], 'id_UNIQUE');
+            $table->unique(["id"], 'id_UNIQUE');
         });
     }
 

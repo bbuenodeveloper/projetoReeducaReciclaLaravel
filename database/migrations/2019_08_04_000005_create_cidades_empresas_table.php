@@ -22,7 +22,8 @@ class CreateCidadesEmpresasTable extends Migration
     {
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->increments('cidades_id');
+            $table->increments('id');
+            $table->unsignedInteger('cidades_id');
             $table->unsignedInteger('cadastroEmpresas_id');
 
             $table->index(["cadastroEmpresas_id"], 'fk_cidades_has_cadastroEmpresas_cadastroEmpresas1_idx');
@@ -30,13 +31,13 @@ class CreateCidadesEmpresasTable extends Migration
             $table->index(["cidades_id"], 'fk_cidades_has_cadastroEmpresas_cidades1_idx');
 
 
-            $table->foreign('cidades_id', 'fk_cidades_has_cadastroEmpresas_cidades1_idx')
-                ->references('id')->on('cidades')
+            $table->foreign('cadastroEmpresas_id', 'fk_cidades_has_cadastroEmpresas_cadastroEmpresas1_idx')
+                ->references('id')->on('empresas')
                 ->onDelete('no action')
                 ->onUpdate('no action');
 
-            $table->foreign('cadastroEmpresas_id', 'fk_cidades_has_cadastroEmpresas_cadastroEmpresas1_idx')
-                ->references('id')->on('empresas')
+            $table->foreign('cidades_id', 'fk_cidades_has_cadastroEmpresas_cidades1_idx')
+                ->references('id')->on('cidades')
                 ->onDelete('no action')
                 ->onUpdate('no action');
         });

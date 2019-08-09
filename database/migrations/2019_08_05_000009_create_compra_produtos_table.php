@@ -24,14 +24,14 @@ class CreateCompraProdutosTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('compra_id');
             $table->unsignedInteger('produtos_id');
-            $table->decimal('preco', 10, 2)->nullable();
+            $table->decimal('preco', 10, 2)->nullable()->default(null);
 
             $table->index(["compra_id"], 'fk_compra_has_produtos_compra1_idx');
 
             $table->index(["produtos_id"], 'fk_compra_has_produtos_produtos1_idx');
 
 
-            $table->foreign('compra_id', 'fk_compra_has_produtos_compra1_idx')
+            $table->foreign('compra_id', 'compra_produtos_compra_id')
                 ->references('id')->on('compras')
                 ->onDelete('no action')
                 ->onUpdate('no action');
