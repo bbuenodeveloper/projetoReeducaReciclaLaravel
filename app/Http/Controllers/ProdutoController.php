@@ -32,7 +32,9 @@ class ProdutoController extends Controller
         }
         $produto->save();
 
-        return response()->json(['produto' => "Produto cadastrado com sucesso!"]);
+        return view('add-produto', [
+            'sucesso' => "Cadastro realizado com sucesso!"
+        ]);
     }
 
     public function exibirProdutos(Request $request){

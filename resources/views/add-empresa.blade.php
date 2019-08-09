@@ -54,13 +54,6 @@
                                     <label for="telefone">Telefone</label>
                                     <input type="text" name="telefone" class="form-control" placeholder="Digite o telefone">
                                     </div>
-                                    <div class="form-group custom-checkbox">
-                                        <div>
-                                        <label for="material">Material</label>
-                                        </div>
-                                        <input type="checkbox" class="custom-control-input" id="material" name="material">
-                                        <label class="custom-control-label" for="material">Ferro</label>
-                                      </div>
                                     <div class="form-group">
                                         <label for="latitude">Latitude</label>
                                         <input type="text" name="latitude" class="form-control" placeholder="Digite a latitude">
