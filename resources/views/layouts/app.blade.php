@@ -206,7 +206,7 @@
                 </nav>
 
                 <div class="foot5 mb-0 container-fluid justify-content-center">
-                    <p class="mb-3">Copyrights © 2019 Reciclamaps</p>
+                    <p class="mb-3">Copyrights © 2019 Recicla Maps - Todos os Direitos Reservados</p>
                 </div>
             </footer>
         </div>
