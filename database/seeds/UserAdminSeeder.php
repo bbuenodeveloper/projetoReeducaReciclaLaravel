@@ -12,7 +12,7 @@ class UserAdminSeeder extends Seeder
      */
     public function run()
     {
-       { User::create([
+       User::create([
             'name'      => 'teste',
             'email'     => 'teste@teste.com',
             'password'  => bcrypt('123456789'),
@@ -27,9 +27,7 @@ class UserAdminSeeder extends Seeder
             'cidade' => 'sao paulo',
             'nivel_user' => 0,
             'telefone' => 12345678
-
-
         ]);
-       }
+
     }
 }

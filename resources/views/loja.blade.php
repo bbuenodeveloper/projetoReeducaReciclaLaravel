@@ -20,14 +20,14 @@
         <div class="row mb-5">
             <div class="col-md-9 order-2">
 
-            
+
                 <div class="row mb-5">
                 @foreach($produtos as $produto)
                     <div class="col-sm-6 col-lg-4 mb-4 mt-5" data-aos="fade-up">
-                        
+
                             <div class="card text-center border">
                                 <figure class="block-4-image">
-                                    <a href="shop-single.html"><img src="{{$produto->imagem}}"
+                                    <a href="shop-single.html"><img src="/storage/produtos/{{$produto->imagem}}"
                                             alt="Image placeholder" class="img-fluid"></a>
                                 </figure>
                                 <div class=" p-4">
@@ -36,11 +36,11 @@
                                     <a class="btn btn-success" href="/internaProduto/{{$produto->id}} ">VER PRODUTO</a>
                                 </div>
                             </div>
-                        
+
                     </div>
                     @endforeach
                 </div>
-                
+
 
             </div>
 
@@ -48,9 +48,9 @@
                 <div class="border p-4 rounded mb-4 mt-5">
                     <h3 class="mb-3 h6 text-uppercase text-black d-block">CATEGORIAS</h3>
                     <ul class="list-unstyled mb-0">
-                   @foreach($produtos as $produto)
+                   @foreach($categorias as $categoria)
                         <li class="mb-1"><a href="#" class="d-flex"><span></span> <span
-                                    class="text-black ml-auto">(5)</span></a></li>
+                        class="text-black ml-auto">{{$categoria->nome_categoria}}</span></a></li>
                     @endforeach
                     </ul>
                 </div>
