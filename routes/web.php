@@ -110,6 +110,7 @@ Route::post('/home', 'NewsletterController@home');
 
 Route::get('/loja', 'ProdutoController@exibirProdutos');
 
+Route::get('/adminlista','AdminController@mostrarLista');
 
 
 
