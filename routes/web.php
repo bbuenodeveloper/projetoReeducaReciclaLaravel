@@ -81,7 +81,7 @@ Route::get('/internaProduto/{id}', 'InternaLojaController@interna');
 Route::get('/internaProduto/{id}', 'InternaLojaController@exibirProdutoUnico');
 Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')->name('newsletter.cadastrar');
 
-Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')-> name('admin.cadastrar');
+Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')->name('admin.cadastrar');
 
 Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers');
 
