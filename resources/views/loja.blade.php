@@ -27,7 +27,7 @@
                         
                             <div class="card text-center border">
                                 <figure class="block-4-image">
-                                    <a href="shop-single.html"><img src="{{ asset("storage/app/public/produtos/{$produto->imagem}") }}"
+                                    <a href="shop-single.html"><img src="{{$produto->imagem}}"
                                             alt="Image placeholder" class="img-fluid"></a>
                                 </figure>
                                 <div class=" p-4">
@@ -49,7 +49,7 @@
                     <h3 class="mb-3 h6 text-uppercase text-black d-block">CATEGORIAS</h3>
                     <ul class="list-unstyled mb-0">
                    @foreach($produtos as $produto)
-                        <li class="mb-1"><a href="#" class="d-flex"><span>{{$produto->categoria->nome}}</span> <span
+                        <li class="mb-1"><a href="#" class="d-flex"><span></span> <span
                                     class="text-black ml-auto">(5)</span></a></li>
                     @endforeach
                     </ul>

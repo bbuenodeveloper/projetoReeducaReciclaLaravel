@@ -43,10 +43,10 @@
     <div id="app">
 
         <header>
-            <nav class="navbar navbar-expand-md bg-preto shadow-sm active shadow ">
+            <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm active shadow ">
                 <div class="container">
                     <a class="navbar-brand align-self-start" href="./">
-                        <img src="img/logo_lado.png" class="logoMargin logoSize" alt="">
+                        <img src="{{ asset ('img/logo_lado.png') }}" class="logoMargin logoSize" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                         <span class="navbar-toggler-icon"></span>
@@ -87,7 +87,6 @@
                                 <a class="nav-link active grow efeitoTransicaoLoja" href="{{ route('register') }}">{{ __('Cadastro') }}</a>
                             </li>
                             @endif
-                           
                             @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link efeitoTransicaoLoja dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -110,132 +109,139 @@
                             </div>
                         </li>
                         @endguest
-                            
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-        <main>
-            @yield('content')
-        </main>
-    </div>
-
-
-    <div style="max-width: 100%; overflow: hidden;">
-        <footer>
-            <nav class="nav nav-fill rodape">
-
-                <div class="col-md-3 d-none d-sm-block">
-                    <li class="footer-logo-size">
-                        <img src="img/logo_branco.png" width="200" alt="">
-                    </li>
-                </div>
-
-                <div class="col-md-9">
-                    <div class="row">
-                        <ul class="nav marginFooter">
-                            <li class="nav-item d-none d-sm-block align-footer">
-                                <a class="nav-link active menu-footer" href="/home">Home</a>
-                                <a class="nav-link active menu-footer" href="/sobre">Sobre</a>
-                                <a class="nav-link active menu-footer" href="/loja">Loja</a>
-                            </li>
-                            <li class="nav-item d-none d-sm-block align-footer">
-                                <a class="nav-link active menu-footer" href="/mapa">Mapa</a>
-                                <a class="nav-link active menu-footer" href="/faq">FAQ</a>
-                                <a class="nav-link active menu-footer" href="/contato">Contato</a>
-                            </li>
-                            <li class="nav-item d-none d-sm-block align-footer">
-                                <a class="nav-link active menu-footer" href="/privacidade">Privacidade</a>
-                                <a class="nav-link active menu-footer" href="/termos">Termos de Uso</a>
-                            </li>
-                            <div class="col-md-2 text-primary div-icones justify-content-center">
-                                <ul class="ul-icones-footer ">
-                                    <li class="nav-link active icones-footer ">
-                                        <a href="https://twitter.com/reeducarecicla" target="_blank">
-                                            <i class="fa fa-twitter text-white"> </i>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-link active icones-footer">
-                                        <a href="https://facebook.com/reeducarecicla" target="_blank">
-                                            <i class="fa fa-facebook text-white"> </i>
-                                        </a>
-                                    </li>
-                                    <li class=" nav-link active icones-footer">
-                                        <a href="http://instagram.com/reeducarecicla" target="_blank">
-                                            <i class="fa fa-instagram text-white"> </i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <form class="nav-item newsletter" method="POST" action="/home">
-                                @csrf
-                                <label class="form-control newsletter-footer"> Assine nossa Newsletter!</label>
-                                <div class="input-group newsletter-email">
-                                    <input class="form-control" type="email" name="email" placeholder="email@email.com.br">
-                                    <span class="input-group-btn ">
-                                        <button class="btn btn-success" class="btn-newsletter" type="submit">Assine
-                                            agora</button>
-                                        </span>
-                                    </div>
-                                </form>
-                            </ul>
-                            @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-
-                            </div>
-                            @endif
-
-                            @if(isset($resultado))
-                            @if($resultado)
-                            <div class="alert alert-success">
-                                <h1>E-mail cadastrado com sucesso</h1>
-                            </div>
-                            @else
-                            <h1>erro</h1>
-                            @endif
-                            @endif
+    <main>
+        @yield('content')
+    </main>
+</div>
 
 
-                        </div>
-                    </nav>
+<div style="max-width: 100%; overflow: hidden;">
+    <footer>
+        <nav class="nav nav-fill rodape">
 
-                    <div class="foot5 mb-0 container-fluid justify-content-center">
-                        <p class="mb-3">Copyrights © 2019 Reciclamaps</p>
-                    </div>
-                </footer>
+            <div class="col-md-3 d-none d-sm-block">
+                <li class="footer-logo-size">
+                    <img src="{{ asset ('img/logo_branco.png') }}" width="200" alt="">
+                </li>
             </div>
 
-            <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Google Page Speed Insights") === false): ?>
-            <!-- O que tiver aqui dentro o page speed do Google não consegue ver -->
-            <?php endif ?>
+            <div class="col-md-9">
+                <div class="row">
+                    <ul class="nav marginFooter">
+                        <li class="nav-item d-none d-sm-block align-footer">
+                            <a class="nav-link active menu-footer" href="/home">Home</a>
+                            <a class="nav-link active menu-footer" href="/sobre">Sobre</a>
+                            <a class="nav-link active menu-footer" href="/loja">Loja</a>
+                        </li>
+                        <li class="nav-item d-none d-sm-block align-footer">
+                            <a class="nav-link active menu-footer" href="/mapa">Mapa</a>
+                            <a class="nav-link active menu-footer" href="/faq">FAQ</a>
+                            <a class="nav-link active menu-footer" href="/contato">Contato</a>
+                        </li>
+                        <li class="nav-item d-none d-sm-block align-footer">
+                            <a class="nav-link active menu-footer" href="/privacidade">Privacidade</a>
+                            <a class="nav-link active menu-footer" href="/termos">Termos de Uso</a>
+                        </li>
+                        <div class="col-md-2 text-primary div-icones justify-content-center">
+                            <ul class="ul-icones-footer ">
+                                <li class="nav-link active icones-footer ">
+                                    <a href="https://twitter.com/reeducarecicla" target="_blank">
+                                        <i class="fa fa-twitter text-white"> </i>
+                                    </a>
+                                </li>
 
-            <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-            <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
+                                <li class="nav-link active icones-footer">
+                                    <a href="https://facebook.com/reeducarecicla" target="_blank">
+                                        <i class="fa fa-facebook text-white"> </i>
+                                    </a>
+                                </li>
+                                <li class=" nav-link active icones-footer">
+                                    <a href="http://instagram.com/reeducarecicla" target="_blank">
+                                        <i class="fa fa-instagram text-white"> </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <form class="nav-item newsletter" method="POST" action="/home">
+                            @csrf
+                            <label class="form-control newsletter-footer"> Assine nossa Newsletter!</label>
+                            <div class="input-group newsletter-email">
+                                <input class="form-control" type="email" name="email" placeholder="email@email.com.br">
+                                <span class="input-group-btn ">
+                                    <button class="btn btn-success" class="btn-newsletter" type="submit">Assine
+                                        agora</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </ul>
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
 
-            <link href="{{ asset('css/dropdown.min.css') }}" rel="stylesheet" type="text/css" />
-            <link href="{{ asset('css/jquery.fancybox.min.css') }}" rel="stylesheet" type="text/css" />
-            <link href="{{ asset('css/stylesa361.css?ver=2.3') }}" rel="stylesheet" type="text/css" />
-            <link href="{{ asset('css/beta-popup.css') }}" rel="stylesheet" type="text/css" />
+                        </div>
+                        @endif
+
+                        @if(isset($resultado))
+                        @if($resultado)
+                        <div class="alert alert-success">
+                            <h1>E-mail cadastrado com sucesso</h1>
+                        </div>
+                        @else
+                        <h1>erro</h1>
+                        @endif
+                        @endif
+
+
+                    </div>
+                </nav>
+
+                <div class="foot5 mb-0 container-fluid justify-content-center">
+                    <p class="mb-3">Copyrights © 2019 Reciclamaps</p>
+                </div>
+            </footer>
+        </div>
+
+        <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Google Page Speed Insights") === false): ?>
+        <!-- O que tiver aqui dentro o page speed do Google não consegue ver -->
+        <?php endif ?>
+
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
+
+
+        <!-- Fonts -->
+        {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
 
 
 
-            <!-- <script src="js/jquery.js"></script> -->
-            <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-            <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-            <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-            <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-            <script src="{{ asset('js/recicla.min.js') }}"></script>
-        </body>
+        {{-- <link href="{{asset('css/font-icons.css')}}" rel="stylesheet" type="text/css" /> --}}
+        <link href="{{asset('css/recicla-guide.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('css/dropdown.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('css/jquery.fancybox.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('css/stylesa361.css?ver=2.3')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('css/beta-popup.css')}}" rel="stylesheet" type="text/css" />
 
-        </html>
 
-        
+
+        <script src="{{asset('js/jquery.js')}}"></script>
+        <script src="{{url('https://code.jquery.com/jquery-3.4.0.min.js')}}"></script>
+        <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        {{-- <script src="{{asset('js/app.js') }}" defer></script> --}}
+        <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->
+        <script src="{{asset('js/recicla.min.js')}}"></script>
+    </body>
+
+    </html>

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Produto;
-use App\Categoria;
 
 
 class ProdutoController extends Controller
@@ -34,20 +33,24 @@ class ProdutoController extends Controller
         $produto->save();
 
         
-        return response()->json(['produto' => "Produto cadastrado com sucesso!"]);
+        return view('add-produto', [
+            'sucesso' => "Cadastro realizado com sucesso!"
+        ]);
     }
 
     public function exibirProdutos(Request $request){
-            $produtos = Produto::all();
-
-            return view("loja",['produtos'=>$produtos]);
+        $produto = new Produto();
+        $produtos = $produto->all();
+        return view("loja",['produtos'=>$produtos]);
 
     }
+
+}
 
     
 
 
-}
+
 
 
 

@@ -11,10 +11,10 @@ class InternaLojaController extends Controller
         return view('internaProduto');
     }
 
-    public function exibirProdutoUnico(Request $request){
-        $produtos = Produto::all();
+    public function exibirProdutoUnico(Request $request, $id){
+        $produto = Produto::all();
        
-        return view("internaProduto",['produtos'=>$produtos]);
+        return view("internaProduto/{id}",['produto'=>$produto]);
    
 }
    

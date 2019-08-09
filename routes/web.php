@@ -31,8 +31,6 @@ Route::get('/faq', 'FaqController@faq');
 
 Route::get('/loja', 'LojaController@loja');
 
-Route::get('/loja', 'ProdutoController@exibirProdutos');
-
 Route::get('/carrinho', 'CarrinhoController@carrinho');
 
 Route::get('/finalizada', 'FinalizadaController@finalizada');
@@ -47,7 +45,7 @@ Route::get('/marcadores/{cidade}/{materiaisIds}', 'MarcadoresController@marcador
 
 Route::get('/cidades', 'CidadeController@obterJson');
 
-Route::get('/internaProduto', 'InternaLojaController@interna');
+Route::get('/internaProduto/{id}', 'InternaLojaController@interna');
 
 Route::get('/add-cidade', 'CidadeController@addCidade');
 
@@ -57,10 +55,10 @@ Route::get('/add-empresa', 'EmpresaController@addEmpresa');
 
 Route::get('/add-produto', 'ProdutoController@addProduto');
 
-
 Route::get('/add-newsletter', 'NewsletterController@addnewsletter');
 
 Route::get('/add-admin','AdminController@addAdmin');
+
 
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
 
@@ -69,7 +67,6 @@ Route::post('/cadastrarempresa', 'EmpresaController@cadastrarEmpresa')->name('em
 Route::post('/cadastrarmaterial', 'MaterialController@cadastrarMaterial')->name('material.cadastrar');
 
 Route::post('/cadastrarcidade', 'CidadeController@cadastrarCidade')->name('cidade.cadastrar');
-
 
 Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')->name('newsletter.cadastrar');
 
@@ -96,6 +93,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home', 'NewsletterController@home');
 
 Route::post('/home', 'NewsletterController@home');
+
+Route::get('/loja', 'ProdutoController@exibirProdutos');
+
 
 
 
