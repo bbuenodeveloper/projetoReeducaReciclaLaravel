@@ -10,7 +10,13 @@
                     <strong>Muito bem!</strong> {{ $sucesso }}
                 </div>
                 @endif
-            <div class="jumbotron">
+            <div class="jumbotron border rounded border-success">
+                    <center><div class="logoRegister mb-4">
+                            <a href="/add-cidade">
+                                <img class="logoRegister mb-3" src="img/logologin.png" alt>
+                            </a>
+                        <div></center>
+
                 <form action="{{ route('categoria.cadastrar')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                     <h1 class="mb-4">Cadastro de Categorias</h1>

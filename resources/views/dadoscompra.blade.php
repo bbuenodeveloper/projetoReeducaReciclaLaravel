@@ -97,7 +97,7 @@
                 </div>
                 @endif
                 @else
-                
+
 
 
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -115,9 +115,9 @@
                                 <div class="p-3 p-lg-5 border">
                                   <h2>{{ Auth::user()->name }}, seus dados de compra já estão preenchidos!</h2>
                                   <center>
-                                  <img src="img/produtos_loja/check.png" class="mt-5"width="45%" alt="">
+                                  <img src="{{ asset ('img/produtos_loja/check.png') }}" class="mt-5"width="45%" alt="">
                                   </center>
-                                  
+
 
 
 
@@ -139,22 +139,19 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>Nome do produto <strong class="mx-2">x</strong>1</td>
-                                                        <td>Preço</td>
+                                                        <td>{{$produto->nome}}<strong class="mx-2">x</strong>1</td>
+                                                        <td>{{$produto->preco}}</td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>Polo Shirt <strong class="mx-2">x</strong> 1</td>
-                                                        <td>$100.00</td>
-                                                    </tr>
+
                                                     <tr>
                                                         <td class="text-black font-weight-bold">
                                                             <strong>Subtotal</strong></td>
-                                                        <td class="text-black">$350.00</td>
+                                                        <td class="text-black">R${{$produto->preco}}</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="text-black font-weight-bold"><strong>Total</strong>
                                                         </td>
-                                                        <td class="text-black font-weight-bold"><strong>$350.00</strong>
+                                                    <td class="text-black font-weight-bold"><strong>R${{$produto->preco}}</strong>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -210,7 +207,7 @@
 
                             </div>
                         </div>
-                        
+
                         <!-- </form> -->
                     </div>
                 </div>

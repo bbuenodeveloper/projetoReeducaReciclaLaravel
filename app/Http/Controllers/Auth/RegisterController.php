@@ -91,4 +91,10 @@ class RegisterController extends Controller
             'telefone' => $data['telefone'],
         ]);
     }
+
+    public function addUser() {
+
+            return view('registerPainel');
+
+    }
 }

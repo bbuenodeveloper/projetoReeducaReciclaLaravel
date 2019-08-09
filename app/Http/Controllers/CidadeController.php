@@ -32,7 +32,7 @@ class CidadeController extends Controller
             $file = $request->file('imagem');
             $extension = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extension;
-            $file->move('uploads/cidades/', $filename);
+            $file->move('storage/img/', $filename);
             $cidade->imagem = $filename;
         }
         $cidade->save();

@@ -37,12 +37,12 @@
                             <tbody>
                                 <tr>
                                     <td class="product-thumbnail">
-                                        <img src="images/cloth_1.jpg" alt="Image" class="img-fluid">
+                                    <img src="/storage/produtos/{{$produto->imagem}}" alt="Image" class="img-fluid">
                                     </td>
                                     <td class="product-name">
-                                        <h2 class="h5 text-black">Nome do produto</h2>
+                                    <h2 class="h5 text-black">{{$produto->nome}}</h2>
                                     </td>
-                                    <td>Preco</td>
+                                <td>R${{$produto->preco}}</td>
                                     <td>
                                         <div class="input-group mb-3" style="max-width: 120px;">
                                             <div class="input-group-prepend">
@@ -59,7 +59,7 @@
                                         </div>
 
                                     </td>
-                                    <td>Preco</td>
+                                    <td>R${{$produto->preco}}</td>
                                     <td><a href="#" class="btn btn-danger btn-sm">X</a></td>
                                 </tr>
 
@@ -93,7 +93,7 @@
                                     <span class="text-black">Subtotal</span>
                                 </div>
                                 <div class="col-6 text-right">
-                                    <strong class="text-black">$230.00</strong>
+                                    <strong class="text-black">{{$produto->preco}}</strong>
                                 </div>
                             </div>
                             <div class="row mb-5">
@@ -101,14 +101,14 @@
                                     <span class="text-black">Total</span>
                                 </div>
                                 <div class="col-6 text-right">
-                                    <strong class="text-black">$230.00</strong>
+                                    <strong class="text-black">{{$produto->preco}}</strong>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-12">
                                     <button class="btn btn-primary btn-lg py-3 btn-block
-                                    "onclick="window.location='/dadoscompra'">FINALIZAR COMPRA</button>
+                                "onclick="window.location='/dadoscompra/{{$produto->id}}'">FINALIZAR COMPRA</button>
                                 </div>
                             </div>
                         </div>

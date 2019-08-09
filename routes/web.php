@@ -45,7 +45,11 @@ Route::get('/marcadores/{cidade}/{materiaisIds}', 'MarcadoresController@marcador
 
 Route::get('/cidades', 'CidadeController@obterJson');
 
-Route::get('/internaProduto/{id}', 'InternaLojaController@interna');
+Route::get('/internaProduto/{id}', 'InternaLojaController@exibirProdutoUnico');
+
+Route::get('/carrinho/{id}', 'CarrinhoController@carrinhoProduto');
+
+Route::get('/dadoscompra/{id}', 'DadosCompraController@dadosProduto');
 
 Route::get('/add-cidade', 'CidadeController@addCidade');
 
@@ -57,7 +61,11 @@ Route::get('/add-produto', 'ProdutoController@addProduto');
 
 Route::get('/add-newsletter', 'NewsletterController@addnewsletter');
 
+Route::get('/add-categoria', 'CategoriaController@categorias');
+
 Route::get('/add-admin','AdminController@addAdmin');
+
+Route::get('/registerPainel','Auth\RegisterController@addUser');
 
 
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
@@ -71,6 +79,12 @@ Route::post('/cadastrarcidade', 'CidadeController@cadastrarCidade')->name('cidad
 Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')->name('newsletter.cadastrar');
 
 Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')->name('admin.cadastrar');
+
+Route::post('/cadastrarcategoria','CategoriaController@cadastrarCategoria')->name('categoria.cadastrar');
+
+Route::post('/cadastrarusuario','RegisterController@create');
+
+
 
 Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers');
 
