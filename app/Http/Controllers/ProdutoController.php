@@ -27,26 +27,30 @@ class ProdutoController extends Controller
             $file = $request->file('imagem');
             $extension = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extension;
-            $file->move('uploads/produtos/', $filename);
+            $upload = $request->imagem->storeAs('produtos', $filename);
             $produto->imagem = $filename;
         }
         $produto->save();
 
+        
         return view('add-produto', [
             'sucesso' => "Cadastro realizado com sucesso!"
         ]);
     }
 
     public function exibirProdutos(Request $request){
-            $produtos = Produto::all();
-
-            return view("loja",['produtos'=>$produtos]);
+        $produto = new Produto();
+        $produtos = $produto->all();
+        return view("loja",['produtos'=>$produtos]);
 
     }
 
-
-
 }
+
+    
+
+
+
 
 
 

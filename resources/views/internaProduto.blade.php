@@ -7,7 +7,7 @@
             <div class="col-6 mb-0"><a href="/home">Home</a> <span class="mx-2 mb-0">/</span> 
             <a href="/loja">Loja</a><span class="mx-2 mb-0">/</span>
             <strong class="text-black">Produto</strong></div>
-            <div class="col-6 mb-0"><a href="/carrinho"><img src="img/produtos_loja/carrinho.png"
+            <div class="col-6 mb-0"><a href="/carrinho"><img src="{{ asset ('img/produtos_loja/carrinho.png') }}"
                         class="sizeCarrinho pull-right" alt=""></a>
             </div>
         </div>
@@ -54,9 +54,9 @@
 
                     <div class="shop-right col-lg-6">
                         <div class="title">
-                            <h1 class="shorter product-name">Eco Tanque 80 litros Casológica</h1>
+                            <h1 class="shorter product-name"></h1>
                             
-                            <p class="availability in-stock">Disponibilidade: <span>Em estoque</span></p>
+                            <p class="availability in-stock">Disponibilidade: <span>unidades em estoque</span></p>
                             <div class="price-box">
                                 <span class="regular-price" id="product-price-1509">
                                     <span class="price">R$177,00</span> </span>

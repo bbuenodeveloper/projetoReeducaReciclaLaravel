@@ -45,7 +45,7 @@ Route::get('/marcadores/{cidade}/{materiaisIds}', 'MarcadoresController@marcador
 
 Route::get('/cidades', 'CidadeController@obterJson');
 
-Route::get('/internaProduto', 'InternaLojaController@interna');
+Route::get('/internaProduto/{id}', 'InternaLojaController@interna');
 
 Route::get('/add-cidade', 'CidadeController@addCidade');
 
@@ -82,6 +82,9 @@ Route::get('/relatorio-Materiais', 'RelatoriosController@relatorioMateriais');
 
 Route::get('/relatorio-Newsletter', 'RelatoriosController@relatorioNewsletter');
 
+
+
+
 // Rotas são definidas em ./vendor/laravel/framework/src/Illuminate/Routing/Router.php # auth
 Auth::routes();
 Route::get('/painel', 'PainelController@painel')->name('painel');
@@ -92,5 +95,13 @@ Route::get('/home', 'NewsletterController@home');
 Route::post('/home', 'NewsletterController@home');
 
 Route::get('/loja', 'ProdutoController@exibirProdutos');
+
+
+
+
+
+
+
+
 
 

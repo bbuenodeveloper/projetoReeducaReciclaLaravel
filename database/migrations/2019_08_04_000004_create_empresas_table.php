@@ -23,16 +23,16 @@ class CreateEmpresasTable extends Migration
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('nome', 200)->nullable();
-            $table->string('endereco', 200)->nullable();
-            $table->string('numero', 200)->nullable();
-            $table->string('complemento', 200)->nullable();
-            $table->integer('cep')->nullable();
-            $table->string('bairro', 200)->nullable();
-            $table->string('estado', 100)->nullable();
-            $table->string('telefone', 45)->nullable();
-            $table->string('latitude', 200)->nullable();
-            $table->string('longitude', 50)->nullable();
+            $table->string('nome', 200)->nullable()->default(null);
+            $table->string('endereco', 200)->nullable()->default(null);
+            $table->string('numero', 200)->nullable()->default(null);
+            $table->string('complemento', 200)->nullable()->default(null);
+            $table->integer('cep')->nullable()->default(null);
+            $table->string('bairro', 200)->nullable()->default(null);
+            $table->string('estado', 100)->nullable()->default(null);
+            $table->string('telefone', 45)->nullable()->default(null);
+            $table->string('latitude', 200)->nullable()->default(null);
+            $table->string('longitude', 50)->nullable()->default(null);
 
             $table->unique(["id"], 'id_UNIQUE');
         });

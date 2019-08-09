@@ -33,7 +33,7 @@
                                 <div class=" p-4">
                                     <h3><a href="shop-single.html" class="lojaProdutos">{{$produto->nome}}</a></h3>
                                     <p class="precoLoja font-weight-bold">R${{$produto->preco}}</p>
-                                    <a class="btn btn-success" href="/internaProduto ">VER PRODUTO</a>
+                                    <a class="btn btn-success" href="/internaProduto/{{$produto->id}} ">VER PRODUTO</a>
                                 </div>
                             </div>
                         
@@ -48,12 +48,10 @@
                 <div class="border p-4 rounded mb-4 mt-5">
                     <h3 class="mb-3 h6 text-uppercase text-black d-block">CATEGORIAS</h3>
                     <ul class="list-unstyled mb-0">
-                        <li class="mb-1"><a href="#" class="d-flex"><span>Categoria 1</span> <span
+                   @foreach($produtos as $produto)
+                        <li class="mb-1"><a href="#" class="d-flex"><span></span> <span
                                     class="text-black ml-auto">(5)</span></a></li>
-                        <li class="mb-1"><a href="#" class="d-flex"><span>Categoria 2</span> <span
-                                    class="text-black ml-auto">(5)</span></a></li>
-                        <li class="mb-1"><a href="#" class="d-flex"><span>Categoria 3</span> <span
-                                    class="text-black ml-auto">(5)</span></a></li>
+                    @endforeach
                     </ul>
                 </div>
 
