@@ -65,11 +65,8 @@ Route::get('/add-newsletter', 'NewsletterController@addnewsletter');
 Route::get('/add-categoria', 'CategoriaController@categorias');
 Route::get('/add-admin','AdminController@addAdmin');
 
-<<<<<<< HEAD
 Route::get('/add-produto', 'ProdutoController@exibirCategorias');
-=======
 
->>>>>>> 91e2a579cb870f3c01e052dacb2df95b7cd4f40a
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
 
 Route::post('/cadastrarempresa', 'EmpresaController@cadastrarEmpresa')->name('empresa.cadastrar');
@@ -96,13 +93,10 @@ Route::get('/relatorio-Materiais', 'RelatoriosController@relatorioMateriais');
 
 Route::get('/relatorio-Newsletter', 'RelatoriosController@relatorioNewsletter');
 
-<<<<<<< HEAD
 Route::get('/internaProduto', 'InternaLojaController@interna');
 
 
-=======
 // Rotas são definidas em ./vendor/laravel/framework/src/Illuminate/Routing/Router.php # auth
->>>>>>> 91e2a579cb870f3c01e052dacb2df95b7cd4f40a
 Auth::routes();
 Route::get('/painel', 'PainelController@painel')->name('painel');
 Route::get('/home', 'HomeController@index')->name('home');
