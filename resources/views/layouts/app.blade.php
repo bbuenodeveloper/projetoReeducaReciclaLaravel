@@ -95,12 +95,12 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     @if (Auth::user()->nivel_user === 0)
-                                    <a class="dropdown-item" href="{{ route('painel') }}">{{ __('Painel') }}</a>
+                                    <a class="dropdown-item" href="{{ route('painel') }}"><i class="fa fa-cog"></i><span class="space-menu"> {{ __('Painel') }} </span></a>
                                     @endif
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
-                                    {{ __('Sair') }}
+                                    <i class="fa fa-sign-out"></i><span class="space-menu"> {{ __('Sair') }} </span>
                                 </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

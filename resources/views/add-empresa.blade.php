@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-6 mx-auto">
+        <div class="col-12 mx-auto">
                 @if (isset($sucesso))
                 <div class="alert alert-success" role="alert">
                     <strong>Muito bem!</strong> {{ $sucesso }}
@@ -14,7 +14,7 @@
                 @endif
 <div class="jumbotron border rounded border-success">
         <center><div class="logoRegister mb-4">
-                <a href="index.html">
+                <a href="/add-empresa">
                     <img class="logoRegister mb-3" src="img/logologin.png" alt>
                 </a>
             <div></center>
@@ -62,7 +62,18 @@
                                             <label for="longitude">Longitude</label>
                                             <input type="text" name="longitude" class="form-control" placeholder="Digite a longitude">
                                             </div>
-                                            <div class="form-group row">
+                                            <div class="form-group">
+
+                                                <label for="cidade">Cidade</label>
+                                                <select class="custom-select" id="cidade" name="cidade" aria-label="Example select with button addon" required>
+                                                @foreach ($cidades as $cidade)
+
+                                                    <option value="{{ $cidade->id }}">{{ $cidade->cidade }}</option>
+                                                @endforeach
+                                                </select>
+
+                                            </div>
+                                            {{-- <div class="form-group row">
                                                     <label class="col-sm-2">Cidades</label>
                                                     <div class="col-sm-10">
                                                         @foreach ($cidades as $cidade)
@@ -74,7 +85,7 @@
                                                         </div>
                                                         @endforeach
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                                 <div class="form-group row">
                                                     <label class="col-sm-2">Materiais</label>
                                                     <div class="col-sm-10">
