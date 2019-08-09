@@ -31,8 +31,6 @@ Route::get('/faq', 'FaqController@faq');
 
 Route::get('/loja', 'LojaController@loja');
 
-Route::get('/add-produto', 'CategoriaController@exibirCategorias');
-
 Route::get('/loja', 'ProdutoController@exibirProdutos');
 
 Route::get('/carrinho', 'CarrinhoController@carrinho');
@@ -62,10 +60,7 @@ Route::get('/add-produto', 'ProdutoController@addProduto');
 
 Route::get('/add-newsletter', 'NewsletterController@addnewsletter');
 
-Route::get('/add-categoria', 'CategoriaController@categorias');
 Route::get('/add-admin','AdminController@addAdmin');
-
-Route::get('/add-produto', 'ProdutoController@exibirCategorias');
 
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
 
@@ -75,10 +70,6 @@ Route::post('/cadastrarmaterial', 'MaterialController@cadastrarMaterial')->name(
 
 Route::post('/cadastrarcidade', 'CidadeController@cadastrarCidade')->name('cidade.cadastrar');
 
-Route::post('/cadastrarcategoria', 'CategoriaController@cadastrarCategoria')->name('categoria.cadastrar'); 
-
-Route::get('/internaProduto/{id}', 'InternaLojaController@interna');
-Route::get('/internaProduto/{id}', 'InternaLojaController@exibirProdutoUnico');
 
 Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')->name('newsletter.cadastrar');
 
@@ -94,7 +85,7 @@ Route::get('/relatorio-Materiais', 'RelatoriosController@relatorioMateriais');
 
 Route::get('/relatorio-Newsletter', 'RelatoriosController@relatorioNewsletter');
 
-Route::get('/internaProduto', 'InternaLojaController@interna');
+
 
 
 // Rotas são definidas em ./vendor/laravel/framework/src/Illuminate/Routing/Router.php # auth
@@ -106,8 +97,6 @@ Route::get('/home', 'NewsletterController@home');
 
 Route::post('/home', 'NewsletterController@home');
 
-Route::get('/loja', 'CategoriaController@exibirCategorias')->name('loja');
-Route::get('/loja', 'ProdutoController@exibirProdutos');
 
 
 
