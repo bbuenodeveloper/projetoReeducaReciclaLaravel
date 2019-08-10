@@ -41,8 +41,9 @@ class EmpresaController extends Controller
         }
 
         // dd($_POST);
+
         return view('add-empresa', [
-            'sucesso' => "Cadastro realizado com sucesso!",
+            'success' => "Cadastro realizado com sucesso!",
             'materiais' =>  material::All(),
             'cidades' =>  cidade::All(),
             ]

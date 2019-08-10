@@ -180,7 +180,36 @@
                                 </div>
                             </form>
                         </ul>
+                        <script>
+                            const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'botton-end',
+                            showConfirmButton: false,
+                            timer: 3000
+                            })
+
+                            Toast.fire({
+                            type: 'success',
+                            title: 'Signed in successfully'
+                            })
+
+                        </script>
+                        <script>
+                                const Toast = Swal.mixin({
+                                toast: true,
+                                position: 'botton-end',
+                                showConfirmButton: false,
+                                timer: 3000
+                                })
+
+                                Toast.fire({
+                                type: 'error',
+                                title: 'Signed in successfully'
+                                })
+
+                            </script>
                         @if ($errors->any())
+
                         <div class="alert alert-danger">
                             <ul>
                                 @foreach ($errors->all() as $error)
@@ -193,7 +222,8 @@
 
                         @if(isset($resultado))
                         @if($resultado)
-                        <div class="alert alert-success">
+
+                       <div class="alert alert-success">
                             <h1>E-mail cadastrado com sucesso</h1>
                         </div>
                         @else
@@ -232,6 +262,9 @@
         <link href="{{asset('css/jquery.fancybox.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('css/stylesa361.css?ver=2.3')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('css/beta-popup.css')}}" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+        <link rel="stylesheet" href="{{asset('sweetalert/dist/sweetalert2.min.css')}}">
 
 
 
@@ -240,6 +273,7 @@
         <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         {{-- <script src="{{asset('js/app.js') }}" defer></script> --}}
+        <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>
         <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->
         <script src="{{asset('js/recicla.min.js')}}"></script>
     </body>

@@ -16,7 +16,9 @@ class CategoriaController extends Controller
             $categoria->nome = $request->nome;
             $categoria->save();
 
-            return response()->json(['categoria' => "Categoria cadastrada com sucesso!"]);
+            return view('add-categoria', [
+                'success' => "Cadastro realizado com sucesso!"
+            ]);
     }
 
 }

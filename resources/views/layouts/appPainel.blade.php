@@ -41,7 +41,10 @@
         <link href="{{asset('css/chartist.css')}}" rel="stylesheet">
         <link href="{{asset('css/rickshaw.min.css')}}" rel="stylesheet">
         <link rel="stylesheet" href="{{asset('css/slim.css')}}">
-        <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+        <link rel="stylesheet" href="{{asset('sweetalert/dist/sweetalert2.min.css')}}">
 
         <title>Painel</title>
 
@@ -236,13 +239,15 @@
         <script src="{{asset('js/jquery.js')}}"></script>
         <script src="{{asset('js/popper.js')}}"></script>
         <script src="{{asset('js/bootstrap.js')}}"></script>
-        <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->
-        <script src="{{asset('js/recicla.min.js')}}"></script>
+
         <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
-
+        <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>
+        <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
+        <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->
+        <script src="{{asset('js/recicla.min.js')}}"></script>
 
 
 

@@ -21,6 +21,8 @@ class MaterialController extends Controller
 
 
 
-        return redirect()->back()->with('alert', 'Material cadastrado com sucesso!');
+        return view('add-material', [
+            'success' => "Cadastro realizado com sucesso!"
+        ]);
     }
 }

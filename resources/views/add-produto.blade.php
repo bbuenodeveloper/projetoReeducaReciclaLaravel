@@ -5,12 +5,19 @@
 <div class="container">
     <div class="row">
         <div class="col-12 mt-5 mb-5">
+                <script>
+                        Swal.fire({
+                          type: 'success',
+                          text: 'Cadastro realizado com sucesso!',
 
-            @if (isset($sucesso))
+                        })
+                                        </script>
+
+            {{-- @if (isset($sucesso))
             <div class="alert alert-success" role="alert">
                 <strong>Muito bem!</strong> {{ $sucesso }}
             </div>
-            @endif
+            @endif --}}
             <div class="jumbotron  border rounded border-success">
                 <center>
                     <div class="logoRegister mb-4">

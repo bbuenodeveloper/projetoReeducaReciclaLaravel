@@ -35,7 +35,7 @@ class ProdutoController extends Controller
 
 
         return view('add-produto', [
-            'sucesso' => "Cadastro realizado com sucesso!"
+            'success' => "Cadastro realizado com sucesso!"
         ]);
     }
 

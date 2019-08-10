@@ -30,7 +30,7 @@ class NewsletterController extends Controller
 
 
 
-            return view ('home',["resultado"=>$resultado]);
+            return view ('home',["success"=>$resultado]);
 
     }
 
@@ -39,7 +39,9 @@ class NewsletterController extends Controller
         $newsletter->email = $request->email;
         $newsletter->save();
 
-        return response()->json(['cidade' => "Newsletter cadastrada com sucesso!"]);
+        return view('add-newsletter', [
+            'success' => "Cadastro realizado com sucesso!"
+        ]);
 
 
 
