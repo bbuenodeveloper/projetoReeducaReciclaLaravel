@@ -30,7 +30,7 @@ class NewsletterController extends Controller
 
 
 
-            return view ('home',["success"=>$resultado]);
+            return view ('home',["resultado"=>$resultado]);
 
     }
 
