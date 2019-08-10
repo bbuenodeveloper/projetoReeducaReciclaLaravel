@@ -13,7 +13,7 @@ class CategoriaController extends Controller
 
     public function cadastrarCategoria(Request $request){
         $categoria = new Categoria();
-            $categoria->nome = $request->nome;
+            $categoria->nome_categoria = $request->nome_categoria;
             $categoria->save();
 
             return view('add-categoria', [
