@@ -10,7 +10,8 @@
         <tr>
           <th>Id</th>
           <th>Materiais</th>
-
+          <th>Editar</th>
+          <th>Apagar</th>
         </tr>
       </thead>
       <tbody>
@@ -19,7 +20,8 @@
             <tr>
             <td>{{$material->id}}</td>
             <td>{{$material->tipoMaterial}}</td>
-
+            <td><button class="btn btn-success">Editar</button></td>
+            <td><button class="btn btn-danger">Apagar</button></td>
 
             </tr>
           @endforeach

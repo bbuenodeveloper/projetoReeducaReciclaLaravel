@@ -5,13 +5,6 @@
 <div class="container">
     <div class="row">
         <div class="col-12 mt-5 mb-5">
-                <script>
-                        Swal.fire({
-                          type: 'success',
-                          text: 'Cadastro realizado com sucesso!',
-
-                        })
-                                        </script>
 
             {{-- @if (isset($sucesso))
             <div class="alert alert-success" role="alert">

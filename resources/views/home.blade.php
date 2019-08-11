@@ -36,7 +36,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 			</p>
 			<!-- <h5>Saiba onde descartar seus resíduos</h5> -->
 			<p></p>
-			<a href="\mapa" class="btn btn-success btn-card">Acessar o Mapa</a>
+			<a href="\mapa" class="btn btn-success btn-card">ACESSAR O MAPA</a>
 
 		</div>
 	</div>
@@ -95,7 +95,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 					</h1>
 
 					<p class="card-text"> Você já pensou que algum produto poderia ser feito com material reciclado? O ReciclaMaps pensou, e temos vários parceiros que pensam como a gente, por isso nossa loja virtual tem uma variedade enorme de produtos sustentáveis e com processo de produção consciente.</p>
-					<a href="\loja" class="btn btn-success btn-card">Acessar a Loja</a>
+					<a href="\loja" class="btn btn-success btn-card">ACESSAR A LOJA</a>
 
 				</article>
 			</div>

@@ -12526,8 +12526,8 @@ textarea.parsley-success:focus {
     .slim-navbar .sub-item .sub-with-sub {
       position: relative; }
       .slim-navbar .sub-item .sub-with-sub::after {
-        content: '\f125';
-        font-family: "Ionicons";
+        content: '\f054';
+        font-family: Fontawesome;
         font-size: 10px;
         position: absolute;
         top: 9px;

@@ -28,8 +28,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <link rel="stylesheet" href="{{asset('css/app.css')}}">
-        <link rel="stylesheet" href="{{asset('css/style.css')}}">
+
         <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
         <link href="{{asset('css/recicla-guide.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('css/dropdown.min.css')}}" rel="stylesheet" type="text/css" />
@@ -40,11 +39,12 @@
         <link href="{{asset('css/ionicons.css')}}" rel="stylesheet">
         <link href="{{asset('css/chartist.css')}}" rel="stylesheet">
         <link href="{{asset('css/rickshaw.min.css')}}" rel="stylesheet">
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
         <link rel="stylesheet" href="{{asset('css/slim.css')}}">
-
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-
-        <link rel="stylesheet" href="{{asset('sweetalert/dist/sweetalert2.min.css')}}">
+        <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+        <link href="{{asset('css/mdb.css')}}" rel="stylesheet">
+        <link href="{{asset('css/mdb.lite.css')}}" rel="stylesheet">
 
         <title>Painel</title>
 
@@ -56,6 +56,7 @@
     <?php if (false): ?>
     <?php endif ?>
     <div id="app">
+
 
 
 
@@ -234,21 +235,28 @@
 
 
 
-        <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
-        <script src="{{asset('js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('js/jquery.js')}}"></script>
-        <script src="{{asset('js/popper.js')}}"></script>
-        <script src="{{asset('js/bootstrap.js')}}"></script>
 
+        <link rel="stylesheet" href="{{asset('sweetalert/dist/sweetalert2.min.css')}}">
+
+        <script src="{{asset('js/jquery.js')}}"></script>
         <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
+
+
+
         <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>
+        <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
+        <script src="{{asset('js/post.js')}}"></script>
         <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
+        <script src="http://malsup.github.com/jquery.form.js"></script>
         <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->
         <script src="{{asset('js/recicla.min.js')}}"></script>
-
+        <script src="{{asset('js/popper.js')}}"></script>
+        <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('js/mdb.js')}}"></script>
 
 
 

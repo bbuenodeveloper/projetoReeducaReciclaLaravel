@@ -6,13 +6,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12 mx-auto">
-                <script>
-Swal.fire({
-  type: 'success',
-  text: 'Cadastro realizado com sucesso!',
 
-})
-                </script>
                 {{-- @if (isset($sucesso))
                 <div class="alert alert-success" role="alert">
                     <strong>Muito bem!</strong> {{ $sucesso }}
@@ -25,7 +19,7 @@ Swal.fire({
                 </a>
             <div></center>
     <h1 class="text-center mb-2">Cadastro de Cidades</h1>
-    <form action="{{ route('cidade.cadastrar') }}" method="post" class="user-info-setting-form" enctype="multipart/form-data">
+    <form data-route="{{ route('cidade.cadastrar') }}" method="post" id="myform" class="user-info-setting-form" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
         <label for="cidade">Cidade</label>
@@ -35,13 +29,45 @@ Swal.fire({
         <label for="imagem">Imagem</label>
         <input type="file" name="imagem" class=" form-control" >
         </div>
-        <button type="submit" class="btn btn-card btn-primary" onclick="enviarForm(event)">CADASTRAR</button>
+        <button type="submit" class="btn btn-card btn-primary" >CADASTRAR</button>
     </form>
 </div>
 </div>
 </div>
 </div>
 
+
+
+    {{-- <script>
+        $(document).ready(function() {
+            $("myform").ajaxForm({
+                success: function(executeSweet){
+
+                }
+            });
+        });
+    </script> --}}
+{{-- <script>
+    $("#myform").submit(function(e) {
+    var url = "{{ route('cidade.cadastrar') }}";
+    $.ajax({
+           type: "POST",
+           url: url,
+           data: $("#myform").serialize(),
+           success: function()
+           {
+            Swal.fire({
+        type: 'success',
+        text: 'Cadastro realizado com sucesso!',
+
+        })
+           }
+         });
+
+    e.preventDefault();// esse comando serve para previnir que o form realmente realize o submit e atualize a tela.
+});
+
+</script> --}}
 
 
 
