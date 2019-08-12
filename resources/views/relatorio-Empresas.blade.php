@@ -2,14 +2,14 @@
 
 @section('content')
 
-<div class="container-fluid">
+<div class="container-fluid dataTables_wrapper dt-bootstrap4" id="dtBasicExample_wrapper">
     <div class="row">
         <div class="col-12">
-    <table class="table table-hover table-striped table-bordered table-sm">
-      <thead class="thead-dark">
+    <table id="align-table" class="table table-hover table-sm table-striped table-bordered table-sm ">
+      <thead class="thead-light">
         <tr>
-          <th>Id</th>
-          <th>Nome</th>
+          <th class="th-sm">Id</th>
+          <th class="th-sm">Nome</th>
           <th>Endereço</th>
           <th>Numero</th>
           <th>Complemento</th>
@@ -48,6 +48,13 @@
         </div>
     </div>
   </div>
+
+  <script>
+        $(document).ready(function () {
+        $('#align-table').DataTable();
+        $('.dataTables_length').addClass('bs-select');
+        });
+  </script>
 
 
   @endsection

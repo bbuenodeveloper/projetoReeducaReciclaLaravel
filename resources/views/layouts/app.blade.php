@@ -209,7 +209,8 @@
                 </nav>
 
                 <div class="foot5 mb-0 container-fluid justify-content-center">
-                    <p class="mb-3">Copyrights © 2019 Recicla Maps - Todos os Direitos Reservados</p>
+                    <p class="mb-3" style="font-family: Roboto,sans-serif;
+                    font-weight: 300;">Copyrights © <strong> Recicla Maps </strong> - Todos os Direitos Reservados</p>
                 </div>
             </footer>
         </div>

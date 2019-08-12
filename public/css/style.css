@@ -1554,7 +1554,7 @@ a.efeitoTransicaoLoja:hover {
     margin-bottom: 3rem;
     padding: 1rem;
     border-radius: .125rem;
-    background-color: #00A26A;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 
 }
 

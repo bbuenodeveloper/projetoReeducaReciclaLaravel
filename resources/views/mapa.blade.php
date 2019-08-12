@@ -20,9 +20,9 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
                     </a>
                 </div>
                 <div class="main_cityinfo">
-                    <div class="dropdown">
-                        <button class="btn btn-dark dropdown-toggle botao-pesquisa" type="button" data-toggle="dropdown"><span class="label" data-id="0">Selecione a cidade</span><span class="caret"></span></button>
-                        <ul class="dropdown-menu lista-cidades">
+                    <div class="dropdown ">
+                        <button class="btn btn-dark dropdown-toggle botao-pesquisa " type="button" data-toggle="dropdown"><span class="label" data-id="0">Selecione a cidade</span><span class="caret"></span></button>
+                        <ul class="dropdown-menu lista-cidades ">
                             <li><a>Selecione a cidade</a></li>
                         </ul>
                     </div>

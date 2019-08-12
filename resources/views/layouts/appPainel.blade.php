@@ -39,12 +39,14 @@
         <link href="{{asset('css/ionicons.css')}}" rel="stylesheet">
         <link href="{{asset('css/chartist.css')}}" rel="stylesheet">
         <link href="{{asset('css/rickshaw.min.css')}}" rel="stylesheet">
+        <link rel="stylesheet" href="{{asset('css/slim.css')}}">
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
-        <link rel="stylesheet" href="{{asset('css/slim.css')}}">
         <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
         <link href="{{asset('css/mdb.css')}}" rel="stylesheet">
         <link href="{{asset('css/mdb.lite.css')}}" rel="stylesheet">
+        <link href="{{asset('css/addons/datatables.min.css')}}" rel="stylesheet">
+        <link href="{{asset('css/addons/datatables-select.min.css')}}" rel="stylesheet">
 
         <title>Painel</title>
 
@@ -257,6 +259,11 @@
         <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <script src="{{asset('js/mdb.js')}}"></script>
+        <script href="{{asset('js/addons/datatables.min.js')}}" rel="stylesheet"></script>
+        <script href="{{asset('js/addons/datatables-select.min.js')}}" rel="stylesheet"></script>
+
+
+
 
 
 

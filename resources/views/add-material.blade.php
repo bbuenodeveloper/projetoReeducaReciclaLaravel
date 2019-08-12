@@ -18,7 +18,7 @@
             {{-- <div class="jumbotron border rounded border-success"> --}}
                 <center>
                     <div class="form-header mb-4 mt-4">
-                            <h3 class="text-center mb-2">Cadastro de Material</h3>
+                            <h3 class="text-center mb-2" style="color:black">Cadastro de Material</h3>
                         {{-- <a href="index.html">
                             <img class="logoRegister mb-3" src="img/logologin.png" alt>
                         </a> --}}
@@ -28,10 +28,12 @@
                 <form action="{{ route('material.cadastrar') }}" method="post" class="user-info-setting-form"
                     enctype="multipart/form-data">
                     @csrf
+
                     <div class="md-form mt-5">
-                        <label for="tipoMaterial">Material</label>
-                        <input type="text" name="tipoMaterial" class="form-control" placeholder="Digite o material">
-                    </div>
+                            <i class="fa fa-recycle prefix grey-text"></i>
+                            <input type="text" name="tipoMaterial" id="materialFormCardNameEx" class="form-control">
+                            <label for="tipoMaterial" class="font-weight-light">Digite o material</label>
+                          </div>
 
                     <button type="submit" class="btn btn-success btn-rounded waves-effect waves-light">CADASTRAR</button>
                 </form>
