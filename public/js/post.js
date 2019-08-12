@@ -1,25 +1,31 @@
 $(function(){
     $('#myform').submit(function(e){
-        var route = $('#myform').data('route');
-        var myform = $(this);
+        e.preventDefault();
+        var route = document.querySelector('#myform').attributes.dataroute.value;
+        var myform = document.querySelector('#myform');
+
+        let dados = new FormData(myform);
+
 
         $.ajax({
             type: 'POST',
+            processData: false,
+            contentType: false,
             url: route,
-            data: myform.serialize(),
-            success: function (executeSweet) {
+            data: dados,
+            success: function() {
 
-                    Swal.fire({
-                    type: 'success',
-                    text: 'Cadastro realizado com sucesso!',
+                    executeSweet();
 
-                    });
 
+            },
+            error : function() {
+                executeSweetError();
             }
 
 
         });
-            // e.preventDefault();
+
 
     });
 

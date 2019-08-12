@@ -49,12 +49,8 @@
     </div>
   </div>
 
-  <script>
-        $(document).ready(function () {
-        $('#align-table').DataTable();
-        $('.dataTables_length').addClass('bs-select');
-        });
-  </script>
+
 
 
   @endsection
+

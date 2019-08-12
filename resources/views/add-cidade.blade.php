@@ -19,7 +19,7 @@
                 </a>
             <div></center>
     <h1 class="text-center mb-2">Cadastro de Cidades</h1>
-    <form data-route="{{ route('cidade.cadastrar') }}" method="post" id="myform" class="user-info-setting-form" enctype="multipart/form-data">
+    <form dataroute="{{ route('cidade.cadastrar') }}" method="post" id="myform" class="user-info-setting-form" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
         <label for="cidade">Cidade</label>

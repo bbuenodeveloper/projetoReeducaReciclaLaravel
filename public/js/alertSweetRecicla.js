@@ -6,7 +6,14 @@ function executeSweet(){
         })
 }
 
+function executeSweetError(){
+    Swal.fire({
+    type: 'error',
+    title: 'Oops...',
+    text: 'Tente Novamente!',
 
+    })
+}
 
 
 //                     const Toast = Swal.mixin({

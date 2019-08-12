@@ -263,7 +263,12 @@
         <script href="{{asset('js/addons/datatables-select.min.js')}}" rel="stylesheet"></script>
 
 
-
+        <script>
+                $(document).ready(function () {
+                $('#align-table').DataTable();
+                $('.dataTables_length').addClass('bs-select');
+                });
+          </script>
 
 
 
