@@ -460,74 +460,30 @@ p#frase {
 
 /*Início Configuração Footer*/
 
-.rodape{
-    background: #000000;
-    padding-top:30px;
-    padding-bottom:30px;
-    font-size: 0.9rem;
-    font-family: 'Poppins';
-    margin-bottom: 0;
-}
 
-.nav-item-newsletter{
-    width:100%;
+
+.btn-instagram {
+    background: #dd131b;
+    border-color: #dd131b;
+    color: #fff;
+    width: 39px;
 
 }
 
-.div-icones{
-    margin:30px;
-    display: inline-flex;
+.btn-facebook-footer {
+    background: #3b5998;
+    border-color: #3b5998;
+    color: #fff;
+    width: 39px;
 
 }
 
-.newsletter-email{
-     width:100%;
- }
+.btn-twitter-footer {
+    background: #1da1f2;
+    border-color: #1da1f2;
+    color: #fff;
+    width: 39px;
 
-.footer-logo-size{
-   margin-top:40px;
-   margin-left:60px;
-}
-
-.marginFooter{
-    margin:20px;
-}
-
-.nav-item-redes-sociais{
-    padding:10px;
-}
-
-.menu-footer{
-   color:white;
-   font-weight:500;
-}
-
-.foot5{
-    background-color: #000000;
-    color:white;
-    font-size: 0.8rem;
-    line-height: 1.0rem;
-    display:flex;
-    justify-content: center;
-
-}
-
-.align-footer {
-    text-align: left !important;
-}
-
-.ul-icones-footer{
-    display: flex;
-    justify-content: space-around;
-    direction:row;
-    list-style: none;
-    width:140px;
-    margin-right:0;
-}
-
-.icones-footer{
-    width:60px;
-    font-size: 25px;
 }
 
 /* Inicio configuração formulario de login */
@@ -1557,6 +1513,19 @@ a.efeitoTransicaoLoja:hover {
     background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 
 }
+
+/* POLITICA DE PRIVACIDADE */
+
+.font-politica {
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.config-card-politica h1, h4 {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
 
 
 

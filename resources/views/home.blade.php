@@ -45,28 +45,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 
 <!-- fim banner -->
-<main class="container-fluid ">
-	<!-- inicio reciclagem divulgaçao -->
 
-	<div class="row no-gutters recicla-texto">
-		<div class="col-md-6 texto-info-home px-3">
-			<article>
-				<h1 class="titulo-card-home d-none d-sm-none d-md-block d-lg-block d-xl-block ">Por que <span class="color-title">reciclar ?</span>
-				</h1>
-				<h2 class="titulo-card-home d-block d-sm-block d-md-none d-lg-none d-xl-none">Por que <span class="color-title">reciclar ?</span>
-				</h2>
-				<p class="card-text">  Sabemos que o consumo de recursos naturais já é maior do que o planeta pode fornecer e essa realidade tende a crescer cada vez mais rápido. A reciclagem é a saída para um consumo mais responsável e o ReciclaMaps facilita sua busca pelos pontos de coleta adequados. </p>
-
-			</article>
-		</div>
-		<div class="col-md-6 img-texto">
-			<img src="{{asset('img/nature2.png')}}" class="img-fluid " alt="Por que reciclar?">
-		</div>
-
-	</div>
-</main>
-
-<!-- fim reciclagem divulgação -->
 
 <main class="container-fluid no-gutters main-pag-home">
 
@@ -86,9 +65,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 		<div class="row no-gutters recicla-texto px-3">
 
-			<div class="col-md-6 img-texto order-2 order-md-1 order-sm-1 order-lg-1 order-xl-1 d-block d-sm-block d-md-block d-lg-block d-xl-block">
-				<img src="{{asset('img/lojavirtual.jpg')}}" class="img-fluid " alt="Loja virtual">
-			</div>
+
 			<div class="col-md-6 order-1 order-md-1 order-sm-1 order-lg-1 order-xl-1 texto-info-home px-3 d-block d-sm-block d-md-block d-lg-block d-xl-block px-3">
 				<article>
 					<h1 class="titulo-card-home-loja d-block d-sm-block d-md-block d-lg-block d-xl-block ">Visite nossa loja <span class="color-title">virtual!</span>
@@ -98,7 +75,10 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 					<a href="\loja" class="btn btn-success btn-card">ACESSAR A LOJA</a>
 
 				</article>
-			</div>
+            </div>
+            <div class="col-md-6 img-texto order-2 order-md-1 order-sm-1 order-lg-1 order-xl-1 d-block d-sm-block d-md-block d-lg-block d-xl-block">
+                    <img src="{{asset('img/lojavirtual.png')}}" class="img-fluid " alt="Loja virtual">
+                </div>
 		</div>
 	</main>
 
@@ -107,7 +87,28 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 	<!-- Banner topo mobile loja -->
 
+    <main class="container-fluid ">
+            <!-- inicio reciclagem divulgaçao -->
 
+            <div class="row no-gutters recicla-texto">
+
+                <div class="col-md-6 img-texto">
+                    <img src="{{asset('img/nature2.png')}}" class="img-fluid " alt="Por que reciclar?">
+                </div>
+                <div class="col-md-6 texto-info-home px-3">
+                        <article>
+                            <h1 class="titulo-card-home d-none d-sm-none d-md-block d-lg-block d-xl-block ">Por que <span class="color-title">reciclar ?</span>
+                            </h1>
+                            <h2 class="titulo-card-home d-block d-sm-block d-md-none d-lg-none d-xl-none">Por que <span class="color-title">reciclar ?</span>
+                            </h2>
+                            <p class="card-text">  Sabemos que o consumo de recursos naturais já é maior do que o planeta pode fornecer e essa realidade tende a crescer cada vez mais rápido. A reciclagem é a saída para um consumo mais responsável e o ReciclaMaps facilita sua busca pelos pontos de coleta adequados. </p>
+
+                        </article>
+                    </div>
+            </div>
+        </main>
+
+        <!-- fim reciclagem divulgação -->
 
 
 

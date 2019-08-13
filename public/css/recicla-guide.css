@@ -14,7 +14,7 @@
 .footer .emergency i{ color:#fff; display:block; font-size:65px; }
 .footer .emergency .text{ margin:25px 0 0 0; font-size:18px; font-family: 'Raleway', sans-serif; font-weight:800; color:#fff; display:block; text-transform: uppercase;}
 .footer .emergency .number{  margin: 6px 0 0 0;  display: block;  color: #fff;  font-size: 50px;  font-weight: 800;}
-.footer .emergency img{margin:10px 0 0 0;  }
+.footer .emergency img{margin:10px 0 0 0; width: 200px !important  }
 
 
 .main-footer{ padding:70px 0;}
@@ -37,6 +37,7 @@
 .main-footer .newsletter .signup-text span{color:#fff;}
 .main-footer .newsletter .form{ margin:20px 0 0 0;}
 .main-footer .newsletter .form input[type=text]{ background: #373e4c;  border: solid 1px #7b8498;  border-radius: 5px;  width: 100%;  color: #fff;  padding: 10px 14px;  font-size: 14px;  margin: 0 0 9px 0;}
+.main-footer .newsletter .form input[type=email]{ background: #373e4c;  border: solid 1px #7b8498;  border-radius: 5px;  width: 100%;  color: #fff;  padding: 10px 14px;  font-size: 14px;  margin: 0 0 9px 0;}
 .main-footer .newsletter .form input[type=submit]{ background: #fff;  border: none;  text-transform: uppercase;  color: #373e4c;  font-weight: 700;  font-size: 14px;  padding: 10px 25px;  border-radius: 5px;}
 .main-footer .newsletter .form input[type=submit]:hover{ color:#fff; }
 

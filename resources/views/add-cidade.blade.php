@@ -23,11 +23,11 @@
         @csrf
         <div class="form-group">
         <label for="cidade">Cidade</label>
-        <input type="text" name="cidade" class="form-control" placeholder="Digite a cidade">
+        <input type="text" name="cidade" class="form-control" placeholder="Digite a cidade" required>
         </div>
         <div class="form-group">
         <label for="imagem">Imagem</label>
-        <input type="file" name="imagem" class=" form-control" >
+        <input type="file" name="imagem" class=" form-control" required>
         </div>
         <button type="submit" class="btn btn-card btn-primary" >CADASTRAR</button>
     </form>
