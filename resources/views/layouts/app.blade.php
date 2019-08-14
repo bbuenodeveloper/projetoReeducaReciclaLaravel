@@ -51,21 +51,23 @@
         <header class="greennature-header-wrapper header-style-5-wrapper greennature-header-with-top-bar">
             <!-- top navigation -->
             <nav class="navbar navbar-expand-md navbar-light bg-dark shadow-sm active p-0 ">
-                    <div class="container">
+                    <div class="container responsive-text">
 
 
                         {{-- left --}}
-                            <div class="top-navigation-left">
+                            <div class="top-navigation-left ">
                                     <div class="top-navigation-left-text text-white">
-                                        Bem Vindo a Recicla Maps </div>
+                                        Bem Vindo à Recicla Maps </div>
                             </div>
+
+
                         {{-- fim left --}}
 
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                        {{-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                             <span class="navbar-toggler-icon"></span>
-                        </button>
+                        </button> --}}
 
-                        <div class="col-md-6 " id="navbarSupportedContent">
+                        <div class="top-navigation-right " id="navbarSupportedContent">
 
                             <!-- Right Side Of Navbar -->
 
