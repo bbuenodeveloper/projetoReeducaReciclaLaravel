@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="pt-BR">
 
 
 <head>
@@ -51,21 +51,23 @@
         <header class="greennature-header-wrapper header-style-5-wrapper greennature-header-with-top-bar">
             <!-- top navigation -->
             <nav class="navbar navbar-expand-md navbar-light bg-dark shadow-sm active p-0 ">
-                    <div class="container">
+                    <div class="container responsive-text">
 
 
                         {{-- left --}}
-                            <div class="top-navigation-left">
+                            <div class="top-navigation-left ">
                                     <div class="top-navigation-left-text text-white">
-                                        Bem Vindo a Recicla Maps </div>
+                                        Bem Vindo à Recicla Maps </div>
                             </div>
+
+
                         {{-- fim left --}}
 
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                        {{-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                             <span class="navbar-toggler-icon"></span>
-                        </button>
+                        </button> --}}
 
-                        <div class="col-md-6 " id="navbarSupportedContent">
+                        <div class="top-navigation-right " id="navbarSupportedContent">
 
                             <!-- Right Side Of Navbar -->
 
@@ -89,7 +91,7 @@
                                 @else
                                 <li class="nav-item dropdown">
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><i class="fas fa-user text-white p-2"></i>
-                                        {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{Auth::user()->name}}<span class="caret"></span>
                                     </a>
 
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -245,7 +247,7 @@
                              <li><a href="/mapa">Mapa</a></li>
                              <li><a href="/termos">Termos de Uso</a></li>
                              <li><a href="/loja">Loja</a></li>
-                             <li><a href="/politica">Politica de Privacidade</a></li>
+                             <li><a href="/privacidade">Politica de Privacidade</a></li>
                              <li><a href="/blog">Blog</a></li>
 
                          </ul>

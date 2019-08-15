@@ -39,9 +39,6 @@ class CidadeController extends Controller
         $cidade->save();
 
 
-
-
-
         // return view('add-cidade', [
         //     'success' => "Cadastro realizado com sucesso!"
         // ]);

@@ -108,7 +108,7 @@ Route::get('/home', 'NewsletterController@home')->name('home');
 
 Route::post('/home', 'NewsletterController@home');
 
-Route::get('/loja', 'ProdutoController@exibirProdutos');
+Route::get('/loja', 'ProdutoController@exibirProdutos')->middleware('auth');
 
 Route::get('/adminlista','AdminController@mostrarLista');
 
