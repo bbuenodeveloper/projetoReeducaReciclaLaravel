@@ -49,19 +49,6 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 <main class="container-fluid no-gutters main-pag-home">
 
-	<!-- inicio propaganda loja -->
-		<!-- <div class="mt-4 mb-4">
-			<div class="d-none d-sm-none d-md-block d-lg-block d-xl-block">
-				<a href="loja.php" role="button"
-				title="Visite nossa loja virtual - Trabalhamos com produtos feitos de material reciclado.">
-				<div class="card bg-dark text-white card-banner">
-					<img src="img/bannerloja2.jpg" class="card-img" alt="Visite nossa loja virtual">
-					<div class="card-img-overlay">
-					</div>
-				</a>
-			</div>
-
-		</div> -->
 
 		<div class="row no-gutters recicla-texto px-3">
 

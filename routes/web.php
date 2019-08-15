@@ -41,6 +41,10 @@ Route::get('/privacidade', 'PrivacidadeController@privacidade');
 
 Route::get('/termos', 'TermosController@termos');
 
+Route::get('/blog', 'BlogController@blog');
+
+Route::get('/blog-details', 'BlogController@blogdetails');
+
 Route::get('/marcadores/{cidade}/{materiaisIds}', 'MarcadoresController@marcadores')->name('marcadores');
 
 Route::get('/cidades', 'CidadeController@obterJson');
