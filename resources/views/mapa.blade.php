@@ -12,6 +12,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 ?>
 
 <div style="position: relative;">
+
         <div class="panel city_panel">
             <div class="city_head">
                 <div class="photo">

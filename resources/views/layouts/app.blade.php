@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="pt-BR">
 
 
 <head>
@@ -247,7 +247,7 @@
                              <li><a href="/mapa">Mapa</a></li>
                              <li><a href="/termos">Termos de Uso</a></li>
                              <li><a href="/loja">Loja</a></li>
-                             <li><a href="/politica">Politica de Privacidade</a></li>
+                             <li><a href="/privacidade">Politica de Privacidade</a></li>
                              <li><a href="/blog">Blog</a></li>
 
                          </ul>
