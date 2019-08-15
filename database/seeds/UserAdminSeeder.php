@@ -28,6 +28,5 @@ class UserAdminSeeder extends Seeder
             'nivel_user' => 0,
             'telefone' => 12345678
         ]);
-
     }
 }
