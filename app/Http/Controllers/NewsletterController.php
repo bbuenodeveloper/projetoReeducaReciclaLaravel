@@ -25,6 +25,7 @@ class NewsletterController extends Controller
         ],$messages)->validate();
 
         $novaNews = new Newsletter();
+        $novaNews->name = $request->name;
         $novaNews->email = $request->email;
         $resultado = $novaNews->save();
 
@@ -36,6 +37,7 @@ class NewsletterController extends Controller
 
     public function cadastrarNewsletter(Request $request){
         $newsletter = new newsletter();
+        $newsletter->name = $request->name;
         $newsletter->email = $request->email;
         $newsletter->save();
 

@@ -104,7 +104,7 @@ Auth::routes();
 Route::get('/painel', 'PainelController@painel')->name('painel');
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/home', 'NewsletterController@home');
+Route::get('/home', 'NewsletterController@home')->name('home');
 
 Route::post('/home', 'NewsletterController@home');
 

@@ -15,6 +15,7 @@ class Reeduca extends Migration
     {
         Schema::create('newsletters', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
             $table->string('email')->unique();
         });
     }
