@@ -108,11 +108,11 @@ Auth::routes();
 Route::get('/painel', 'PainelController@painel')->name('painel');
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/home', 'NewsletterController@home');
+Route::get('/home', 'NewsletterController@home')->name('home');
 
 Route::post('/home', 'NewsletterController@home');
 
-Route::get('/loja', 'ProdutoController@exibirProdutos');
+Route::get('/loja', 'ProdutoController@exibirProdutos')->middleware('auth');
 
 Route::get('/adminlista','AdminController@mostrarLista');
 

@@ -91,7 +91,7 @@
                                 @else
                                 <li class="nav-item dropdown">
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><i class="fas fa-user text-white p-2"></i>
-                                        {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{Auth::user()->name}}<span class="caret"></span>
                                     </a>
 
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -275,9 +275,10 @@
                              <p class="subscribe_success" id="subscribe_success" style="display:none;"></p>
                              <p class="subscribe_error" id="subscribe_error" style="display:none;"></p>
 
-                             <form name="subscribe_form" id="subscribe_form" method="post" action="/home" onSubmit="return false">
-                                 <input type="text" data-delay="300" placeholder="Seu nome" name="name" id="subscribe_name" onKeyPress="removeChecks();" class="input" >
-                                 <input type="email" data-delay="300" placeholder="Email" name="email" id="subscribe_email" onKeyPress="removeChecks();" class="input" >
+                             <form id="myform2"  method="post" dataroute="{{ route('home') }}">
+                                @csrf
+                                 <input type="text" data-delay="300" placeholder="Seu nome" name="name" id="name" class="input" >
+                                 <input type="email" data-delay="300" placeholder="Email" name="email" id="email" class="input" >
                                  {{-- <input name="Subscribe" type="submit" value="Assinar" onClick="validateSubscription();"> --}}
                             <button type="submit" class="btn btn-card btn-secondary" value="Assinar">Assinar</button>
                              </form>
@@ -285,7 +286,7 @@
                              </div>
 
                          </div>
-                         @if ($errors->any())
+                         {{-- @if ($errors->any())
 
                          <div class="alert alert-danger">
                              <ul>
@@ -298,15 +299,15 @@
                          @endif
 
                          @if(isset($resultado))
-                         @if($resultado)
+                         @if($resultado) --}}
 
-                        <div class="alert alert-success">
+                        {{-- <div class="alert alert-success">
                              <h1>E-mail cadastrado com sucesso</h1>
                          </div>
                          @else
                          <h1>erro</h1>
                          @endif
-                         @endif
+                         @endif --}}
 
                  </div>
 
@@ -429,6 +430,8 @@
         <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>
+        <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
+        <script src="{{asset('js/postnewsletter.js')}}"></script>
         <script type='text/javascript' src="{{asset('js/jquery/jquery-migrate.min.js')}}"></script>
         <script type='text/javascript' src="{{asset('plugins/superfish/js/superfish.js')}}"></script>
         <script type='text/javascript' src="{{asset('js/hoverIntent.min.js')}}"></script>
@@ -473,6 +476,7 @@
         <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
         <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->
         <script src="{{asset('js/recicla.min.js')}}"></script>
+
 
 
 
