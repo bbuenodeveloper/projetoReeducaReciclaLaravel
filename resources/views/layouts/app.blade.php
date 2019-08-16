@@ -277,8 +277,8 @@
 
                              <form id="myform2"  method="post" dataroute="{{ route('home') }}">
                                 @csrf
-                                 <input type="text" data-delay="300" placeholder="Seu nome" name="name" id="name" class="input" >
-                                 <input type="email" data-delay="300" placeholder="Email" name="email" id="email" class="input" >
+                                 <input type="text" data-delay="300" placeholder="Seu nome" name="name" id="nameNews" class="input" >
+                                 <input type="email" data-delay="300" placeholder="Email" name="email" id="emailNews" class="input" >
                                  {{-- <input name="Subscribe" type="submit" value="Assinar" onClick="validateSubscription();"> --}}
                             <button type="submit" class="btn btn-card btn-secondary" value="Assinar">Assinar</button>
                              </form>

@@ -8,11 +8,52 @@ function executeSweet(){
 
 function executeSweetError(){
     Swal.fire({
-    type: 'error',
-    title: 'Oops...',
-    text: 'Tente Novamente!',
+        type: 'error',
+        title: 'Oops...',
+        text: 'Tente Novamente!',
+    })
+}
+
+function executeSweetNews(){
+    Swal.fire({
+    type: 'success',
+    text: 'Inscrição realizada com sucesso!',
 
     })
+}
+
+function executeSweetErrorNews(){
+    let nameN = document.getElementById('nameNews');
+    let emailN = document.getElementById('emailNews');
+
+    if(nameN.value == "" || emailN.value == ""){
+        if(nameN.value == "" && emailN.value == ""){
+            Swal.fire({
+                type: 'error',
+                title: 'Oops...',
+                text: 'Preencha os campos',
+            })
+        }
+        else if(nameN.value == ""){
+            Swal.fire({
+                type: 'error',
+                title: 'Oops...',
+                text: 'Preencha seu nome',
+            })
+        } else if(emailN.value == "") {
+            Swal.fire({
+                type: 'error',
+                title: 'Oops...',
+                text: 'Preencha seu email',
+            })
+        }
+        } else {
+            Swal.fire({
+            type: 'error',
+            title: 'Oops...',
+            text: 'Email já cadastrado',
+            })
+        }
 }
 
 
