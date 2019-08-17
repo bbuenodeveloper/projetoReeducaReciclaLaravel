@@ -3,6 +3,8 @@ $(function(){
         e.preventDefault();
         var route = document.querySelector('#myform2').attributes.dataroute.value;
         var myform = document.querySelector('#myform2');
+        let name = document.querySelector('#nameNews');
+        let email = document.querySelector('#emailNews');
 
         let dados = new FormData(myform2);
 
@@ -25,6 +27,8 @@ $(function(){
 
         });
 
+        name.value="";
+        email.value="";
 
     });
 
