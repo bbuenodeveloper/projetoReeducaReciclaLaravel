@@ -9,19 +9,7 @@ function executeSweetError(){
     Swal.fire({
         type: 'error',
         title: 'Oops...',
-<<<<<<< HEAD
         text: 'Preencha todos os campos para enviar o formulário',
-=======
-        text: 'Tente Novamente!',
-    })
-}
-
-function executeSweetNews(){
-    Swal.fire({
-    type: 'success',
-    text: 'Inscrição realizada com sucesso!',
-
->>>>>>> fa5a6fb022da5eef64f597e670e778e15556f5b2
     })
 }
 
