@@ -14,13 +14,12 @@ $(function(){
             url: route,
             data: dados,
             success: function() {
-
-                    executeSweet();
-
+                executeSweetNews();
 
             },
             error : function() {
-                executeSweetError();
+                executeSweetErrorNews();
+
             }
 
 
