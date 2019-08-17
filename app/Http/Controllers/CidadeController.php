@@ -37,10 +37,5 @@ class CidadeController extends Controller
             $cidade->imagem = $filename;
         }
         $cidade->save();
-
-
-        // return view('add-cidade', [
-        //     'success' => "Cadastro realizado com sucesso!"
-        // ]);
     }
 }

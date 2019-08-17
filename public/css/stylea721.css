@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
+
+
+     /* Four Feature Blocks */     
+     .fourFeatures {width:100%; height:325px; display:block; position:relative; overflow:hidden; clear:both;}
+          .fourFeatures .block {float:left; width:25%; height:325px; background:#19212a; color:white; position:relative; z-index:2;}
+          .fourFeatures .block.alt, .fourFeatures .overlay.alt {background:#609ed3;}
+          .fourFeatures .block img {position:absolute; z-index:1; top:0px; left:0px; display:block; float:left; min-height:100%; max-height:140%; overflow:hidden; min-width:100%; max-width:140%; transition:0.5s; opacity:0.2;}
+		  	.fourFeatures .block:hover img {opacity:0.4;}   
+          .fourFeatures .block h3 {color:white; padding:25px 25px 15px; position:relative; z-index:2;}
+          .fourFeatures .block p {color:white; padding:0 60px 0 25px; position:relative; z-index:2;}
+          .fourFeatures .block a {color:white; font-size:33px; display:inline-block; line-height:33px; text-align:center; border:1px solid white; width:40px; height:40px; right:25px; bottom:25px; position:absolute; z-index:5;}
+               .fourFeatures .block a:hover, .overlay a:hover {color:white; background:#b5b700; border-color:#b5b700;}
+
+
+          /* Overlay */  
+          .overlay {height:100%; width:100%; position:absolute; z-index:3; background-color:#19212a; transition:0.5s; top:0px; right:-100%;}
+          .overlay.open {right:0% !important; overflow:hidden;}
+          .overlay a.close {color:white; font-size:33px; display:inline-block; line-height:33px; text-align:center; border:1px solid white; width:40px; height:40px; right:25px; bottom:25px; position:absolute; z-index:5;}
+          .overlay-content {position:relative; z-index:2; width:90%; margin:0 5%; text-align:center; color:white; top:50%; transform:translateY(-50%); max-width:900px; margin:0 auto;}
+               .overlay-content h3 {color:white;}
+     
+          @media screen and (min-width:769px) and (max-width:1024px) {
+               .fourFeatures {height:auto;}
+               .fourFeatures .block {width:50%; height:275px;}
+               .overlay-content {width:80%; margin:0 10%;}               
+          }
+          @media screen and (max-width:768px){
+               .fourFeatures {height:auto;}
+               .fourFeatures .block {width:auto; float:none; height:auto; padding:2em 0;}
+               .fourFeatures .block h3 {color:white; padding:15px 25px;}
+               .fourFeatures .block p {color:white; padding:0 80px 0 25px;}               
+          }
+         
+     /* Video */         
+     .homePageVideo {clear:both;}
+          .homePageVideo .title {position:absolute; z-index:2; bottom:0px; left:0px; background:rgba(255,255,255,0.5); width:100%; display:block;}         
+          .homePageVideo .title a {padding:1em 1.5em; background:#b5b700; color:white; font-weight:bold; display:inline-block; font-size:125%;}
+
+          @media screen and (max-width:768px){
+               .homePageVideo .title a {font-size:100%;}    
+          }
+      
+     /* Meet Members */
+     .meet-members {display:block; clear:both; text-align:center; padding:4em 0; background:white;}
+          
+               
+              
+                    
+          .members {display:block; clear:both; background:#f1f1f1; text-align:center;}    
+               .members .member {display:block;  padding:2em 0;} 
+                    .members .member .image {width:20%; max-width:200px; display:inline-block; vertical-align:middle;}
+                    .members .member .copy {width:60%; max-width:700px; margin-left:2.5%; padding-left:2.5%; border-left:2px solid #c1c1c1; display:inline-block; vertical-align:middle; text-align:left;}
+                    .
+                    .members .member .copy .type {font-weight:bold; color:#b5b700; text-transform:uppercase;}
+          
+          @media screen and (max-width:1024px) {
+               .meet-members {padding:3em 0;}
+               .members .member .image {width:30%}
+          }
+          @media screen and (max-width:768px){
+               .meet-members {padding:2em 0;}
+               .members .member .image {width:30%}
+               .members .member .copy {width:58%; margin-left:5%; padding-left:5%;}  
+          }
+
+/* Title block */        
+.title-block {display:block; clear:both; text-align:center; padding:0; background:white;} 
+     .title-block h1 {border-bottom:1px solid #ddd;  padding:1.5em 0 1em;}
+
+/* Responsive Video Embed */            
+.videoWrapper {position:relative; padding-bottom:56.25%; padding-top:0px; height:0; overflow:hidden;}
+     .videoWrapper iframe, .videoWrapper object, .videoWrapper embed {position:absolute;top:0;left:0;width:100%; height:100%; z-index:1;}
+
+/* more news */
+
+
+.more-news {
+     display: block;
+     clear: both;
+     background: #1b232e;
+     color: white;
+     text-align: center;
+     padding: 2em;
+ }
+
+ .more-news a {
+     color: white;
+     font-size: 125%;
+ }
+
+ strong, b {
+     font-weight: 700;
+ }
+
+ .meet-members h2 {
+     color: #b5b700;
+     font-size: 240%;
+     text-transform: uppercase;
+     font-family: 'Roboto', sans-serif;
+ }
+
+ 
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+	

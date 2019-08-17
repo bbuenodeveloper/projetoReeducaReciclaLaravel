@@ -1,17 +1,15 @@
 function executeSweet(){
-        Swal.fire({
+    Swal.fire({
         type: 'success',
         text: 'Cadastro realizado com sucesso!',
-
-        })
+    })
 }
 
 function executeSweetError(){
     Swal.fire({
-    type: 'error',
-    title: 'Oops...',
-    text: 'Tente Novamente!',
-
+        type: 'error',
+        title: 'Oops...',
+        text: 'Preencha todos os campos para enviar o formulário',
     })
 }
 

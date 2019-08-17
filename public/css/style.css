@@ -432,27 +432,27 @@ p#frase {
 
 
 
-.btn-instagram {
-    background: #dd131b;
-    border-color: #dd131b;
-    color: #fff;
-    width: 39px;
+.btn-instagram  {
+    background: #dd131b !important;
+    border-color: #dd131b !important;
+    color: #fff !important;
+    width: 39px !important;
 
 }
 
 .btn-facebook-footer {
-    background: #3b5998;
-    border-color: #3b5998;
-    color: #fff;
-    width: 39px;
+    background: #3b5998 !important;
+    border-color: #3b5998 !important;
+    color: #fff!important ;
+    width: 39px !important;
 
 }
 
 .btn-twitter-footer {
-    background: #1da1f2;
-    border-color: #1da1f2;
-    color: #fff;
-    width: 39px;
+    background: #1da1f2 !important;
+    border-color: #1da1f2!important ;
+    color: #fff !important;
+    width: 39px !important;
 
 }
 

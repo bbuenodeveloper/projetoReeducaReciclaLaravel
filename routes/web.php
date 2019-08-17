@@ -45,6 +45,8 @@ Route::get('/blog', 'BlogController@blog');
 
 Route::get('/blog-details', 'BlogController@blogdetails');
 
+Route::get('/como-reciclar', 'ReciclarController@comoReciclar');
+
 Route::get('/marcadores/{cidade}/{materiaisIds}', 'MarcadoresController@marcadores')->name('marcadores');
 
 Route::get('/cidades', 'CidadeController@obterJson');
@@ -112,7 +114,7 @@ Route::get('/home', 'NewsletterController@home')->name('home');
 
 Route::post('/home', 'NewsletterController@home');
 
-Route::get('/loja', 'ProdutoController@exibirProdutos')->middleware('auth');
+Route::get('/loja', 'ProdutoController@exibirProdutos');
 
 Route::get('/adminlista','AdminController@mostrarLista');
 

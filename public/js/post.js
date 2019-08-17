@@ -3,9 +3,15 @@ $(function(){
         e.preventDefault();
         var route = document.querySelector('#myform').attributes.dataroute.value;
         var myform = document.querySelector('#myform');
+        let cidade = document.querySelector('#cidade');
+        let imagem = document.querySelector('#imagem');
+
+        if(cidade.value == "" || imagem.value == ""){
+            executeSweetError()
+            return
+        }
 
         let dados = new FormData(myform);
-
 
         $.ajax({
             type: 'POST',
@@ -14,19 +20,15 @@ $(function(){
             url: route,
             data: dados,
             success: function() {
-
-                    executeSweet();
-
-
+                executeSweet();
             },
             error : function() {
                 executeSweetError();
             }
-
-
         });
 
-
+        cidade.value = ""
+        imagem.value = ""
     });
 
 

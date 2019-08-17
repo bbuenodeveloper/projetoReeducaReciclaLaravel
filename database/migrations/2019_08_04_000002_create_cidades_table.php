@@ -23,8 +23,8 @@ class CreateCidadesTable extends Migration
         Schema::create($this->tableName, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('cidade', 100)->nullable(false);
-            $table->string('imagem', 200)->nullable(false);
+            $table->string('cidade', 100)->require();
+            $table->string('imagem', 200)->require();
             $table->unique(["id"], 'id_UNIQUE');
         });
     }
