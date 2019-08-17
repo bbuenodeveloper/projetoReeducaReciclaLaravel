@@ -41,9 +41,9 @@ class NewsletterController extends Controller
         $newsletter->email = $request->email;
         $newsletter->save();
 
-        return view('add-newsletter', [
-            'success' => "Cadastro realizado com sucesso!"
-        ]);
+        // return view('add-newsletter', [
+        //     'success' => "Cadastro realizado com sucesso!"
+        // ]);
 
 
 

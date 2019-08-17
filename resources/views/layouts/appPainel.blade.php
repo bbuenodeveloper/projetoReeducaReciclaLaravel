@@ -251,6 +251,8 @@
         <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
         <script src="{{asset('js/post.js')}}"></script>
+        <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
+        <script src="{{asset('js/postNewsletterAdmin.js')}}"></script>
         <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
         <script src="http://malsup.github.com/jquery.form.js"></script>
         <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->

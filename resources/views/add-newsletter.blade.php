@@ -22,14 +22,17 @@
                 </center>
                 <h1 class="text-center mb-2">
                     Cadastro de Newsletter</h1>
-                <form action="{{ route('newsletter.cadastrar') }}" method="post" class="user-info-setting-form"
-                    enctype="multipart/form-data">
+                <form dataroute="{{ route('newsletter.cadastrar') }}" method="post" class="user-info-setting-form"
+                    id="myform3" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" placeholder="Seu nome" name="name" id="name" class="form-control" >
                         <label for="email">Newsletter</label>
-                        <input type="email" name="email" class="form-control" placeholder="email@email.com.br">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="email@email.com.br">
+
                     </div>
-                    <button type="submit" class="btn btn-card btn-primary">CADASTRAR</button>
+                    <button type="submit" class="btn btn-card btn-primary" value="Assinar">CADASTRAR</button>
                 </form>
             </div>
         </div>
