@@ -25,7 +25,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
       <div class="carousel-item active">
         <img class="d-block w-100 " src="img/slider0.png" alt="Primeiro Slide">
         <div class="carousel-caption d-none d-md-block class="copy">
-            <p class="copy">Faça 1 coisa, <strong class="strong-color">Recicle.</strong></p>
+            <p class="copy">Faça 1 coisa, <strong class="strong-color" >Recicle.</strong></p>
           </div>
       </div>
       <div class="carousel-item">
@@ -90,7 +90,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
     </div>
 
     <div class="block alt">
-      <img src="img/PETCO_Collection_BottleHand_2326.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 500px) 100vw, 500px" /><h3>Reciclar Alumínio</h3>
+      <img src="img/aluminio.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 500px) 100vw, 500px" /><h3>Reciclar <strong>Alumínio</strong></h3>
       <p>Reciclagem de alumínio é o processo pelo qual o alumínio pode ser reutilizado em determinados produtos, após ter sido inicialmente produzido. </p>
 
       <a href="javascript:void(0)" class="openTwo">&plus;</a>
@@ -105,14 +105,14 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
       </div>
     </div>
 
-    <div class="block ">
-      <img src="img/slide3.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1600px) 100vw, 1600px" /><h3>Reciclar <strong>Plástico</strong></h3>
+    <div class="block alt2 ">
+      <img src="img/PETCO_Collection_BottleHand_2326.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1600px) 100vw, 1600px" /><h3>Reciclar <strong>Plástico</strong></h3>
       <p>Diversos produtos e embalagens feitos com material plástico apresentam um símbolo que indica que eles são recicláveis, de acordo com o tipo de plástico do qual são feitos. </p>
 
       <a href="javascript:void(0)" class="openThree">&plus;</a>
     </div>
 
-    <div class="overlay three ">
+    <div class="overlay three alt2 ">
       <a href="javascript:void(0)" class="openThree close">&minus;</a>
       <div class="overlay-content">
         <h3>Passo a passo de como reciclar  <strong>plástico</strong></h3>
@@ -123,14 +123,14 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         </div>
       </div>
 
-      <div class="block alt">
-        <img src="img/FII9175.jpg" class="attachment-full size-full wp-post-image" alt="" /><h3>Reciclar <strong>Papel</strong></h3>
+      <div class="block alt3">
+        <img src="img/papel.jpg" class="attachment-full size-full wp-post-image" alt="" /><h3>Reciclar <strong>Papel</strong></h3>
         <p>A reciclagem de papel é o reaproveitamento do papel não-funcional para produzir papel reciclado. 1- A reciclagem de papéis velhos visa o aproveitamento de fibras celulósicas dos papéis e cartões usados para a produção de papéis novos.</p>
 
         <a href="javascript:void(0)" class="openFour">&plus;</a>
       </div>
 
-      <div class="overlay four alt">
+      <div class="overlay four alt3">
         <a href="javascript:void(0)" class="openFour close">&minus;</a>
         <div class="overlay-content">
           <h3>Como  <strong>descartar?</strong></h3>
@@ -141,10 +141,87 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         </div>
       </div>
 
-      <!-- fim cards -->
-
-
     </div>
+
+    <div class="more-cards"><span></span>
+    </div>
+
+    <!-- fim cards -->
+
+
+    <div class="fourFeatures">
+        <div class="block alt4 ">
+          <img src="img/BIG-DUMPv2-copy.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1500px) 100vw, 1500px" /><h3>Reciclar <strong>Orgânicos</strong></h3>
+          <p>Entende-se como reciclagem de vidro, o processo industrial de derretimento de resíduos de vidro.</p>
+
+          <a href="javascript:void(0)" class="openFive">&plus;</a>
+        </div>
+
+        <div class="overlay five alt4 ">
+          <a href="javascript:void(0)" class="openFive close">&minus;</a>
+          <div class="overlay-content">
+
+            <h3>Como reciclar garrafas de <strong>vidro?</strong></h3>
+            <p>Na reciclagem de garrafas de vidro, se estiverem inteiras, elas devem ser lavadas. Se estiverem quebradas, você pode utilizar uma garrafa PET para embalá-las. Para isso, retire o rótulo da garrafa PET e descarte-o junto de outros plásticos recicláveis. Então corte a garrafa ao meio, insira os cacos da garrafa de vidro quebrada, utilize a parte superior da garrafa PET para tampar o recipiente e coloque-o dentro de uma sacola. Procure utilizar luvas ou pá e vassoura para não se ferir.Também recomenda-se que os cacos de vidro não sejam misturados com terra ou sujeira.</p>
+
+          </div>
+        </div>
+
+        <div class="block alt5">
+          <img src="img/PETCO_Collection_BottleHand_2326.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 500px) 100vw, 500px" /><h3>Reciclar <strong> Tóxicos</strong></h3>
+          <p>Reciclagem de alumínio é o processo pelo qual o alumínio pode ser reutilizado em determinados produtos, após ter sido inicialmente produzido. </p>
+
+          <a href="javascript:void(0)" class="openSix">&plus;</a>
+        </div>
+
+        <div class="overlay six alt6">
+          <a href="javascript:void(0)" class="openSix close">&minus;</a>
+          <div class="overlay-content">
+            <h3>Confira o passo a passo da reciclagem do alumínio <strong>e gere renda</strong></h3>
+            <p>O alumínio pode ser reciclado tanto a partir de sucatas geradas por produtos descartados, quanto por sobras do processo produtivo. Utensílios domésticos, latas de bebidas, esquadrias de janelas, componentes automotivos, entre outros, podem ser fundidos e empregados novamente na fabricação de novos produtos.</p>
+
+          </div>
+        </div>
+
+        <div class="block alt6 ">
+          <img src="img/slide3.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1600px) 100vw, 1600px" /><h3>Reciclar <strong>Hospitalar</strong></h3>
+          <p>Diversos produtos e embalagens feitos com material plástico apresentam um símbolo que indica que eles são recicláveis, de acordo com o tipo de plástico do qual são feitos. </p>
+
+          <a href="javascript:void(0)" class="openSeven">&plus;</a>
+        </div>
+
+        <div class="overlay seven alt6 ">
+          <a href="javascript:void(0)" class="openSeven close">&minus;</a>
+          <div class="overlay-content">
+            <h3>Passo a passo de como reciclar  <strong>plástico</strong></h3>
+            <p>Descubra mais sobre o programa de reciclagem de sua comunidade. Muitas cidades têm, hoje em dia, pontos de coleta e depósito de materiais recicláveis. No entanto, cada comunidade é diferente, então entre em contato com a prefeitura e pergunte sobre quais facilidades e opções estão disponíveis em sua área.</p>
+            <p>Leve os plásticos diretamente ao local da reciclagem. Pesquise online ou telefone para autoridades locais para encontrar os centros de sua área. Se um centro aceitar plástico, você pode muito bem levá-los diretamente até ele.
+              Alguns estabelecimentos de reciclagem podem pagar algum dinheiro por item que você levar. Você pode fazer algum dinheiro extra coletando material reciclável de amigos e vizinhos e levar aos pontos de coleta.</p>
+
+            </div>
+          </div>
+
+          <div class="block alt7">
+            <img src="img/FII9175.jpg" class="attachment-full size-full wp-post-image" alt="" /><h3>Reciclar <strong>Madeira</strong></h3>
+            <p>A reciclagem de papel é o reaproveitamento do papel não-funcional para produzir papel reciclado. 1- A reciclagem de papéis velhos visa o aproveitamento de fibras celulósicas dos papéis e cartões usados para a produção de papéis novos.</p>
+
+            <a href="javascript:void(0)" class="openEight">&plus;</a>
+          </div>
+
+          <div class="overlay eight alt7">
+            <a href="javascript:void(0)" class="openEight close">&minus;</a>
+            <div class="overlay-content">
+              <h3>Como  <strong>descartar?</strong></h3>
+              <p>1. Não jogue as embalagens em cestos com restos de outros resíduos, como óleo, comida e produtos químicos que podem “contaminá-lo”.</p>
+              <p>2. Papéis sujos (contaminados) devem ser descartados no lixo orgânico.</p>
+              <p>3. Armazene em local seco</p>
+              <p>4. Se possível, separe por tipo de papel, como embalagens, papel de escritório, revistas, jornais, papelão, entre outros.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- fim cards -->
 
 
 

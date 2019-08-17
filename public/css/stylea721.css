@@ -3,8 +3,14 @@
 
      /* Four Feature Blocks */
      .fourFeatures {width:100%; height:325px; display:block; position:relative; overflow:hidden; clear:both;}
-          .fourFeatures .block {float:left; width:25%; height:325px; background:#19212a; color:white; position:relative; z-index:2;}
-          .fourFeatures .block.alt, .fourFeatures .overlay.alt {background:#609ed3;}
+          .fourFeatures .block {float:left; width:25%; height:325px; background:#007e49; color:white; position:relative; z-index:2;}
+          .fourFeatures .block.alt, .fourFeatures .overlay.alt {background:#fdb225;}
+          .fourFeatures .block.alt2, .fourFeatures .overlay.alt2 {background:#cf3a36;}
+          .fourFeatures .block.alt3, .fourFeatures .overlay.alt3 {background:#0087c9;}
+          .fourFeatures .block.alt4, .fourFeatures .overlay.alt4 {background:#853d25;}
+          .fourFeatures .block.alt5, .fourFeatures .overlay.alt5 {background:#c03fbd;}
+          .fourFeatures .block.alt6, .fourFeatures .overlay.alt6 {background:#ffffff;}
+          .fourFeatures .block.alt7, .fourFeatures .overlay.alt7 {background:#302d28;}
           .fourFeatures .block img {position:absolute; z-index:1; top:0px; left:0px; display:block; float:left; min-height:100%; max-height:140%; overflow:hidden; min-width:100%; max-width:140%; transition:0.5s; opacity:0.2;}
 		  	.fourFeatures .block:hover img {opacity:0.4;}
           .fourFeatures .block h3 {color:white; padding:25px 25px 15px; position:relative; z-index:2;}
@@ -82,7 +88,19 @@
      color: white;
      text-align: center;
      padding: 2em;
+     font-weight: 600;
  }
+
+ .more-cards {
+    display: block;
+    clear: both;
+    background: black;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    font-weight: 600;
+
+}
 
  .more-news a {
      color: white;
