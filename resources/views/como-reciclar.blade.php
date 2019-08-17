@@ -73,7 +73,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
   <div class="fourFeatures">
     <div class="block ">
-      <img src="img/BIG-DUMPv2-copy.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1500px) 100vw, 1500px" /><h3>Reciclar <strong>vidro</strong></h3>
+      <img src="img/vidroreciclar.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1500px) 100vw, 1500px" /><h3>Reciclar <strong>vidro</strong></h3>
       <p>Entende-se como reciclagem de vidro, o processo industrial de derretimento de resíduos de vidro.</p>
 
       <a href="javascript:void(0)" class="openOne">&plus;</a>
@@ -125,7 +125,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
       <div class="block alt3">
         <img src="img/papel.jpg" class="attachment-full size-full wp-post-image" alt="" /><h3>Reciclar <strong>Papel</strong></h3>
-        <p>A reciclagem de papel é o reaproveitamento do papel não-funcional para produzir papel reciclado. 1- A reciclagem de papéis velhos visa o aproveitamento de fibras celulósicas dos papéis e cartões usados para a produção de papéis novos.</p>
+        <p>A reciclagem de papel é o reaproveitamento do papel não-funcional para produzir papel reciclado. </p>
 
         <a href="javascript:void(0)" class="openFour">&plus;</a>
       </div>
@@ -151,7 +151,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
     <div class="fourFeatures">
         <div class="block alt4 ">
-          <img src="img/BIG-DUMPv2-copy.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1500px) 100vw, 1500px" /><h3>Reciclar <strong>Orgânicos</strong></h3>
+          <img src="img/organicoreciclar.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1500px) 100vw, 1500px" /><h3>Reciclar <strong>Orgânicos</strong></h3>
           <p>Entende-se como reciclagem de vidro, o processo industrial de derretimento de resíduos de vidro.</p>
 
           <a href="javascript:void(0)" class="openFive">&plus;</a>
@@ -168,13 +168,13 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         </div>
 
         <div class="block alt5">
-          <img src="img/PETCO_Collection_BottleHand_2326.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 500px) 100vw, 500px" /><h3>Reciclar <strong> Tóxicos</strong></h3>
+          <img src="img/toxicoreciclar.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 500px) 100vw, 500px" /><h3>Reciclar <strong> Tóxicos</strong></h3>
           <p>Reciclagem de alumínio é o processo pelo qual o alumínio pode ser reutilizado em determinados produtos, após ter sido inicialmente produzido. </p>
 
           <a href="javascript:void(0)" class="openSix">&plus;</a>
         </div>
 
-        <div class="overlay six alt6">
+        <div class="overlay six alt5">
           <a href="javascript:void(0)" class="openSix close">&minus;</a>
           <div class="overlay-content">
             <h3>Confira o passo a passo da reciclagem do alumínio <strong>e gere renda</strong></h3>
@@ -184,8 +184,8 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         </div>
 
         <div class="block alt6 ">
-          <img src="img/slide3.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1600px) 100vw, 1600px" /><h3>Reciclar <strong>Hospitalar</strong></h3>
-          <p>Diversos produtos e embalagens feitos com material plástico apresentam um símbolo que indica que eles são recicláveis, de acordo com o tipo de plástico do qual são feitos. </p>
+          <img src="img/lixohospitalar.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1600px) 100vw, 1600px" /><h3 class="cor-alt6-titulo">Reciclar <strong>Hospitalar</strong></h3>
+          <p class="cor-alt6">O lixo hospitalar, também chamado de resíduo hospitalar e de resíduo de serviços de saúde, é todo tipo de lixo proveniente do atendimento a pacientes ou de qualquer estabelecimento de saúde ou unidade que execute atividades de natureza de atendimento médico.</p>
 
           <a href="javascript:void(0)" class="openSeven">&plus;</a>
         </div>
@@ -193,17 +193,17 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         <div class="overlay seven alt6 ">
           <a href="javascript:void(0)" class="openSeven close">&minus;</a>
           <div class="overlay-content">
-            <h3>Passo a passo de como reciclar  <strong>plástico</strong></h3>
-            <p>Descubra mais sobre o programa de reciclagem de sua comunidade. Muitas cidades têm, hoje em dia, pontos de coleta e depósito de materiais recicláveis. No entanto, cada comunidade é diferente, então entre em contato com a prefeitura e pergunte sobre quais facilidades e opções estão disponíveis em sua área.</p>
-            <p>Leve os plásticos diretamente ao local da reciclagem. Pesquise online ou telefone para autoridades locais para encontrar os centros de sua área. Se um centro aceitar plástico, você pode muito bem levá-los diretamente até ele.
+            <h3 class="cor-alt6-titulo">Passo a passo de como reciclar  <strong>plástico</strong></h3>
+            <p class="cor-alt6-titulo">Grupo A (potencialmente infectantes) - que tenham presença de agentes biológicos que apresentem risco de infecção. Ex.: bolsas de sangue contaminado;</p>
+            <p class="cor-alt6-titulo">Leve os plásticos diretamente ao local da reciclagem. Pesquise online ou telefone para autoridades locais para encontrar os centros de sua área. Se um centro aceitar plástico, você pode muito bem levá-los diretamente até ele.
               Alguns estabelecimentos de reciclagem podem pagar algum dinheiro por item que você levar. Você pode fazer algum dinheiro extra coletando material reciclável de amigos e vizinhos e levar aos pontos de coleta.</p>
 
             </div>
           </div>
 
           <div class="block alt7">
-            <img src="img/FII9175.jpg" class="attachment-full size-full wp-post-image" alt="" /><h3>Reciclar <strong>Madeira</strong></h3>
-            <p>A reciclagem de papel é o reaproveitamento do papel não-funcional para produzir papel reciclado. 1- A reciclagem de papéis velhos visa o aproveitamento de fibras celulósicas dos papéis e cartões usados para a produção de papéis novos.</p>
+            <img src="img/madeira.jpg" class="attachment-full size-full wp-post-image" alt="" /><h3>Reciclar <strong>Madeira</strong></h3>
+            <p>A reciclagem da madeira é impossível. Por isso, a saída é o upcycle!</p>
 
             <a href="javascript:void(0)" class="openEight">&plus;</a>
           </div>
@@ -212,10 +212,10 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             <a href="javascript:void(0)" class="openEight close">&minus;</a>
             <div class="overlay-content">
               <h3>Como  <strong>descartar?</strong></h3>
-              <p>1. Não jogue as embalagens em cestos com restos de outros resíduos, como óleo, comida e produtos químicos que podem “contaminá-lo”.</p>
-              <p>2. Papéis sujos (contaminados) devem ser descartados no lixo orgânico.</p>
-              <p>3. Armazene em local seco</p>
-              <p>4. Se possível, separe por tipo de papel, como embalagens, papel de escritório, revistas, jornais, papelão, entre outros.</p>
+              <p>Por ser um material orgânico, a reciclagem de madeira, infelizmente, não é possível. No entanto, com criatividade, ela pode se transformar em vários outros objetos. </p>
+              <p>Com criatividade, transforme antigas peças</p>
+              <p>Não é só porque a reciclagem de madeira não é possível que o material deveria ir para os aterros sanitários. Se você não tiver dotes artísticos para lapidar uma peça de madeira, procure carpintarias e lojas de móveis usados, que possam reaproveitar madeira antiga para outros usos e até consertos. Também há a opção de chamar empresas que recolhem entulho.  Caso queria descartar seu móvel velho, conheça nosso serviço de coleta em casa.</p>
+
             </div>
           </div>
 

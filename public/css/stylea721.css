@@ -14,16 +14,17 @@
           .fourFeatures .block img {position:absolute; z-index:1; top:0px; left:0px; display:block; float:left; min-height:100%; max-height:140%; overflow:hidden; min-width:100%; max-width:140%; transition:0.5s; opacity:0.2;}
 		  	.fourFeatures .block:hover img {opacity:0.4;}
           .fourFeatures .block h3 {color:white; padding:25px 25px 15px; position:relative; z-index:2;}
-          .fourFeatures .block p {color:white; padding:0 60px 0 25px; position:relative; z-index:2;}
+          .fourFeatures .block p {color:white; padding:0 60px 0 25px; position:relative; z-index:2; font-size: 16px; font-weight: 500;}
+          .fourFeatures .block .cor-alt6 {color:black; padding:0 60px 0 25px; position:relative; z-index:2;}
           .fourFeatures .block a {color:white; font-size:33px; display:inline-block; line-height:33px; text-align:center; border:1px solid white; width:40px; height:40px; right:25px; bottom:25px; position:absolute; z-index:5;}
                .fourFeatures .block a:hover, .overlay a:hover {color:white; background:#b5b700; border-color:#b5b700;}
-
+               .cor-alt6-titulo { color: black !important; }
 
           /* Overlay */
-          .overlay {height:100%; width:100%; position:absolute; z-index:3; background-color:#19212a; transition:0.5s; top:0px; right:-100%;}
+          .overlay {height:100%; width:100%; position:absolute; z-index:3; background-color:#007e49; transition:0.5s; top:0px; right:-100%;}
           .overlay.open {right:0% !important; overflow:hidden;}
           .overlay a.close {color:white; font-size:33px; display:inline-block; line-height:33px; text-align:center; border:1px solid white; width:40px; height:40px; right:25px; bottom:25px; position:absolute; z-index:5;}
-          .overlay-content {position:relative; z-index:2; width:90%; margin:0 5%; text-align:center; color:white; top:50%; transform:translateY(-50%); max-width:900px; margin:0 auto;}
+          .overlay-content {position:relative; z-index:2; width:90%; margin:0 5%; text-align:left; color:white; top:50%; transform:translateY(-50%); max-width:900px; margin:0 auto;}
                .overlay-content h3 {color:white;}
 
           @media screen and (min-width:769px) and (max-width:1024px) {
