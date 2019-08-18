@@ -428,8 +428,8 @@
         <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
         <script src="{{asset('js/postnewsletter.js')}}"></script>
-        {{-- <script src="{{asset('js/custom.js')}}" type="text/javascript"></script> --}}
 
+        {{-- js menu --}}
         <script type='text/javascript' src="{{asset('js/jquery/jquery-migrate.min.js')}}"></script>
         <script type='text/javascript' src="{{asset('plugins/superfish/js/superfish.js')}}"></script>
         <script type='text/javascript' src="{{asset('js/hoverIntent.min.js')}}"></script>

@@ -48,43 +48,21 @@
 
 
         <link rel='stylesheet' href="{{asset('css/styleMenu.css')}}" type='text/css' media='all' />
-
-        <link href="{{asset('css/stylesa361.css?ver=2.3')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('css/recicla-guide.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('css/dropdown.min.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('css/jquery.fancybox.min.css')}}" rel="stylesheet" type="text/css" />
-
         <link rel='stylesheet' href="{{asset('plugins/dl-menu/component.css')}}" type='text/css' media='all' />
         <link rel='stylesheet' href="{{asset('plugins/elegant-font/style.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' href="{{asset('plugins/fancybox/jquery.fancybox.css')}}" type='text/css' media='all' />
         <link rel="stylesheet" href="{{asset('sweetalert/dist/sweetalert2.min.css')}}">
-
         <link rel='stylesheet' href="{{asset('plugins/superfish/css/superfish.css')}}" type='text/css' media='all' />
-
-
-
         <link rel="stylesheet" href="{{asset('css/reciclar/tablepress-responsive-flip.min7ef2.css')}}" type="text/css" media='all' />
-        <link rel="stylesheet" href="{{asset('css/reciclar/google-maps-builder.min7406.css')}}" type="text/css" media='all' />
-        <link rel="stylesheet" href="{{asset('css/reciclar/map-icons7406.css')}}" type="text/css" media='all' />
         <link rel="stylesheet" href="{{asset('css/reciclar/responsive.dataTables.min7ef2.css')}}" type="text/css" media='all' />
-
         <link rel="stylesheet" href="{{asset('css/reciclar/tablepress-combined.min9399.css')}}" type="text/css" media='all' />
-        <link rel="stylesheet" href="{{asset('css/reciclar/google-maps-builder.min7406.css')}}" type="text/css" media='all' />
         <link rel="stylesheet" href="{{asset('css/stylea721.css')}}" type="text/css" media='all' />
-
         <link rel="stylesheet" href="{{asset('css/reciclar/accordion.css')}}" type="text/css">
         <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}" type="text/css" media='all' />
-
         <link rel='stylesheet' href="{{asset('css/style-responsive.css')}}" type='text/css' media='all' />
         <link rel='stylesheet' href="{{asset('css/style-custom.css')}}" type='text/css' media='all' />
-        <link href="href="{{asset('js/plugins/rev/css/layers.css')}}" rel="stylesheet" type="text/css" />
-        <link href="href="{{asset('js/plugins/rev/css/navigation.css')}}" rel="stylesheet" type="text/css" />
-        <link href="href="{{asset('js/plugins/rev/css/settings.css')}}"  rel="stylesheet" type="text/css" />
-        <link href="href="{{asset('css/flaticon.css')}}" rel="stylesheet" type="text/css" />
-        <link href="href="{{asset('css/jquery.bxslider.css')}}" rel="stylesheet" type="text/css" />
-        <link href="href="{{asset('css/ihover.css')}}" rel="stylesheet" type="text/css" />
-        <link href="href="{{asset('css/jquery-ui.css')}}" rel="stylesheet" type="text/css" />
-        <link href="href="{{asset('css/prettyPhoto.css')}}" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
 
@@ -441,43 +419,16 @@
 
         <script src="{{url('https://code.jquery.com/jquery-3.4.0.min.js')}}"></script>
         <script src="{{asset('js/reciclar/jquery-2.1.0.min.js')}}"></script>
-
-        <script src="{{asset('js/reciclar/map-icons7406.js')}}"></script>
-        <script src="{{asset('js/reciclar/jquery.form.mind03d.js')}}"></script>
-        <script src="{{asset('js/reciclar/google-maps-builder.min7406.js')}}"></script>
-
         <script src="{{asset('js/reciclar/scripts.js')}}"></script>
         <script src="{{asset('js/reciclar/accordion.js')}}"></script>
-        <script src="{{asset('js/reciclar/jquery.datatables.minc245.js')}}"></script>
-
-
         <script type='text/javascript' src="{{asset('js/jquery.flexslider.js')}}"></script>
-        <script src="{{asset('js/reciclar/front.mine8f3.js')}}"></script>
         <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
-        <script type='text/javascript' src="{{asset('plugins/jquery.transit.min.js')}}"></script>
-        <script src="{{asset('js/plugins/jquery-ui/jquery-ui.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/plugins/smoothscroll/smoothScroll.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/custom.js" type="text/javascript')}}"></script>
-        <script src="{{asset('js/plugins/rev/js/jquery.themepunch.revolution.min.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/plugins/rev/js/jquery.themepunch.tools.min.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/plugins/rev/js/revolution.extension.actions.min.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/plugins/rev/js/revolution.extension.layeranimation.min.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/plugins/rev/js/revolution.extension.kenburn.min.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/plugins/rev/js/revolution.extension.parallax.min.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/plugins/rev/js/revolution.extension.slideanims.min.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/plugins/rev/js/revolution.extension.video.min.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/plugins/rev/js/revolution.extension.navigation.min.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/jquery.bxslider.min.js')}}"></script>
-        <script src="{{asset('js/plugins/prettyphoto/jquery.prettyPhoto.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/plugins/rainyday/rainyday.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/jquery.mixitup.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/scrollReveal.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/circles.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/plugins/countto/jquery.countTo.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/plugins/countto/jquery.appear.js')}}" type="text/javascript"></script>
-        <script src="{{asset('js/plugins/parallax/jquery.parallax-1.1.3.js')}}" type="text/javascript"></script>
+
+
+
+        {{-- js menu --}}
         <script type='text/javascript' src="{{asset('js/jquery/jquery-migrate.min.js')}}"></script>
         <script type='text/javascript' src="{{asset('plugins/superfish/js/superfish.js')}}"></script>
         <script type='text/javascript' src="{{asset('js/hoverIntent.min.js')}}"></script>
@@ -490,6 +441,7 @@
         <script type='text/javascript' src="{{asset('plugins/flexslider/jquery.flexslider.js')}}"></script>
         <script type='text/javascript' src="{{asset('plugins/jquery.isotope.min.js')}}"></script>
         <script type='text/javascript' src="{{asset('js/plugins.js')}}"></script>
+        <script type='text/javascript' src="{{asset('plugins/jquery.transit.min.js')}}"></script>
 
 
 </body>
