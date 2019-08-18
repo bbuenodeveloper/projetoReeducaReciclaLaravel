@@ -58,7 +58,7 @@
                .members .member {display:block;  padding:2em 0;}
                     .members .member .image {width:20%; max-width:200px; display:inline-block; vertical-align:middle;}
                     .members .member .copy {width:60%; max-width:700px; margin-left:2.5%; padding-left:2.5%; border-left:2px solid #c1c1c1; display:inline-block; vertical-align:middle; text-align:left;}
-                    .
+
                     .members .member .copy .type {font-weight:bold; color:#b5b700; text-transform:uppercase;}
 
           @media screen and (max-width:1024px) {

@@ -18,23 +18,6 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 <div class="main-wrapper">
 
 
-    <!-- breadcrumb-area start -->
-    <div class="breadcrumb-area section-ptb">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2 class="breadcrumb-title">Blog</h2>
-                    <!-- breadcrumb-list start -->
-                    <ul class="breadcrumb-list">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Blog</li>
-                    </ul>
-                    <!-- breadcrumb-list end -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- breadcrumb-area end -->
 
 
     <div class="blog-details-area bg-grey section-ptb">

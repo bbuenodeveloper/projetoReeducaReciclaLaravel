@@ -17,23 +17,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
 
 
-    <!-- breadcrumb-area start -->
-    <div class="breadcrumb-area section-ptb">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2 class="breadcrumb-title">Blog</h2>
-                    <!-- breadcrumb-list start -->
-                    <ul class="breadcrumb-list">
-                        <li class="breadcrumb-item"><a href="/home">Blog Detalhes</a></li>
-                        <li class="breadcrumb-item active">Blog</li>
-                    </ul>
-                    <!-- breadcrumb-list end -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- breadcrumb-area end -->
+
 
 
     <div class="blog-details-area section-ptb">
@@ -58,7 +42,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
                         <!-- shop-sidebar start -->
                         <div class="blog-sidebar mb--30">
                             <h4 class="title">ULTIMAS POSTAGENS</h4>
-                            
+
                         </div>
                         <!-- shop-sidebar end -->
 
@@ -133,7 +117,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
                             <h4 class="title">CARGILL INSTALA LINHA DE ENVASE MAIS EFICIENTE E SUSTENTÁVEL</h4>
 
                         </div>
-                    
+
                         <div class="postinfo-wrapper">
                             <div class="post-info">
                                 <p class="mb-2">A Cargill investiu mais de US$ 10 milhões para instalar uma linha de envase de óleo comestível de última geração em sua unidade de refinaria e processamento de grãos em Sidney, Ohio, nos Estados Unidos. A linha possui a tecnologia de envase mais eficiente de sua categoria, possibilitando um aumento anual de 75% da capacidade de produção em relação às versões anteriores. E mais: permite também que a Cargill e seus clientes cumpram seus compromissos de sustentabilidade, reduzindo o desperdício de material de embalagem e usando PET totalmente reciclável.</p>

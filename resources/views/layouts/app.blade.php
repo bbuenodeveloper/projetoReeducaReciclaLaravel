@@ -167,7 +167,10 @@
                                             class="fa fa-home"></i>Home</a></li>
                                 <li class="menu-item menu-item-has-children greennature-normal-menu"><a href="/como-reciclar"
                                         class="sf-with-ul-pre"><i class="fas fa-recycle"></i>Como Reciclar</a>
-
+                                        <ul class="dl-submenu">
+                                            <li class="menu-item"><a href="#">Onde Vai Reciclar ?</a></li>
+                                            <li class="menu-item"><a href="#">teste</a></li>
+                                        </ul>
                                 </li>
                                 <li class="menu-item menu-item-has-children greennature-normal-menu"><a href="/mapa"
                                         class="sf-with-ul-pre"><i class="fas fa-map-marked-alt"></i>Mapa</a>
@@ -378,40 +381,7 @@
         <!-- O que tiver aqui dentro o page speed do Google não consegue ver -->
         <?php endif ?>
 
-        
-        <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
-        <link href="{{asset('css/dropdown.min.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{asset('css/jquery.fancybox.min.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{asset('css/stylesa361.css?ver=2.3')}}" rel="stylesheet" type="text/css" />
-        <link href="{{asset('css/beta-popup.css')}}" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-        {{-- links css --}}
-    <link href="href="{{asset('css/flaticon.css')}}" rel="stylesheet" type="text/css" />
-    <link href="href="{{asset('css/jquery.bxslider.css')}}" rel="stylesheet" type="text/css" />
-    <link href="href="{{asset('css/ihover.css')}}" rel="stylesheet" type="text/css" />
-    <link href="href="{{asset('css/jquery-ui.css')}}" rel="stylesheet" type="text/css" />
-    <link href="href="{{asset('css/prettyPhoto.css')}}" rel="stylesheet" type="text/css" />
-    <link href="href="{{asset('js/plugins/rev/css/layers.css')}}" rel="stylesheet" type="text/css" />
-    <link href="href="{{asset('js/plugins/rev/css/navigation.css')}}" rel="stylesheet" type="text/css" />
-    <link href="href="{{asset('js/plugins/rev/css/settings.css')}}"  rel="stylesheet" type="text/css" />
-    
-        <link rel="stylesheet" href="{{asset('sweetalert/dist/sweetalert2.min.css')}}">
-        <link rel='stylesheet' href="{{asset('css/styleMenu.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' href="{{asset('plugins/superfish/css/superfish.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' href="{{asset('plugins/dl-menu/component.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' href="{{asset('plugins/elegant-font/style.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' href="{{asset('plugins/fancybox/jquery.fancybox.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' href="{{asset('plugins/flexslider/flexslider.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' href="{{asset('css/style-responsive.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' href="{{asset('css/style-custom.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' href="{{asset('plugins/masterslider/public/assets/css/masterslider.main.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' href="{{asset('css/master-custom.css')}}" type='text/css' media='all' />
-        <link rel='stylesheet' href="{{asset('css/prettyPhoto.css')}}" type='text/css' media='all' />
-        <link href="{{asset('css/recicla-guide.css')}}" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="{{asset('css/app.css')}}">
-        <link rel="stylesheet" href="{{asset('css/style.css')}}">
-        <link rel="stylesheet" href="{{asset('css/stylea721.css')}}" type="text/css" media='all' />
-    <link rel='stylesheet'
+        <link rel='stylesheet'
     href='https://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin&amp;'
     type='text/css' media='all' />
 <link rel='stylesheet'
@@ -428,13 +398,38 @@
 
 
 
+        {{-- links css --}}
+        <link href="{{asset('css/stylesa361.css?ver=2.3')}}" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{asset('sweetalert/dist/sweetalert2.min.css')}}">
+        <link rel='stylesheet' href="{{asset('css/styleMenu.css')}}" type='text/css' media='all' />
+        <link rel='stylesheet' href="{{asset('plugins/superfish/css/superfish.css')}}" type='text/css' media='all' />
+        <link rel='stylesheet' href="{{asset('plugins/dl-menu/component.css')}}" type='text/css' media='all' />
+        <link rel='stylesheet' href="{{asset('plugins/elegant-font/style.css')}}" type='text/css' media='all' />
+        <link rel='stylesheet' href="{{asset('plugins/fancybox/jquery.fancybox.css')}}" type='text/css' media='all' />
+        <link rel='stylesheet' href="{{asset('plugins/flexslider/flexslider.css')}}" type='text/css' media='all' />
+        <link rel='stylesheet' href="{{asset('css/style-responsive.css')}}" type='text/css' media='all' />
+        <link rel='stylesheet' href="{{asset('css/style-custom.css')}}" type='text/css' media='all' />
+        <link rel='stylesheet' href="{{asset('plugins/masterslider/public/assets/css/masterslider.main.css')}}" type='text/css' media='all' />
+        <link rel='stylesheet' href="{{asset('css/master-custom.css')}}" type='text/css' media='all' />
+        <link rel='stylesheet' href="{{asset('css/prettyPhoto.css')}}" type='text/css' media='all' />
+        <link rel="stylesheet" href="{{asset('css/recicla-guide.css')}}"  type="text/css" />
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        <link rel="stylesheet" href="{{asset('css/stylea721.css')}}" type="text/css" media='all' />
+
+
+
+
+
         <script src="{{url('https://code.jquery.com/jquery-3.4.0.min.js')}}"></script>
-        <script src="{{asset('js/reciclar/scripts.js')}}"></script>
+
         <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
         <script src="{{asset('js/postnewsletter.js')}}"></script>
+        {{-- <script src="{{asset('js/custom.js')}}" type="text/javascript"></script> --}}
+
         <script type='text/javascript' src="{{asset('js/jquery/jquery-migrate.min.js')}}"></script>
         <script type='text/javascript' src="{{asset('plugins/superfish/js/superfish.js')}}"></script>
         <script type='text/javascript' src="{{asset('js/hoverIntent.min.js')}}"></script>
@@ -447,35 +442,9 @@
         <script type='text/javascript' src="{{asset('plugins/flexslider/jquery.flexslider.js')}}"></script>
         <script type='text/javascript' src="{{asset('plugins/jquery.isotope.min.js')}}"></script>
         <script type='text/javascript' src="{{asset('js/plugins.js')}}"></script>
-        <!--Script Start-->
- <script src="{{asset('js/jquery-1.11.1.min.js" type="text/javascript')}}"></script>
- <script src="{{asset('js/jquery.bxslider.min.js')}}"></script>
- <script src="{{asset('js/plugins/prettyphoto/jquery.prettyPhoto.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/plugins/rainyday/rainyday.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/jquery.mixitup.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/scrollReveal.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/circles.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/plugins/countto/jquery.countTo.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/plugins/countto/jquery.appear.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/plugins/parallax/jquery.parallax-1.1.3.js')}}" type="text/javascript"></script>
- <!--Revolution slider js start-->
- <script src="{{asset('js/plugins/rev/js/jquery.themepunch.revolution.min.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/plugins/rev/js/jquery.themepunch.tools.min.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/plugins/rev/js/revolution.extension.actions.min.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/plugins/rev/js/revolution.extension.layeranimation.min.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/plugins/rev/js/revolution.extension.kenburn.min.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/plugins/rev/js/revolution.extension.parallax.min.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/plugins/rev/js/revolution.extension.slideanims.min.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/plugins/rev/js/revolution.extension.video.min.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/plugins/rev/js/revolution.extension.navigation.min.js')}}" type="text/javascript"></script>
- <!--Revolution slider js end-->
- <script src="{{asset('js/plugins/jquery-ui/jquery-ui.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/plugins/smoothscroll/smoothScroll.js')}}" type="text/javascript"></script>
- <script src="{{asset('js/custom.js" type="text/javascript')}}"></script>
-
         <script type='text/javascript' src="{{asset('plugins/jquery.transit.min.js')}}"></script>
-        <script src="{{asset('js/jquery.js')}}"></script>
-        {{-- <script src="{{url('https://code.jquery.com/jquery-3.4.0.min.js')}}"></script> --}}
+
+
         <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
         <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->
         <script src="{{asset('js/recicla.min.js')}}"></script>

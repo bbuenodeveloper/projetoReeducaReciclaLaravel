@@ -13,6 +13,20 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
 <div style="position: relative;">
 
+    <div class="panel city_panel-ins">
+        <div class="panel-titulo">
+            <h3>Instruções</h3>
+        </div>
+            <ul>
+                <li>1. Escolha a cidade</li>
+                <li>2. Selecione 1 ou mais materiais que deseja reciclar</li>
+                <li>3. Clique nos pontos que aparecerão no Mapa para saber os dados das empresas</li>
+                <li>4. Ou selecione a empresa na lista que vai aparecer no canto direito da tela</li>
+            </ul>
+
+        <div class="clearfix"></div>
+    </div>
+
         <div class="panel city_panel">
             <div class="city_head">
                 <div class="photo">
