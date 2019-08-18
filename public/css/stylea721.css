@@ -24,6 +24,7 @@
           .overlay {height:100%; width:100%; position:absolute; z-index:3; background-color:#007e49; transition:0.5s; top:0px; right:-100%;}
           .overlay.open {right:0% !important; overflow:hidden;}
           .overlay a.close {color:white; font-size:33px; display:inline-block; line-height:33px; text-align:center; border:1px solid white; width:40px; height:40px; right:25px; bottom:25px; position:absolute; z-index:5;}
+          .overlay a.close7 {color:black; font-size:33px; display:inline-block; line-height:33px; text-align:center; border:1px solid black; width:40px; height:40px; right:25px; bottom:25px; position:absolute; z-index:5;}
           .overlay-content {position:relative; z-index:2; width:90%; margin:0 5%; text-align:left; color:white; top:50%; transform:translateY(-50%); max-width:900px; margin:0 auto;}
                .overlay-content h3 {color:white;}
 

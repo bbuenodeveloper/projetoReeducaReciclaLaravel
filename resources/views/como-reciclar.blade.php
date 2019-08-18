@@ -191,7 +191,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         </div>
 
         <div class="overlay seven alt6 ">
-          <a href="javascript:void(0)" class="openSeven close">&minus;</a>
+          <a href="javascript:void(0)" class="openSeven close7">&minus;</a>
           <div class="overlay-content">
             <h3 class="cor-alt6-titulo">Passo a passo de como reciclar  <strong>plástico</strong></h3>
             <p class="cor-alt6-titulo">Grupo A (potencialmente infectantes) - que tenham presença de agentes biológicos que apresentem risco de infecção. Ex.: bolsas de sangue contaminado;</p>
