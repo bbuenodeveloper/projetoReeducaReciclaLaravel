@@ -48,14 +48,26 @@ function executeSweetErrorNews(){
 }
 
 
-//                     const Toast = Swal.mixin({
-//   toast: true,
-//   position: 'top-end',
-//   showConfirmButton: false,
-//   timer: 3000
-// })
+function deleteAllAdmin(){
+    Swal.fire({
+        title: 'Você tem certeza?',
+        text: "Você não poderá reverter isso!",
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sim, apague isso!'
+      }).then((result) => {
+        if (result.value) {
+          Swal.fire(
+            'Deletado!',
+            'Seu registro foi deletado.',
+            'success'
+          )
+        }
+      })
 
-// Toast.fire({
-//   type: 'success',
-//   title: 'Signed in successfully'
-// })
+
+
+
+}

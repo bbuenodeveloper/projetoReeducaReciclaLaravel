@@ -20,8 +20,8 @@
             <tr>
             <td>{{$material->id}}</td>
             <td>{{$material->tipoMaterial}}</td>
-            <td><button class="btn btn-success">Editar</button></td>
-            <td><button class="btn btn-danger">Apagar</button></td>
+            <td><a href="/editar-material/{{$material->id}}"<button class="btn btn-success" >Editar</button></td>
+            <td><button class="btn btn-danger" id="deletaMaterial" onclick="deletaMaterial({{$material->id}})">Apagar</button></td>
 
             </tr>
           @endforeach

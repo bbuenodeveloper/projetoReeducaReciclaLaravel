@@ -91,6 +91,17 @@ Route::post('/cadastrarcategoria','CategoriaController@cadastrarCategoria')->nam
 Route::post('/cadastrarusuario','RegisterController@create');
 
 
+Route::get('/apagarmaterial/{id}','MaterialController@apagarMaterial');
+
+
+
+Route::get('/editar-material/{id}','MaterialController@ViewEditarMaterial');
+
+// Route::post('/edit-material/{id}','MaterialController@editarMaterial')->name('edit');
+
+
+
+
 
 Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers');
 

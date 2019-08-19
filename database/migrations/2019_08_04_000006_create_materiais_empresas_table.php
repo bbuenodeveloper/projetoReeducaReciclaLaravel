@@ -33,13 +33,13 @@ class CreateMateriaisEmpresasTable extends Migration
 
             $table->foreign('cadastroEmpresas_id', 'fk_materiaisReciclados_has_cadastroEmpresas_cadastroEmpresa_idx')
                 ->references('id')->on('empresas')
-                ->onDelete('no action')
-                ->onUpdate('no action');
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
 
             $table->foreign('materiaisReciclados_id', 'fk_materiaisReciclados_has_cadastroEmpresas_materiaisRecicl_idx')
                 ->references('id')->on('materiais')
-                ->onDelete('no action')
-                ->onUpdate('no action');
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
         });
     }
 

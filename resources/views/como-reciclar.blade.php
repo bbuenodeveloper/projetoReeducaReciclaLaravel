@@ -143,8 +143,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
     </div>
 
-    <div class="more-cards"><span></span>
-    </div>
+
 
     <!-- fim cards -->
 
@@ -161,7 +160,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
           <a href="javascript:void(0)" class="openFive close">&minus;</a>
           <div class="overlay-content">
 
-            <h3>Como reciclar garrafas de <strong>vidro?</strong></h3>
+            <h3>Como reciclar garrafas de <strong>Vidro?</strong></h3>
             <p>Na reciclagem de garrafas de vidro, se estiverem inteiras, elas devem ser lavadas. Se estiverem quebradas, você pode utilizar uma garrafa PET para embalá-las. Para isso, retire o rótulo da garrafa PET e descarte-o junto de outros plásticos recicláveis. Então corte a garrafa ao meio, insira os cacos da garrafa de vidro quebrada, utilize a parte superior da garrafa PET para tampar o recipiente e coloque-o dentro de uma sacola. Procure utilizar luvas ou pá e vassoura para não se ferir.Também recomenda-se que os cacos de vidro não sejam misturados com terra ou sujeira.</p>
 
           </div>

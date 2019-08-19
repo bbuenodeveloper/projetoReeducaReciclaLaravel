@@ -33,13 +33,13 @@ class CreateCidadesEmpresasTable extends Migration
 
             $table->foreign('cadastroEmpresas_id', 'fk_cidades_has_cadastroEmpresas_cadastroEmpresas1_idx')
                 ->references('id')->on('empresas')
-                ->onDelete('no action')
-                ->onUpdate('no action');
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
 
             $table->foreign('cidades_id', 'fk_cidades_has_cadastroEmpresas_cidades1_idx')
                 ->references('id')->on('cidades')
-                ->onDelete('no action')
-                ->onUpdate('no action');
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
         });
     }
 

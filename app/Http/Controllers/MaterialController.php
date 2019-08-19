@@ -19,8 +19,30 @@ class MaterialController extends Controller
         $material->save();
 
 
-
-
-
     }
+
+    public function apagarMaterial(Request $request, $id){
+        $material = Material::find($id);
+        $material->delete();
+
+        return redirect('/relatorio-Materiais');
+    }
+
+    public function viewEditarMaterial(Request $request,$id) {
+        if($request->isMethod('GET')){
+            $material = Material::find($id);
+            return view('editar-material',['material'=>$material]);
+        }
+    }
+
+
+
+    public function editarMaterial(Request $request, $id){
+        $material = Material::find($id);
+        $material->save();
+
+        return redirect('/editar-Material');
+    }
+
+
 }
