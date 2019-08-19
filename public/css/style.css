@@ -431,12 +431,48 @@ p#frase {
 /*Início Configuração Footer*/
 
 
+footer .column {
+    float: left;
+    width: 25%;
+    padding: 4em 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+footer h6 {
+    padding: 0 0 1.5em;
+    color: #b5b700;
+}
+
+footer a.socialIcon {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    background: white;
+    color: #1b232e;
+    font-size: 30px;
+    line-height: 50px;
+    margin: 0 5px 8px 0;
+}
+
+footer a.socialIcon:hover {
+    background: #b6b701;
+    color: white;
+}
+
+
 
 .btn-instagram  {
-    background: #dd131b !important;
-    border-color: #dd131b !important;
-    color: #fff !important;
-    width: 39px !important;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    background: white;
+    color: #1b232e;
+    font-size: 30px;
+    line-height: 50px;
+    margin: 0 5px 8px 0;
 
 }
 
@@ -451,6 +487,13 @@ p#frase {
 .btn-twitter-footer {
     background: #1da1f2 !important;
     border-color: #1da1f2!important ;
+    color: #fff !important;
+    width: 39px !important;
+
+}
+.btn-youtube-footer {
+    background: #ff0000 !important;
+    border-color: #ff0000!important ;
     color: #fff !important;
     width: 39px !important;
 

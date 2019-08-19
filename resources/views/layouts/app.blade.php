@@ -349,27 +349,23 @@
  </div>
 
  <div class="footer-bottom">
-     <div class="container">
-         <div class="row">
+        <div class="container mt-2 mb-2">
+                <div class="row">
 
-             <div class="col-md-6">
-                 <span class="copyrights">Copyright &copy; 2019 Recicla Maps. Todos os Direitos Reservados.</span>
-             </div>
+                    <div class="col-md-6 p-3">
+                        <span class="copyrights">Copyright &copy; 2019 Recicla Maps. Todos os Direitos Reservados.</span>
+                    </div>
 
-             <div class="col-md-6">
-                <ul class="list-inline">
-                    <li class="list-inline-item m-t-10"><a href="" class="btn btn-facebook-footer"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item m-t-10"><a href="" class="btn btn-twitter-footer"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item m-t-10"><a href="" class="btn btn-instagram"><i class="fab fa-instagram"></i></a>
-                    </li>
-
-                </ul>
-             </div>
-
-         </div>
-     </div>
+                    <div class="col-md-6 p-3">
+                           <ul>
+                               <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-facebook"></i></a></li>
+                               <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-twitter"></i></a></li>
+                               <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-instagram"></i></a></li>
+                               <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
 
  </div>
 
