@@ -411,6 +411,7 @@
         <link rel="stylesheet" href="{{asset('css/recicla-guide.css')}}"  type="text/css" />
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        <link rel="stylesheet" href="{{asset('css/loja.css')}}">
         <link rel="stylesheet" href="{{asset('css/stylea721.css')}}" type="text/css" media='all' />
 
 
