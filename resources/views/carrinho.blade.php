@@ -1,121 +1,65 @@
-@extends('layoutsloja.app')
+@extends('layouts.app')
 
 @section('content')
 
-<div class="site-wrap">
+<div class="container">
+    <div class="mb-5 mt-5">
+        <div class="card">
+            <table class="table table-hover shopping-cart-wrap">
+                <thead class="text-muted">
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col" width="120">Quantidade</th>
+                        <th scope="col" width="120">Preço</th>
+                        <th scope="col" width="200" class="text-right">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <figure class="media">
+                                <div class="img-wrap"><img src="/storage/produtos/{{$produto->imagem}}"
+                                        class="img-thumbnail img-sm"></div>
 
+                                <h3 class="title text-truncate">{{$produto->nome}}</h6>
 
-    <div class="bg-light py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 mb-0"><a href="/home">Home</a> <span class="mx-2 mb-0">/</span>
-                    <a href="/loja">Loja</a><span class="mx-2 mb-0">/</span>
-                    <strong class="text-black">Carrinho</strong></div>
-                    <div class="col-6 mb-0"><a href="/carrinho"><img src="img/produtos_loja/carrinho.png"
-                        class="sizeCarrinho pull-right" alt=""></a>
-            </div>
-            </div>
+                            </figure>
+                        </td>
+                        <td>
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="price-wrap">
+                                <var class="price">R$ {{$produto->preco}}</var>
+                            </div> <!-- price-wrap .// -->
+                        </td>
+                        <td class="text-right">
+                            <a href="" class="btn btn-outline-danger"> × Remover</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div> <!-- card.// -->
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 mb-5">
+            <a href="#" class="btn  btn-outline-primary"> <i class="fas fa-shopping-cart"></i> CONTINUAR COMPRANDO</a>
+            <a href="/dadoscompra/{{$produto->id}}" class="btn  btn-primary">FINALIZAR COMPRA</a>
         </div>
     </div>
-
-    <div class="site-section">
-        <div class="container">
-            <div class="row mb-5">
-                <form class="col-12 mt-5" method="post">
-                    <div class="site-blocks-table">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th class="product-thumbnail">Imagem</th>
-                                    <th class="product-name">Produto</th>
-                                    <th class="product-price">Preço</th>
-                                    <th class="product-quantity">Quantidade</th>
-                                    <th class="product-total">Total</th>
-                                    <th class="product-remove">Remover</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="product-thumbnail">
-                                    <img src="/storage/produtos/{{$produto->imagem}}" alt="Image" class="img-fluid">
-                                    </td>
-                                    <td class="product-name">
-                                    <h2 class="h5 text-black">{{$produto->nome}}</h2>
-                                    </td>
-                                <td>R${{$produto->preco}}</td>
-                                    <td>
-                                        <div class="input-group mb-3" style="max-width: 120px;">
-                                            <div class="input-group-prepend">
-                                                <button class="btn btn-outline-primary js-btn-minus "
-                                                    type="button">&minus;</button>
-                                            </div>
-                                            <input type="text" class="form-control text-center" value="1" placeholder=""
-                                                aria-label="Example text with button addon"
-                                                aria-describedby="button-addon1">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-outline-primary js-btn-plus"
-                                                    type="button">&plus;</button>
-                                            </div>
-                                        </div>
-
-                                    </td>
-                                    <td>R${{$produto->preco}}</td>
-                                    <td><a href="#" class="btn btn-danger btn-sm">X</a></td>
-                                </tr>
+</div>
 
 
-                            </tbody>
-                        </table>
-                    </div>
-                </form>
-            </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="row mb-5">
 
-                        <div class="col-12">
-                            <button class="btn btn-outline-primary btn-sm btn-block heightBotao">CONTINUAR COMPRANDO</button>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="col-12 pl-5 mb-5">
-                    <div class="row justify-content-end">
-                        <div class="col-7">
-                            <div class="row">
-                                <div class="col-12 text-right border-bottom mb-5">
-                                    <h3 class="text-black h4 text-uppercase">PREÇO TOTAL</h3>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-md-6">
-                                    <span class="text-black">Subtotal</span>
-                                </div>
-                                <div class="col-6 text-right">
-                                    <strong class="text-black">{{$produto->preco}}</strong>
-                                </div>
-                            </div>
-                            <div class="row mb-5">
-                                <div class="col-6">
-                                    <span class="text-black">Total</span>
-                                </div>
-                                <div class="col-6 text-right">
-                                    <strong class="text-black">{{$produto->preco}}</strong>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-12">
-                                    <button class="btn btn-primary btn-lg py-3 btn-block
-                                "onclick="window.location='/dadoscompra/{{$produto->id}}'">FINALIZAR COMPRA</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    @endsection
+@endsection
