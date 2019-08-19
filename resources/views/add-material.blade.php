@@ -25,13 +25,13 @@
                     </div>
                 </center>
 
-                <form action="{{ route('material.cadastrar') }}" method="post" class="user-info-setting-form"
+                <form dataroute="{{ route('material.cadastrar') }}" method="post" id="formMaterial" class="user-info-setting-form"
                     enctype="multipart/form-data">
                     @csrf
 
                     <div class="md-form mt-5">
                             <i class="fa fa-recycle prefix grey-text"></i>
-                            <input type="text" name="tipoMaterial" id="materialFormCardNameEx" class="form-control">
+                            <input type="text" name="tipoMaterial" id="tipoMaterial" class="form-control">
                             <label for="tipoMaterial" class="font-weight-light">Digite o material</label>
                           </div>
 

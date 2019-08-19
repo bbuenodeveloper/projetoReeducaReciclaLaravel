@@ -250,7 +250,9 @@
 
         <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
-        <script src="{{asset('js/post.js')}}"></script>
+        <script src="{{asset('js/ajaxValidaEmpresa.js')}}"></script>
+        <script src="{{asset('js/ajaxValidaCidade.js')}}"></script>
+        <script src="{{asset('js/ajaxValidaMaterial.js')}}"></script>
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
         <script src="{{asset('js/postNewsletterAdmin.js')}}"></script>
         <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
@@ -264,13 +266,6 @@
         <script href="{{asset('js/addons/datatables.min.js')}}" rel="stylesheet"></script>
         <script href="{{asset('js/addons/datatables-select.min.js')}}" rel="stylesheet"></script>
 
-
-        <script>
-                $(document).ready(function () {
-                $('#align-table').DataTable();
-                $('.dataTables_length').addClass('bs-select');
-                });
-          </script>
 
 
 

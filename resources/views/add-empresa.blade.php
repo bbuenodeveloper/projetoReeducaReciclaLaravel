@@ -8,11 +8,7 @@
     <div class="row">
         <div class="col-12 mx-auto">
 
-                {{-- @if (isset($sucesso))
-                <div class="alert alert-success" role="alert">
-                    <strong>Muito bem!</strong> {{ $sucesso }}
-                </div>
-                @endif --}}
+
 <div class="jumbotron border rounded border-success">
         <center><div class="logoRegister mb-4">
                 <a href="/add-empresa">
@@ -20,48 +16,48 @@
                 </a>
             <div></center>
     <h1 class="text-center mb-2">Cadastro de Empresas</h1>
-    <form action="{{ route('empresa.cadastrar') }}" method="post" class="user-info-setting-form" enctype="multipart/form-data">
+    <form dataroute="{{ route('empresa.cadastrar') }}" method="post" id="formEmpresa" class="user-info-setting-form" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
         <label for="nome">Nome</label>
-        <input type="text" name="nome" class="form-control" placeholder="Digite o nome">
+        <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite o nome">
         </div>
         <div class="form-group">
             <label for="endereco">Endereço</label>
-            <input type="text" name="endereco" class="form-control" placeholder="Digite o endereço">
+            <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Digite o endereço">
             </div>
             <div class="form-group">
                 <label for="numero">Numero</label>
-                <input type="text" name="numero" class="form-control" placeholder="Digite o numero">
+                <input type="text" name="numero" id="numero" class="form-control" placeholder="Digite o numero">
                 </div>
                 <div class="form-group">
                     <label for="complemento">Complemento</label>
-                    <input type="text" name="complemento" class="form-control" placeholder="Digite o complemento">
+                    <input type="text" name="complemento" id="complemento" class="form-control" placeholder="Digite o complemento">
                     </div>
                     <div class="form-group">
                         <label for="cep">Cep</label>
-                        <input type="text" name="cep" class="form-control" placeholder="Digite o cep">
+                        <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite o cep">
                         </div>
                         <div class="form-group">
                             <label for="bairro">Bairro</label>
-                            <input type="text" name="bairro" class="form-control" placeholder="Digite o bairro">
+                            <input type="text" name="bairro" id="bairro" class="form-control" placeholder="Digite o bairro">
                             </div>
 
                             <div class="form-group">
                                 <label for="estado">Estado</label>
-                                <input type="text" name="estado" class="form-control" placeholder="Digite o estado">
+                                <input type="text" name="estado" id="estado" class="form-control" placeholder="Digite o estado">
                                 </div>
                                 <div class="form-group">
                                     <label for="telefone">Telefone</label>
-                                    <input type="text" name="telefone" class="form-control" placeholder="Digite o telefone">
+                                    <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Digite o telefone">
                                     </div>
                                     <div class="form-group">
                                         <label for="latitude">Latitude</label>
-                                        <input type="text" name="latitude" class="form-control" placeholder="Digite a latitude">
+                                        <input type="text" name="latitude" id="latitude" class="form-control" placeholder="Digite a latitude">
                                         </div>
                                         <div class="form-group">
                                             <label for="longitude">Longitude</label>
-                                            <input type="text" name="longitude" class="form-control" placeholder="Digite a longitude">
+                                            <input type="text" name="longitude" id="longitude" class="form-control" placeholder="Digite a longitude">
                                             </div>
                                             <div class="form-group">
 
@@ -74,19 +70,7 @@
                                                 </select>
 
                                             </div>
-                                            {{-- <div class="form-group row">
-                                                    <label class="col-sm-2">Cidades</label>
-                                                    <div class="col-sm-10">
-                                                        @foreach ($cidades as $cidade)
-                                                        <div class="radio">
-                                                            <label>
-                                                                <input type="radio" name="cidade" id="cidade" value="{{ $cidade->id }}">
-                                                                {{ $cidade->cidade }}
-                                                            </label>
-                                                        </div>
-                                                        @endforeach
-                                                    </div>
-                                                </div> --}}
+
                                                 <div class="form-group row">
                                                     <label class="col-sm-2">Materiais</label>
                                                     <div class="col-sm-10">

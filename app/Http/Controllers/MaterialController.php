@@ -21,8 +21,6 @@ class MaterialController extends Controller
 
 
 
-        return view('add-material', [
-            'success' => "Cadastro realizado com sucesso!"
-        ]);
+
     }
 }

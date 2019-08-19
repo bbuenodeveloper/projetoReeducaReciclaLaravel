@@ -40,13 +40,7 @@ class EmpresaController extends Controller
             DB::insert('INSERT INTO `materiais_empresas` (`materiaisReciclados_id`,`cadastroEmpresas_id`) VALUES (?,?);', [$material_id, $empresa->id]);
         }
 
-        // dd($_POST);
 
-        return view('add-empresa', [
-            'success' => "Cadastro realizado com sucesso!",
-            'materiais' =>  material::All(),
-            'cidades' =>  cidade::All(),
-            ]
-        );
+
     }
 }
