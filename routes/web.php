@@ -14,6 +14,7 @@ use App\Http\Controllers\Newslettercontroller;
 |
 */
 
+// Rotas menu acesso as paginas
 
 Route::get('/','HomeController@home');
 
@@ -31,12 +32,6 @@ Route::get('/faq', 'FaqController@faq');
 
 Route::get('/loja', 'LojaController@loja');
 
-Route::get('/carrinho', 'CarrinhoController@carrinho');
-
-Route::get('/finalizada', 'FinalizadaController@finalizada');
-
-Route::get('/dadoscompra', 'DadosCompraController@dadoscompra');
-
 Route::get('/privacidade', 'PrivacidadeController@privacidade');
 
 Route::get('/termos', 'TermosController@termos');
@@ -47,15 +42,34 @@ Route::get('/blog-details', 'BlogController@blogdetails');
 
 Route::get('/como-reciclar', 'ReciclarController@comoReciclar');
 
-Route::get('/marcadores/{cidade}/{materiaisIds}', 'MarcadoresController@marcadores')->name('marcadores');
 
-Route::get('/cidades', 'CidadeController@obterJson');
+// Rotas loja
+
+Route::get('/carrinho', 'CarrinhoController@carrinho');
+
+Route::get('/finalizada', 'FinalizadaController@finalizada');
+
+Route::get('/dadoscompra', 'DadosCompraController@dadoscompra');
 
 Route::get('/internaProduto/{id}', 'InternaLojaController@exibirProdutoUnico');
 
 Route::get('/carrinho/{id}', 'CarrinhoController@carrinhoProduto');
 
 Route::get('/dadoscompra/{id}', 'DadosCompraController@dadosProduto');
+
+Route::get('/loja', 'ProdutoController@exibirProdutos');
+
+
+// rotas internas do mapa de acesso ao banco de dados
+
+Route::get('/marcadores/{cidade}/{materiaisIds}', 'MarcadoresController@marcadores')->name('marcadores');
+
+Route::get('/cidades', 'CidadeController@obterJson');
+
+
+
+
+// rotas incluir registros
 
 Route::get('/add-cidade', 'CidadeController@addCidade');
 
@@ -72,6 +86,9 @@ Route::get('/add-categoria', 'CategoriaController@categorias');
 Route::get('/add-admin','AdminController@addAdmin');
 
 Route::get('/registerPainel','Auth\RegisterController@addUser');
+
+
+// rotas cadastrar registros
 
 
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
@@ -91,28 +108,45 @@ Route::post('/cadastrarcategoria','CategoriaController@cadastrarCategoria')->nam
 Route::post('/cadastrarusuario','RegisterController@create');
 
 
+// rotas deletar registros
+
+
 Route::get('/apagarmaterial/{id}','MaterialController@apagarMaterial');
 
 Route::get('/apagarempresa/{id}','EmpresaController@apagarEmpresa');
 
 Route::get('/apagarcidade/{id}','CidadeController@apagarCidade');
 
+Route::get('/apagarnews/{id}', 'Newslettercontroller@apagarNews');
+
+
+// rotas editar registros Get
 
 
 Route::get('/editar-material/{id}','MaterialController@ViewEditarMaterial');
 
+Route::get('/editar-empresa/{id}','EmpresaController@ViewEditarEmpresa');
+
+Route::get('/editar-cidade/{id}','CidadeController@ViewEditarCidade');
+
+
+
+// rotas editar registros Post
+
 Route::post('/editado/{id}','MaterialController@editarMaterial');
 
-Route::get('/apagarnews/{id}', 'Newslettercontroller@apagarNews');
+Route::post('/editadoempresa/{id}','EmpresaController@editarEmpresa');
+
+Route::post('/editadocidade/{id}','CidadeController@editarCidade');
 
 
 
 Route::get('/editar-news/{id}', 'NewsletterController@editarNews');
 Route::post('/editar-news/{id}', 'NewsletterController@editarNews');
-// Route::post('/edit-material/{id}','MaterialController@editarMaterial')->name('edit');
 
 
 
+// rotas relatórios
 
 
 Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers');
@@ -127,8 +161,9 @@ Route::get('/relatorio-Newsletter', 'RelatoriosController@relatorioNewsletter');
 
 
 
+// Rotas de autenticação
 
-// Rotas são definidas em ./vendor/laravel/framework/src/Illuminate/Routing/Router.php # auth
+
 Auth::routes();
 Route::get('/painel', 'PainelController@painel')->name('painel');
 Route::get('/home', 'HomeController@index')->name('home');
@@ -137,9 +172,11 @@ Route::get('/home', 'NewsletterController@home')->name('home');
 
 Route::post('/home', 'NewsletterController@home');
 
-Route::get('/loja', 'ProdutoController@exibirProdutos');
+
 
 Route::get('/adminlista','AdminController@mostrarLista');
+
+Route::get('/registerPainel','Auth\RegisterController@addUser');
 
 
 

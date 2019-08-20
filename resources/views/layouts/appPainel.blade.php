@@ -176,20 +176,21 @@
             </li>
             <li class="nav-item with-sub">
               <a class="nav-link" href="#">
-                <i class="far fa-file"></i>
-                <span class="space-menu">Página</span>
+                <i class="fas fa-blog"></i>
+                <span class="space-menu">Blog</span>
               </a>
               <div class="sub-item">
                 <ul>
-                  <li><a href="#">Info 1</a></li>
-                  <li><a href="#">Info 2</a></li>
-                  <li><a href="#">Info 3</a></li>
+                  <li><a href="#">Cadastro de Matérias</a></li>
+                  <li><a href="#">Cadastro de Categorias</a></li>
+                  <li><a href="#">Cadastro de Tags</a></li>
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
-                      <li><a href="#">Relatorio 1</a></li>
-                      <li><a href="#">Relatorio 2</a></li>
-                      <li><a href="#">Relatorio 3</a></li>
+                      <li><a href="#">Relatorio de Matérias</a></li>
+                      <li><a href="#">Relatorio de Comentários</a></li>
+                      <li><a href="#">Relatorio de Categorias</a></li>
+                      <li><a href="#">Relatorio de Tags</a></li>
                     </ul>
                   </li>
                 </ul>
