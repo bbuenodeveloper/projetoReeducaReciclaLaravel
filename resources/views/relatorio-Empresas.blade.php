@@ -19,6 +19,8 @@
           <th>Telefone</th>
           <th>Latitude</th>
           <th>longitude</th>
+          <th>Editar</th>
+          <th>Apagar</th>
 
 
         </tr>
@@ -38,7 +40,8 @@
             <td>{{$empresa->telefone}}</td>
             <td>{{$empresa->latitude}}</td>
             <td>{{$empresa->longitude}}</td>
-
+            <td><a href="/editar-empresa/{{$empresa->id}}"><button class="btn btn-success" >Editar</button></a></td>
+            <td><button class="btn btn-danger" id="deletaEmpresa" onclick="deletaEmpresa({{$empresa->id}})">Apagar</button></td>
             </tr>
           @endforeach
 

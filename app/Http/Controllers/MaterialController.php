@@ -39,9 +39,10 @@ class MaterialController extends Controller
 
     public function editarMaterial(Request $request, $id){
         $material = Material::find($id);
+        $material->tipoMaterial = $request->tipoMaterial;
         $material->save();
 
-        return redirect('/editar-Material');
+        return view('relatorio-Materiais');
     }
 
 

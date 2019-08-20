@@ -11,6 +11,8 @@
           <th>Id</th>
           <th>cidade</th>
           <th>Imagem</th>
+          <th>Editar</th>
+          <th>Apagar</th>
         </tr>
       </thead>
       <tbody>
@@ -20,7 +22,8 @@
             <td>{{$cidade->id}}</td>
             <td>{{$cidade->cidade}}</td>
             <td>{{$cidade->imagem}}</td>
-
+            <td><a href="/editar-cidade/{{$cidade->id}}"><button class="btn btn-success" >Editar</button></a></td>
+            <td><button class="btn btn-danger" id="deletaCidade" onclick="deletaCidade({{$cidade->id}})">Apagar</button></td>
             </tr>
           @endforeach
 

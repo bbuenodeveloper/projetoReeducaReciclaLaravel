@@ -93,11 +93,15 @@ Route::post('/cadastrarusuario','RegisterController@create');
 
 Route::get('/apagarmaterial/{id}','MaterialController@apagarMaterial');
 
+Route::get('/apagarempresa/{id}','EmpresaController@apagarEmpresa');
+
+Route::get('/apagarcidade/{id}','CidadeController@apagarCidade');
+
 
 
 Route::get('/editar-material/{id}','MaterialController@ViewEditarMaterial');
 
-// Route::post('/edit-material/{id}','MaterialController@editarMaterial')->name('edit');
+Route::post('/editado/{id}','MaterialController@editarMaterial');
 
 
 

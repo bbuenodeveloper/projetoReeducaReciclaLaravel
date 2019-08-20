@@ -1,4 +1,4 @@
-function deletaMaterial(id){
+function deletaEmpresa(id){
 
 
     Swal.fire({
@@ -16,7 +16,7 @@ function deletaMaterial(id){
                         type: 'GET',
                         processData: false,
                         contentType: false,
-                        url: '/apagarmaterial/'+ id,
+                        url: '/apagarempresa/'+ id,
 
                         success: function() {
                             executeSweetDelete();
