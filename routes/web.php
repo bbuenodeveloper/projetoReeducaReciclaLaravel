@@ -55,10 +55,7 @@ Route::get('/internaProduto/{id}', 'InternaLojaController@exibirProdutoUnico');
 
 Route::get('/carrinho/{id}', 'CarrinhoController@carrinhoProduto');
 
-Route::get('/dadoscompra/{id}', 'DadosCompraController@dadosProduto');
-
-Route::get('/loja', 'ProdutoController@exibirProdutos');
-
+Route::get('/dadoscompra/{id}', 'DadosCompraController@dadosProduto')->middleware('acesso');
 
 // rotas internas do mapa de acesso ao banco de dados
 
@@ -66,46 +63,40 @@ Route::get('/marcadores/{cidade}/{materiaisIds}', 'MarcadoresController@marcador
 
 Route::get('/cidades', 'CidadeController@obterJson');
 
-
-
-
 // rotas incluir registros
+Route::get('/add-cidade', 'CidadeController@addCidade')->middleware('acesso');
 
-Route::get('/add-cidade', 'CidadeController@addCidade');
+Route::get('/add-material', 'MaterialController@addMaterial')->middleware('acesso');
 
-Route::get('/add-material', 'MaterialController@addMaterial');
+Route::get('/add-empresa', 'EmpresaController@addEmpresa')->middleware('acesso');
 
-Route::get('/add-empresa', 'EmpresaController@addEmpresa');
+Route::get('/add-produto', 'ProdutoController@addProduto')->middleware('acesso');
 
-Route::get('/add-produto', 'ProdutoController@addProduto');
+Route::get('/add-newsletter', 'NewsletterController@addnewsletter')->middleware('acesso');
 
-Route::get('/add-newsletter', 'NewsletterController@addnewsletter');
+Route::get('/add-categoria', 'CategoriaController@categorias')->middleware('acesso');
 
-Route::get('/add-categoria', 'CategoriaController@categorias');
+Route::get('/add-admin','AdminController@addAdmin')->middleware('acesso');
 
-Route::get('/add-admin','AdminController@addAdmin');
-
-Route::get('/registerPainel','Auth\RegisterController@addUser');
-
+Route::get('/registerPainel','Auth\RegisterController@addUser')->middleware('acesso');
 
 // rotas cadastrar registros
 
+Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar')->middleware('acesso');
 
-Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
+Route::post('/cadastrarempresa', 'EmpresaController@cadastrarEmpresa')->name('empresa.cadastrar')->middleware('acesso');
 
-Route::post('/cadastrarempresa', 'EmpresaController@cadastrarEmpresa')->name('empresa.cadastrar');
+Route::post('/cadastrarmaterial', 'MaterialController@cadastrarMaterial')->name('material.cadastrar')->middleware('acesso');
 
-Route::post('/cadastrarmaterial', 'MaterialController@cadastrarMaterial')->name('material.cadastrar');
+Route::post('/cadastrarcidade', 'CidadeController@cadastrarCidade')->name('cidade.cadastrar')->middleware('acesso');
 
-Route::post('/cadastrarcidade', 'CidadeController@cadastrarCidade')->name('cidade.cadastrar');
+Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')->name('newsletter.cadastrar')->middleware('acesso');
 
-Route::post('/cadastrarnewsletter', 'NewsletterController@cadastrarNewsletter')->name('newsletter.cadastrar');
+Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')->name('admin.cadastrar')->middleware('acesso');
 
-Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')->name('admin.cadastrar');
+Route::post('/cadastrarcategoria','CategoriaController@cadastrarCategoria')->name('categoria.cadastrar')->middleware('acesso');
 
-Route::post('/cadastrarcategoria','CategoriaController@cadastrarCategoria')->name('categoria.cadastrar');
-
-Route::post('/cadastrarusuario','RegisterController@create');
+Route::post('/cadastrarusuario','RegisterController@create')->middleware('acesso');
 
 
 // rotas deletar registros
@@ -149,23 +140,22 @@ Route::post('/editar-news/{id}', 'NewsletterController@editarNews');
 // rotas relatórios
 
 
-Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers');
+Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers')->middleware('acesso');
 
-Route::get('/relatorio-Empresas', 'RelatoriosController@relatorioEmpresas');
+Route::get('/relatorio-Empresas', 'RelatoriosController@relatorioEmpresas')->middleware('acesso');
 
-Route::get('/relatorio-Cidades', 'RelatoriosController@relatorioCidades');
+Route::get('/relatorio-Cidades', 'RelatoriosController@relatorioCidades')->middleware('acesso');
 
-Route::get('/relatorio-Materiais', 'RelatoriosController@relatorioMateriais');
+Route::get('/relatorio-Materiais', 'RelatoriosController@relatorioMateriais')->middleware('acesso');
 
-Route::get('/relatorio-Newsletter', 'RelatoriosController@relatorioNewsletter');
-
+Route::get('/relatorio-Newsletter', 'RelatoriosController@relatorioNewsletter')->middleware('acesso');
 
 
 // Rotas de autenticação
 
 
 Auth::routes();
-Route::get('/painel', 'PainelController@painel')->name('painel');
+Route::get('/painel', 'PainelController@painel')->name('painel')->middleware('acesso');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/home', 'NewsletterController@home')->name('home');
@@ -174,7 +164,19 @@ Route::post('/home', 'NewsletterController@home');
 
 
 
-Route::get('/adminlista','AdminController@mostrarLista');
+Route::get('/adminlista','AdminController@mostrarLista')->middleware('acesso');
+
+Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
+
+Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+
+Route::get('redirect/{driver}', 'Auth\LoginController@redirectToProvider')
+    ->name('login.provider')
+    ->where('driver', implode('|', config('auth.socialite.drivers')));
+
+Route::get('{driver}/callback', 'Auth\LoginController@handleProviderCallback')
+    ->name('login.callback')
+    ->where('driver', implode('|', config('auth.socialite.drivers')));
 
 Route::get('/registerPainel','Auth\RegisterController@addUser');
 
