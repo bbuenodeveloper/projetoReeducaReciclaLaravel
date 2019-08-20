@@ -248,6 +248,7 @@
 
 
         <script src="{{asset('js/ajaxDeletaMaterial.js')}}"></script>
+        <script src="{{asset('js/ajaxDeletaNews.js')}}"></script>
         <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
 

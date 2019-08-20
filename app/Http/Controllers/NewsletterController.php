@@ -54,7 +54,25 @@ class NewsletterController extends Controller
             return view('add-newsletter');
         }
     }
+    public function apagarNews(Request $request, $id){
+        $newsletter = newsletter::find($id);
+        $newsletter->delete();
 
+        return redirect('/relatorio-Newsletter');
+    }
 
+    public function editarNews(Request $request,$id) {
+        if($request->isMethod('GET')){
+            $newsletter = Newsletter::find($id);
+            return view('editar-news',['newsletter'=>$newsletter]);
+        }
+
+        $newsletter = newsletter::find($id);
+        $newsletter->email;
+        $newsletter->save();
+
+        return redirect('/');
+
+}
 
 }
