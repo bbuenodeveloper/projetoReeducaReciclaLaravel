@@ -103,6 +103,14 @@ Route::get('/editar-material/{id}','MaterialController@ViewEditarMaterial');
 
 Route::post('/editado/{id}','MaterialController@editarMaterial');
 
+Route::get('/apagarnews/{id}', 'Newslettercontroller@apagarNews');
+
+
+
+Route::get('/editar-news/{id}', 'NewsletterController@editarNews');
+Route::post('/editar-news/{id}', 'NewsletterController@editarNews');
+// Route::post('/edit-material/{id}','MaterialController@editarMaterial')->name('edit');
+
 
 
 

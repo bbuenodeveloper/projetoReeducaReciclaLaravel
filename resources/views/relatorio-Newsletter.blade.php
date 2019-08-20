@@ -10,6 +10,8 @@
         <tr>
           <th>Id</th>
           <th>Email</th>
+          <th>Editar</th>
+          <th>Apagar</th>
 
         </tr>
       </thead>
@@ -19,7 +21,8 @@
             <tr>
             <td>{{$newsletter->id}}</td>
             <td>{{$newsletter->email}}</td>
-
+            <td><a href="/editar-news/{{$newsletter->id}}"><button class="btn btn-success" >Editar</button></td>
+            <td><button class="btn btn-danger" id="deletaNews" onclick="deletaNews({{$newsletter->id}})">Apagar</button></td>
 
             </tr>
           @endforeach
