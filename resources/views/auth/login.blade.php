@@ -20,12 +20,32 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
                 <div class="card-body">
                         <div class="logo text-center">
-                                <a href="index.html">
-                                    <img src="img/logologin.png" alt="">
+                            <a href="index.html">
+                                <img src="img/logologin.png" alt="">
+                            </a>
+                        </div>
+
+                    <div class="container col-md-10"> 
+                        <div class="row">
+                            <div class="col-md-5 mx-auto">
+                                <a href="/auth/facebook" >
+                                    <img src="{{ asset('img/loginFacebook.png') }}">
                                 </a>
                             </div>
+                            <div class="col-md-5 mx-auto">
+                                <a href="/auth/google" >
+                                    <img src="{{ asset('img/loginGoogle.png') }}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                        
+                    
                     <form class="login-form-text mt-3" method="POST" action="{{ route('login') }}">
                         @csrf
+
+                        
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>

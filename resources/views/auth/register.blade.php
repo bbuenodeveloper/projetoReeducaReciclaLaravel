@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="jumbotron col-md-8 border rounded border-success">
         <div class="col-md-12">
-            <form method="POST" action="{{ route('register') }}">
+            <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                 @csrf
                 <div class="col-md-12 container  p-4 text-center">
                 <div class="logoRegister mb-4">
@@ -14,7 +14,7 @@
                         </a>
                     <div>
                     <div class="form-group row">
-
+                    
                         <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome') }}</label>
 
                         <div class="col-md-6">
@@ -60,7 +60,7 @@
                         <label for="data_nascimento" class="col-md-4 col-form-label text-md-right">{{ __('Data de Nascimento') }}</label>
 
                         <div class="col-md-6">
-                            <input id="data_nascimento" type="date" class="form-control @error('data_nascimento') is-invalid @enderror" name="data_nascimento" value="{{ old('data_nascimento') }}" required autocomplete="data_nascimento">
+                            <input id="data_nascimento" type="date" class="form-control @error('data_nascimento') is-invalid @enderror" name="data_nascimento" value="{{ old('data_nascimento') }}" required autocomplete="data_nascimento" style="font-style:italic">
 
                             @error('data_nascimento')
                                 <span class="invalid-feedback" role="alert">
@@ -74,7 +74,7 @@
                         <label for="telefone" class="col-md-4 col-form-label text-md-right">{{ __('Telefone') }}</label>
 
                         <div class="col-md-6">
-                            <input id="telefone" type="text" class="form-control @error('telefone') is-invalid @enderror" name="telefone" value="{{ old('telefone') }}" required autocomplete="telefone">
+                            <input id="telefone" type="number" class="form-control @error('telefone') is-invalid @enderror" name="telefone" value="{{ old('telefone') }}" required autocomplete="telefone" mask="(__) _____-____" placeholder="Ex: (xx) xxxx-xxxx"style="font-style:italic">
 
                             @error('telefone')
                                 <span class="invalid-feedback" role="alert">
@@ -110,7 +110,7 @@
                         <label for="cep" class="col-md-4 col-form-label text-md-right">{{ __('CEP') }}</label>
 
                         <div class="col-md-6">
-                            <input id="cep" type="text" class="form-control @error('cep') is-invalid @enderror" name="cep" required autocomplete="cep">
+                            <input id="cep" type="text" class="form-control @error('cep') is-invalid @enderror" name="cep" required autocomplete="cep" mask="_____-___" placeholder="Ex: xxxxx-xxx" style="font-style:italic">
 
                             @error('cep')
                                 <span class="invalid-feedback" role="alert">
@@ -212,6 +212,12 @@
                             <input id="name" type="hidden" class="form-control ">
                         </div>
                     </div>
+                    <div class="form-group row">
+                            <label for="avatar" class="col-md-4 col-form-label text-md-right">Insira sua foto</label>
+                            <div class="col-md-6">
+                                <input type="file" name="avatar" id="avatar" accept="image/png,image/jpg">
+                            </div>
+                        </div>
 
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-4">
