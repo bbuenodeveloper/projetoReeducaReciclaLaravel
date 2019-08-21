@@ -18,12 +18,23 @@
                     <img class="logoRegister mb-3" src="img/logologin.png" alt>
                 </a>
             <div></center>
-    <h1 class="text-center mb-2">Cadastro de Cidades</h1>
-    <form dataroute="{{ route('cidade.cadastrar') }}" method="post" id="myform" class="user-info-setting-form" enctype="multipart/form-data">
+    <h1 class="text-center mb-2">Cadastro de Postagens</h1>
+    <form dataroute="{{ route('postagem.cadastrar') }}" method="post" id="myform" class="user-info-setting-form" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
-        <label for="cidade">Cidade</label>
-        <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Digite a cidade">
+        <label for="titulo">Titulo</label>
+        <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Digite o titulo">
+        </div>
+        <div class="form-group">
+            <textarea name="editor1" id="ck_editor" rows="10" cols="80">
+
+            </textarea>
+            <script>
+
+                CKEDITOR.replace( 'ck_editor' );
+
+
+            </script>
         </div>
         <div class="form-group">
         <label for="imagem">Imagem</label>
@@ -35,7 +46,6 @@
 </div>
 </div>
 </div>
-
 
 
 

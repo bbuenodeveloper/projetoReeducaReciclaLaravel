@@ -18,15 +18,15 @@
                             </a>
                         <div></center>
 
-                <form action="{{ route('categoria.cadastrar')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('tagBlog.cadastrar')}}" method="POST" enctype="multipart/form-data">
                 @csrf
-                    <h1 class="mb-4">Cadastro de Categorias</h1>
+                    <h1 class="mb-4">Cadastro de Tag Blog</h1>
                     <div class="form-group">
-                        <label for="nomeCategoria">Nome da Categoria</label>
-                        <input type="text" class="form-control" id="nomeCategoria" name="nome_categoria"
-                            placeholder="Nome da categoria" required>
+                        <label for="tagBlog">TAG</label>
+                        <input type="text" class="form-control" id="tagBlog" name="tagBlog"
+                            placeholder="Nome da Tag" required>
                     </div>
-                    <button type="submit" class="btn btn-success pull-right widthHeightBtn">CADASTRAR CATEGORIA</button>
+                    <button type="submit" class="btn btn-success ">CADASTRAR</button>
                 </form>
             </div>
         </div>

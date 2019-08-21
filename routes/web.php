@@ -43,6 +43,8 @@ Route::get('/blog-details', 'BlogController@blogdetails');
 Route::get('/como-reciclar', 'ReciclarController@comoReciclar');
 
 
+
+
 // Rotas loja
 
 Route::get('/carrinho', 'CarrinhoController@carrinho');
@@ -69,7 +71,7 @@ Route::get('/cidades', 'CidadeController@obterJson');
 
 
 
-// rotas incluir registros
+// rotas chamar formularios
 
 Route::get('/add-cidade', 'CidadeController@addCidade');
 
@@ -85,11 +87,18 @@ Route::get('/add-categoria', 'CategoriaController@categorias');
 
 Route::get('/add-admin','AdminController@addAdmin');
 
+Route::get('/add-postagens', 'BlogController@addPostagem');
+
+Route::get('/add-tagBlog', 'BlogController@addTag');
+
 Route::get('/registerPainel','Auth\RegisterController@addUser');
 
 
 // rotas cadastrar registros
 
+Route::post('/cadastrartagblog', 'BlogController@cadastrarPpostagem')->name('tagBlog.cadastrar');
+
+Route::post('/cadastrarpostagem', 'BlogController@cadastrarPpostagem')->name('postagem.cadastrar');
 
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar');
 

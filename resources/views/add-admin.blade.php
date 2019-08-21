@@ -29,7 +29,7 @@
             <input type="password" name="password-confirm" class="form-control" placeholder="Confirmar Senha">
         </div>
 
-        <button type="submit" class="btn btn-card btn-primary">CADASTRAR</button>
+        <button type="submit" class="btn  btn-success">CADASTRAR</button>
     </form>
 </div>
 </div>

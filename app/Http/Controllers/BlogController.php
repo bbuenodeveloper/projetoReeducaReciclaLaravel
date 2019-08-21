@@ -18,4 +18,18 @@ class BlogController extends Controller
         }
     }
 
+    public function addPostagem(Request $request) {
+        if($request->isMethod('GET')){
+            return view('add-postagens');
+        }
+
+    }
+
+    public function addTag(Request $request) {
+        if($request->isMethod('GET')){
+            return view('add-tagBlog');
+        }
+
+    }
+
 }
