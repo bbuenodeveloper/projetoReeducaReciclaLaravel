@@ -59,13 +59,17 @@ Route::get('/carrinho/{id}', 'CarrinhoController@carrinhoProduto');
 
 Route::get('/dadoscompra/{id}', 'DadosCompraController@dadosProduto')->middleware('acesso');
 
+
 // rotas internas do mapa de acesso ao banco de dados
 
 Route::get('/marcadores/{cidade}/{materiaisIds}', 'MarcadoresController@marcadores')->name('marcadores');
 
 Route::get('/cidades', 'CidadeController@obterJson');
 
+
 // rotas incluir registros
+
+
 Route::get('/add-cidade', 'CidadeController@addCidade')->middleware('acesso');
 
 Route::get('/add-material', 'MaterialController@addMaterial')->middleware('acesso');
@@ -88,11 +92,14 @@ Route::get('/add-admin','AdminController@addAdmin')->middleware('acesso');
 
 Route::get('/registerPainel','Auth\RegisterController@addUser')->middleware('acesso');
 
+
 // rotas cadastrar registros
+
 
 Route::post('/cadastrartagblog', 'BlogController@cadastrarPpostagem')->name('tagBlog.cadastrar');
 
 Route::post('/cadastrarpostagem', 'BlogController@cadastrarPpostagem')->name('postagem.cadastrar');
+
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar')->middleware('acesso');
 
 Route::post('/cadastrarempresa', 'EmpresaController@cadastrarEmpresa')->name('empresa.cadastrar')->middleware('acesso');
@@ -134,6 +141,7 @@ Route::get('/editar-cidade/{id}','CidadeController@ViewEditarCidade');
 
 
 // rotas editar registros Post
+
 
 Route::post('/editado/{id}','MaterialController@editarMaterial');
 

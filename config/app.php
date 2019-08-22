@@ -174,7 +174,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        //Integração Rede Social 
+        //Integração Rede Social
         Laravel\Socialite\SocialiteServiceProvider::class
 
     ],

@@ -42,7 +42,7 @@ class MaterialController extends Controller
         $material->tipoMaterial = $request->tipoMaterial;
         $material->save();
 
-        return view('relatorio-Materiais');
+        return redirect('relatorio-Materiais');
     }
 
 

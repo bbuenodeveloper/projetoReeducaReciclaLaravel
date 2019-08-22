@@ -25,6 +25,7 @@
 .main-footer .detail{ margin:38px 0 0 0; float:left;}
 .main-footer .useful-links ul li{   background: url(../img/links-arrow-light.png) no-repeat 0 9px;  margin: 0 0 16px 0;   float: left;  width: 50%; list-style: none;}
 .main-footer .useful-links ul li a{   color: #fff;  margin: 0 0 0 20px;  font-size: 15px;}
+.main-footer .useful-links ul li a:hover {color: #b6b701;}
 .main-footer .tweets{  width: 100%;  float: left;  margin: 0 0 28px 0;}
 .main-footer .tweets .icon{ float:left;}
 .main-footer .tweets .icon i{ font-size:35px;   margin: 0 0 0 0;}
