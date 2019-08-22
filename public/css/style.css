@@ -1488,6 +1488,23 @@ a.efeitoTransicaoLoja:hover {
 
     /* configuração painel */
 
+    .estiloPainel {
+        color: white;
+        background-color: #000;
+    }
+
+    .estiloPainel li a {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+
+    }
+
+    .estiloPainel li a:hover {
+        background-color: rgba(240, 240, 240, 0.589)
+
+    }
+
     .space-menu {
 
         padding: 10px;

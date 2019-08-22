@@ -37,7 +37,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
                 <div class="main_cityinfo">
                     <div class="dropdown ">
                         <button class="btn btn-dark dropdown-toggle botao-pesquisa " type="button" data-toggle="dropdown"><span class="label" data-id="0">Selecione a cidade</span><span class="caret"></span></button>
-                        <ul class="dropdown-menu lista-cidades ">
+                        <ul class="dropdown-menu lista-cidades estiloPainel" style="overflow-y: auto; height:300px; position:fixed;">
                             <li><a>Selecione a cidade</a></li>
                         </ul>
                     </div>

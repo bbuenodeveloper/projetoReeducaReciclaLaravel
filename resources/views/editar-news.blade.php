@@ -23,12 +23,16 @@
                     @csrf
 
                     <div class="md-form mt-5">
-                            <i class="fa fa-recycle prefix grey-text"></i>
+                            <i class="fa fa-user prefix grey-text"></i>
                             <label for="editarName" class="font-weight-light">Digite o Nome</label>
                             <input type="text" name="name" id="editarEmail" value="{{ $newsletter->name }}"class="form-control">
-                            <input type="email" name="email" id="editarEmail" value="{{ $newsletter->email }}"class="form-control">
+                    </div>
+                    <div class="md-form mt-5">
+                            <i class="fa fa-envelope prefix grey-text"></i>
                             <label for="editarEmail" class="font-weight-light">Digite o Cadastro</label>
-                          </div>
+                            <input type="email" name="email" id="editarEmail" value="{{ $newsletter->email }}"class="form-control">
+
+                    </div>
 
                     <button type="submit" class="btn btn-success btn-rounded waves-effect waves-light">EDITAR</button>
                 </form>
