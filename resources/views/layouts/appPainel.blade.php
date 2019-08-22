@@ -259,6 +259,7 @@
         <script src="{{asset('js/ajaxValidaMaterial.js')}}"></script>
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
         <script src="{{asset('js/postNewsletterAdmin.js')}}"></script>
+        {{-- <script src="{{asset('js/postNewsletterAdminEdit.js')}}"></script> --}}
         <script src="{{asset('js/ckeditor/editor-ck-init.js')}}"></script>
         <script src="{{asset('js/ckeditor/plugin.js')}}"></script>
         <script src="{{asset('js/ckeditor/ckeditor.js')}}"></script>

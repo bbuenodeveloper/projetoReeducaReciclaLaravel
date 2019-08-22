@@ -138,6 +138,7 @@ Route::get('/editar-empresa/{id}','EmpresaController@ViewEditarEmpresa');
 
 Route::get('/editar-cidade/{id}','CidadeController@ViewEditarCidade');
 
+Route::get('/editar-news/{id}', 'NewsletterController@editarNews');
 
 
 // rotas editar registros Post
@@ -149,9 +150,6 @@ Route::post('/editadoempresa/{id}','EmpresaController@editarEmpresa');
 
 Route::post('/editadocidade/{id}','CidadeController@editarCidade');
 
-
-
-Route::get('/editar-news/{id}', 'NewsletterController@editarNews');
 Route::post('/editar-news/{id}', 'NewsletterController@editarNews');
 
 
