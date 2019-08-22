@@ -18,7 +18,7 @@
                     </div>
                 </center>
 
-                <form action="/edit-material/{{$material->id}}" method="post"  class="user-info-setting-form"
+                <form action="/editado/{{$material->id}}" method="post"  class="user-info-setting-form"
                     enctype="multipart/form-data">
                     @csrf
 

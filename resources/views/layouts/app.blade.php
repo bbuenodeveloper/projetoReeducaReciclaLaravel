@@ -90,6 +90,9 @@
                                 @endif
                                 @else
                                 <li class="nav-item dropdown">
+                                    @if(Auth::user()->img != null)
+                                        <img src="{{ asset(Auth::user()->img) }}" style="width:30px">
+                                    @endif
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><i class="fas fa-user text-white p-2"></i>
                                     {{Auth::user()->name}}<span class="caret"></span>
                                     </a>
@@ -349,14 +352,14 @@
  </div>
 
  <div class="footer-bottom">
-        <div class="container mt-2 mb-2">
+        <div class="container">
                 <div class="row">
 
-                    <div class="col-md-6 p-3">
+                    <div class="col-md-6 mt-3">
                         <span class="copyrights">Copyright &copy; 2019 Recicla Maps. Todos os Direitos Reservados.</span>
                     </div>
 
-                    <div class="col-md-6 p-3">
+                    <div class="col-md-6 mt-3">
                            <ul>
                                <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-facebook"></i></a></li>
                                <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-twitter"></i></a></li>

@@ -83,7 +83,7 @@
                                                         @endforeach
                                                     </div>
                                                 </div>
-        <button type="submit" class="btn btn-card btn-primary">CADASTRAR</button>
+        <button type="submit" class="btn btn-success">CADASTRAR</button>
     </form>
 </div>
 </div>

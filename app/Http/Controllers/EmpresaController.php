@@ -41,6 +41,13 @@ class EmpresaController extends Controller
         }
 
 
-
     }
+
+    public function apagarEmpresa(Request $request, $id){
+        $empresa = Empresa::find($id);
+        $empresa->delete();
+
+        return redirect('/relatorio-Empresas');
+    }
+
 }

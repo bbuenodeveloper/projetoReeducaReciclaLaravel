@@ -5,6 +5,13 @@ function executeSweet(){
     })
 }
 
+function executeSweetDelete(){
+    Swal.fire({
+        type: 'success',
+        text: 'Registro excluido com sucesso!',
+    })
+}
+
 function executeSweetError(){
     Swal.fire({
         type: 'error',

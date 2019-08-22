@@ -47,6 +47,7 @@
         <link href="{{asset('css/mdb.lite.css')}}" rel="stylesheet">
         <link href="{{asset('css/addons/datatables.min.css')}}" rel="stylesheet">
         <link href="{{asset('css/addons/datatables-select.min.css')}}" rel="stylesheet">
+        <link href="{{asset('css/ckeditor/editor.css')}}" rel="stylesheet">
 
         <title>Painel</title>
 
@@ -176,20 +177,19 @@
             </li>
             <li class="nav-item with-sub">
               <a class="nav-link" href="#">
-                <i class="far fa-file"></i>
-                <span class="space-menu">Página</span>
+                <i class="fas fa-blog"></i>
+                <span class="space-menu">Blog</span>
               </a>
               <div class="sub-item">
                 <ul>
-                  <li><a href="#">Info 1</a></li>
-                  <li><a href="#">Info 2</a></li>
-                  <li><a href="#">Info 3</a></li>
+                  <li><a href="/add-postagens">Cadastro de Postagens</a></li>
+                  <li><a href="/add-tagBlog">Cadastro de Tags</a></li>
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
-                      <li><a href="#">Relatorio 1</a></li>
-                      <li><a href="#">Relatorio 2</a></li>
-                      <li><a href="#">Relatorio 3</a></li>
+                      <li><a href="#">Relatorio de Postagens</a></li>
+                      <li><a href="#">Relatorio de Comentários</a></li>
+                      <li><a href="#">Relatorio de Tags</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -245,8 +245,10 @@
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
+        <script src="https://cdn.ckeditor.com/4.4.5.1/basic/ckeditor.js"></script>
 
-
+        <script src="{{asset('js/ajaxDeletaCidade.js')}}"></script>
+        <script src="{{asset('js/ajaxDeletaEmpresa.js')}}"></script>
         <script src="{{asset('js/ajaxDeletaMaterial.js')}}"></script>
         <script src="{{asset('js/ajaxDeletaNews.js')}}"></script>
         <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>
@@ -257,6 +259,9 @@
         <script src="{{asset('js/ajaxValidaMaterial.js')}}"></script>
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
         <script src="{{asset('js/postNewsletterAdmin.js')}}"></script>
+        <script src="{{asset('js/ckeditor/editor-ck-init.js')}}"></script>
+        <script src="{{asset('js/ckeditor/plugin.js')}}"></script>
+        <script src="{{asset('js/ckeditor/ckeditor.js')}}"></script>
         <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
         <script src="http://malsup.github.com/jquery.form.js"></script>
         <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->

@@ -38,4 +38,11 @@ class CidadeController extends Controller
         }
         $cidade->save();
     }
+
+    public function apagarCidade(Request $request, $id){
+        $cidade = Cidade::find($id);
+        $cidade->delete();
+
+        return redirect('/relatorio-Cidades');
+    }
 }

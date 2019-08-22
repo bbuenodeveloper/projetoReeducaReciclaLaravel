@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -74,12 +75,20 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        //Pegando o nome original do arquivo
+       $nomeOriginal = $data['avatar']->getClientOriginalName();
+        //Montando a url necessária para acessar o arquivo corretamente
+        $caminhoimg  = 'storage/img/' . $nomeOriginal;
+         //Salvando apenas a imagem
+        $save = $data['avatar']->storeAs('public/img', $nomeOriginal);
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'nivel_user'=> 1,
-            'sobrenome'=> $data['sobrenome'],
+            'img' => $caminhoimg,
+            'sobrenome' => $data['sobrenome'],
             'cep' => $data['cep'],
             'endereco' => $data['endereco'],
             'numero' => $data['numero'],
@@ -88,10 +97,11 @@ class RegisterController extends Controller
             'data_nascimento' => $data['data_nascimento'],
             'estado' => $data['estado'],
             'cidade' => $data['cidade'],
-            'telefone' => $data['telefone'],
+            'telefone' => $data['telefone']
         ]);
+        
     }
-
+    
     public function addUser() {
 
             return view('registerPainel');

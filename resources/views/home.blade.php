@@ -53,7 +53,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 		<div class="row no-gutters recicla-texto px-3">
 
 
-			<div class="col-md-6 order-1 order-md-1 order-sm-1 order-lg-1 order-xl-1 texto-info-home px-3 d-block d-sm-block d-md-block d-lg-block d-xl-block px-3">
+			<div class="col-md-6 order-2 order-md-1 order-sm-1 order-lg-1 order-xl-1 texto-info-home px-3 d-block d-sm-block d-md-block d-lg-block d-xl-block px-3">
 				<article>
 					<h1 class="titulo-card-home-loja d-block d-sm-block d-md-block d-lg-block d-xl-block ">Visite nossa loja <span class="color-title">virtual!</span>
 					</h1>
@@ -63,7 +63,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 				</article>
             </div>
-            <div class="col-md-6 img-texto order-2 order-md-1 order-sm-1 order-lg-1 order-xl-1 d-block d-sm-block d-md-block d-lg-block d-xl-block">
+            <div class="col-md-6 img-texto order-1 order-md-1 order-sm-1 order-lg-1 order-xl-1 d-block d-sm-block d-md-block d-lg-block d-xl-block">
                     <img src="{{asset('img/lojavirtual.png')}}" class="img-fluid " alt="Loja virtual">
                 </div>
 		</div>

@@ -38,10 +38,12 @@ class CreateUsersTable extends Migration
             $table->tinyInteger('nivel_user')->nullable()->default(null);
             $table->string('email_verified_at', 45)->nullable()->default(null);
             $table->string('telefone', 45)->nullable()->default(null);
-
             $table->unique(["id"], 'id_UNIQUE');
-
             $table->unique(["email"], 'email_UNIQUE');
+            $table->string('img', 292)->nullable();
+            $table->string('provider')->nullable();
+            $table->bigInteger('provider_id')->nullable();
+
         });
     }
 

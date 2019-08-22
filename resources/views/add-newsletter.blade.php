@@ -32,7 +32,7 @@
                         <input type="email" name="email" class="form-control" id="email" placeholder="email@email.com.br">
 
                     </div>
-                    <button type="submit" class="btn btn-card btn-primary" value="Assinar">CADASTRAR</button>
+                    <button type="submit" class="btn btn-card btn-success" value="Assinar">CADASTRAR</button>
                 </form>
             </div>
         </div>
