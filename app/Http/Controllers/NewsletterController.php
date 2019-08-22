@@ -68,10 +68,11 @@ class NewsletterController extends Controller
         }
 
         $newsletter = newsletter::find($id);
+        $newsletter->name = $request->name;
         $newsletter->email = $request->email;
         $resultado = $newsletter->save();
 
-        return view ('/relatorio-Newsletter',["resultado"=>$resultado]);
+        return redirect ('/relatorio-Newsletter');
 
 }
 

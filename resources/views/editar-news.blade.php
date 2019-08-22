@@ -18,13 +18,15 @@
                     </div>
                 </center>
 
-                <form action="/relatorio-newsletter/{{$newsletter->id}}" method="post"  class="user-info-setting-form"
-                    enctype="multipart/form-data">
+                <form action="/editar-news/{{$newsletter->id}}" method="post"  class="user-info-setting-form"
+                    enctype="multipart/form-data" id="myformEdit">
                     @csrf
 
                     <div class="md-form mt-5">
                             <i class="fa fa-recycle prefix grey-text"></i>
-                            <input type="email" name="editaEmail" id="editarEmail" value="{{ $newsletter->email }}"class="form-control">
+                            <label for="editarName" class="font-weight-light">Digite o Nome</label>
+                            <input type="text" name="name" id="editarEmail" value="{{ $newsletter->name }}"class="form-control">
+                            <input type="email" name="email" id="editarEmail" value="{{ $newsletter->email }}"class="form-control">
                             <label for="editarEmail" class="font-weight-light">Digite o Cadastro</label>
                           </div>
 

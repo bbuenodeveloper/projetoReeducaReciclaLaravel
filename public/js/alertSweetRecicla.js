@@ -74,7 +74,20 @@ function deleteAllAdmin(){
         }
       })
 
-
-
-
 }
+
+function executeSweetEdit(){
+    Swal.fire({
+        type: 'success',
+        text: 'Cadastro alterado com sucesso!',
+    })
+}
+
+function executeSweetErrorEdit(){
+    Swal.fire({
+        type: 'error',
+        title: 'Oops...',
+        text: 'Preencha todos os campos para enviar o formulário',
+    })
+}
+
