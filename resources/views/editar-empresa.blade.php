@@ -20,44 +20,44 @@
         @csrf
         <div class="form-group">
         <label for="nome">Nome</label>
-        <input type="text" name="nome" class="form-control" id="nome"  value={{ $empresa->nome }}>
+        <input type="text" name="nome" class="form-control" id="nome"  value="{{ $empresa->nome }}">
         </div>
         <div class="form-group">
             <label for="endereco">Endereço</label>
-            <input type="text" name="endereco" id="endereco" class="form-control" value={{ $empresa->endereco }}  >
+            <input type="text" name="endereco" id="endereco" class="form-control" value="{{ $empresa->endereco }}">
             </div>
             <div class="form-group">
                 <label for="numero">Numero</label>
-                <input type="text" name="numero" id="numero" class="form-control" value={{ $empresa->numero }}>
+                <input type="text" name="numero" id="numero" class="form-control" value="{{ $empresa->numero }}">
                 </div>
                 <div class="form-group">
                     <label for="complemento">Complemento</label>
-                    <input type="text" name="complemento" id="complemento" class="form-control" value={{ $empresa->complemento }}>
+                    <input type="text" name="complemento" id="complemento" class="form-control" value="{{ $empresa->complemento }}">
                     </div>
                     <div class="form-group">
                         <label for="cep">Cep</label>
-                        <input type="text" name="cep" id="cep" class="form-control" value={{ $empresa->cep }}>
+                        <input type="text" name="cep" id="cep" class="form-control" value="{{ $empresa->cep }}">
                         </div>
                         <div class="form-group">
                             <label for="bairro">Bairro</label>
-                            <input type="text" name="bairro" id="bairro" class="form-control" value={{ $empresa->bairro }}>
+                            <input type="text" name="bairro" id="bairro" class="form-control" value="{{ $empresa->bairro }}">
                             </div>
 
                             <div class="form-group">
                                 <label for="estado">Estado</label>
-                                <input type="text" name="estado" id="estado" class="form-control" value={{ $empresa->estado }}>
+                                <input type="text" name="estado" id="estado" class="form-control" value="{{ $empresa->estado }}">
                                 </div>
                                 <div class="form-group">
                                     <label for="telefone">Telefone</label>
-                                    <input type="text" name="telefone" id="telefone" class="form-control" value={{ $empresa->telefone }}>
+                                    <input type="text" name="telefone" id="telefone" class="form-control" value="{{ $empresa->telefone }}"">
                                     </div>
                                     <div class="form-group">
                                         <label for="latitude">Latitude</label>
-                                        <input type="text" name="latitude" id="latitude" class="form-control" value={{ $empresa->latitude }}>
+                                        <input type="text" name="latitude" id="latitude" class="form-control" value="{{ $empresa->latitude }}">
                                         </div>
                                         <div class="form-group">
                                             <label for="longitude">Longitude</label>
-                                            <input type="text" name="longitude" id="longitude" class="form-control" value={{ $empresa->longitude }}>
+                                            <input type="text" name="longitude" id="longitude" class="form-control" value="{{ $empresa->longitude }}">
                                             </div>
                                             <div class="form-group">
 

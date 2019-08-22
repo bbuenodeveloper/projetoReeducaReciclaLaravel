@@ -60,8 +60,8 @@ class EmpresaController extends Controller
         );
     }
 
-    public function editarEmpresa(Request $request){
-        $empresa = new Empresa();
+    public function editarEmpresa(Request $request,$id){
+        $empresa = Empresa::find($id);
         $empresa->nome = $request->nome;
         $empresa->endereco = $request->endereco;
         $empresa->numero = $request->numero;

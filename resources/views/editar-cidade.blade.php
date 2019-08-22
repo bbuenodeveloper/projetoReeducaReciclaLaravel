@@ -23,11 +23,11 @@
         @csrf
         <div class="form-group">
         <label for="cidade">Cidade</label>
-        <input type="text" name="cidade" id="cidade" class="form-control" value={{ $cidade->cidade }} placeholder="Digite a cidade">
+        <input type="text" name="cidade" id="cidade" class="form-control" value="{{ $cidade->cidade }}">
         </div>
         <div class="form-group">
         <label for="imagem">Imagem</label>
-        <input type="file" name="imagem" id="imagem" class="form-control" value={{ $cidade->imagem }}  >
+        <input type="file" name="imagem" id="imagem" class="form-control" value="{{ $cidade->imagem }}" >
         </div>
         <button type="submit" class="btn btn-success" >CADASTRAR</button>
     </form>

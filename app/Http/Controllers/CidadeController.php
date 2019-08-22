@@ -39,9 +39,9 @@ class CidadeController extends Controller
         $cidade->save();
     }
 
-    public function editarCidade(Request $request){
+    public function editarCidade(Request $request, $id){
 
-        $cidade = new cidade();
+        $cidade = Cidade::find($id);
         $cidade->cidade = strtoupper($request->cidade);
         //$cidade->imagem = 'https://dummyimage.com/75x76/b8b8b8/fff/?text='.$request->cidade;
 

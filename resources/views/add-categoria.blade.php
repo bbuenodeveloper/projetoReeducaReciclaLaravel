@@ -22,8 +22,8 @@
                 @csrf
                     <h1 class="mb-4">Cadastro de Categorias</h1>
                     <div class="form-group">
-                        <label for="nomeCategoria">Nome da Categoria</label>
-                        <input type="text" class="form-control" id="nomeCategoria" name="nome_categoria"
+                        <label for="nome_categoria">Nome da Categoria</label>
+                        <input type="text" class="form-control" id="nome_categoria" name="nome_categoria"
                             placeholder="Nome da categoria" required>
                     </div>
                     <button type="submit" class="btn btn-success pull-right widthHeightBtn">CADASTRAR CATEGORIA</button>
