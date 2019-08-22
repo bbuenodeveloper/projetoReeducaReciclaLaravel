@@ -18,7 +18,7 @@
                     </div>
                 </center>
 
-                <form action="/editar-news/{{$newsletter->id}}" method="post"  class="user-info-setting-form"
+                <form action="/relatorio-newsletter/{{$newsletter->id}}" method="post"  class="user-info-setting-form"
                     enctype="multipart/form-data">
                     @csrf
 

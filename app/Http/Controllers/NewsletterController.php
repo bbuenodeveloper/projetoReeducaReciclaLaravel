@@ -64,14 +64,14 @@ class NewsletterController extends Controller
     public function editarNews(Request $request,$id) {
         if($request->isMethod('GET')){
             $newsletter = Newsletter::find($id);
-            return view('editar-news',['newsletter'=>$newsletter]);
+            return view('/editar-news',['newsletter'=>$newsletter]);
         }
 
         $newsletter = newsletter::find($id);
-        $newsletter->email;
-        $newsletter->save();
+        $newsletter->email = $request->email;
+        $resultado = $newsletter->save();
 
-        return redirect('/');
+        return view ('/relatorio-Newsletter',["resultado"=>$resultado]);
 
 }
 

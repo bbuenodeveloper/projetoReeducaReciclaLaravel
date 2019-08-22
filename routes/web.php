@@ -115,8 +115,6 @@ Route::get('/relatorio-Materiais', 'RelatoriosController@relatorioMateriais');
 Route::get('/relatorio-Newsletter', 'RelatoriosController@relatorioNewsletter');
 
 
-
-
 // Rotas são definidas em ./vendor/laravel/framework/src/Illuminate/Routing/Router.php # auth
 Auth::routes();
 Route::get('/painel', 'PainelController@painel')->name('painel');
