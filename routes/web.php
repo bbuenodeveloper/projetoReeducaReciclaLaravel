@@ -42,7 +42,7 @@ Route::get('/blog-details', 'BlogController@blogdetails');
 
 Route::get('/como-reciclar', 'ReciclarController@comoReciclar');
 
-Route::get('/userPerfil', 'UserPerfilController@userPerfil');
+Route::get('/editar-userPerfil', 'UserPerfilController@userPerfil');
 
 
 // Rotas loja

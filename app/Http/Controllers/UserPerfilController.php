@@ -8,7 +8,7 @@ class UserPerfilController extends Controller
 {
     public function userPerfil(Request $request) {
         if($request->isMethod('GET')){
-            return view('userPerfil');
+            return view('editar-userPerfil');
         }
 
     }

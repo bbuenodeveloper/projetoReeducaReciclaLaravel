@@ -101,7 +101,7 @@
                                         @if (Auth::user()->nivel_user === 0)
                                         <a class="dropdown-item" href="{{ route('painel') }}"><i class="fa fa-cog"></i><span class="space-menu"> {{ __('Painel Admin') }} </span></a>
                                         @endif
-                                        <a href="/userPerfil" class="dropdown-item"><i class="fa fa-user"></i><span class="space-menu"> {{ __('Ver Perfil') }} </span></a>
+                                        <a href="/editar-userPerfil" class="dropdown-item"><i class="fa fa-user"></i><span class="space-menu"> {{ __('Ver Perfil') }} </span></a>
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                         document.getElementById('logout-form').submit();">
