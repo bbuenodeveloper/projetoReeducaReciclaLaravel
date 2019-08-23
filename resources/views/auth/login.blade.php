@@ -25,22 +25,26 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             </a>
                         </div>
 
-                    <div class="container col-md-10"> 
+                    <div class="container col-md-10 mx-auto"> 
                         <div class="row">
-                            <div class="col-md-5 mx-auto">
+                            <div class="col-md-5 ml-5 b-0">
                                 <a href="/auth/facebook" >
-                                    <img src="{{ asset('img/loginFacebook.png') }}">
+                                    <img src="{{ asset('img/loginFacebook2.png') }}" style="width:40px; height:40px;">
                                 </a>
                             </div>
-                            <div class="col-md-5 mx-auto">
+                            <div class="col-md-5 ml-5 b-0">
                                 <a href="/auth/google" >
-                                    <img src="{{ asset('img/loginGoogle.png') }}">
+                                    <img src="{{ asset('img/loginGoogle2.png') }}" style="width:40px; height:40px;">
                                 </a>
                             </div>
                         </div>
                     </div>
-
-                        
+                    <div class="col-md-9 mx-auto">
+                        <div class="login-or">
+                            <hr class="hr-or">
+                            <span class="span-or mx-auto" style="width:50px; height:50px;">ou</span>
+                        </div>
+                    </div>
                     
                     <form class="login-form-text mt-3" method="POST" action="{{ route('login') }}">
                         @csrf

@@ -104,6 +104,7 @@
                     <a href="#">Relatorios</a>
                     <ul>
                       <li><a href="/relatorio-Users">Relatorio de Usuários</a></li>
+                      <li><a href="/relatorio-Admins">Relatorio de Admins</a></li>
 
                     </ul>
                   </li>
