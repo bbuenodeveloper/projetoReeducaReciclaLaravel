@@ -90,7 +90,7 @@ Route::get('/registerPainel','Auth\RegisterController@addUser');
 
 Route::get('/add-admin','AdminController@addAdmin')->middleware('acesso');
 
-Route::get('/registerPainel','Auth\RegisterController@addUser')->middleware('acesso');
+Route::get('/add-user','Auth\RegisterController@addUser')->middleware('acesso');
 
 
 // rotas cadastrar registros
@@ -128,6 +128,9 @@ Route::get('/apagarcidade/{id}','CidadeController@apagarCidade');
 
 Route::get('/apagarnews/{id}', 'Newslettercontroller@apagarNews');
 
+Route::get('/apagarAdmin/{id}', 'AdminController@deletarAdmin')->middleware('acesso');
+
+Route::get('/apagarUser/{id}', 'RegisterController@deletarUser')->middleware('acesso');
 
 // rotas editar registros Get
 
@@ -138,8 +141,11 @@ Route::get('/editar-empresa/{id}','EmpresaController@ViewEditarEmpresa');
 
 Route::get('/editar-cidade/{id}','CidadeController@ViewEditarCidade');
 
-Route::get('/editar-news/{id}', 'NewsletterController@editarNews');
+Route::get('/editar-admin/{id}', 'AdminController@viewEditarAdmin')->middleware('acesso');
+Route::post('/editar-admin/{id}', 'AdminController@editarAdmin')->middleware('acesso');
 
+Route::get('/editar-user/{id}', 'Auth\RegisterController@viewEditarUser')->middleware('acesso');
+Route::post('/editar-user/{id}', 'Auth\RegisterController@editarUser')->middleware('acesso');
 
 // rotas editar registros Post
 
@@ -158,6 +164,8 @@ Route::post('/editar-news/{id}', 'NewsletterController@editarNews');
 
 
 Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers')->middleware('acesso');
+
+Route::get('/relatorio-Admins', 'RelatoriosController@relatorioAdmins')->middleware('acesso');
 
 Route::get('/relatorio-Empresas', 'RelatoriosController@relatorioEmpresas')->middleware('acesso');
 

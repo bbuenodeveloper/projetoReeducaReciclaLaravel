@@ -12,6 +12,14 @@ use App\Newsletter;
 class RelatoriosController extends Controller
 {
 
+    public function relatorioAdmins (Request $request){
+        $query = User::query();
+        $query->where('nivel_user','=', 0);
+        $users = $query->paginate(25);
+
+        return view('relatorio-Admins', ['admin'=>$users]);
+        }
+
     public function relatorioUsers (Request $request){
         $users = User::paginate(25);
                 return view('relatorio-Users',['users'=>$users]);

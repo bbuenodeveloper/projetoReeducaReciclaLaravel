@@ -9,24 +9,24 @@
         <div class="col-6 mx-auto m-5">
 <div class="jumbotron">
     <h1 class="text-center mb-3">Cadastro de Administrador</h1>
-    <form action="{{ route('admin.cadastrar')}}" method="post" class="user-info-setting-form" enctype="multipart/form-data">
+    <form action="/editar-admin/{{$editado->id}}" method="post" class="user-info-setting-form" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="name">Nome</label>
-            <input type="text" name="name" class="form-control" placeholder="Nome do admin" style="font-style: italic">
+            <input type="text" name="name" class="form-control" style="font-style: italic" value="{{$editado->name}}">
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" name="email" class="form-control" placeholder="Email do admin" style="font-style: italic">
+            <input type="email" name="email" class="form-control" style="font-style: italic" value="{{$editado->email}}">
         </div>
             <div class="form-group">
             <label for="password">Senha</label>
-            <input type="password" name="password" class="form-control" placeholder="Criar senha" style="font-style: italic">
+            <input type="password" name="password" class="form-control" style="font-style: italic">
         </div>
 
         <div class="form-group">
             <label for="password-confirm">Confirmar Senha</label>
-            <input type="password" name="password-confirm" class="form-control" placeholder="Confirmar senha" style="font-style: italic">
+            <input type="password" name="password-confirm" class="form-control" style="font-style: italic">
         </div>
         <div class="form-group">
             <label for="avatar" >Insira sua foto</label>

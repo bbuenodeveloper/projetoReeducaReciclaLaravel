@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 
+
 class RegisterController extends Controller
 {
     /*
@@ -99,12 +100,53 @@ class RegisterController extends Controller
             'cidade' => $data['cidade'],
             'telefone' => $data['telefone']
         ]);
-        
     }
     
     public function addUser() {
 
             return view('registerPainel');
+    }
 
+    public function deletarUser(Request $request, $id){
+        $user = User::find($id);
+        $user->delete();
+
+
+        if ($user-> nivel_user == 0) {
+            return redirect('/relatorio-Admins');
+        } else {
+            return redirect('/relatorio-Users');
+        }
+    }
+
+
+    public function viewEditarUser(Request $request,$id){
+        if ($request->ismethod('GET')){
+             $editado = User::find($id);
+            return view('registerPainel', ['editado'=>$editado]);
+        }
+     }
+
+    public function editarUser(Request $request, $id){
+        if ($request->ismethod('POST')){
+            $editado = User::find($id);
+            $editado->name = $request->name;
+            $editado->email = $request->email;
+            $editado->password = Hash::make($request->password);
+            $editado->sobrenome = $request->sobrenome;
+            $editado->cep = $request->cep;
+            $editado->endereco = $request->endereco;
+            $editado->numero = $request->numero;
+            $editado->complemento = $request->complemento;
+            $editado->bairro = $request->bairro;
+            $editado->data_nascimento = $request->data_nascimento;
+            $editado->estado = $request->estado;
+            $editado->cidade = $request->cidade;
+            $editado->telefone = $request->telefone;
+
+            $editado->save();
+    
+           return redirect('/relatorio-Users');
+       }
     }
 }
