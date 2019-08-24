@@ -38,7 +38,8 @@ Route::get('/termos', 'TermosController@termos');
 
 Route::get('/blog', 'BlogController@blog');
 
-Route::get('/blog-details', 'BlogController@blogdetails');
+Route::get('/blog-details/{id}', 'BlogController@blogdetails');
+Route::get('/post/{id}', 'BlogController@blogdetails');
 
 Route::get('/como-reciclar', 'ReciclarController@comoReciclar');
 
@@ -96,9 +97,9 @@ Route::get('/registerPainel','Auth\RegisterController@addUser')->middleware('ace
 // rotas cadastrar registros
 
 
-Route::post('/cadastrartagblog', 'BlogController@cadastrarPpostagem')->name('tagBlog.cadastrar');
+Route::post('/cadastrartagblog', 'BlogController@cadastrarPostagem')->name('tagBlog.cadastrar');
 
-Route::post('/cadastrarpostagem', 'BlogController@cadastrarPpostagem')->name('postagem.cadastrar');
+Route::post('/cadastrarpostagem', 'BlogController@cadastrarPostagem')->name('postagem.cadastrar');
 
 Route::post('/cadastrarProduto', 'ProdutoController@cadastrarProduto')->name('produto.cadastrar')->middleware('acesso');
 
@@ -138,6 +139,8 @@ Route::get('/editar-empresa/{id}','EmpresaController@ViewEditarEmpresa');
 
 Route::get('/editar-cidade/{id}','CidadeController@ViewEditarCidade');
 
+Route::get('/editar-post/{id}','BlogController@ViewEditarPost');
+
 Route::get('/editar-news/{id}', 'NewsletterController@editarNews');
 
 
@@ -149,6 +152,8 @@ Route::post('/editado/{id}','MaterialController@editarMaterial');
 Route::post('/editadoempresa/{id}','EmpresaController@editarEmpresa');
 
 Route::post('/editadocidade/{id}','CidadeController@editarCidade');
+
+Route::post('/editadopost/{id}','BlogController@editarPost');
 
 Route::post('/editar-news/{id}', 'NewsletterController@editarNews');
 
@@ -162,6 +167,8 @@ Route::get('/relatorio-Users', 'RelatoriosController@relatorioUsers')->middlewar
 Route::get('/relatorio-Empresas', 'RelatoriosController@relatorioEmpresas')->middleware('acesso');
 
 Route::get('/relatorio-Cidades', 'RelatoriosController@relatorioCidades')->middleware('acesso');
+
+Route::get('/relatorio-Posts', 'RelatoriosController@relatorioPosts');//->middleware('acesso');
 
 Route::get('/relatorio-Materiais', 'RelatoriosController@relatorioMateriais')->middleware('acesso');
 

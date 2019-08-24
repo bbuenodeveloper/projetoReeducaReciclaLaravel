@@ -176,6 +176,7 @@
                                             <li class="menu-item"><a href="#">teste</a></li>
                                         </ul>
                                 </li>
+
                                 <li class="menu-item menu-item-has-children greennature-normal-menu"><a href="/mapa"
                                         class="sf-with-ul-pre"><i class="fas fa-map-marked-alt"></i>Mapa</a>
 
@@ -375,6 +376,7 @@
 
 </footer>
 
+<a href="#" id="scroll-top" class="scroll-top"><i class="fas fa-angle-up"></i></a>
 {{-- end footer  --}}
 
         <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Google Page Speed Insights") === false): ?>
@@ -423,6 +425,7 @@
 
 
         <script src="{{url('https://code.jquery.com/jquery-3.4.0.min.js')}}"></script>
+        <script type='text/javascript' src="{{asset('js/jquery/jquery-migrate.min.js')}}"></script>
 
         <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
@@ -431,7 +434,6 @@
         <script src="{{asset('js/postnewsletter.js')}}"></script>
 
         {{-- js menu --}}
-        <script type='text/javascript' src="{{asset('js/jquery/jquery-migrate.min.js')}}"></script>
         <script type='text/javascript' src="{{asset('plugins/superfish/js/superfish.js')}}"></script>
         <script type='text/javascript' src="{{asset('js/hoverIntent.min.js')}}"></script>
         <script type='text/javascript' src="{{asset('plugins/dl-menu/modernizr.custom.js')}}"></script>
@@ -444,7 +446,6 @@
         <script type='text/javascript' src="{{asset('plugins/jquery.isotope.min.js')}}"></script>
         <script type='text/javascript' src="{{asset('js/plugins.js')}}"></script>
         <script type='text/javascript' src="{{asset('plugins/jquery.transit.min.js')}}"></script>
-
 
         <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
         <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->

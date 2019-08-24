@@ -8,6 +8,7 @@ use App\empresa;
 use App\cidade;
 use App\material;
 use App\Newsletter;
+use App\Post;
 
 class RelatoriosController extends Controller
 {
@@ -25,6 +26,11 @@ class RelatoriosController extends Controller
     public function relatorioCidades (Request $request){
         $cidades = Cidade::paginate(25);
                 return view('relatorio-Cidades',['cidades'=>$cidades]);
+        }
+
+    public function relatorioPosts (Request $request){
+        $posts = Post::paginate(25);
+                return view('relatorio-Posts',['posts'=>$posts]);
         }
 
     public function relatorioMateriais (Request $request){

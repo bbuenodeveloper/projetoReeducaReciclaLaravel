@@ -13,12 +13,8 @@ $description = $facebook_description = substr(strip_tags('<p>A Reeduca, por sua 
 $facebook_image = htmlentities($root . 'img/' . $foto);
 ?>
 
-
 <!-- Main Wrapper Start -->
 <div class="main-wrapper">
-
-
-
 
     <div class="blog-details-area bg-grey section-ptb">
         <div class="container">
@@ -50,35 +46,16 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
                         <div class="sidbar-blog mb--30">
                             <!-- sidbar-blog-inner start -->
 
+                            @foreach ($ultimos as $p)
                             <div class="sidbar-blog-inner">
                                 <div class="sidbar-blog-image">
-                                    <a href="#"><img src="img/blog-03.jpg" alt=""></a>
+                                    <a href="/post/{{ $p->id }}"><img src="/storage/img/{{ $p->imagem }}" alt=""></a>
                                 </div>
                                 <div class="sidbar-blog-content text-left">
-                                    <h3><a href="#">Gestora de recursos investe em inovação na área ambiental</a></h3>
+                                    <h3><a href="/post/{{ $p->id }}">{{ $p->titulo }}</a></h3>
                                 </div>
                             </div>
-                            <!-- sidbar-blog-inner end -->
-                            <!-- sidbar-blog-inner start -->
-                            <div class="sidbar-blog-inner">
-                                <div class="sidbar-blog-image">
-                                    <a href="#"><img src="img/blog-02.jpg" alt=""></a>
-                                </div>
-                                <div class="sidbar-blog-content text-left">
-                                    <h3><a href="#"> O Benefício do Plástico Reciclado</a></h3>
-                                </div>
-                            </div>
-                            <!-- sidbar-blog-inner end -->
-                            <!-- sidbar-blog-inner start -->
-                            <div class="sidbar-blog-inner">
-                                <div class="sidbar-blog-image">
-                                    <a href="/blog-details"><img src="img/blog-01.jpg" alt=""></a>
-                                </div>
-                                <div class="sidbar-blog-content text-left">
-                                    <h3><a href="#">Cargil Instala linha de envase sustentável</a></h3>
-                                </div>
-                            </div>
-                            <!-- sidbar-blog-inner end -->
+                            @endforeach
                         </div>
                         <!-- shop-sidebar end -->
 
@@ -94,88 +71,24 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
                             </div>
                         </div>
-                        <!-- shop-sidebar end -->
                     </div>
-                    <!-- shop-sidebar-wrap end -->
                 </div>
                 <div class="col-lg-8 order-1 order-lg-1">
                     <div class="row">
+                        @foreach ($posts as $post)
                         <div class="col-lg-6 col-md-6">
-                            <!-- single-latest-blog Start -->
                             <div class="single-latest-blog mb--30">
                                 <div class="latest-blog-image">
-                                    <a href="/blog-details"><img src="img/blog-01.jpg" alt=""></a>
+                                    <a href="/post/{{ $post->id }}"><img src="/storage/img/{{ $post->imagem }}" alt=""></a>
                                 </div>
                                 <div class="latest-blog-cont">
-                                    <h3><a href="/blog-details">CARGILL INSTALA LINHA DE ENVASE MAIS EFICIENTE E SUSTENTÁVEL
-
-                                    </a></h3>
-                                    <p>A Cargill investiu mais de US$ 10 milhões para instalar uma linha de envase de óleo comestível de última geração</p>
+                                    <h3><a href="/post/{{ $post->id }}">{{ $post->titulo }}</a></h3>
+                                    <p>{{ substr(strip_tags($post->texto), 0, 140) }}</p>
                                 </div>
-                            </div><!--// single-latest-blog End -->
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
-                            <!-- single-latest-blog Start -->
-                            <div class="single-latest-blog mb--30">
-                                <div class="latest-blog-image">
-                                    <a href="#"><img src="img/blog-04.jpg" alt=""></a>
-                                </div>
-                                <div class="latest-blog-cont">
-                                    <h3><a href="#">PEPSICO UNE RECICLAGEM E FUTEBOL EM AÇÃO QUE ENGAJA A SOCIEDADE</a></h3>
-                                    <p>Termina no sábado, dia 8 de novembro, a ação “Craques da Reciclagem”, promovida pela PepsiCo...</p>
-                                </div>
-                            </div><!--// single-latest-blog End -->
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <!-- single-latest-blog Start -->
-                            <div class="single-latest-blog mb--30">
-                                <div class="latest-blog-image">
-                                    <a href="#"><img src="img/blog-06.jpg" alt=""></a>
-                                </div>
-                                <div class="latest-blog-cont">
-                                    <h3><a href="#">A GESTÃO DE RESÍDUOS SÓLIDOS NAS PLATAFORMAS MARÍTIMAS</a></h3>
-                                    <p>Eduardo da Silva Videla era ainda um jovem mergulhador profissional quando teve sua atenção ...</p>
-                                </div>
-                            </div><!--// single-latest-blog End -->
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <!-- single-latest-blog Start -->
-                            <div class="single-latest-blog mb--30 ">
-                                <div class="latest-blog-image">
-                                    <a href="#"><img src="img/blog-02.jpg" alt=""></a>
-                                </div>
-                                <div class="latest-blog-cont">
-                                    <h3><a href="#">O BENEFÍCIO DO PLÁSTICO RECICLADO</a></h3>
-                                    <p>Já estão em fase de conclusão os cálculos feitos pelos pesquisadores da Franklin Associates sobre ...</p>
-                                </div>
-                            </div><!--// single-latest-blog End -->
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <!-- single-latest-blog Start -->
-                            <div class="single-latest-blog mb--30">
-                                <div class="latest-blog-image">
-                                    <a href="#"><img src="img/blog-03.jpg" alt=""></a>
-                                </div>
-                                <div class="latest-blog-cont">
-                                    <h3><a href="#">GESTORA DE RECURSOS INVESTE EM INOVAÇÃO NA ÁREA AMBIENTAL </a></h3>
-                                    <p>A Inseed Investimentos, gestora de recursos focada em empresas inovadoras com elevado potencial de crescimento...</p>
-                                </div>
-                            </div><!--// single-latest-blog End -->
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <!-- single-latest-blog Start -->
-                            <div class="single-latest-blog mb--30 ">
-                                <div class="latest-blog-image">
-                                    <a href="#"><img src="img/blog-05.jpg" alt=""></a>
-                                </div>
-                                <div class="latest-blog-cont">
-                                    <h3><a href="#">PELOTAS PRIORIZA AÇÕES EM ESCOLAS PARA DISSEMINAR A COLETA SELETIVA</a></h3>
-                                    <p>A primeira iniciativa do município de Pelotas, no Rio Grande do Sul, visando à segregação dos resíduos recicláveis ocorreu nos anos 90...</p>
-                                </div>
-                            </div><!--// single-latest-blog End -->
-                        </div>
+                        @endforeach
                     </div>
-                    <!-- paginatoin-area Start -->
                     <div class="paginatoin-area">
                         <div class="row">
                             <div class="col-lg-12">

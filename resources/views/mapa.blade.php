@@ -69,6 +69,11 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
         </div>
     </div>
 
+    <div class="lista">
+        <ul>
+
+        </ul>
+    </div>
     <div id="map"></div>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDottVHFaZukoZo_EvVv-jxbhOCpC1LMeY&callback=initMap"></script>
@@ -129,6 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
 
                         else {
+                            let lista = '';
                             for (var i = window.marcadores.length - 1; i >= 0; i--) {
                                 ///////////////////////////////////////////////////////////////////////////////////////////////
                                 // para cada iteração com o vetor, chama a função addMarker() para inserir os pontos no mapa //
@@ -147,7 +153,21 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <p><a href="https://maps.google.com?saddr=Current+Location&daddr=${window.marcadores[i].empresas_latitude},${window.marcadores[i].empresas_longitude}" target="_blank" title="Clique nesse link para abrir o GPS">Abrir GPS</a></p>
                                     `,
                                 });
+
+                                /* incluindo na lista */
+
+                                        lista += `<li>
+                                            <h3><a href="javascript:" onclick="\$(this).parent().next().toggle()">${window.marcadores[i].empresas_nome}</a></h3>
+                                            <p style="display:none;">
+                                                 ${window.marcadores[i].empresas_latitude} <br>
+                                                ${window.marcadores[i].empresas_longitude} <br>
+                                                ${window.marcadores[i].empresas_nome} <br>
+                                                ${window.marcadores[i].empresas_endereco} <br>
+                                                ${window.marcadores[i].empresas_telefone}
+                                            </p>
+                                            </li>`;
                             }
+                            document.querySelector('.lista ul').innerHTML = lista;
                             ///////////////////////////////////////////////////////////////////////////////////////////////
                             // por fim chama essa função para centralizar o mapa com base nos marcadores recém colocados //
                             ///////////////////////////////////////////////////////////////////////////////////////////////

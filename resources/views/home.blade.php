@@ -47,7 +47,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 <!-- fim banner -->
 
 
-<main class="container-fluid no-gutters main-pag-home">
+<main class="container-fluid no-gutters main-pag-home background-home">
 
 
 		<div class="row no-gutters recicla-texto px-3">
@@ -67,43 +67,8 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                     <img src="{{asset('img/lojavirtual.png')}}" class="img-fluid " alt="Loja virtual">
                 </div>
 		</div>
-	</main>
+</main>
 
-
-
-
-	<!-- Banner topo mobile loja -->
-
-    <main class="container-fluid ">
-            <!-- inicio reciclagem divulgaçao -->
-
-            <div class="row no-gutters recicla-texto">
-
-                <div class="col-md-6 img-texto">
-                    <img src="{{asset('img/nature2.png')}}" class="img-fluid " alt="Por que reciclar?">
-                </div>
-                <div class="col-md-6 texto-info-home px-3">
-                        <article>
-                            <h1 class="titulo-card-home d-none d-sm-none d-md-block d-lg-block d-xl-block ">Por que <span class="color-title">reciclar ?</span>
-                            </h1>
-                            <h2 class="titulo-card-home d-block d-sm-block d-md-none d-lg-none d-xl-none">Por que <span class="color-title">reciclar ?</span>
-                            </h2>
-                            <p class="card-text">  Sabemos que o consumo de recursos naturais já é maior do que o planeta pode fornecer e essa realidade tende a crescer cada vez mais rápido. A reciclagem é a saída para um consumo mais responsável e o ReciclaMaps facilita sua busca pelos pontos de coleta adequados. </p>
-
-                        </article>
-                    </div>
-            </div>
-        </main>
-
-        <!-- fim reciclagem divulgação -->
-
-
-
-</div>
-
-<!-- fim propaganda loja -->
-
-<!-- inicio parceiros -->
 <main class="container-fluid ">
 	<!-- inicio reciclagem divulgaçao -->
 
@@ -146,5 +111,116 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 			</div>
 		</div>
 
-	</div>
+    </div>
+
+</main>
+
+
+<main class="container-fluid background-home d-none d-sm-block d-md-block d-lg-block d-xl-block">
+        <div class="row no-gutters">
+            <div class="col-md-6">
+                    <div class="client-item">
+                            <div class="client-icon">
+                                <div class="border-img">
+                                    <a href="team.html"><div class="window-tabs">
+                                        <div class="overflow-block"></div><img src="img/img-team-1.png" alt></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3>Nossa<span> Visão</span></h3>
+                            <p>A Reeduca, por sua atitude empresarial e pela qualidade das relações que busca desenvolver com os diversos agentes que articula, expressa sua marca na identidade com pessoas e empresas que se comprometem a atuar de maneira efetiva na colaboração </p>
+                    </div>
+                    <div class="client-item">
+                            <div class="client-icon">
+                                <div class="border-img">
+                                    <a href="team.html"><div class="window-tabs">
+                                        <div class="overflow-block"></div><img src="img/img-team-2.png" alt></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3>Nossa<span> Missão</span></h3>
+                            <p>Nosso compromisso é criar e oferecer conteúdo, serviços e produtos que contribuam para a ampliação da consciência dos indivíduos em suas ações de consumo rumo a uma relação mais equilibrada e harmoniosa consigo mesmo, com o outro e com o meio ambiente</p>
+                    </div>
+                    <div class="client-item">
+                            <div class="client-icon">
+                                <div class="border-img">
+                                    <a href="team.html"><div class="window-tabs">
+                                        <div class="overflow-block"></div><img src="img/img-team-3.png" alt></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3>Nossos<span> Valores</span></h3>
+                            <p>Acreditamos na capacidade das pessoas e empresas para, na dinâmica de suas relações, promoverem alternativas e adotarem escolhas que contribuam para o desenvolvimento de uma sociedade sustentável, alcançável através do desenvolvimento de um padrão </p>
+                    </div>
+            </div>
+            <div class="col-md-6">
+                    <div class="grid-col-4 title-innovation">
+                            <div class="innovation-header">Sobre nós
+                            <div class="slash-line"></div></div>
+                        </div>
+            </div>
+
+        </div>
+        </main>
+
+<main class="container-fluid mt-3 d-none d-sm-block d-md-block d-lg-block d-xl-block">
+        <div class="latest-news-area section-pt section-pb-80  bg-grey">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- section-title Start -->
+                            <div class="section-title">
+                                <h4>ULTIMAS NOTÍCIAS</h4>
+                                <h3>Nosso <span>Blog</span></h3>
+                            </div>
+                            <!--// section-title End -->
+                        </div>
+                    </div>
+                    <div class="row latest-blog-active">
+                        <div class="col-lg-4">
+                            <!-- single-latest-blog Start -->
+                            <div class="single-latest-blog mb--30 mt--30">
+                                <div class="latest-blog-image">
+                                    <a href="/blog-details"><img src="img/blog-image1.jpg" alt=""></a>
+                                </div>
+                                <div class="latest-blog-cont">
+                                    <h3><a href="/blog-details" >Cargill instala linha de envase mais eficiente e sustentável</a></h3>
+
+                                </div>
+                            </div>
+                            <!--// single-latest-blog End -->
+                        </div>
+                        <div class="col-lg-4">
+                            <!-- single-latest-blog Start -->
+                            <div class="single-latest-blog mb--30 mt--30">
+                                <div class="latest-blog-image">
+                                    <a href="/blog-details"><img src="img/blog-image2.jpg" alt=""></a>
+                                </div>
+                                <div class="latest-blog-cont">
+                                    <h3><a href="/blog-details" >Gestora de recursos investe em inovação na área ambiental</a></h3>
+
+                                </div>
+                            </div>
+                            <!--// single-latest-blog End -->
+                        </div>
+                        <div class="col-lg-4">
+                            <!-- single-latest-blog Start -->
+                            <div class="single-latest-blog mb--30 mt--30">
+                                <div class="latest-blog-image">
+                                    <a href="/blog-details"><img src="img/blog-image3.jpg" alt=""></a>
+                                </div>
+                                <div class="latest-blog-cont">
+                                    <h3><a href="/blog-details" >O benefício do plástico reciclado</a></h3><br>
+
+                                </div>
+                            </div>
+                            <!--// single-latest-blog End -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+</main>
+
+
 	@endsection
