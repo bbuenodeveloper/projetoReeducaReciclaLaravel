@@ -33,10 +33,10 @@ class AdminController extends Controller
         return redirect('/add-admin');
     }
 
-
+    //Function mostrarLista é apenas de teste//
     protected function mostrarLista(){  
         $adminlista = User::where('nivel_user', 0)->get();
-        return view('mostarAdmin', ['adminLista' => $adminlista]);
+        return view('mostrarAdmin', ['adminLista' => $adminlista]);
     }
 
 
@@ -66,7 +66,7 @@ class AdminController extends Controller
         $editado->save();
 
        return redirect('/relatorio-Admins');
+    }
    }
-
-}
+   
 }

@@ -130,7 +130,7 @@ Route::get('/apagarnews/{id}', 'Newslettercontroller@apagarNews');
 
 Route::get('/apagarAdmin/{id}', 'AdminController@deletarAdmin')->middleware('acesso');
 
-Route::get('/apagarUser/{id}', 'RegisterController@deletarUser')->middleware('acesso');
+Route::get('/apagarUser/{id}', 'Auth\RegisterController@deletarUser')->middleware('acesso');
 
 // rotas editar registros Get
 
@@ -187,14 +187,15 @@ Route::get('/home', 'NewsletterController@home')->name('home');
 
 Route::post('/home', 'NewsletterController@home');
 
-
-
-Route::get('/adminlista','AdminController@mostrarLista')->middleware('acesso');
+Route::get('/registerPainel','Auth\RegisterController@addUser');
 
 Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
 
 Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
+
+
+//Rotas Socialite Google
 Route::get('redirect/{driver}', 'Auth\LoginController@redirectToProvider')
     ->name('login.provider')
     ->where('driver', implode('|', config('auth.socialite.drivers')));
@@ -203,9 +204,9 @@ Route::get('{driver}/callback', 'Auth\LoginController@handleProviderCallback')
     ->name('login.callback')
     ->where('driver', implode('|', config('auth.socialite.drivers')));
 
-Route::get('/registerPainel','Auth\RegisterController@addUser');
 
-
+//Rota adminlista apenas teste
+Route::get('/adminlista','AdminController@mostrarLista')->middleware('acesso');
 
 
 

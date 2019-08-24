@@ -102,51 +102,49 @@ class RegisterController extends Controller
         ]);
     }
     
+
+    
+
+    //Functions do Cadastro de Usuario dentro do Painel Admin
+
     public function addUser() {
 
             return view('registerPainel');
     }
 
+
     public function deletarUser(Request $request, $id){
-        $user = User::find($id);
-        $user->delete();
+        $deletado = User::find($id);
+        $deletado->delete();
 
-
-        if ($user-> nivel_user == 0) {
-            return redirect('/relatorio-Admins');
-        } else {
-            return redirect('/relatorio-Users');
-        }
+        return redirect('/relatorio-Users');
     }
 
 
     public function viewEditarUser(Request $request,$id){
-        if ($request->ismethod('GET')){
-             $editado = User::find($id);
-            return view('registerPainel', ['editado'=>$editado]);
-        }
+        $editado = User::find($id);
+        return view('editar-user', ['editado'=>$editado]);
      }
 
     public function editarUser(Request $request, $id){
-        if ($request->ismethod('POST')){
-            $editado = User::find($id);
-            $editado->name = $request->name;
-            $editado->email = $request->email;
-            $editado->password = Hash::make($request->password);
-            $editado->sobrenome = $request->sobrenome;
-            $editado->cep = $request->cep;
-            $editado->endereco = $request->endereco;
-            $editado->numero = $request->numero;
-            $editado->complemento = $request->complemento;
-            $editado->bairro = $request->bairro;
-            $editado->data_nascimento = $request->data_nascimento;
-            $editado->estado = $request->estado;
-            $editado->cidade = $request->cidade;
-            $editado->telefone = $request->telefone;
+        $editado = User::find($id);
+        $editado->name = $request->name;
+        $editado->email = $request->email;
+        $editado->password = Hash::make($request->password);
+        $editado->sobrenome = $request->sobrenome;
+        $editado->cep = $request->cep;
+        $editado->endereco = $request->endereco;
+        $editado->numero = $request->numero;
+        $editado->complemento = $request->complemento;
+        $editado->bairro = $request->bairro;
+        $editado->data_nascimento = $request->data_nascimento;
+        $editado->estado = $request->estado;
+        $editado->cidade = $request->cidade;
+        $editado->telefone = $request->telefone;
 
-            $editado->save();
-    
-           return redirect('/relatorio-Users');
-       }
+        $editado->save();
+
+        return redirect('/relatorio-Users');
+       
     }
 }

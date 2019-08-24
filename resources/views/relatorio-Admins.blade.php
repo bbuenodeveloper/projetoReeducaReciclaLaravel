@@ -12,7 +12,6 @@
           <th>Nome</th>
           <th>email</th>
           <th>Nível Usuário</th>
-          <th>Senha</th>
           <th>Imagem</th>
           <th>Editar</th>
           <th>Apagar</th>
@@ -26,7 +25,6 @@
             <td>{{$admins->name}}</td>            
             <td>{{$admins->email}}</td>
             <td>{{$admins->nivel_user}}</td>
-            <td>{{$admins->password}}</td>
             <td>{{$admins->imagem}}</td>
             <td><a href="/editar-admin/{{$admins->id}}"><button class="btn btn-success" style="padding:15px;">Editar</button></a></td>
             <td><a href="/apagarAdmin/{{$admins->id}}"><button class="btn btn-danger" id="deletarAdmin" onclick="deletarAdmin({{$admins->id}})"style="padding:15px;">Deletar</button></td>
