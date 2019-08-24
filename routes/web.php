@@ -145,10 +145,13 @@ Route::get('/editar-cidade/{id}','CidadeController@ViewEditarCidade');
 Route::get('/editar-post/{id}','BlogController@ViewEditarPost');
 
 Route::get('/editar-news/{id}', 'NewsletterController@editarNews');
+
 Route::get('/editar-admin/{id}', 'AdminController@viewEditarAdmin')->middleware('acesso');
+
 Route::post('/editar-admin/{id}', 'AdminController@editarAdmin')->middleware('acesso');
 
 Route::get('/editar-user/{id}', 'Auth\RegisterController@viewEditarUser')->middleware('acesso');
+
 Route::post('/editar-user/{id}', 'Auth\RegisterController@editarUser')->middleware('acesso');
 
 // rotas editar registros Post

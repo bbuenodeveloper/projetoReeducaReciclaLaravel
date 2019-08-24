@@ -446,7 +446,7 @@
         <script type='text/javascript' src="{{asset('plugins/jquery.isotope.min.js')}}"></script>
         <script type='text/javascript' src="{{asset('js/plugins.js')}}"></script>
         <script type='text/javascript' src="{{asset('plugins/jquery.transit.min.js')}}"></script>
-
+        <script id="dsq-count-scr" src="//www-reciclamaps-com-br.disqus.com/count.js" async></script>
         <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
         <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->
         <script src="{{asset('js/recicla.min.js')}}"></script>
