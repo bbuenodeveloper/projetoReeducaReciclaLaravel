@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 
+
 class RegisterController extends Controller
 {
     /*
@@ -99,12 +100,51 @@ class RegisterController extends Controller
             'cidade' => $data['cidade'],
             'telefone' => $data['telefone']
         ]);
-        
     }
     
+
+    
+
+    //Functions do Cadastro de Usuario dentro do Painel Admin
+
     public function addUser() {
 
             return view('registerPainel');
+    }
 
+
+    public function deletarUser(Request $request, $id){
+        $deletado = User::find($id);
+        $deletado->delete();
+
+        return redirect('/relatorio-Users');
+    }
+
+
+    public function viewEditarUser(Request $request,$id){
+        $editado = User::find($id);
+        return view('editar-user', ['editado'=>$editado]);
+     }
+
+    public function editarUser(Request $request, $id){
+        $editado = User::find($id);
+        $editado->name = $request->name;
+        $editado->email = $request->email;
+        $editado->password = Hash::make($request->password);
+        $editado->sobrenome = $request->sobrenome;
+        $editado->cep = $request->cep;
+        $editado->endereco = $request->endereco;
+        $editado->numero = $request->numero;
+        $editado->complemento = $request->complemento;
+        $editado->bairro = $request->bairro;
+        $editado->data_nascimento = $request->data_nascimento;
+        $editado->estado = $request->estado;
+        $editado->cidade = $request->cidade;
+        $editado->telefone = $request->telefone;
+
+        $editado->save();
+
+        return redirect('/relatorio-Users');
+       
     }
 }

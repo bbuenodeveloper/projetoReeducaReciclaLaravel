@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appPainel')
 
 @section('content')
 <div class="container p-4">
@@ -167,37 +167,7 @@
 
                         <div class="col-md-6">
                             <input id="bairro" type="text" class="form-control @error('bairro') is-invalid @enderror" name="bairro" required autocomplete="bairro">
-
-                            @error('bairro')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="estado" class="col-md-4 col-form-label text-md-right">{{ _('Estado') }}</label>
-                        <div class="col-md-6">
-                            <select id="estado" type="text" class="form-control @error('estado') is-invalid @enderror" name="estado" required autocomplete="estado">
-                            <option selected>Selecione</option>
-                            <option>São Paulo</option>
-                            </select>
-                            @error('estado')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="cidade" class="col-md-4 col-form-label text-md-right">{{ _('Cidade') }}</label>
-                        <div class="col-md-6">
-                            <select id="cidade" type="text" class="form-control @error('cidade') is-invalid @enderror" name="cidade" required autocomplete="cidade">
-                            <option selected>Selecione</option>
-                            <option>São Paulo</option>
-                            </select>
+                </select>
                             @error('cidade')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -205,6 +175,7 @@
                             @enderror
                         </div>
                     </div>
+
                     <div class="form-group row">
                         <label style="display:none" for="nivelUser" class="col-md-4 col-form-label text-md-right">{{ __('Nivel usuário') }}</label>
                         <div class="col-md-6">
@@ -221,7 +192,7 @@
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-4">
                             <button type="submit" class="btn btn-primary float-right">
-                                {{ __('Cadastrar') }}
+                                {{ __('Cadastrar') }} blabla
                             </button>
                         </div>
                     </div>

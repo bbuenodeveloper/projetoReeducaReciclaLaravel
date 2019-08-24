@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="jumbotron col-md-8 border rounded border-success">
         <div class="col-md-12">
-            <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
+            <form method="POST" action=" /editar-user/{{$editado->id}}" enctype="multipart/form-data">
                 @csrf
                 <div class="col-md-12 container  p-4 text-center">
                 <div class="logoRegister mb-4">
@@ -18,7 +18,7 @@
                         <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome') }}</label>
 
                         <div class="col-md-6">
-                            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" required autocomplete="name" style="font-style:italic" value="{{$editado->name}}">
 
                             @error('name')
                                 <span class="invalid-feedback" role="alert">
@@ -32,7 +32,7 @@
                         <label for="sobrenome" class="col-md-4 col-form-label text-md-right">{{ __('Sobrenome') }}</label>
 
                         <div class="col-md-6">
-                            <input id="sobrenome" type="text" class="form-control @error('sobrenome') is-invalid @enderror" name="sobrenome" value="{{ old('sobrenome') }}" required autocomplete="sobrenome" autofocus>
+                            <input id="sobrenome" type="text" class="form-control @error('sobrenome') is-invalid @enderror" name="sobrenome" required autocomplete="sobrenome" style="font-style:italic" value="{{$editado->sobrenome}}">
 
                             @error('sobrenome')
                                 <span class="invalid-feedback" role="alert">
@@ -46,7 +46,7 @@
                         <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
 
                         <div class="col-md-6">
-                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" required autocomplete="email" style="font-style:italic" value="{{$editado->email}}">
 
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -60,7 +60,7 @@
                         <label for="data_nascimento" class="col-md-4 col-form-label text-md-right">{{ __('Data de Nascimento') }}</label>
 
                         <div class="col-md-6">
-                            <input id="data_nascimento" type="date" class="form-control @error('data_nascimento') is-invalid @enderror" name="data_nascimento" value="{{ old('data_nascimento') }}" required autocomplete="data_nascimento" style="font-style:italic">
+                            <input id="data_nascimento" type="date" class="form-control @error('data_nascimento') is-invalid @enderror" name="data_nascimento" style="font-style:italic" required autocomplete="data_nascimento" value="{{$editado->data_nascimento}}">
 
                             @error('data_nascimento')
                                 <span class="invalid-feedback" role="alert">
@@ -74,7 +74,7 @@
                         <label for="telefone" class="col-md-4 col-form-label text-md-right">{{ __('Telefone') }}</label>
 
                         <div class="col-md-6">
-                            <input id="telefone" type="number" class="form-control @error('telefone') is-invalid @enderror" name="telefone" value="{{ old('telefone') }}" required autocomplete="telefone" mask="(__) _____-____" placeholder="Ex: (xx) xxxx-xxxx"style="font-style:italic">
+                            <input id="telefone" type="number" class="form-control @error('telefone') is-invalid @enderror" name="telefone" style="font-style:italic" required autocomplete="telefone" value="{{$editado->telefone}}">
 
                             @error('telefone')
                                 <span class="invalid-feedback" role="alert">
@@ -88,7 +88,7 @@
                         <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Senha') }}</label>
 
                         <div class="col-md-6">
-                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" value="{{$editado->password}}">
 
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
@@ -102,7 +102,7 @@
                         <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirmar Senha') }}</label>
 
                         <div class="col-md-6">
-                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" value="{{$editado->password}}">
                         </div>
                     </div>
 
@@ -110,7 +110,7 @@
                         <label for="cep" class="col-md-4 col-form-label text-md-right">{{ __('CEP') }}</label>
 
                         <div class="col-md-6">
-                            <input id="cep" type="text" class="form-control @error('cep') is-invalid @enderror" name="cep" required autocomplete="cep" mask="_____-___" placeholder="Ex: xxxxx-xxx" style="font-style:italic">
+                            <input id="cep" type="text" class="form-control @error('cep') is-invalid @enderror" name="cep" required autocomplete="cep" style="font-style:italic" value="{{$editado->cep}}">
 
                             @error('cep')
                                 <span class="invalid-feedback" role="alert">
@@ -124,7 +124,7 @@
                         <label for="endereco" class="col-md-4 col-form-label text-md-right">{{ __('Endereço') }}</label>
 
                         <div class="col-md-6">
-                            <input id="endereco" type="text" class="form-control @error('endereco') is-invalid @enderror" name="endereco" required autocomplete="endereco">
+                            <input id="endereco" type="text" class="form-control @error('endereco') is-invalid @enderror" name="endereco" required autocomplete="endereco" style="font-style:italic" value="{{$editado->endereco}}">
 
                             @error('endereco')
                                 <span class="invalid-feedback" role="alert">
@@ -138,7 +138,7 @@
                         <label for="numero" class="col-md-4 col-form-label text-md-right">{{ __('Número') }}</label>
 
                         <div class="col-md-6">
-                            <input id="numero" type="text" class="form-control @error('numero') is-invalid @enderror" name="numero" required autocomplete="numero">
+                            <input id="numero" type="text" class="form-control @error('numero') is-invalid @enderror" name="numero" required autocomplete="numero" style="font-style:italic" value="{{$editado->numero}}">
 
                             @error('numero')
                                 <span class="invalid-feedback" role="alert">
@@ -152,7 +152,7 @@
                         <label for="complemento" class="col-md-4 col-form-label text-md-right">{{ __('Complemento') }}</label>
 
                         <div class="col-md-6">
-                            <input id="complemento" type="text" class="form-control @error('complemento') is-invalid @enderror" name="complemento" required autocomplete="complemento">
+                            <input id="complemento" type="text" class="form-control @error('complemento') is-invalid @enderror" name="complemento" required autocomplete="complemento"  style="font-style:italic" value="{{$editado->complemento}}">
 
                             @error('complemento')
                                 <span class="invalid-feedback" role="alert">
@@ -163,23 +163,9 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="bairro" class="col-md-4 col-form-label text-md-right">{{ __('Bairro') }}</label>
-
-                        <div class="col-md-6">
-                            <input id="bairro" type="text" class="form-control @error('bairro') is-invalid @enderror" name="bairro" required autocomplete="bairro">
-
-                            @error('bairro')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
                         <label for="estado" class="col-md-4 col-form-label text-md-right">{{ _('Estado') }}</label>
                         <div class="col-md-6">
-                            <select id="estado" type="text" class="form-control @error('estado') is-invalid @enderror" name="estado" required autocomplete="estado">
+                            <select id="estado" type="text" class="form-control @error('estado') is-invalid @enderror" name="estado" required autocomplete="estado" value="{{$editado->estado}}">
                             <option selected>Selecione</option>
                             <option>São Paulo</option>
                             </select>
@@ -194,7 +180,7 @@
                     <div class="form-group row">
                         <label for="cidade" class="col-md-4 col-form-label text-md-right">{{ _('Cidade') }}</label>
                         <div class="col-md-6">
-                            <select id="cidade" type="text" class="form-control @error('cidade') is-invalid @enderror" name="cidade" required autocomplete="cidade">
+                            <select id="cidade" type="text" class="form-control @error('cidade') is-invalid @enderror" name="cidade" required autocomplete="cidade" value="{{$editado->cidade}}">
                             <option selected>Selecione</option>
                             <option>São Paulo</option>
                             </select>
@@ -205,6 +191,7 @@
                             @enderror
                         </div>
                     </div>
+
                     <div class="form-group row">
                         <label style="display:none" for="nivelUser" class="col-md-4 col-form-label text-md-right">{{ __('Nivel usuário') }}</label>
                         <div class="col-md-6">
@@ -221,7 +208,7 @@
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-4">
                             <button type="submit" class="btn btn-primary float-right">
-                                {{ __('Cadastrar') }}
+                                {{ __('SALVAR ALTERAÇÕES') }}
                             </button>
                         </div>
                     </div>

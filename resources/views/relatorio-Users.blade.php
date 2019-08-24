@@ -22,6 +22,9 @@
           <th>Cidade</th>
           <th>Nível Usuário</th>
           <th>Telefone</th>
+          <th>Imagem</th>
+          <th>Editar</th>
+          <th>Apagar</th>
 
         </tr>
       </thead>
@@ -43,6 +46,9 @@
             <td>{{$user->cidade}}</td>
             <td>{{$user->nivel_user}}</td>
             <td>{{$user->telefone}}</td>
+            <td>{{$user->imagem}}</td>
+            <td><a href="/editar-user/{{$user->id}}"><button class="btn btn-success" style="padding:15px;">Editar</button></a></td>
+            <td><a href="/apagarUser/{{$user->id}}"><button class="btn btn-danger" id="deletarUser" onclick="deletarUser({{$user->id}})"style="padding:15px;">Deletar</button></td>
             </tr>
           @endforeach
 
