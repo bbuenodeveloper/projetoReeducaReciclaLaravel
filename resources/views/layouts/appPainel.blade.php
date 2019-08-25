@@ -242,10 +242,9 @@
         <link rel="stylesheet" href="{{asset('sweetalert/dist/sweetalert2.min.css')}}">
 
         <script src="{{asset('js/jquery.js')}}"></script>
-        <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
         <script src="https://cdn.ckeditor.com/4.4.5.1/basic/ckeditor.js"></script>
 
         <script src="{{asset('js/ajaxDeletaCidade.js')}}"></script>
@@ -272,9 +271,7 @@
         <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <script src="{{asset('js/mdb.js')}}"></script>
-        <script href="{{asset('js/addons/datatables.min.js')}}" rel="stylesheet"></script>
-        <script href="{{asset('js/addons/datatables-select.min.js')}}" rel="stylesheet"></script>
-
-
-
+        <script src="{{asset('js/addons/datatables.min.js')}}"></script>
+        <script src="{{asset('js/addons/datatables-select.min.js')}}"></script>
+        <script src="{{asset('js/postCadastroAdmin.js')}}"></script>
 
