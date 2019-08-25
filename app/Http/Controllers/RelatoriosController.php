@@ -22,32 +22,32 @@ class RelatoriosController extends Controller
         }
 
     public function relatorioUsers (Request $request){
-        $users = User::paginate(25);
+        $users = User::paginate(10);
                 return view('relatorio-Users',['users'=>$users]);
         }
 
     public function relatorioEmpresas (Request $request){
-        $empresas = Empresa::paginate(25);
+        $empresas = Empresa::paginate(10);
                 return view('relatorio-Empresas',['empresas'=>$empresas]);
         }
 
     public function relatorioCidades (Request $request){
-        $cidades = Cidade::paginate(25);
+        $cidades = Cidade::paginate(10);
                 return view('relatorio-Cidades',['cidades'=>$cidades]);
         }
 
     public function relatorioPosts (Request $request){
-        $posts = Post::paginate(25);
+        $posts = Post::paginate(10);
                 return view('relatorio-Posts',['posts'=>$posts]);
         }
 
     public function relatorioMateriais (Request $request){
-        $materiais = Material::paginate(25);
+        $materiais = Material::paginate(10);
                 return view('relatorio-Materiais',['materiais'=>$materiais]);
         }
 
     public function relatorioNewsletter (Request $request){
-        $newsletters = Newsletter::paginate(25);
+        $newsletters = Newsletter::paginate(10);
                 return view('relatorio-Newsletter',['newsletters'=>$newsletters]);
             }
 

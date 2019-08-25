@@ -50,7 +50,7 @@ class BlogController extends Controller
         }
         $post->save();
 
-        return redirect('relatorio-Posts');
+        // return redirect('relatorio-Posts');
     }
 
     public function editarPost(Request $request, $id){

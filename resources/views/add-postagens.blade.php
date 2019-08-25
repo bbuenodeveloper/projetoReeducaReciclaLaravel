@@ -6,12 +6,6 @@
 <div class="container">
     <div class="row">
         <div class="col-12 mx-auto">
-
-                {{-- @if (isset($sucesso))
-                <div class="alert alert-success" role="alert">
-                    <strong>Muito bem!</strong> {{ $sucesso }}
-                </div>
-                @endif --}}
 <div class="jumbotron border rounded border-success">
             <center><div class="logoRegister mb-4">
                 <a href="/add-postagens">
@@ -19,10 +13,10 @@
                 </a>
             <div></center>
     <h1 class="text-center mb-2">Cadastro de Postagens</h1>
-    <form action="{{ route('postagem.cadastrar') }}" method="post" class="user-info-setting-form" enctype="multipart/form-data">
+    <form dataroute="{{ route('postagem.cadastrar') }}" method="post" id="formPostagem" class="user-info-setting-form" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
-        <label for="titulo">Data</label>
+        <label for="data">Data</label>
         <input type="date" name="data" id="data" class="form-control" placeholder="Data">
         <label for="titulo">Titulo</label>
         <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Digite o titulo">

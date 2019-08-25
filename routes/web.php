@@ -121,6 +121,8 @@ Route::post('/cadastrarusuario','RegisterController@create')->middleware('acesso
 // rotas deletar registros
 
 
+Route::get('/apagarpostagem/{id}','BlogController@apagarPost');
+
 Route::get('/apagarmaterial/{id}','MaterialController@apagarMaterial');
 
 Route::get('/apagarempresa/{id}','EmpresaController@apagarEmpresa');

@@ -23,7 +23,7 @@
             <td>{{$post->titulo}}</td>
             <td>{{$post->imagem}}</td>
             <td><a href="/editar-post/{{$post->id}}"><button class="btn btn-success" >Editar</button></a></td>
-            <td><button class="btn btn-danger" id="deletaCidade" onclick="deletaCidade({{$post->id}})">Apagar</button></td>
+            <td><button class="btn btn-danger" id="deletaPostagem" onclick="deletaPostagem({{$post->id}})">Apagar</button></td>
             </tr>
           @endforeach
 
