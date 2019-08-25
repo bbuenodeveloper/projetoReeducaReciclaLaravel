@@ -1,7 +1,10 @@
-function executeSweet(){
+function executeSweet(message){
+    if(!message) {
+        message = 'Cadastro realizado com sucesso!';
+    }
     Swal.fire({
         type: 'success',
-        text: 'Cadastro realizado com sucesso!',
+        text: message,
     })
 }
 
@@ -12,11 +15,17 @@ function executeSweetDelete(){
     })
 }
 
-function executeSweetError(){
+function executeSweetError(err, message){
+    if(!message) {
+        message = 'Preencha todos os campos para enviar o formulário';
+    }
+    if(err){
+        console.log("Error", err);
+    }
     Swal.fire({
         type: 'error',
         title: 'Oops...',
-        text: 'Preencha todos os campos para enviar o formulário',
+        text: message,
     })
 }
 
