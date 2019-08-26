@@ -249,14 +249,16 @@
                          <ul>
 
                              <li><a href="/h">Home</a></li>
-                             <li><a href="/sobre">Sobre</a></li>
-                             <li><a href="/comodescartar">Como Descartar</a></li>
-                             <li><a href="/contato">Contato</a></li>
+                             <li><a href="/faq">FAQ</a></li>
                              <li><a href="/mapa">Mapa</a></li>
-                             <li><a href="/termos">Termos de Uso</a></li>
+                             <li><a href="/sobre">Sobre</a></li>
                              <li><a href="/loja">Loja</a></li>
-                             <li><a href="/privacidade">Politica de Privacidade</a></li>
+                             <li><a href="/contato">Contato</a></li>
+                             <li><a href="/comodescartar">Como Descartar</a></li>
+                             <li><a href="/termos">Termos de Uso</a></li>
                              <li><a href="/blog">Blog</a></li>
+                             <li><a href="/privacidade">Politica de Privacidade</a></li>
+
 
                          </ul>
                      </div>

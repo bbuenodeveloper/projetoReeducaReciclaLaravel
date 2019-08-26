@@ -23,17 +23,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
                     <!-- shop-sidebar-wrap start -->
                     <div class="blog-sidebar-wrap">
 
-                        <!-- shop-sidebar start -->
-                        <div class="blog-sidebar mb--30">
-                            <h4 class="title">Buscar</h4>
-                            <div class="search-post">
-                                <form  action="#" class="search-blog">
-                                    <input type="text" placeholder="Digite Aqui...">
-                                    <button class=" btn-search" type="submit"><span class="fas fa-search"></span></button>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- shop-sidebar end -->
+
 
                         <!-- shop-sidebar start -->
                         <div class="blog-sidebar mb--30">
@@ -62,15 +52,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
 
                         <!-- shop-sidebar start -->
-                        <div class="blog-sidebar">
-                            <h4 class="title">Tags</h4>
-                            <div class="sidebar-tag">
-                                <a href="#">Vidro</a>
-                                <a href="#">Papel</a>
-                                <a href="#">Plastico</a>
 
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-8 order-1 order-lg-1">
