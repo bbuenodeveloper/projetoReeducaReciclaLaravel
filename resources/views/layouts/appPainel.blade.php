@@ -148,8 +148,8 @@
                   <li class="sub-with-sub">
                     <a href="#">Relatorios</a>
                     <ul>
-                      <li><a href="#">Relatorio de Produtos</a></li>
-                      <li><a href="#">Relatorio de Categorias</a></li>
+                      <li><a href="/relatorio-Produtos">Relatorio de Produtos</a></li>
+                      <li><a href="/relatorio-Categorias">Relatorio de Categorias</a></li>
                       <li><a href="#">Relatorio de Forma de Pagamento</a></li>
                     </ul>
                   </li>
