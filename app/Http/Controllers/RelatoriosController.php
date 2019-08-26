@@ -9,6 +9,8 @@ use App\cidade;
 use App\material;
 use App\Newsletter;
 use App\Post;
+use App\Produto;
+use App\Categoria;
 
 class RelatoriosController extends Controller
 {
@@ -50,5 +52,15 @@ class RelatoriosController extends Controller
         $newsletters = Newsletter::paginate(10);
                 return view('relatorio-Newsletter',['newsletters'=>$newsletters]);
             }
+
+    public function relatorioProdutos (Request $request){
+        $produtos = Produto::paginate(10);
+            return view('relatorio-Produtos', ['produtos'=>$produtos]);
+    }
+
+    public function relatorioCategorias (Request $request){
+        $categorias = Categoria::paginate(10);
+            return view('relatorio-Categorias', ['categorias'=>$categorias]);
+    }
 
 }

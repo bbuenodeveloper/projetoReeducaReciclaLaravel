@@ -135,6 +135,8 @@ Route::get('/apagarAdmin/{id}', 'AdminController@deletarAdmin')->middleware('ace
 
 Route::get('/apagarUser/{id}', 'Auth\RegisterController@deletarUser')->middleware('acesso');
 
+Route::get('/apagarProduto/{id}', 'ProdutoController@apagarProduto');
+
 // rotas editar registros Get
 
 
@@ -156,6 +158,12 @@ Route::get('/editar-user/{id}', 'Auth\RegisterController@viewEditarUser')->middl
 
 Route::post('/editar-user/{id}', 'Auth\RegisterController@editarUser')->middleware('acesso');
 
+Route::get('/editar-produto/{id}', 'ProdutoController@viewEditarProduto');
+
+
+
+
+
 // rotas editar registros Post
 
 
@@ -168,6 +176,8 @@ Route::post('/editadocidade/{id}','CidadeController@editarCidade');
 Route::post('/editadopost/{id}','BlogController@editarPost');
 
 Route::post('/editar-news/{id}', 'NewsletterController@editarNews');
+
+Route::post('/editadoProduto/{id}', 'ProdutoController@editarProduto');
 
 
 
@@ -187,6 +197,10 @@ Route::get('/relatorio-Posts', 'RelatoriosController@relatorioPosts');//->middle
 Route::get('/relatorio-Materiais', 'RelatoriosController@relatorioMateriais')->middleware('acesso');
 
 Route::get('/relatorio-Newsletter', 'RelatoriosController@relatorioNewsletter')->middleware('acesso');
+
+Route::get('/relatorio-Produtos', 'RelatoriosController@relatorioProdutos');
+
+Route::get('/relatorio-Categorias', 'RelatoriosController@relatorioCategorias');
 
 
 // Rotas de autenticação

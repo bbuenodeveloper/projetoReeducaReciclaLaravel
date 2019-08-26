@@ -47,6 +47,32 @@ class ProdutoController extends Controller
 
     }
 
+    public function editarProduto(Request $request, $id){
+
+        $produto = Produto::find($id);
+        $produto->produto = strtoupper($request->produto);
+        //$cidade->imagem = 'https://dummyimage.com/75x76/b8b8b8/fff/?text='.$request->cidade;
+
+        if($request->hasfile('imagem'))
+        {
+            $file = $request->file('imagem');
+            $extension = $file->getClientOriginalExtension();
+            $filename = time() . '.' . $extension;
+            $file->move('storage/produtos/', $filename);
+            $produto->imagem = $filename;
+        }
+        $produto->save();
+
+        return redirect('relatorio-Produtos');
+    }
+
+    public function viewEditarProduto(Request $request,$id) {
+        if($request->isMethod('GET')){
+            $produto = Produto::find($id);
+            return view('editar-Produto',['produto'=>$produto]);
+        }
+    }
+
 }
 
 
