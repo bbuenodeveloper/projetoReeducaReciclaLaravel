@@ -1948,6 +1948,13 @@ a.efeitoTransicaoLoja:hover {
         font-weight: 600;
     }
 
+    .titulo-lista {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-weight: 600;
+    }
+
 
     .sub-titulo-painel {
         margin-left: 6.5rem;

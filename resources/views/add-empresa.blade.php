@@ -12,7 +12,7 @@
 <div class="jumbotron border rounded border-success">
         <center><div class="logoRegister mb-4">
                 <a href="/add-empresa">
-                    <img class="logoRegister mb-3" src="{{asset('img/logologin.png')}} alt>
+                    <img class="logoRegister mb-3" src="{{asset('img/logologin.png')}}" alt=""  >
                 </a>
             <div></center>
     <h1 class="text-center mb-2">Cadastro de Empresas</h1>
@@ -51,6 +51,11 @@
                                     <label for="telefone">Telefone</label>
                                     <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Digite o telefone">
                                     </div>
+                                    <div class="form-group">
+                                        <label for="site">Website</label>
+                                        <input type="url" name="site" id="site" class="form-control" placeholder="Digite o site">
+                                        </div>
+
                                     <div class="form-group">
                                         <label for="latitude">Latitude</label>
                                         <input type="text" name="latitude" id="latitude" class="form-control" placeholder="Digite a latitude">

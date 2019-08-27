@@ -21,7 +21,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
                 <li>1. Escolha a cidade</li>
                 <li>2. Selecione 1 ou mais materiais que deseja reciclar</li>
                 <li>3. Clique nos pontos que aparecerão no Mapa para saber os dados das empresas</li>
-                <li>4. Ou selecione a empresa na lista que vai aparecer no canto direito da tela</li>
+                <li>4. Ou selecione a Empresa na lista que vai aparecer na parte abaixo do Mapa</li>
             </ul>
 
         <div class="clearfix"></div>
@@ -68,18 +68,22 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
             <div class="clearfix"></div>
         </div>
     </div>
-    <div class="panel city_panel-city">
-        <div class="panel-titulo">
-            <h3>Lista de Empresas</h3>
+
+
+    </div>
+    <div id="map"></div>
+    <div class="clearfix"></div>
+    <div class="container-fluid">
+        <div class="titulo-lista mx-auto mt-4">
+            <h3>Postos de destinação na cidade informada:</h3>
         </div>
     <div class="lista">
         <ul>
 
         </ul>
     </div>
-    <div class="clearfix"></div>
     </div>
-    <div id="map"></div>
+    <div class="clearfix"></div>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDottVHFaZukoZo_EvVv-jxbhOCpC1LMeY&callback=initMap"></script>
 

@@ -29,6 +29,7 @@ class EmpresaController extends Controller
         $empresa->complemento = $request->complemento;
         $empresa->estado = $request->estado;
         $empresa->telefone = $request->telefone;
+        $empresa->site = $request->site;
         $empresa->complemento = $request->complemento;
         $empresa->latitude = $request->latitude;
         $empresa->longitude = $request->longitude;
@@ -71,6 +72,7 @@ class EmpresaController extends Controller
         $empresa->complemento = $request->complemento;
         $empresa->estado = $request->estado;
         $empresa->telefone = $request->telefone;
+        $empresa->site = $request->site;
         $empresa->complemento = $request->complemento;
         $empresa->latitude = $request->latitude;
         $empresa->longitude = $request->longitude;
