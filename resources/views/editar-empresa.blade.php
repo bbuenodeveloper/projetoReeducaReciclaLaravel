@@ -12,7 +12,7 @@
 <div class="jumbotron border rounded border-success">
         <center><div class="logoRegister mb-4">
                 <a href="/add-empresa">
-                    <img class="logoRegister mb-3" src="img/logologin.png" alt>
+                    <img class="logoRegister mb-3" src="{{asset('img/logologin.png')}}" alt>
                 </a>
             <div></center>
     <h1 class="text-center mb-2">Editar Empresas</h1>

@@ -90,7 +90,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
     </div>
 
     <div class="block alt">
-      <img src="img/aluminio.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 500px) 100vw, 500px" /><h3>Reciclar <strong>Alumínio</strong></h3>
+      <img src="{{asset('img/aluminio.jpg')}}" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 500px) 100vw, 500px" /><h3>Reciclar <strong>Alumínio</strong></h3>
       <p>Reciclagem de alumínio é o processo pelo qual o alumínio pode ser reutilizado em determinados produtos, após ter sido inicialmente produzido. </p>
 
       <a href="javascript:void(0)" class="openTwo">&plus;</a>
@@ -106,7 +106,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
     </div>
 
     <div class="block alt2 ">
-      <img src="img/PETCO_Collection_BottleHand_2326.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1600px) 100vw, 1600px" /><h3>Reciclar <strong>Plástico</strong></h3>
+      <img src="{{asset('img/PETCO_Collection_BottleHand_2326.jpg')}}" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1600px) 100vw, 1600px" /><h3>Reciclar <strong>Plástico</strong></h3>
       <p>Diversos produtos e embalagens feitos com material plástico apresentam um símbolo que indica que eles são recicláveis, de acordo com o tipo de plástico do qual são feitos. </p>
 
       <a href="javascript:void(0)" class="openThree">&plus;</a>
@@ -124,7 +124,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
       </div>
 
       <div class="block alt3">
-        <img src="img/papel.jpg" class="attachment-full size-full wp-post-image" alt="" /><h3>Reciclar <strong>Papel</strong></h3>
+        <img src="{{asset('img/papel.jpg')}}" class="attachment-full size-full wp-post-image" alt="" /><h3>Reciclar <strong>Papel</strong></h3>
         <p>A reciclagem de papel é o reaproveitamento do papel não-funcional para produzir papel reciclado. </p>
 
         <a href="javascript:void(0)" class="openFour">&plus;</a>
@@ -150,7 +150,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
     <div class="fourFeatures">
         <div class="block alt4 ">
-          <img src="img/organicoreciclar.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1500px) 100vw, 1500px" /><h3>Reciclar <strong>Orgânicos</strong></h3>
+          <img src="{{asset('img/organicoreciclar.jpg')}}" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1500px) 100vw, 1500px" /><h3>Reciclar <strong>Orgânicos</strong></h3>
           <p>Entende-se como reciclagem de vidro, o processo industrial de derretimento de resíduos de vidro.</p>
 
           <a href="javascript:void(0)" class="openFive">&plus;</a>
@@ -167,7 +167,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         </div>
 
         <div class="block alt5">
-          <img src="img/toxicoreciclar.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 500px) 100vw, 500px" /><h3>Reciclar <strong> Tóxicos</strong></h3>
+          <img src="{{asset('img/toxicoreciclar.jpg')}}" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 500px) 100vw, 500px" /><h3>Reciclar <strong> Tóxicos</strong></h3>
           <p>Reciclagem de alumínio é o processo pelo qual o alumínio pode ser reutilizado em determinados produtos, após ter sido inicialmente produzido. </p>
 
           <a href="javascript:void(0)" class="openSix">&plus;</a>
@@ -183,7 +183,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         </div>
 
         <div class="block alt6 ">
-          <img src="img/lixohospitalar.jpg" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1600px) 100vw, 1600px" /><h3 class="cor-alt6-titulo">Reciclar <strong>Hospitalar</strong></h3>
+          <img src="{{asset('img/lixohospitalar.jpg')}}" class="attachment-full size-full wp-post-image" alt=""  sizes="(max-width: 1600px) 100vw, 1600px" /><h3 class="cor-alt6-titulo">Reciclar <strong>Hospitalar</strong></h3>
           <p class="cor-alt6">O lixo hospitalar, também chamado de resíduo hospitalar e de resíduo de serviços de saúde, é todo tipo de lixo proveniente do atendimento a pacientes ou de qualquer estabelecimento de saúde ou unidade que execute atividades de natureza de atendimento médico.</p>
 
           <a href="javascript:void(0)" class="openSeven">&plus;</a>
@@ -201,7 +201,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
           </div>
 
           <div class="block alt7">
-            <img src="img/madeira.jpg" class="attachment-full size-full wp-post-image" alt="" /><h3>Reciclar <strong>Madeira</strong></h3>
+            <img src="{{asset('img/madeira.jpg')}}" class="attachment-full size-full wp-post-image" alt="" /><h3>Reciclar <strong>Madeira</strong></h3>
             <p>A reciclagem da madeira é impossível. Por isso, a saída é o upcycle!</p>
 
             <a href="javascript:void(0)" class="openEight">&plus;</a>

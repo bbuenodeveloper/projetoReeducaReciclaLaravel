@@ -31,7 +31,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
             <div class="city_head">
                 <div class="photo">
                     <a href="#" class="fit_size" data-tooltip="visao geral">
-                        <img src="img/id_1.jpg" alt="" />
+                        <img src="{{asset('img/id_1.jpg')}}" alt="" />
                     </a>
                 </div>
                 <div class="main_cityinfo">

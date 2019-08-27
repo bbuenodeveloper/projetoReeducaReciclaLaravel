@@ -20,7 +20,7 @@
                     <div class="form-header mb-4 mt-4">
                             <h3 class="text-center mb-2" style="color:black">Cadastro de Material</h3>
                         {{-- <a href="index.html">
-                            <img class="logoRegister mb-3" src="img/logologin.png" alt>
+                            <img class="logoRegister mb-3" src="{{asset('img/logologin.png')}}" alt>
                         </a> --}}
                     </div>
                 </center>
