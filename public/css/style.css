@@ -71,6 +71,67 @@ body .top-navigation-left {
 
 /* blog home */
 
+.boxCinza {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 33px;
+    font-size: 14px;
+}
+
+.boxCinza h5, .boxCinza h2 {
+    text-transform: none!important;
+    color: #008151;
+    font-weight: lighter;
+    padding: 21px 0;
+    margin: 0 0 20px 0!important;
+    font-size: 21px;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+
+.boxCinza h5 span, .boxCinza h2 span {
+    border-bottom: 2px solid #CCC;
+    padding-bottom: 17px;
+}
+
+.boxCinza h5 a, .boxCinza h2 a {
+    text-decoration: none;
+    color: #008151;
+}
+
+
+#asideOfertasLoja .btnVejaMais {
+    padding: 4px 6px!important;
+    position: relative;
+    margin: 20px 0!important;
+    display: block;
+    text-align: center;
+}
+
+.bRadiusRight5 {
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btnVejaMais {
+    text-transform: none;
+    text-decoration: none;
+    font-size: 12px!important;
+    padding: 2px 6px!important;
+    margin-top: -2px!important;
+    margin-left: 20px!important;
+    background: transparent;
+    color: #008151;
+    border: 1px solid #008251;
+    position: absolute;
+    line-height: 18px!important;
+}
+
+
 
 
 .section-title {

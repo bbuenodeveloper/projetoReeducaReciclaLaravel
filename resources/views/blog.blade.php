@@ -38,7 +38,95 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             </div>
                             @endforeach
                         </div>
+                        <div class="largeRectangleBanner" style="height:auto!important;">
+                            <a href="#" target="_blank"><img src="{{asset('img/lateral_v2.gif')}}"
+                                    alt="Apoie nosso projeto" style="max-width: 100%;"></a>
+                        </div>
+                        <div id="asideOfertasLoja" class="boxCinza mt-3">
+							<h5 id="asideOfertasLojaTitulo">
+								<span>
+									<a href="/loja" target="_blank">
+									  <i class="fa fa-shopping-cart"></i> Loja ReciclaMaps
+									</a>
+								</span>
+                            </h5>
+                            {{-- carroussel --}}
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/produtos_loja/prod1.jpg" alt="Primeiro Slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/produtos_loja/prod2.jpg" alt="Segundo Slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/produtos_loja/prod3.jpg" alt="Terceiro Slide">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Próximo</span>
+                                </a>
+                            </div>
+                            {{-- fim carroussel --}}
+                            <div class="mb-2">
+                                    <center>
+                                    <a href="/loja" target="_blank"  class="btn btn-success">Já conhece nossa loja? Confira!</a>
+                                    <center>
+                            </div>
+
+                        </div>
+                        <div id="asideOfertasLoja" class="boxCinza mt-3">
+                                <h5 id="asideOfertasLojaTitulo">
+                                    <span>
+                                        <a href="/loja" target="_blank">
+                                          <i class="far fa-handshake"></i> Parceiros ReciclaMaps
+                                        </a>
+                                    </span>
+                                </h5>
+                                {{-- carroussel parceiros--}}
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img class="d-block " src="img/parceiros/trasix.png" alt="Primeiro Slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block " src="img/parceiros/remakker.png" alt="Segundo Slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block " src="img/parceiros/recolast.png" alt="Terceiro Slide">
+                                      </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Anterior</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Próximo</span>
+                                    </a>
+                                </div>
+                                {{-- fim carroussel --}}
+
+
+                            </div>
+
                     </div>
+
                 </div>
                 <div class="col-lg-8 order-1 order-lg-1">
                     <div class="row">
