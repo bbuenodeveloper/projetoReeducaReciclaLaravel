@@ -155,8 +155,8 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             </div>
             <div class="col-md-6">
                     <div class="grid-col-4 title-innovation">
-                            <div class="innovation-header">Sobre nós
-                            <div class="slash-line"></div></div>
+                            <div class="titulo-card-home-loja"><h1>Sobre <span class="color-title">Nós </span></h1>
+
                         </div>
             </div>
 

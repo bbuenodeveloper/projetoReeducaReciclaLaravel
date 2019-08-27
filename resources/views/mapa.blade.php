@@ -68,11 +68,16 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
             <div class="clearfix"></div>
         </div>
     </div>
-
+    <div class="panel city_panel-city">
+        <div class="panel-titulo">
+            <h3>Lista de Empresas</h3>
+        </div>
     <div class="lista">
         <ul>
 
         </ul>
+    </div>
+    <div class="clearfix"></div>
     </div>
     <div id="map"></div>
 
@@ -159,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                         lista += `<li>
                                             <h3><a href="javascript:" onclick="\$(this).parent().next().toggle()">${window.marcadores[i].empresas_nome}</a></h3>
                                             <p style="display:none;">
-                                                 ${window.marcadores[i].empresas_latitude} <br>
+                                                ${window.marcadores[i].empresas_latitude} <br>
                                                 ${window.marcadores[i].empresas_longitude} <br>
                                                 ${window.marcadores[i].empresas_nome} <br>
                                                 ${window.marcadores[i].empresas_endereco} <br>

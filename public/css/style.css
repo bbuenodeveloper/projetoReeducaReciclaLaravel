@@ -71,6 +71,8 @@ body .top-navigation-left {
 
 /* blog home */
 
+
+
 .section-title {
     margin-bottom: 30px;
     text-align: center;
@@ -2467,7 +2469,8 @@ a.efeitoTransicaoLoja:hover {
     width: 100%;
   }
   .sidbar-blog-inner .sidbar-blog-content h3 {
-    font-size: 16px;
+    text-transform: capitalize;
+    font-size: 13px;
     font-weight: 500;
     line-height: 23px;
     font-family: "Lato", sans-serif;
@@ -2561,4 +2564,11 @@ a.efeitoTransicaoLoja:hover {
 
 .scroll-top i {
     line-height: 57px;
+}
+
+
+/* configuração relatorios */
+
+.pagination {
+    justify-content: center;
 }

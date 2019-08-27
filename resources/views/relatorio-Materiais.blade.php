@@ -31,7 +31,10 @@
 
         </div>
     </div>
+    {{$materiais->links()}}
   </div>
+
+
 
 
   @endsection

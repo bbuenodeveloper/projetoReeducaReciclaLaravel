@@ -27,7 +27,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
                         <!-- shop-sidebar start -->
                         <div class="blog-sidebar mb--30">
-                            <h4 class="title">ULTIMAS POSTAGENS</h4>
+                            <h4 class="title">ÚLTIMAS POSTAGENS</h4>
 
                         </div>
                         <!-- shop-sidebar end -->
@@ -57,7 +57,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
                 </div>
                 <div class="col-lg-8 order-1 order-lg-1">
                     <div class="row">
-                        @foreach ($posts as $post)
+                        @foreach ($ultimos as $post)
                         <div class="col-lg-6 col-md-6">
                             <div class="single-latest-blog mb--30">
                                 <div class="latest-blog-image">

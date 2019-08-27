@@ -43,8 +43,8 @@
 
      /* Video */
      .homePageVideo {clear:both; border: 0;}
-          .homePageVideo .title {position:absolute; z-index:2; bottom:0px; left:0px; background:rgba(255,255,255,0.5); width:100%; display:block;}
-          .homePageVideo .title a {padding:1em 1.5em; background:#b5b700; color:white; font-weight:bold; display:inline-block; font-size:125%;}
+          .homePageVideo .titleReciclar {position:absolute; z-index:2; bottom:0px; left:0px; background:rgba(255,255,255,0.5); width:100%; display:block;}
+          .homePageVideo .titleReciclar a {padding:1em 1.5em; background:#b5b700; color:white; font-weight:bold; display:inline-block; font-size:125%;}
 
           @media screen and (max-width:768px){
                .homePageVideo .title a {font-size:100%;}

@@ -27,16 +27,16 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
                         <!-- shop-sidebar start -->
                         <div class="blog-sidebar mb--30">
-                            <h4 class="title">ULTIMAS POSTAGENS</h4>
+                            <h4 class="title">ÚLTIMAS POSTAGENS</h4>
                         </div>
                         <!-- shop-sidebar end -->
 
                         <!-- shop-sidebar start -->
                         <div class="sidbar-blog mb--30">
                             <!-- sidbar-blog-inner start -->
-                           @foreach ($posts as $p)
+                           @foreach ($ultimos as $p)
                            <div class="sidbar-blog-inner">
-                                <div class="sidbar-blog-image">
+                                <div class="sidbar-blog-image ">
                                     <a href="/post/{{ $p->id }}"><img src="/storage/img/{{ $p->imagem }}" alt=""></a>
                                 </div>
                                 <div class="sidbar-blog-content text-left">
@@ -55,9 +55,16 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
                 </div>
                 <div class="col-lg-8 order-1 order-lg-1">
                     <!-- blog-details-wrapper start -->
+
+
+
+
+
                     <div class="blog-details-wrapper">
                         <div class="blog-details-image">
+                            <div class="card">
                             <img src="/storage/img/{{ $post->imagem }}" alt="">
+                            </div>
                         </div>
                         <div class="blog-inner">
                             <ul class="meta">

@@ -39,6 +39,7 @@ Route::get('/termos', 'TermosController@termos');
 Route::get('/blog', 'BlogController@blog');
 
 Route::get('/blog-details/{id}', 'BlogController@blogdetails');
+
 Route::get('/post/{id}', 'BlogController@blogdetails');
 
 Route::get('/como-reciclar', 'ReciclarController@comoReciclar');

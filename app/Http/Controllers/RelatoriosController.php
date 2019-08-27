@@ -18,7 +18,7 @@ class RelatoriosController extends Controller
     public function relatorioAdmins (Request $request){
         $query = User::query();
         $query->where('nivel_user','=', 0);
-        $users = $query->paginate(25);
+        $users = $query->paginate(10);
 
         return view('relatorio-Admins', ['admin'=>$users]);
         }
@@ -44,7 +44,7 @@ class RelatoriosController extends Controller
         }
 
     public function relatorioMateriais (Request $request){
-        $materiais = Material::paginate(10);
+        $materiais = Material::simplePaginate(3);
                 return view('relatorio-Materiais',['materiais'=>$materiais]);
         }
 
