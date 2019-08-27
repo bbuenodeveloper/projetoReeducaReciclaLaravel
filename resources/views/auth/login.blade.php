@@ -25,18 +25,24 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             </a>
                         </div>
 
-                    <div class="container col-md-10 mx-auto"> 
-                        <div class="row">
-                            <div class="col-md-5 ml-5 b-0">
-                                <a href="/auth/facebook" >
-                                    <img src="{{ asset('img/loginFacebook2.png') }}" style="width:40px; height:40px;">
-                                </a>
-                            </div>
-                            <div class="col-md-5 ml-5 b-0">
-                                <a href="/auth/google" >
-                                    <img src="{{ asset('img/loginGoogle2.png') }}" style="width:40px; height:40px;">
-                                </a>
-                            </div>
+                    <div class="container col-md-12"> 
+                        <div class="row ">
+                            <ul class="container text-center m-2">
+                                <li class="list-inline-item m-3">
+                                    
+                                        <a href="/auth/facebook" >
+                                            <img src="{{ asset('img/loginFacebook2.png') }}" style="width:50px; height:50px;">
+                                        </a>
+                                    
+                                </li>
+                                <li class="list-inline-item m-3">
+                                    
+                                        <a href="/auth/google" >
+                                            <img src="{{ asset('img/loginGoogle2.png') }}" style="width:50px; height:50px;">
+                                        </a>
+                                    
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-md-9 mx-auto">
