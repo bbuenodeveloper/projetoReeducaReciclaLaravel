@@ -16,7 +16,7 @@
                 <center>
                     <div class="logoRegister mb-4">
                         <a href="index.html">
-                            <img class="logoRegister mb-3" src="img/logologin.png" alt>
+                            <img class="logoRegister mb-3" src="{{asset('img/logologin.png')}}" alt>
                         </a>
                         <div>
                 </center>

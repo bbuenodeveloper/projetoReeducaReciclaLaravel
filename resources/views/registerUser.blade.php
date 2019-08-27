@@ -10,11 +10,11 @@
                 <div class="col-md-12 container  p-4 text-center">
                 <div class="logoRegister mb-4">
                         <a href="index.html">
-                            <img class="logoRegister mb-3" src="img/logologin.png" alt>
+                            <img class="logoRegister mb-3" src="{{asset('img/logologin.png')}}" alt>
                         </a>
                     <div>
                     <div class="form-group row">
-                    
+
                         <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome') }}</label>
 
                         <div class="col-md-6">

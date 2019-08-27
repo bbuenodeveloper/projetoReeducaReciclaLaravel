@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-6"><a href="/home">Home</a> <span class="mx-2 mb-0">/</span> <strong
                     class="text-black">Loja</strong></div>
-            <div class="col-6"><a href="/carrinho"><img src="img/produtos_loja/carrinho.png"
+            <div class="col-6"><a href="/carrinho"><img src="{{asset('img/produtos_loja/carrinho.png')}}"
                         class="sizeCarrinho pull-right" alt=""></a>
             </div>
         </div>

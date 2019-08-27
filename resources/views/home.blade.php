@@ -123,7 +123,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             <div class="client-icon">
                                 <div class="border-img">
                                     <a href="team.html"><div class="window-tabs">
-                                        <div class="overflow-block"></div><img src="img/img-team-1.png" alt></div>
+                                        <div class="overflow-block"></div><img src="{{asset('img/img-team-1.png')}}" alt></div>
                                     </a>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             <div class="client-icon">
                                 <div class="border-img">
                                     <a href="team.html"><div class="window-tabs">
-                                        <div class="overflow-block"></div><img src="img/img-team-2.png" alt></div>
+                                        <div class="overflow-block"></div><img src="{{asset('img/img-team-2.png')}}" alt></div>
                                     </a>
                                 </div>
                             </div>
@@ -145,7 +145,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             <div class="client-icon">
                                 <div class="border-img">
                                     <a href="team.html"><div class="window-tabs">
-                                        <div class="overflow-block"></div><img src="img/img-team-3.png" alt></div>
+                                        <div class="overflow-block"></div><img src="{{asset('img/img-team-3.png')}}" alt></div>
                                     </a>
                                 </div>
                             </div>
@@ -181,7 +181,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             <!-- single-latest-blog Start -->
                             <div class="single-latest-blog mb--30 mt--30">
                                 <div class="latest-blog-image">
-                                    <a href="/blog-details"><img src="img/blog-image1.jpg" alt=""></a>
+                                    <a href="/blog-details"><img src="{{asset('img/blog-image1.jpg')}}" alt=""></a>
                                 </div>
                                 <div class="latest-blog-cont">
                                     <h3><a href="/blog-details" >Cargill instala linha de envase mais eficiente e sustentável</a></h3>
@@ -194,7 +194,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             <!-- single-latest-blog Start -->
                             <div class="single-latest-blog mb--30 mt--30">
                                 <div class="latest-blog-image">
-                                    <a href="/blog-details"><img src="img/blog-image2.jpg" alt=""></a>
+                                    <a href="/blog-details"><img src="{{asset('img/blog-image2.jpg')}}" alt=""></a>
                                 </div>
                                 <div class="latest-blog-cont">
                                     <h3><a href="/blog-details" >Gestora de recursos investe em inovação na área ambiental</a></h3>
@@ -207,7 +207,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             <!-- single-latest-blog Start -->
                             <div class="single-latest-blog mb--30 mt--30">
                                 <div class="latest-blog-image">
-                                    <a href="/blog-details"><img src="img/blog-image3.jpg" alt=""></a>
+                                    <a href="/blog-details"><img src="{{asset('img/blog-image3.jpg')}}" alt=""></a>
                                 </div>
                                 <div class="latest-blog-cont">
                                     <h3><a href="/blog-details" >O benefício do plástico reciclado</a></h3><br>

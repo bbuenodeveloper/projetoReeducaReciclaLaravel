@@ -14,8 +14,8 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 <section class="container-fluid">
         <div class="row sobre">
             <div class="col-md-6 foto">
-               <img src="img/salveoplaneta.jpg" class="img-fluid desktop" alt="Salve o planeta">
-               <img src="img/salveoplanetaresponsivo.jpg" class="img-fluid responsivo" alt="Salve o planeta">
+               <img src="{{asset('img/salveoplaneta.jpg')}}" class="img-fluid desktop" alt="Salve o planeta">
+               <img src="{{asset('img/salveoplanetaresponsivo.jpg')}}" class="img-fluid responsivo" alt="Salve o planeta">
             </div>
 
             <article class="col-md-6 texto mb-5" >
@@ -26,7 +26,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);
 
                 <h3 class="space"><span class="color-title">Visão</span></h3>
                 <p>Temos a missão de facilitar o processo de busca por pontos adequados de coleta e mostrar qual a melhor maneira de descartar cada resíduo. Dessa forma, contribuir com um modelo de consumo sustentável e mais consciente.</p>
-                
+
                 <h3 class="space"><span class="color-title">Valores</span></h3>
                 <p>Recicla Maps acredita que todos têm direito e responsabilidade em relação ao descarte adequado de resíduos. Por isso, temos o compromisso de oferecer uma alternativa de serviço sustentável com qualidade e confiança.</p>
             </article>
