@@ -1,15 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<?php
-$root = 'http://localhost/projetoreeducarecicla/';
-$foto = 'salveo%20planeta.png';
 
+<?php
+$root = 'http://www.reciclamaps.com.br';
+$foto = 'mapahome.png';
 $title = $facebook_title = "Mapa Interativo";
-$keywords = 'recicla,palavras,chave,separadas,por,virgula';
-$description = $facebook_description = substr(strip_tags('<p>A Reeduca, por sua atitude empresarial e pela qualidade das relações que busca desenvolver com os diversos agentes que articula, expressa sua marca na identidade com pessoas e empresas que se comprometem a atuar de maneira efetiva na colaboração por um mundo mais saudável para se habitar, em respeito ao meio ambiente do qual fazem parte e responsabilidade para com as gerações por vir.</p>'), 0, 200);
-$facebook_image = htmlentities($root . 'img/' . $foto);
-?>
+$keywords = 'reciclamaps,reciclagem, reciclar, doar, descarte, consumo, consciente, descartar, como, descartar, Construção e Demolição, Diversos, Eletrodomésticos, Eletrônicos, Embalagens longa vida, Lâmpadas, Líquidos e Produtos Químicos, Materiais Orgânicos, Metais, Móveis, Óleos, Papel e Papelão, Pilhas e Baterias, Plástico, Veículos, Vestuário, Vidro';
+$description = $facebook_description = substr(strip_tags('<p>Você pode ajudar o meio ambiente com uma ação muito simples. O mapa interativo do ReciclaMaps mostra os pontos de coleta mais próximos a você.</p>'), 0, 200);
+$facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 <div style="position: relative;">
 

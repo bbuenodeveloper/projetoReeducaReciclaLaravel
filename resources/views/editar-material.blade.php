@@ -2,6 +2,13 @@
 
 @section('content')
 
+<?php
+$root = 'http://www.reciclamaps.com.br';
+$foto = 'mapahome.png';
+$title = $facebook_title = "Editar Material";
+$keywords = 'reciclamaps,reciclagem, reciclar, doar, descarte, consumo, consciente, descartar, como, descartar, Construção e Demolição, Diversos, Eletrodomésticos, Eletrônicos, Embalagens longa vida, Lâmpadas, Líquidos e Produtos Químicos, Materiais Orgânicos, Metais, Móveis, Óleos, Papel e Papelão, Pilhas e Baterias, Plástico, Veículos, Vestuário, Vidro';
+$description = $facebook_description = substr(strip_tags('<p>Você pode ajudar o meio ambiente com uma ação muito simples. O mapa interativo do ReciclaMaps mostra os pontos de coleta mais próximos a você.</p>'), 0, 200);
+$facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 
 <div class="container">
@@ -14,7 +21,6 @@
                             <h3 class="text-center mb-2" style="color:black">Cadastro de Material</h3>
                         </div>
                     </center>
-
                     <form action="/editado/{{$material->id}}" method="post" class="user-info-setting-form"
                         enctype="multipart/form-data">
                         @csrf
