@@ -9,19 +9,9 @@
         <div class="col-12 mx-auto">
 <div class="card">
     <div class="card-body">
-
-            {{-- @if (isset($sucesso))
-            <div class="alert alert-success" role="alert">
-                <strong>Muito bem!</strong> {{ $sucesso }}
-            </div>
-            @endif --}}
-            {{-- <div class="jumbotron border rounded border-success"> --}}
                 <center>
                     <div class="form-header mb-4 mt-4">
                             <h3 class="text-center mb-2" style="color:black">Cadastro de Material</h3>
-                        {{-- <a href="index.html">
-                            <img class="logoRegister mb-3" src="{{asset('img/logologin.png')}}" alt>
-                        </a> --}}
                     </div>
                 </center>
 
@@ -38,8 +28,6 @@
                     <button type="submit" class="btn btn-success btn-rounded waves-effect waves-light">CADASTRAR</button>
                 </form>
             </div>
-
-            {{-- </div> --}}
         </div>
         </div>
     </div>

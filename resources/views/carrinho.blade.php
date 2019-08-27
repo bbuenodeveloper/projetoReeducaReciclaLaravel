@@ -20,9 +20,7 @@
                             <figure class="media">
                                 <div class="img-wrap"><img src="/storage/produtos/{{$produto->imagem}}"
                                         class="img-thumbnail img-sm"></div>
-
                                 <h3 class="title text-truncate">{{$produto->nome}}</h6>
-
                             </figure>
                         </td>
                         <td>
@@ -42,7 +40,6 @@
                             <a href="" class="btn btn-outline-danger"> × Remover</a>
                         </td>
                     </tr>
-
                 </tbody>
             </table>
         </div> <!-- card.// -->

@@ -5,13 +5,6 @@
 <div class="container">
     <div class="row">
         <div class="col-12 mx-auto">
-
-
-            {{-- @if (isset($sucesso))
-            <div class="alert alert-success" role="alert">
-                <strong>Muito bem!</strong> {{ $sucesso }}
-            </div>
-            @endif --}}
             <div class="jumbotron border rounded border-success">
                 <center>
                     <div class="logoRegister mb-4">
@@ -27,9 +20,10 @@
                     @csrf
                     <div class="form-group">
                         <label for="name">Nome</label>
-                        <input type="text" placeholder="Seu nome" name="name" id="name" class="form-control" >
+                        <input type="text" placeholder="Seu nome" name="name" id="name" class="form-control">
                         <label for="email">Newsletter</label>
-                        <input type="email" name="email" class="form-control" id="email" placeholder="email@email.com.br">
+                        <input type="email" name="email" class="form-control" id="email"
+                            placeholder="email@email.com.br">
 
                     </div>
                     <button type="submit" class="btn btn-card btn-success" value="Assinar">CADASTRAR</button>
