@@ -34,6 +34,7 @@
 
         </div>
     </div>
+    {{$newsletters->links()}}
   </div>
 
 

@@ -57,6 +57,7 @@
 
         </div>
     </div>
+    {{$users->links()}}
   </div>
 
 

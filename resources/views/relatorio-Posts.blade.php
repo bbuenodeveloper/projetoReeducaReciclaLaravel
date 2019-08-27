@@ -32,6 +32,7 @@
 
         </div>
     </div>
+    {{$posts->links()}}
   </div>
 
 

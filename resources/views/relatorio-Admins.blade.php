@@ -22,7 +22,7 @@
           @foreach ($admin as $admins)
             <tr>
             <td>{{$admins->id}}</td>
-            <td>{{$admins->name}}</td>            
+            <td>{{$admins->name}}</td>
             <td>{{$admins->email}}</td>
             <td>{{$admins->nivel_user}}</td>
             <td>{{$admins->imagem}}</td>
@@ -36,6 +36,7 @@
 
         </div>
     </div>
+    {{-- {{$users->links()}} --}}
   </div>
 
 

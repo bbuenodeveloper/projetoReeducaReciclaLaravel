@@ -32,6 +32,7 @@
 
         </div>
     </div>
+    {{$cidades->links()}}
   </div>
 
 

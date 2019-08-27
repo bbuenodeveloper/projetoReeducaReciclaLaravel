@@ -40,6 +40,7 @@
 
         </div>
     </div>
+    {{$produtos->links()}}
   </div>
 
 

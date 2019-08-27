@@ -32,6 +32,7 @@
 
         </div>
     </div>
+    {{$categorias->links()}}
   </div>
 
 

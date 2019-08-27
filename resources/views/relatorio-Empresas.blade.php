@@ -50,6 +50,7 @@
 
         </div>
     </div>
+    {{$empresas->links()}}
   </div>
 
 
