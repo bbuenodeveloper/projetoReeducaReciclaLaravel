@@ -127,8 +127,8 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                     </a>
                                 </div>
                             </div>
-                            <h3>Nossa<span> Visão</span></h3>
-                            <p>A Reeduca, por sua atitude empresarial e pela qualidade das relações que busca desenvolver com os diversos agentes que articula, expressa sua marca na identidade com pessoas e empresas que se comprometem a atuar de maneira efetiva na colaboração </p>
+                            <h3>Nossa<span> Missão</span></h3>
+                            <p>Temos a missão de facilitar o processo de busca por pontos adequados de coleta e mostrar qual a melhor maneira de descartar cada resíduo. Dessa forma, contribuir com um modelo de consumo sustentável e mais consciente. </p>
                     </div>
                     <div class="client-item">
                             <div class="client-icon">
@@ -138,8 +138,8 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                     </a>
                                 </div>
                             </div>
-                            <h3>Nossa<span> Missão</span></h3>
-                            <p>Nosso compromisso é criar e oferecer conteúdo, serviços e produtos que contribuam para a ampliação da consciência dos indivíduos em suas ações de consumo rumo a uma relação mais equilibrada e harmoniosa consigo mesmo, com o outro e com o meio ambiente</p>
+                            <h3>Nossa<span> Visão</span></h3>
+                            <p>Tornar-se o principal canal de busca por pontos de coleta e reciclagem, possibilitando que todos tenham fácil acesso a pontos de descarte próximos e seguros, além de proporcionar maior integração e eficácia à gestão ambiental local.</p>
                     </div>
                     <div class="client-item">
                             <div class="client-icon">
@@ -150,7 +150,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 </div>
                             </div>
                             <h3>Nossos<span> Valores</span></h3>
-                            <p>Acreditamos na capacidade das pessoas e empresas para, na dinâmica de suas relações, promoverem alternativas e adotarem escolhas que contribuam para o desenvolvimento de uma sociedade sustentável, alcançável através do desenvolvimento de um padrão </p>
+                            <p>Acreditamos que todos têm direito e responsabilidade em relação ao descarte adequado de resíduos. Por isso, temos o compromisso de oferecer uma alternativa de serviço sustentável com qualidade e confiança. </p>
                     </div>
             </div>
             <div class="col-md-6">
