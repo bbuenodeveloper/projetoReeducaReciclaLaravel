@@ -2,6 +2,15 @@
 
 @section('content')
 
+
+<?php
+$root = 'http://www.reciclamaps.com.br';
+$foto = 'mapahome.png';
+$title = $facebook_title = "Loja";
+$keywords = 'reciclamaps,reciclagem, reciclar, doar, descarte, consumo, consciente, descartar, como, descartar, Construção e Demolição, Diversos, Eletrodomésticos, Eletrônicos, Embalagens longa vida, Lâmpadas, Líquidos e Produtos Químicos, Materiais Orgânicos, Metais, Móveis, Óleos, Papel e Papelão, Pilhas e Baterias, Plástico, Veículos, Vestuário, Vidro';
+$description = $facebook_description = substr(strip_tags('<p>Você pode ajudar o meio ambiente com uma ação muito simples. O mapa interativo do ReciclaMaps mostra os pontos de coleta mais próximos a você.</p>'), 0, 200);
+$facebook_image = htmlentities($root . 'img/' . $foto);?>
+
 <div class="bg-light py-3">
     <div class="container">
         <div class="row">
@@ -13,7 +22,6 @@
         </div>
     </div>
 </div>
-
 <div class="container">
     <div class="row">
         <div class="col-12 mt-5 mb-3">
@@ -25,18 +33,18 @@
         </div>
     </div>
 </div>
-
 <div class="container">
     <div class="row">
         @foreach($produtos as $produto)
         <div class="col-4 mb-5">
             <figure class="card card-product">
-                <div class="img-wrap"><a href="/internaProduto/{{$produto->id}}"><img src="/storage/produtos/{{$produto->imagem}}"></a></div>
+                <div class="img-wrap"><a href="/internaProduto/{{$produto->id}}"><img
+                            src="/storage/produtos/{{$produto->imagem}}"></a></div>
                 <figcaption class="info-wrap">
                     <h4 class="title">{{$produto->nome}}</h4>
                 </figcaption>
                 <div class="bottom-wrap">
-                <a href="/internaProduto/{{$produto->id}}" class="btn btn-sm btn-primary float-right">COMPRAR</a>
+                    <a href="/internaProduto/{{$produto->id}}" class="btn btn-sm btn-primary float-right">COMPRAR</a>
                     <div class="price-wrap h5">
                         <span class="price-new">R${{$produto->preco}}</span>
                     </div> <!-- price-wrap.// -->
@@ -48,7 +56,6 @@
     </div>
     <!-- row.// -->
 </div>
-
 <div class="container">
     <div class="row">
         <div class="col-12 d-flex justify-content-center">
