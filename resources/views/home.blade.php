@@ -33,11 +33,11 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 			<p class="card-text-sem-margem ">
             <i class="fa fa-recycle" style="color:green" > </i>
 			É só selecionar sua cidade e o tipo de resíduo para descarte na caixa de pesquisa e o mapa mostrará os pontos de coleta.</p>
-			
+
             <p class="card-text">
             <i class="fa fa-recycle" style="color:green" > </i> Para acessar o mapa NÃO é necessário cadastro, basta clicar no botão abaixo.</p>
 			<!-- <h5>Saiba onde descartar seus resíduos</h5> -->
-			
+
 			<a href="\mapa" class="btn btn-success btn-card">ACESSAR O MAPA</a>
 
 		</div>
@@ -76,6 +76,33 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 	<div class="row no-gutters recicla-texto">
 		<div class="col-md-6 texto-info-home px-3">
+                <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="{{asset('img/parceiros1.png')}}" alt="Primeiro Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="{{asset('img/parceiros2.png')}}" alt="Segundo Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="{{asset('img/parceiros3.png')}}" alt="Segundo Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="{{asset('img/parceiros4.png')}}" alt="Segundo Slide">
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carrousel-icone" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+		</div>
+		<div class="col-12 col-md-6 ">
 			<article>
 				<h1 class="titulo-card-home d-none d-sm-none d-md-block d-lg-block d-xl-block ">Nossos <span class="color-title">Parceiros!</span>
 				</h1>
@@ -83,34 +110,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 				</h2>
 				<p class="texto-card-home card-text">Conheça nossos parceiros. A ReciclaMaps entende que o sucesso de qualquer organização não se faz sozinho e que o trabalho em parceria é fundamental. Por isso, nossas parcerias são feitas com base em valores e objetivos comuns e de acordo com modo de produção sustentável.</p>
 
-			</article>
-		</div>
-		<div class="col-12 col-md-6 ">
-			<div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img class="d-block w-100" src="{{asset('img/parceiros1.png')}}" alt="Primeiro Slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="{{asset('img/parceiros2.png')}}" alt="Segundo Slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="{{asset('img/parceiros3.png')}}" alt="Segundo Slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="{{asset('img/parceiros4.png')}}" alt="Segundo Slide">
-					</div>
-
-				</div>
-				<a class="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon carrousel-icone" aria-hidden="true"></span>
-					<span class="sr-only">Anterior</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Próximo</span>
-				</a>
-			</div>
+			</article>aquii
 		</div>
 
     </div>
@@ -188,7 +188,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 </div>
                                 <div class="latest-blog-cont">
                                     <h3><a href="/post/{{ $post->id }}" >{{ $post->titulo }}</a></h3>
-
+                                    <p>{{ substr(strip_tags($post->texto), 0, 140) }}</p>
                                 </div>
                             </div>
                             <!--// single-latest-blog End -->
