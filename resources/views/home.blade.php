@@ -175,45 +175,22 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         </div>
                     </div>
                     <div class="row latest-blog-active">
+                            @foreach ($ultimos as $post)
                         <div class="col-lg-4">
                             <!-- single-latest-blog Start -->
                             <div class="single-latest-blog mb--30 mt--30">
                                 <div class="latest-blog-image">
-                                    <a href="/blog-details"><img src="{{asset('img/blog-image1.jpg')}}" alt=""></a>
+                                    <a href="/post/{{ $post->id }}"><img src="/storage/img/{{ $post->imagem }}" alt=""></a>
                                 </div>
                                 <div class="latest-blog-cont">
-                                    <h3><a href="/blog-details" >Cargill instala linha de envase mais eficiente e sustentável</a></h3>
+                                    <h3><a href="/post/{{ $post->id }}" >{{ $post->titulo }}</a></h3>
 
                                 </div>
                             </div>
                             <!--// single-latest-blog End -->
                         </div>
-                        <div class="col-lg-4">
-                            <!-- single-latest-blog Start -->
-                            <div class="single-latest-blog mb--30 mt--30">
-                                <div class="latest-blog-image">
-                                    <a href="/blog-details"><img src="{{asset('img/blog-image2.jpg')}}" alt=""></a>
-                                </div>
-                                <div class="latest-blog-cont">
-                                    <h3><a href="/blog-details" >Gestora de recursos investe em inovação na área ambiental</a></h3>
+                        @endforeach
 
-                                </div>
-                            </div>
-                            <!--// single-latest-blog End -->
-                        </div>
-                        <div class="col-lg-4">
-                            <!-- single-latest-blog Start -->
-                            <div class="single-latest-blog mb--30 mt--30">
-                                <div class="latest-blog-image">
-                                    <a href="/blog-details"><img src="{{asset('img/blog-image3.jpg')}}" alt=""></a>
-                                </div>
-                                <div class="latest-blog-cont">
-                                    <h3><a href="/blog-details" >O benefício do plástico reciclado</a></h3><br>
-
-                                </div>
-                            </div>
-                            <!--// single-latest-blog End -->
-                        </div>
 
                     </div>
                 </div>
