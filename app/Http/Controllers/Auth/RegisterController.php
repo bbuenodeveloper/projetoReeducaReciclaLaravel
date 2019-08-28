@@ -64,7 +64,8 @@ class RegisterController extends Controller
             'estado' => ['required', 'string', 'max:100'],
             'cidade' => ['required', 'string', 'max:100'],
             //'nivel_user' => ['required', 'tinyInteger'],
-            'telefone' => ['required','integer']
+            'telefone' => ['required','integer'],
+            
         ]);
     }
 
@@ -98,7 +99,8 @@ class RegisterController extends Controller
             'data_nascimento' => $data['data_nascimento'],
             'estado' => $data['estado'],
             'cidade' => $data['cidade'],
-            'telefone' => $data['telefone']
+            'telefone' => $data['telefone'],
+            'avatar' => $data['avatar']
         ]);
     }
     
@@ -141,6 +143,7 @@ class RegisterController extends Controller
         $editado->estado = $request->estado;
         $editado->cidade = $request->cidade;
         $editado->telefone = $request->telefone;
+        $editado->avatar = $request->avatar;
 
         $editado->save();
 
