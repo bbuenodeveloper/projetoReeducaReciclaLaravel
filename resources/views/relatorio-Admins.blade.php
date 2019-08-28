@@ -35,7 +35,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         <td>{{$admins->imagem}}</td>
                         <td><a href="/editar-admin/{{$admins->id}}"><button class="btn btn-success"
                                     style="padding:15px;">Editar</button></a></td>
-                        <td><a href="/apagarAdmin/{{$admins->id}}"><button class="btn btn-danger" id="deletarAdmin"
+                        <td><button class="btn btn-danger" id="deletarAdmin"
                                     onclick="deletarAdmin({{$admins->id}})" style="padding:15px;">Deletar</button></td>
                     </tr>
                     @endforeach
