@@ -27,13 +27,17 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 		<div class="col-12 col-md-6 px-3">
 
 			<h1 class="card-title titulo-card-home">Vai descartar seus <span class="color-title">resíduos?</span></h1>
-			<p class="card-text-sem-margem" >Você pode ajudar o meio ambiente com uma ação muito simples. O mapa interativo do ReciclaMaps mostra os pontos de coleta mais próximos a você.
+			<p class="card-text-sem-margem " >
+            <i class="fa fa-recycle" style="color:green" > </i> O mapa interativo do ReciclaMaps mostra os pontos de coleta mais próximos de você.</p>
 
-			<p class="card-text ">
-			É só escolher sua cidade na caixa de pesquisa e o mapa mostrará os pontos de coleta de acordo com tipo de resíduo que você quer descartar.</p>
-			</p>
+			<p class="card-text-sem-margem ">
+            <i class="fa fa-recycle" style="color:green" > </i>
+			É só selecionar sua cidade e o tipo de resíduo para descarte na caixa de pesquisa e o mapa mostrará os pontos de coleta.</p>
+			
+            <p class="card-text">
+            <i class="fa fa-recycle" style="color:green" > </i> Para acessar o mapa NÃO é necessário cadastro, basta clicar no botão abaixo.</p>
 			<!-- <h5>Saiba onde descartar seus resíduos</h5> -->
-			<p></p>
+			
 			<a href="\mapa" class="btn btn-success btn-card">ACESSAR O MAPA</a>
 
 		</div>
