@@ -272,5 +272,6 @@
         <script src="{{asset('js/mdb.js')}}"></script>
         <script src="{{asset('js/addons/datatables.min.js')}}"></script>
         <script src="{{asset('js/addons/datatables-select.min.js')}}"></script>
-        <script src="{{asset('js/postCadastroAdmin.js')}}"></script>
-
+        <script src="{{asset('js/ajaxValidaCadastroAdmin.js')}}"></script>
+        <script src="{{asset('js/ajaxCadastroAdminEditar.js')}}"></script>
+        <script src="{{asset('js/ajaxDeletaCadastroAdmin.js')}}"></script>

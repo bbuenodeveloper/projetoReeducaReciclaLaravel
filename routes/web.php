@@ -88,7 +88,7 @@ Route::get('/add-postagens', 'BlogController@addPostagem');
 
 Route::get('/add-tagBlog', 'BlogController@addTag');
 
-Route::get('/registerPainel','Auth\RegisterController@addUser');
+//Route::get('/registerPainel','Auth\RegisterController@addUser');
 
 Route::get('/add-admin','AdminController@addAdmin')->middleware('acesso');
 
