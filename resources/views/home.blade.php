@@ -110,7 +110,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 				</h2>
 				<p class="texto-card-home card-text">Conheça nossos parceiros. A ReciclaMaps entende que o sucesso de qualquer organização não se faz sozinho e que o trabalho em parceria é fundamental. Por isso, nossas parcerias são feitas com base em valores e objetivos comuns e de acordo com modo de produção sustentável.</p>
 
-			</article>aquii
+			</article>
 		</div>
 
     </div>
@@ -188,7 +188,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 </div>
                                 <div class="latest-blog-cont">
                                     <h3><a href="/post/{{ $post->id }}" >{{ $post->titulo }}</a></h3>
-                                    <p>{{ substr(strip_tags($post->texto), 0, 140) }}</p>
+                                    <p>{!! substr(strip_tags($post->texto), 0, 140) !!}</p>
                                 </div>
                             </div>
                             <!--// single-latest-blog End -->

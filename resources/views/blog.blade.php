@@ -139,7 +139,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 </div>
                                 <div class="latest-blog-cont">
                                     <h3><a href="/post/{{ $post->id }}">{{ $post->titulo }}</a></h3>
-                                    <p>{{ substr(strip_tags($post->texto), 0, 140) }}</p>
+                                    <p>{!! substr(strip_tags($post->texto), 0, 140) !!}</p>
                                 </div>
                             </div>
                         </div>
