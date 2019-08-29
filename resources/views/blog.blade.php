@@ -3,6 +3,36 @@
 @section('content')
 
 <?php
+
+/**
+ * Melhor opção do que o sub_string, pois não corta uma palavra no meio.
+ */
+ function getResumo($texto, $limite, $tres_p = '...') {
+	$totalCaracteres = 0;
+	$texto = strip_tags($texto);
+	$texto = trim($texto);
+	$vetorPalavras = explode(" ",$texto);
+	if(strlen($texto) <= $limite)
+	{
+		$tres_p = "";
+		$novoTexto = $texto;
+	}
+	else
+	{
+		$novoTexto = "";
+		for($i = 0; $i < count($vetorPalavras); $i++)
+		{
+			$totalCaracteres += strlen(" ".$vetorPalavras[$i]);
+			if($totalCaracteres <= $limite)
+			{
+				$novoTexto .= ' ' . $vetorPalavras[$i];
+			}
+			else break;
+		}
+	}
+	return trim( preg_replace('/\s+/', ' ', $novoTexto) ) . $tres_p;
+}
+
 $root = 'http://www.reciclamaps.com.br';
 $foto = 'mapahome.png';
 $title = $facebook_title = "Blog";
@@ -139,7 +169,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 </div>
                                 <div class="latest-blog-cont">
                                     <h3><a href="/post/{{ $post->id }}">{{ $post->titulo }}</a></h3>
-                                    <p>{!! substr(strip_tags($post->texto), 0, 140) !!}</p>
+                                    <p>{!! getResumo($post->texto, 100, "...") !!} <a href="/post/{{ $post->id }}">Continue lendo.</a></p>
                                 </div>
                             </div>
                         </div>

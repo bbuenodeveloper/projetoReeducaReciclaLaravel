@@ -37,7 +37,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         data-toggle="dropdown"><span class="label" data-id="0">Selecione a cidade</span><span
                             class="caret"></span></button>
                     <ul class="dropdown-menu lista-cidades estiloPainel"
-                        style="overflow-y: auto; height:300px; position:fixed;">
+                        style="overflow-y: auto; max-height:300px; position:fixed;">
                         <li><a>Selecione a cidade</a></li>
                     </ul>
                 </div>
@@ -75,7 +75,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 </div>
 <div id="map"></div>
 <div class="clearfix"></div>
-<div class="container-fluid">
+<div class="container-fluid d-none" id="cards-empresas">
     <div class="titulo-lista mx-auto mt-4 mb-4">
         <h3>Postos de destinação na cidade informada:</h3>
     </div>
@@ -109,6 +109,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         /**
          * Função a ser chamada sempre que houver necessidade de mudar os marcadores no mapa, ou seja, quando alguém mudar quais marcadores deseja ver
          */
+        window.timerMapa = null;
         function atualizarMapa() {
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -133,11 +134,18 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
              * faz uma solicitação ajax para obter um json com os novos marcadores
              * @param  [url] passa a url do arquivo que retorna o json com os parâmetros da cidade e categorias selecionadas
              */
-            $.getJSON(`/marcadores/${cidade}/${categoria}`).then(function (response) {
+            clearTimeout(window.timerMapa);
+             window.timerMapa = setTimeout(function(){
+                $.getJSON(`/marcadores/${cidade}/${categoria}`).then(function (response) {
                 // por ser uma requisição com Promise, é necessário que o        👆 then()
                 // tratamento do retorn o seja feito no método then()
                 // que é executado quando a requisição é bem sucedida
                 window.marcadores = response;
+
+                /* exibe a área de cards de empresas */
+                $('#cards-empresas').removeClass('d-none');
+
+                /* Juntar empresas iguais */
 
                 ///////////////////////////////////////////////////////////////////
                 // se não encontrar nenhum marcador, reduz o zoom para o inicial //
@@ -169,20 +177,23 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
                         /* incluindo na lista */
 
-                        lista += `<div class="col-12 col-sm-4">
-                            <div class="card mb-2">
-                                <div class="card-body">
-                                    <h4 class="card-title"><i class="fas fa-map-marked-alt p-2"></i><a href="javascript:" onclick="\$(this).parent().next().toggle()">${window.marcadores[i].empresas_nome}</a></h4>
-                                            <p class="card-text" style="display:block;">
-                                                <i class="fas fa-map-pin p-2"></i>${window.marcadores[i].empresas_endereco},${window.marcadores[i].empresas_numero} <br>
-                                                <i class="fas fa-phone p-2"></i>${window.marcadores[i].empresas_telefone}<br>
-                                                <i class="fab fa-internet-explorer p-2"></i>${window.marcadores[i].empresas_site}
-
-                                            </p>
-<p class="p-2">Itens que recicla</p>
-	</div>
-</div>
-                                            </div>`;
+                        lista += `
+                        <div class="col-12 col-sm-4">
+                        <div class="card mb-2">
+                        <div class="card-body">
+                        <h4 class="card-title"><i class="fas fa-map-marked-alt p-2"></i><a href="javascript:" onclick="\$(this).parent().next().toggle()">${window.marcadores[i].empresas_nome}</a></h4>
+                        <p class="card-text" style="display:block;">
+                        <i class="fas fa-map-pin p-2"></i>${window.marcadores[i].empresas_endereco}, ${window.marcadores[i].empresas_numero} <br>
+                        <i class="fas fa-phone p-2"></i>${window.marcadores[i].empresas_telefone}<br>
+                        <i class="fab fa-internet-explorer p-2"></i><a href="${window.marcadores[i].empresas_site}" target="blank_">Site</a>
+                        <i class="fas fa-map-marker p-2"></i><a href="https://maps.google.com?saddr=Current+Location&daddr=${window.marcadores[i].empresas_latitude},${window.marcadores[i].empresas_longitude}" target="blank_">Abrir GPS</a>
+                        </p>
+                        <p class="p-2">Itens que recicla:</p>`;
+                        for(let j = 0; j < window.marcadores[i].materiais_tipoMaterial.length; j++) {
+                            console.table(window.marcadores[i].materiais_tipoMaterial);
+                            lista += `<span style="height: 53px;width: 53px;display: inline-block;background-image: url(img/trash/${window.marcadores[i].materiais_tipoMaterial[j]}.png);"></span>`;
+                        }
+                        lista += `</div></div></div>`;
 
 
 
@@ -194,6 +205,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                     mapa.zoomParaAjustar();
                 }
             });
+            },1e3);
         }
 
         /**
@@ -256,6 +268,10 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
     });
 
 </script>
+<style>.dropdown-menu.show {
+        display: block;
+        transform: translate3d(0px, 32px, 0px)!important;
+    }</style>
 <?php // endif ?>
 
 

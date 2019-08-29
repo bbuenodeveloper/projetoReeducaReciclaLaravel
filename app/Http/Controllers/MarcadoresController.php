@@ -40,8 +40,27 @@ class MarcadoresController extends Controller
         `cidades`.`id` in ({$cidadeID}) AND
         `materiais`.`id` in ({$materiaisIDs})"));
 
+        $empresas = [];
+
+        foreach($marcadores as $marcador) {
+            foreach($marcador as $campo => $valor) {
+                if( $campo != 'materiais_tipoMaterial' ) {
+                    $empresas[$marcador->empresas_id][$campo] = $valor;
+                } else {
+                    if( !isset($empresas[$marcador->empresas_id]['materiais_tipoMaterial']) ) $empresas[$marcador->empresas_id]['materiais_tipoMaterial'] = [];
+                    $empresas[$marcador->empresas_id]['materiais_tipoMaterial'][] = str_slug($valor);
+                }
+            }
+        }
+
+        $retorno = [];
+
+        foreach($empresas as $v) { $retorno[] = $v; }
+
+        // dd($marcadores,$retorno);
+
         //GROUP BY empresas.id
 
-        return json_encode($marcadores);
+        return json_encode($retorno);
     }
 }
