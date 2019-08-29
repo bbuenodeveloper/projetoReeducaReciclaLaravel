@@ -40,6 +40,8 @@ class MarcadoresController extends Controller
         `cidades`.`id` in ({$cidadeID}) AND
         `materiais`.`id` in ({$materiaisIDs})"));
 
+        //GROUP BY empresas.id
+
         return json_encode($marcadores);
     }
 }

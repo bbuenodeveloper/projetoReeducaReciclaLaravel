@@ -61,13 +61,6 @@
                                         Bem Vindo à Recicla Maps </div>
                             </div>
 
-
-                        {{-- fim left --}}
-
-                        {{-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                            <span class="navbar-toggler-icon"></span>
-                        </button> --}}
-
                         <div class="top-navigation-right " id="navbarSupportedContent">
 
                             <!-- Right Side Of Navbar -->
@@ -297,28 +290,7 @@
                              </div>
 
                          </div>
-                         {{-- @if ($errors->any())
 
-                         <div class="alert alert-danger">
-                             <ul>
-                                 @foreach ($errors->all() as $error)
-                                 <li>{{ $error }}</li>
-                                 @endforeach
-                             </ul>
-
-                         </div>
-                         @endif
-
-                         @if(isset($resultado))
-                         @if($resultado) --}}
-
-                        {{-- <div class="alert alert-success">
-                             <h1>E-mail cadastrado com sucesso</h1>
-                         </div>
-                         @else
-                         <h1>erro</h1>
-                         @endif
-                         @endif --}}
 
                  </div>
 

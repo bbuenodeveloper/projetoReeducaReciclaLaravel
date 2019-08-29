@@ -12,7 +12,8 @@ class BlogController extends Controller
         if($request->isMethod('GET')){
             return view('blog', [
                 'posts' => $posts,
-                'ultimos' => Post::paginate(5)
+                'postagens' => Post::paginate(6),
+                'ultimos' => Post::paginate(3)
             ]);
         }
 }

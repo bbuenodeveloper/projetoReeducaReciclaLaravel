@@ -80,8 +80,8 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         <h3>Postos de destinação na cidade informada:</h3>
     </div>
     <div class="lista">
-        <ul>
-        </ul>
+        <div class="row">
+        </div>
     </div>
 </div>
 <div class="clearfix"></div>
@@ -168,8 +168,8 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
                         /* incluindo na lista */
 
-                        lista += `<li>
-                                            <h3><a href="javascript:" onclick="\$(this).parent().next().toggle()">${window.marcadores[i].empresas_nome}</a></h3>
+                        lista += `<div class="col-12 col-sm-4">
+                                            <h3 class="nome-da-empresa"><a href="javascript:" onclick="\$(this).parent().next().toggle()">${window.marcadores[i].empresas_nome}</a></h3>
                                             <p style="display:none;">
                                                 ${window.marcadores[i].empresas_latitude} <br>
                                                 ${window.marcadores[i].empresas_longitude} <br>
@@ -177,9 +177,19 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                                 ${window.marcadores[i].empresas_endereco} <br>
                                                 ${window.marcadores[i].empresas_telefone}
                                             </p>
-                                            </li>`;
+                                            <div class="card">
+	<div class="card-body">
+		<h4 class="card-title">Card title</h4>
+		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		<a href="#" class="btn btn-primary">Button</a>
+	</div>
+</div>
+                                            </div>`;
+
+
+
                     }
-                    document.querySelector('.lista ul').innerHTML = lista;
+                    document.querySelector('.lista div').innerHTML = lista;
                     ///////////////////////////////////////////////////////////////////////////////////////////////
                     // por fim chama essa função para centralizar o mapa com base nos marcadores recém colocados //
                     ///////////////////////////////////////////////////////////////////////////////////////////////

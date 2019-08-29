@@ -130,7 +130,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                 </div>
                 <div class="col-lg-8 order-1 order-lg-1">
                     <div class="row">
-                        @foreach ($ultimos as $post)
+                        @foreach ($postagens as $post)
                         <div class="col-lg-6 col-md-6">
                             <div class="single-latest-blog mb--30">
                                 <div class="latest-blog-image">
@@ -145,22 +145,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         </div>
                         @endforeach
                     </div>
-                    <div class="paginatoin-area">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <ul class="pagination-box">
-                                    <li><a class="Previous" href="#">Anterior</a>
-                                    </li>
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li>
-                                        <a class="Next" href="#">Próximo </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    {{$postagens->links()}}
                     <!--// paginatoin-area End -->
                 </div>
             </div>
