@@ -340,7 +340,7 @@
                            <ul>
                                <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-facebook"></i></a></li>
                                <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-twitter"></i></a></li>
-                               <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-instagram"></i></a></li>
+                               <li class="list-inline-item m-t-10"><a href="https://www.instagram.com/reciclamaps/" target="_blank" class="socialIcon"><i class="fab fa-instagram"></i></a></li>
                                <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                     </div>

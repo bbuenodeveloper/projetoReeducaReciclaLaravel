@@ -76,7 +76,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 <div id="map"></div>
 <div class="clearfix"></div>
 <div class="container-fluid">
-    <div class="titulo-lista mx-auto mt-4">
+    <div class="titulo-lista mx-auto mt-4 mb-4">
         <h3>Postos de destinação na cidade informada:</h3>
     </div>
     <div class="lista">
@@ -162,6 +162,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                     <p><b>${window.marcadores[i].empresas_nome}</b></p>
                                     <p>${window.marcadores[i].empresas_endereco}</p>
                                     <p>${window.marcadores[i].empresas_telefone}</p>
+                                    <p>${window.marcadores[i].empresas_site}</p>
                                     <p><a href="https://maps.google.com?saddr=Current+Location&daddr=${window.marcadores[i].empresas_latitude},${window.marcadores[i].empresas_longitude}" target="_blank" title="Clique nesse link para abrir o GPS">Abrir GPS</a></p>
                                     `,
                         });
@@ -169,19 +170,16 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         /* incluindo na lista */
 
                         lista += `<div class="col-12 col-sm-4">
-                                            <h3 class="nome-da-empresa"><a href="javascript:" onclick="\$(this).parent().next().toggle()">${window.marcadores[i].empresas_nome}</a></h3>
-                                            <p style="display:none;">
-                                                ${window.marcadores[i].empresas_latitude} <br>
-                                                ${window.marcadores[i].empresas_longitude} <br>
-                                                ${window.marcadores[i].empresas_nome} <br>
-                                                ${window.marcadores[i].empresas_endereco} <br>
-                                                ${window.marcadores[i].empresas_telefone}
+                            <div class="card mb-2">
+                                <div class="card-body">
+                                    <h4 class="card-title"><i class="fas fa-map-marked-alt p-2"></i><a href="javascript:" onclick="\$(this).parent().next().toggle()">${window.marcadores[i].empresas_nome}</a></h4>
+                                            <p class="card-text" style="display:block;">
+                                                <i class="fas fa-map-pin p-2"></i>${window.marcadores[i].empresas_endereco},${window.marcadores[i].empresas_numero} <br>
+                                                <i class="fas fa-phone p-2"></i>${window.marcadores[i].empresas_telefone}<br>
+                                                <i class="fab fa-internet-explorer p-2"></i>${window.marcadores[i].empresas_site}
+
                                             </p>
-                                            <div class="card">
-	<div class="card-body">
-		<h4 class="card-title">Card title</h4>
-		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		<a href="#" class="btn btn-primary">Button</a>
+<p class="p-2">Itens que recicla</p>
 	</div>
 </div>
                                             </div>`;
