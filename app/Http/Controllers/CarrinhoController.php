@@ -14,7 +14,7 @@ class CarrinhoController extends Controller
     }
 
     public function carrinhoProduto(Request $request, $id){
-       
+
         $produto = Produto::find($id);
         return view("carrinho",['produto'=>$produto]);
 
@@ -28,7 +28,7 @@ class CarrinhoController extends Controller
             $carrinho[] = $id;
             $request->session() ->put('carrinho', $carrinho);
         } else {
-       
+
             $carrinho [] = $id;
             $request->session() ->put('carrinho', $carrinho);
         }
