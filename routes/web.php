@@ -61,6 +61,8 @@ Route::get('/carrinho/{id}', 'CarrinhoController@carrinhoProduto');
 
 Route::get('/dadoscompra/{id}', 'DadosCompraController@dadosProduto')->middleware('acesso');
 
+Route::get('/adicionarCarrinho/{id}', 'CarrinhoController@addCarrinho');
+
 
 // rotas internas do mapa de acesso ao banco de dados
 
@@ -87,6 +89,8 @@ Route::get('/add-categoria', 'CategoriaController@categorias')->middleware('aces
 Route::get('/add-postagens', 'BlogController@addPostagem');
 
 Route::get('/add-tagBlog', 'BlogController@addTag');
+
+Route::get('/add-pagamento', 'PagamentoController@addPagamento');
 
 //Route::get('/registerPainel','Auth\RegisterController@addUser');
 
@@ -117,6 +121,8 @@ Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')->name('admin.cad
 Route::post('/cadastrarcategoria','CategoriaController@cadastrarCategoria')->name('categoria.cadastrar')->middleware('acesso');
 
 Route::post('/cadastrarusuario','RegisterController@create')->middleware('acesso');
+
+Route::post('/cadastrarPagamento', 'PagamentoController@cadastrarPagamento')->name('pagamento.cadastrar');
 
 
 // rotas deletar registros

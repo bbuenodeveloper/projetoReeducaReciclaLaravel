@@ -40,7 +40,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         </td>
                         <td>
                             <div class="price-wrap">
-                                <var class="price">R$ {{$produto->preco}}</var>
+                                <var class="price">R$ {{$produto->preco}} </var>
                             </div> <!-- price-wrap .// -->
                         </td>
                         <td class="text-right">

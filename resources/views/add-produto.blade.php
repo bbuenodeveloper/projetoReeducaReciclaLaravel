@@ -15,8 +15,8 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         <div class="col-12 mx-auto">
             <div class="card">
                 <div class="card-body">
-                    <h1 class="text-center mb-2">Cadastro de Empresas</h1>
-                    <form dataroute="{{ route('produto.cadastrar') }}" method="post" id="formProdutos"
+                    <h1 class="text-center mb-2">Cadastro de Produtos</h1>
+                    <form action="{{ route('produto.cadastrar') }}" method="post" id="formProdutos"
                         class="user-info-setting-form" enctype="multipart/form-data">
                         @csrf
                         <div class="md-form mt-5">
