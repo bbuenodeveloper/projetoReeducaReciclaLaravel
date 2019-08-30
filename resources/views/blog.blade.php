@@ -50,7 +50,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                     <!-- shop-sidebar-wrap start -->
                     <div class="blog-sidebar-wrap">
                         <!-- shop-sidebar start -->
-                        <div class="blog-sidebar mb--30">
+                        <div class="blog-sidebar mb--30 text-center">
                             <h4 class="title">ÚLTIMAS POSTAGENS</h4>
                         </div>
                         <!-- shop-sidebar end -->
@@ -72,7 +72,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             <a href="#" target="_blank"><img src="{{asset('img/lateral_v2.gif')}}"
                                     alt="Apoie nosso projeto" style="max-width: 100%;"></a>
                         </div>
-                        <div id="asideOfertasLoja" class="boxCinza mt-3">
+                        <div id="asideOfertasLoja" class="boxCinza mt-3 text-center">
 							<h5 id="asideOfertasLojaTitulo">
 								<span>
 									<a href="/loja" target="_blank">
@@ -89,13 +89,13 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 </ol>
                                 <div class="carousel-inner">
                                   <div class="carousel-item active">
-                                    <img class="d-block w-100" src="img/produtos_loja/prod1.jpg" alt="Primeiro Slide">
+                                    <img class="d-block w-100" src="{{ ('img/produtos_loja/prod1.jpg') }}" alt="Primeiro Slide">
                                   </div>
                                   <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/produtos_loja/prod2.jpg" alt="Segundo Slide">
+                                    <img class="d-block w-100" src="{{ ('img/produtos_loja/prod2.jpg') }}" alt="Segundo Slide">
                                   </div>
                                   <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/produtos_loja/prod3.jpg" alt="Terceiro Slide">
+                                    <img class="d-block w-100" src="{{ ('img/produtos_loja/prod3.jpg') }}" alt="Terceiro Slide">
                                   </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -115,7 +115,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             </div>
 
                         </div>
-                        <div id="asideOfertasLoja" class="boxCinza mt-3">
+                        <div id="asideOfertasLoja" class="boxCinza mt-3 text-center">
                                 <h5 id="asideOfertasLojaTitulo">
                                     <span>
                                         <a href="/loja" target="_blank">
@@ -132,13 +132,13 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                     </ol>
                                     <div class="carousel-inner">
                                       <div class="carousel-item active">
-                                        <img class="d-block " src="img/parceiros/trasix.png" alt="Primeiro Slide">
+                                        <img class="d-block " src="{{ ('img/parceiros/trasix.png') }}" alt="Primeiro Slide">
                                       </div>
                                       <div class="carousel-item">
-                                        <img class="d-block " src="img/parceiros/remakker.png" alt="Segundo Slide">
+                                        <img class="d-block " src="{{ ('img/parceiros/remakker.png') }}" alt="Segundo Slide">
                                       </div>
                                       <div class="carousel-item">
-                                        <img class="d-block " src="img/parceiros/recolast.png" alt="Terceiro Slide">
+                                        <img class="d-block " src="{{ ('img/parceiros/recolast.png') }}" alt="Terceiro Slide">
                                       </div>
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

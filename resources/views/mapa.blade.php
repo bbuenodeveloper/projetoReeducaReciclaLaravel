@@ -167,11 +167,11 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             // 👇 aqui montamos o html que será exibido quando o usuário clicar no ponto //
                             //////////////////////////////////////////////////////////////////////////////
                             html: `
-                                    <p><b>${window.marcadores[i].empresas_nome}</b></p>
-                                    <p>${window.marcadores[i].empresas_endereco}</p>
-                                    <p>${window.marcadores[i].empresas_telefone}</p>
-                                    <p>${window.marcadores[i].empresas_site}</p>
-                                    <p><a href="https://maps.google.com?saddr=Current+Location&daddr=${window.marcadores[i].empresas_latitude},${window.marcadores[i].empresas_longitude}" target="_blank" title="Clique nesse link para abrir o GPS">Abrir GPS</a></p>
+                            <i class="fas fa-map-marked-alt text-success p-2"></i><b>${window.marcadores[i].empresas_nome}</b><br>
+                            <i class="fas fa-map-pin text-success p-2"></i>${window.marcadores[i].empresas_endereco},${window.marcadores[i].empresas_numero}<br>
+                            <i class="fas fa-phone text-success p-2"></i>${window.marcadores[i].empresas_telefone}<br>
+                            <i class="fab fa-internet-explorer text-success p-2"></i><a href="${window.marcadores[i].empresas_site}" target="blank_">Site</a><br>
+                            <i class="fas fa-map-marker text-success p-2"></i><a href="https://maps.google.com?saddr=Current+Location&daddr=${window.marcadores[i].empresas_latitude},${window.marcadores[i].empresas_longitude}" target="_blank" title="Clique nesse link para abrir o GPS">Abrir GPS</a>
                                     `,
                         });
 
@@ -181,17 +181,17 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         <div class="col-12 col-sm-4">
                         <div class="card mb-2">
                         <div class="card-body">
-                        <h4 class="card-title"><i class="fas fa-map-marked-alt p-2"></i><a href="javascript:" onclick="\$(this).parent().next().toggle()">${window.marcadores[i].empresas_nome}</a></h4>
+                        <h4 class="card-title"><i class="fas fa-map-marked-alt text-success p-2"></i><a href="javascript:" onclick="\$(this).parent().next().toggle()">${window.marcadores[i].empresas_nome}</a></h4>
                         <p class="card-text" style="display:block;">
-                        <i class="fas fa-map-pin p-2"></i>${window.marcadores[i].empresas_endereco}, ${window.marcadores[i].empresas_numero} <br>
-                        <i class="fas fa-phone p-2"></i>${window.marcadores[i].empresas_telefone}<br>
-                        <i class="fab fa-internet-explorer p-2"></i><a href="${window.marcadores[i].empresas_site}" target="blank_">Site</a>
-                        <i class="fas fa-map-marker p-2"></i><a href="https://maps.google.com?saddr=Current+Location&daddr=${window.marcadores[i].empresas_latitude},${window.marcadores[i].empresas_longitude}" target="blank_">Abrir GPS</a>
+                        <i class="fas fa-map-pin text-success p-2"></i>${window.marcadores[i].empresas_endereco}, ${window.marcadores[i].empresas_numero} <br>
+                        <i class="fas fa-phone  text-success p-2"></i>${window.marcadores[i].empresas_telefone}<br>
+                        <i class="fab fa-internet-explorer text-success p-2"></i><a href="${window.marcadores[i].empresas_site}" target="blank_">Site</a>
+                        <i class="fas fa-map-marker text-success p-2"></i><a href="https://maps.google.com?saddr=Current+Location&daddr=${window.marcadores[i].empresas_latitude},${window.marcadores[i].empresas_longitude}" target="blank_">Abrir GPS</a>
                         </p>
                         <p class="p-2">Itens que recicla:</p>`;
                         for(let j = 0; j < window.marcadores[i].materiais_tipoMaterial.length; j++) {
                             console.table(window.marcadores[i].materiais_tipoMaterial);
-                            lista += `<span style="height: 53px;width: 53px;display: inline-block;background-image: url(img/trash/${window.marcadores[i].materiais_tipoMaterial[j]}.png);"></span>`;
+                            lista += `<span class="custom-tooltip" style="height: 53px;width: 53px;display: inline-block;background-image: url(img/trash/${window.marcadores[i].materiais_tipoMaterial[j]}.png);"></span>`;
                         }
                         lista += `</div></div></div>`;
 

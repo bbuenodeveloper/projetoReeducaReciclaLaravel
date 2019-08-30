@@ -776,9 +776,9 @@ img.responsivo{
     margin-top: 30px;
 }
 
-.text-success {
+/* .text-success {
     margin-bottom: 20px;
-}
+} */
 
 .text-label {
     font-family: 'Poppins', sans-serif;
@@ -1986,6 +1986,7 @@ a.efeitoTransicaoLoja:hover {
     }
 
     .estiloPainel li a {
+        display: block;
         color: white;
         font-family: 'Poppins', sans-serif;
         text-transform: capitalize;
