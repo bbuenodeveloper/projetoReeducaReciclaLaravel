@@ -42,7 +42,10 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 <!-- Main Wrapper Start -->
 <div class="main-wrapper">
+        <div class="col-12 col-md-12 text-center">
 
+                <h1 class="card-title titulo-card-home">Nosso <span class="color-title">Blog</span></h1>
+        </div>
     <div class="blog-details-area bg-grey section-ptb">
         <div class="container">
             <div class="row">

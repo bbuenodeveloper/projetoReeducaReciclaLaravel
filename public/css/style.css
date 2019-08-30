@@ -1990,6 +1990,7 @@ a.efeitoTransicaoLoja:hover {
         color: white;
         font-family: 'Poppins', sans-serif;
         text-transform: capitalize;
+        width: 160px;
 
     }
 
@@ -2199,7 +2200,7 @@ a.efeitoTransicaoLoja:hover {
 }
 
 .section-ptb {
-    padding: 110px 0;
+    padding: 5px 0;
 }
 
   .blog-sidebar-wrap {

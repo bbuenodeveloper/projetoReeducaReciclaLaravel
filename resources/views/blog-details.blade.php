@@ -13,7 +13,10 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 <!-- Main Wrapper Start -->
 <div class="main-wrapper">
+        <div class="col-12 col-md-12 text-center">
 
+                <h1 class="card-title titulo-card-home">Nosso <span class="color-title">Blog</span></h1>
+        </div>
 
     <div class="blog-details-area section-ptb">
         <div class="container">
@@ -22,7 +25,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             <!-- shop-sidebar-wrap start -->
                             <div class="blog-sidebar-wrap">
                                 <!-- shop-sidebar start -->
-                                <div class="blog-sidebar mb--30">
+                                <div class="blog-sidebar mb--30 text-center">
                                     <h4 class="title">ÚLTIMAS POSTAGENS</h4>
                                 </div>
                                 <!-- shop-sidebar end -->
@@ -44,7 +47,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                     <a href="#" target="_blank"><img src="{{asset('img/lateral_v2.gif')}}"
                                             alt="Apoie nosso projeto" style="max-width: 100%;"></a>
                                 </div>
-                                <div id="asideOfertasLoja" class="boxCinza mt-3">
+                                <div id="asideOfertasLoja" class="boxCinza mt-3 text-center">
                                     <h5 id="asideOfertasLojaTitulo">
                                         <span>
                                             <a href="/loja" target="_blank">
@@ -87,7 +90,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                     </div>
 
                                 </div>
-                                <div id="asideOfertasLoja" class="boxCinza mt-3">
+                                <div id="asideOfertasLoja" class="boxCinza mt-3 text-center">
                                         <h5 id="asideOfertasLojaTitulo">
                                             <span>
                                                 <a href="/loja" target="_blank">
@@ -208,7 +211,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
             </div>
                 <div class="text-center">
-                <a href="https://www.instagram.com/reciclamaps/" target="blank_"><button class="btn btn-success mt-5 ">Seguir Instagram</button></a>
+                <a href="https://www.instagram.com/reciclamaps/" target="blank_"><button class="btn btn-success mt-1 mb-3 ">Seguir Instagram</button></a>
                 </div>
     </div>
 
