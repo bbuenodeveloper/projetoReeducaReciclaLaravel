@@ -25,7 +25,7 @@ class BlogController extends Controller
             return view('blog-details', [
                 'post' => $post,
                 'posts' => $posts,
-                'ultimos' => Post::paginate(3)
+                'ultimos' => Post::take(3)->orderBy('id', 'DESC')->get()
             ]);
         }
     }

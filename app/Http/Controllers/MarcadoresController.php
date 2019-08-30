@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 class MarcadoresController extends Controller
 {
     private function getEmpresasFields() {
-        return "`empresas`.`id` AS empresas_id, `empresas`.`nome` AS empresas_nome, `empresas`.`endereco` AS empresas_endereco, `empresas`.`numero` AS empresas_numero, `empresas`.`complemento` AS empresas_complemento, `empresas`.`cep` AS empresas_cep, `empresas`.`bairro` AS empresas_bairro, `empresas`.`estado` AS empresas_estado, `empresas`.`telefone` AS empresas_telefone, `empresas`.`latitude` AS empresas_latitude, `empresas`.`longitude` AS empresas_longitude";
+        return "`empresas`.`id` AS empresas_id, `empresas`.`nome` AS empresas_nome, `empresas`.`endereco` AS empresas_endereco, `empresas`.`numero` AS empresas_numero, `empresas`.`complemento` AS empresas_complemento, `empresas`.`cep` AS empresas_cep, `empresas`.`bairro` AS empresas_bairro, `empresas`.`estado` AS empresas_estado, `empresas`.`telefone` AS empresas_telefone, `empresas`.`latitude` AS empresas_latitude, `empresas`.`longitude` AS empresas_longitude,`empresas`.`site` AS empresas_site";
     }
 
     private function getCidadesFields() {
@@ -40,8 +40,27 @@ class MarcadoresController extends Controller
         `cidades`.`id` in ({$cidadeID}) AND
         `materiais`.`id` in ({$materiaisIDs})"));
 
+        $empresas = [];
+
+        foreach($marcadores as $marcador) {
+            foreach($marcador as $campo => $valor) {
+                if( $campo != 'materiais_tipoMaterial' ) {
+                    $empresas[$marcador->empresas_id][$campo] = $valor;
+                } else {
+                    if( !isset($empresas[$marcador->empresas_id]['materiais_tipoMaterial']) ) $empresas[$marcador->empresas_id]['materiais_tipoMaterial'] = [];
+                    $empresas[$marcador->empresas_id]['materiais_tipoMaterial'][] = str_slug($valor);
+                }
+            }
+        }
+
+        $retorno = [];
+
+        foreach($empresas as $v) { $retorno[] = $v; }
+
+        // dd($marcadores,$retorno);
+
         //GROUP BY empresas.id
 
-        return json_encode($marcadores);
+        return json_encode($retorno);
     }
 }
