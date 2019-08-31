@@ -84,10 +84,12 @@
                                 @endif
                                 @else
                                 <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     @if(Auth::user()->img != null)
                                         <img src="{{ asset(Auth::user()->img) }}" style="width:30px">
+                                    @else
+                                        <i class="fas fa-user text-white p-2"></i>
                                     @endif
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><i class="fas fa-user text-white p-2"></i>
                                     {{Auth::user()->name}}<span class="caret"></span>
                                     </a>
 
