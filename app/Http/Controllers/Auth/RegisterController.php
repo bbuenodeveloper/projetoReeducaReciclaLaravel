@@ -10,6 +10,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 
 
+
 class RegisterController extends Controller
 {
     /*
@@ -65,7 +66,6 @@ class RegisterController extends Controller
             'cidade' => ['required', 'string', 'max:100'],
             //'nivel_user' => ['required', 'tinyInteger'],
             'telefone' => ['required','integer'],
-            
         ]);
     }
 
@@ -75,21 +75,18 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
+    
     protected function create(array $data)
     {
-        //Pegando o nome original do arquivo
-       $nomeOriginal = $data['avatar']->getClientOriginalName();
-        //Montando a url necessária para acessar o arquivo corretamente
-        $caminhoimg  = 'storage/img/' . $nomeOriginal;
-         //Salvando apenas a imagem
-        $save = $data['avatar']->storeAs('public/img', $nomeOriginal);
+        $caminhoPrivadoImg = $data['avatar']->store('avatars', ['disk' => 'public_uploads']);
+        $caminhoPublicoImg = "uploads/$caminhoPrivadoImg";
 
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'nivel_user'=> 1,
-            'img' => $caminhoimg,
+            'img' => $caminhoPublicoImg,
             'sobrenome' => $data['sobrenome'],
             'cep' => $data['cep'],
             'endereco' => $data['endereco'],
@@ -100,7 +97,6 @@ class RegisterController extends Controller
             'estado' => $data['estado'],
             'cidade' => $data['cidade'],
             'telefone' => $data['telefone'],
-            'avatar' => $data['avatar']
         ]);
     }
     
@@ -150,4 +146,5 @@ class RegisterController extends Controller
         return redirect('/relatorio-Users');
        
     }
+    
 }

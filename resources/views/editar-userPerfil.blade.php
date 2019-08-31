@@ -29,31 +29,31 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                 <div class="form-group">
                     <label class="col-lg-3 control-label">Nome:</label>
                     <div class="col-lg-8">
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" id="editarUserName">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-3 control-label">Sobrenome:</label>
                     <div class="col-lg-8">
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" id="editarUserSobrenome">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-3 control-label">Email:</label>
                     <div class="col-lg-8">
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" id="editarUserEmail">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-3 control-label">Senha:</label>
                     <div class="col-md-8">
-                        <input class="form-control" type="password">
+                        <input class="form-control" type="password" id="editarUserSenha">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-3 control-label">Confirmar senha:</label>
                     <div class="col-md-8">
-                        <input class="form-control" type="password">
+                        <input class="form-control" type="password" id="editarUserConfirmSenha">
                     </div>
                 </div>
                 <div class="form-group">
