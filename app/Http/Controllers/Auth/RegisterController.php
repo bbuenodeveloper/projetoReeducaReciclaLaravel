@@ -77,20 +77,16 @@ class RegisterController extends Controller
      */
     
     protected function create(array $data)
-    {//dd ($data);
-        //Pegando o nome original do arquivo
-       $nomeOriginal = $data['avatar']->getClientOriginalName();
-        //Montando a url necessária para acessar o arquivo corretamente
-        $caminhoimg  = 'storage/img/' . $nomeOriginal;
-         //Salvando apenas a imagem
-        $save = $data['avatar']->storeAs('public/img', $nomeOriginal);
+    {
+        $caminhoPrivadoImg = $data['avatar']->store('avatars', ['disk' => 'public_uploads']);
+        $caminhoPublicoImg = "uploads/$caminhoPrivadoImg";
 
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'nivel_user'=> 1,
-            'img' => $caminhoimg,
+            'img' => $caminhoPublicoImg,
             'sobrenome' => $data['sobrenome'],
             'cep' => $data['cep'],
             'endereco' => $data['endereco'],
@@ -101,7 +97,6 @@ class RegisterController extends Controller
             'estado' => $data['estado'],
             'cidade' => $data['cidade'],
             'telefone' => $data['telefone'],
-            
         ]);
     }
     
