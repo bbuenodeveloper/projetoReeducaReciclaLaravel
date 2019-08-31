@@ -11,6 +11,16 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 <div class="container-fuid mx-2 mt-2 mb-2">
 <div class="tg-wrap">
+    <table class="table table-light text-center">
+        <thead class="thead-light">
+                <tbody>
+                        <tr>
+                            <th> TABELA DE MATERIAIS RECICLÁVEIS OU NÃO RECICLÁVEIS</th>
+                        </tr>
+                    </tbody>
+        </thead>
+
+    </table>
     <table class="tg mceItemTable" style="width:100%">
     <colgroup>
     <col style="width:10%">
@@ -19,6 +29,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
     <col style="width:20%">
     <col style="width:20%">
     </colgroup>
+
       <tbody><tr>
         <th class="tg-tq8n">Reciclável?</th>
         <th class="tg-cvx0">Papéis</th>
