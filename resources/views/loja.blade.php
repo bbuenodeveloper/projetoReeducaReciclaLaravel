@@ -40,11 +40,13 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             <figure class="card card-product">
                 <div class="img-wrap"><a href="/internaProduto/{{$produto->id}}"><img
                             src="/storage/produtos/{{$produto->imagem}}"></a></div>
-                <figcaption class="info-wrap">
+                <figcaption class="info-wrap text-center align-item-center">
                     <h4 class="title">{{$produto->nome}}</h4>
                 </figcaption>
                 <div class="bottom-wrap">
                     <a href="/internaProduto/{{$produto->id}}" class="btn btn-sm btn-primary float-right">COMPRAR</a>
+                    <a href="/adicionarCarrinho/{{$produto->id}}" class="btn btn-outline-primary float-right mr-3"> <i class="fas fa-shopping-cart"></i></a>
+
                     <div class="price-wrap h5">
                         <span class="price-new">R${{$produto->preco}}</span>
                     </div> <!-- price-wrap.// -->

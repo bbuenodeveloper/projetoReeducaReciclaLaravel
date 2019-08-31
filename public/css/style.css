@@ -1990,6 +1990,7 @@ a.efeitoTransicaoLoja:hover {
         color: white;
         font-family: 'Poppins', sans-serif;
         text-transform: capitalize;
+        width: 160px;
 
     }
 
@@ -2199,7 +2200,7 @@ a.efeitoTransicaoLoja:hover {
 }
 
 .section-ptb {
-    padding: 110px 0;
+    padding: 5px 0;
 }
 
   .blog-sidebar-wrap {
@@ -2642,3 +2643,133 @@ a.efeitoTransicaoLoja:hover {
 .pagination {
     justify-content: center;
 }
+
+
+.font-postos {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+/* tabela reciclaveis */
+
+.article-content {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.tg .tg-tq8n {
+    font-weight: bold;
+    background-color: #bfbfbf;
+    text-align: center;
+    vertical-align: top;
+}
+
+.tg .tg-cvx0 {
+    font-weight: bold;
+    background-color: #96b4d6;
+    text-align: center;
+    vertical-align: top;
+}
+
+.tg .tg-whg9 {
+    font-weight: bold;
+    background-color: #d99695;
+    text-align: center;
+    vertical-align: top;
+}
+
+.tg .tg-kc6g {
+    font-weight: bold;
+    background-color: #fffe8f;
+    text-align: center;
+    vertical-align: top;
+}
+.tg .tg-zk3q {
+    font-weight: bold;
+    background-color: #c4d69e;
+    text-align: center;
+    vertical-align: top;
+}
+
+.tg .tg-vzrn {
+    background-color: #dce6f1;
+    vertical-align: top;
+}
+
+.tg .tg-h2ec {
+    background-color: #f2f2f2;
+    vertical-align: middle;
+}
+
+.tg .tg-b1z4 {
+    background-color: #f1dcdb;
+    vertical-align: top;
+}
+
+.tg .tg-bmil {
+    background-color: #fffee1;
+    vertical-align: top;
+}
+
+.tg .tg-zkv2 {
+    background-color: #ebf1df;
+    vertical-align: top;
+}
+
+.tg .tg-bfah {
+    background-color: #d9d9d9;
+    vertical-align: middle;
+}
+
+.tg .tg-4jib {
+    background-color: #b9cce3;
+    vertical-align: top;
+}
+
+.tg .tg-6l7w {
+    background-color: #e5b8b8;
+    vertical-align: top;
+}
+
+.tg .tg-b8mg {
+    background-color: #fffec4;
+    vertical-align: top;
+}
+
+.tg .tg-s9lv {
+    background-color: #d8e3be;
+    vertical-align: top;
+}
+
+.article-content table td {
+    border: 1px solid #e6e6e6;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    margin: 0;
+    padding: 8px 5px 4px 5px;
+}
+
+.tg td {
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    padding: 11px 5px;
+    overflow: hidden;
+    word-break: normal;
+    border: 2px solid #FFF;
+}
+
+.article-content table {
+    width: 100%;
+    border: 1px solid #CCC;
+    border-right: 0;
+    border-left: 0;
+    padding: 1%;
+    margin: 4% 0;
+}
+.tg {
+    border-collapse: collapse;
+    border-spacing: 2;
+

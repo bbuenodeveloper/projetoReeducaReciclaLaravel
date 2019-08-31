@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, user-scalable=yes">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="theme-color" content="#000000">
-        <link rel="icon" href="img/favicon.png" sizes="16x16 32x32" type="image/jpg">
+        <link rel="icon" href="{{asset('img/favicon.png')}}" sizes="16x16 32x32" type="image/jpg">
 
         <!-- Metas para o Google -->
         <title><?php @print($title); ?></title>

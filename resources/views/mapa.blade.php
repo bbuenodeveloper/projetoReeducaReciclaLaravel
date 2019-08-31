@@ -17,10 +17,10 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             <h3>Instruções</h3>
         </div>
         <ul>
-            <li>1. Escolha a cidade</li>
-            <li>2. Selecione 1 ou mais materiais que deseja reciclar</li>
-            <li>3. Clique nos pontos que aparecerão no Mapa para saber os dados das empresas</li>
-            <li>4. Ou selecione a Empresa na lista que vai aparecer na parte abaixo do Mapa</li>
+            <li>1. Escolha a cidade.</li>
+            <li>2. Selecione 1 ou mais materiais que deseja.</li>
+            <li>3. Clique nos pontos que aparecerão no Mapa para saber os dados das empresas.</li>
+            <li>4. Ou selecione a Empresa na lista que vai aparecer na parte abaixo do Mapa.</li>
         </ul>
         <div class="clearfix"></div>
     </div>
