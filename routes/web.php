@@ -224,13 +224,13 @@ Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallb
 
 
 //Rotas Socialite Google
-Route::get('redirect/{driver}', 'Auth\LoginController@redirectToProvider')
-    ->name('login.provider')
-    ->where('driver', implode('|', config('auth.socialite.drivers')));
+// Route::get('redirect/{driver}', 'Auth\LoginController@redirectToProvider')
+//     ->name('login.provider')
+//     ->where('driver', implode('|', config('auth.socialite.drivers')));
 
-Route::get('{driver}/callback', 'Auth\LoginController@handleProviderCallback')
-    ->name('login.callback')
-    ->where('driver', implode('|', config('auth.socialite.drivers')));
+// Route::get('{driver}/callback', 'Auth\LoginController@handleProviderCallback')
+//     ->name('login.callback')
+//     ->where('driver', implode('|', config('auth.socialite.drivers')));
 
 
 //Rota adminlista apenas teste
