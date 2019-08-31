@@ -223,7 +223,7 @@
          <div class="col-md-12">
              <div class="emergency">
 
-            <img src="{{ ('img/logo_branco.png') }}" width="200" alt="">
+            <img src="{{asset('img/logo_branco.png') }}" width="200" alt="">
              </div>
          </div>
      </div>
