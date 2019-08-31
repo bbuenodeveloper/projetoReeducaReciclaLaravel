@@ -30,6 +30,7 @@ $(function(){
         });
 
         document.getElementById("formPostagem").reset();
+
     });
 
 
