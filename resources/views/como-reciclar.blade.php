@@ -173,10 +173,19 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         <a href="javascript:void(0)" class="openSix close">&minus;</a>
         <div class="overlay-content">
             <h3>Confira o passo a passo da reciclagem do alumínio <strong>e gere renda</strong></h3>
-            <p>O alumínio pode ser reciclado tanto a partir de sucatas geradas por produtos descartados, quanto por
-                sobras do processo produtivo. Utensílios domésticos, latas de bebidas, esquadrias de janelas,
-                componentes automotivos, entre outros, podem ser fundidos e empregados novamente na fabricação de novos
-                produtos.</p>
+            <p> 1
+                Ao terminar de consumir o conteúdo,
+                retire toda a sobra que você conseguir.
+                2
+                Amasse as latinhas vazias
+                se precisar de mais espaço.
+                3
+                Evite separar o anel da abertura da lata,
+                para que ele não se perca pelo caminho.
+                4
+                Descarte a latinha de alumínio no lixo
+                reciclável ou no cesto destinado a metais
+                (quando houver), separado do lixo orgânico.</p>
 
         </div>
     </div>
