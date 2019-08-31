@@ -141,7 +141,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                         <img class="d-block " src="{{asset('img/parceiros/parceirosduplo2.jpg') }}" alt="Segundo Slide">
                                       </div>
                                       <div class="carousel-item">
-                                        <img class="d-block " src="{{  }}asset('img/parceiros/parceirosduplo3.jpg') }}" alt="Terceiro Slide">
+                                        <img class="d-block " src="{{asset('img/parceiros/parceirosduplo3.jpg') }}" alt="Terceiro Slide">
                                       </div>
                                       <div class="carousel-item">
                                             <img class="d-block " src="{{asset('img/parceiros/parceirosduplo4.jpg') }}" alt="Terceiro Slide">
