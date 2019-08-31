@@ -12,5 +12,19 @@ class ReciclarController extends Controller
         }
 
     }
+
+    public function tabelaReciclar(Request $request) {
+        if($request->isMethod('GET')){
+            return view('tabelaReciclaveis');
+        }
+
+    }
 }
+
+
+
+
+
+
+
 

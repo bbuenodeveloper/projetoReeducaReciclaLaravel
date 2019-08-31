@@ -44,6 +44,8 @@ Route::get('/post/{id}', 'BlogController@blogdetails');
 
 Route::get('/como-reciclar', 'ReciclarController@comoReciclar');
 
+Route::get('/tabelaReciclaveis', 'ReciclarController@tabelaReciclar');
+
 Route::get('/editar-userPerfil', 'UserPerfilController@userPerfil');
 
 
