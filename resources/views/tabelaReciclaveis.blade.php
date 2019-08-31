@@ -11,7 +11,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 <div class="container-fuid mx-2 mt-2 mb-2">
 <div class="tg-wrap">
-    <table class="table table-light text-center">
+    <table class="table table-light text-center ">
         <thead class="thead-light">
                 <tbody>
                         <tr>
@@ -21,7 +21,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         </thead>
 
     </table>
-    <table class="tg mceItemTable" style="width:100%">
+    <table class="tg mceItemTable " style="width:100%">
     <colgroup>
     <col style="width:10%">
     <col style="width:20%">
@@ -31,11 +31,11 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
     </colgroup>
 
       <tbody><tr>
-        <th class="tg-tq8n">Reciclável?</th>
-        <th class="tg-cvx0">Papéis</th>
-        <th class="tg-whg9">Plásticos</th>
-        <th class="tg-kc6g">Vidros</th>
-        <th class="tg-zk3q">Metais</th>
+        <th class="tg-tq8n text-black-50">Reciclável?</th>
+        <th class="tg-cvx0 text-black-50">Papéis</th>
+        <th class="tg-whg9 text-black-50">Plásticos</th>
+        <th class="tg-kc6g text-black-50">Vidros</th>
+        <th class="tg-zk3q text-black-50">Metais</th>
       </tr>
       <tr>
         <td class="tg-h2ec" rowspan="7">Sim</td>
