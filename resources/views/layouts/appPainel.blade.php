@@ -245,7 +245,7 @@
           integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
           crossorigin="anonymous"></script>
         <script src="https://cdn.ckeditor.com/4.4.5.1/basic/ckeditor.js"></script>
-        <script src="{{asset('js/ajaxDeletapostagem.js')}}"></script>
+        <script src="{{asset('js/ajaxDeletaPostagem.js')}}"></script>
         <script src="{{asset('js/ajaxDeletaCidade.js')}}"></script>
         <script src="{{asset('js/ajaxDeletaEmpresa.js')}}"></script>
         <script src="{{asset('js/ajaxDeletaMaterial.js')}}"></script>

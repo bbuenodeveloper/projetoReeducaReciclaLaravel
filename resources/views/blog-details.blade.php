@@ -93,7 +93,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 <div id="asideOfertasLoja" class="boxCinza mt-3 text-center">
                                         <h5 id="asideOfertasLojaTitulo">
                                             <span>
-                                                <a href="/loja" target="_blank">
+                                                <a href="#" target="_blank">
                                                   <i class="far fa-handshake"></i> Parceiros ReciclaMaps
                                                 </a>
                                             </span>
