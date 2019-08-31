@@ -77,6 +77,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                 garrafa de vidro quebrada, utilize a parte superior da garrafa PET para tampar o recipiente e coloque-o
                 dentro de uma sacola. Procure utilizar luvas ou pá e vassoura para não se ferir.Também recomenda-se que
                 os cacos de vidro não sejam misturados com terra ou sujeira.</p>
+                <p class="font-postos">Encontre os postos de reciclagem mais próximos de você no mecanismo de busca gratuito do nosso site.</p>
         </div>
     </div>
     <div class="block alt">
@@ -96,6 +97,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             <p>3. Evite separar o anel da abertura da lata,para que ele não se perca pelo caminho.</p>
             <p>4. Descarte a latinha de alumínio no lixo reciclável ou no cesto destinado a metais
                 (quando houver), separado do lixo orgânico.</p>
+                <p class="font-postos">Encontre os postos de reciclagem mais próximos de você no mecanismo de busca gratuito do nosso site.</p>
         </div>
     </div>
     <div class="block alt2 ">
@@ -113,6 +115,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             <p>1. Lave as embalagens plásticas que você e sua família usaram, incluindo potes de iogurte, embalagens longa vida, canudos, garrafas de suco e outros recipientes. Se possível, use água de reuso na limpeza.</p>
             <p>2. Deixe-os secar antes de separá-los para reciclagem do plástico.</p>
             <p>3. Deposite o seu plástico reciclável em um espaço próprio para a coleta do material.</p>
+            <p class="font-postos">Encontre os postos de reciclagem mais próximos de você no mecanismo de busca gratuito do nosso site.</p>
         </div>
     </div>
     <div class="block alt3">
@@ -131,6 +134,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             <p>3. Armazene em local seco</p>
             <p>4. Se possível, separe por tipo de papel, como embalagens, papel de escritório, revistas, jornais,
                 papelão, entre outros.</p>
+                <p class="font-postos">Encontre os postos de reciclagem mais próximos de você no mecanismo de busca gratuito do nosso site.</p>
         </div>
     </div>
 </div>
@@ -154,6 +158,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             <p>2 tijolos ou pedaços de madeira</p>
             <p>Matéria seca: folhas secas, papelão ou serragem</p>
             <p>Material úmido: borra de café, cascas de frutas, sobras de verduras e legumes e resto de leite</p>
+            <p class="font-postos">Encontre os postos de reciclagem mais próximos de você no mecanismo de busca gratuito do nosso site.</p>
         </div>
     </div>
     <div class="block alt5">
@@ -172,6 +177,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             <p>3. Eletrônicos e eletrodomésticos: Para descartá-los, entre em contato com o fabricante e se informe como retornar o produto para ele.</p>
             <p>4. Remédios: O descarte dos medicamentos vencidos deve ser feito, de preferência, com a própria embalagem e levados em Centros de Atendimento Públicos de Saúde ou farmácias.</p>
             <p>5. Lâmpadas: Procure colocar as lâmpadas em caixas fechadas e separadas do lixo comum e procure um posto de coleta específico.</p>
+            <p class="font-postos">Encontre os postos de reciclagem mais próximos de você no mecanismo de busca gratuito do nosso site.</p>
         </div>
     </div>
     <div class="block alt6 ">
@@ -189,6 +195,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             <h3 class="cor-alt6-titulo">Instruções para descartar <strong>Lixo Hospitalar</strong></h3>
             <p class="cor-alt6-titulo">O treinamento para a separação desse tipo de resíduo é uma exigência do Conselho Nacional do Meio Ambiente (CONAMA), que oferece subsídios para que os hospitais e clínicas elaborem planos de gerenciamento de resíduos do serviço de saúde. O objetivo é adequar a estrutura das unidades para o tratamento correto dos resíduos.</p>
             <p class="cor-alt6-titulo">Segundo as normas sanitárias, o lixo hospitalar deve ser rigorosamente seperado e cada classe deve ter um tipo de coleta e destinação. De acordo com as normas, devem ser separadas conforme um sistema de classificação que inclui os resíduos infectantes – lixo <strong>classe A</strong>, como restos de material de laboratório, seringas, agulhas, hemoderivados, entre outros, perigosos – <strong>classe B</strong>, que são os produtos quimioterápicos, radioativos e medicamentos com validade vencida – e o lixo <strong>classe C</strong>, o mesmo produzido nas residências, que pode ser subdividido em material orgânico e reciclável.</p>
+            <p class="font-postos">Encontre os postos de reciclagem mais próximos de você no mecanismo de busca gratuito do nosso site.</p>
 
         </div>
     </div>
@@ -210,6 +217,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                 lojas de móveis usados, que possam reaproveitar madeira antiga para outros usos e até consertos. Também
                 há a opção de chamar empresas que recolhem entulho. Caso queria descartar seu móvel velho, conheça nosso
                 serviço de coleta em casa.</p>
+                <p class="font-postos">Encontre os postos de reciclagem mais próximos de você no mecanismo de busca gratuito do nosso site.</p>
 
         </div>
     </div>

@@ -2643,3 +2643,9 @@ a.efeitoTransicaoLoja:hover {
 .pagination {
     justify-content: center;
 }
+
+
+.font-postos {
+    font-size: 18px;
+    font-weight: 600;
+}
