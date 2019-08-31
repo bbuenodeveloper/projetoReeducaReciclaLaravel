@@ -63,7 +63,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
     <div class="block ">
         <img src="img/vidroreciclar.jpg" class="attachment-full size-full wp-post-image" alt=""
             sizes="(max-width: 1500px) 100vw, 1500px" />
-        <h3>Reciclar <strong>vidro</strong></h3>
+        <h3>Reciclar <strong>Vidro</strong></h3>
         <p>Entende-se como reciclagem de vidro, o processo industrial de derretimento de resíduos de vidro.</p>
         <a href="javascript:void(0)" class="openOne">&plus;</a>
     </div>
@@ -91,10 +91,11 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         <a href="javascript:void(0)" class="openTwo close">&minus;</a>
         <div class="overlay-content">
             <h3>Confira o passo a passo da reciclagem do alumínio <strong>e gere renda</strong></h3>
-            <p>O alumínio pode ser reciclado tanto a partir de sucatas geradas por produtos descartados, quanto por
-                sobras do processo produtivo. Utensílios domésticos, latas de bebidas, esquadrias de janelas,
-                componentes automotivos, entre outros, podem ser fundidos e empregados novamente na fabricação de novos
-                produtos.</p>
+            <p>1. Ao terminar de consumir o conteúdo,retire toda a sobra que você conseguir.</p>
+            <p>2. Amasse as latinhas vaziasse precisar de mais espaço.</p>
+            <p>3. Evite separar o anel da abertura da lata,para que ele não se perca pelo caminho.</p>
+            <p>4. Descarte a latinha de alumínio no lixo reciclável ou no cesto destinado a metais
+                (quando houver), separado do lixo orgânico.</p>
         </div>
     </div>
     <div class="block alt2 ">
@@ -109,15 +110,9 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         <a href="javascript:void(0)" class="openThree close">&minus;</a>
         <div class="overlay-content">
             <h3>Passo a passo de como reciclar <strong>plástico</strong></h3>
-            <p>Descubra mais sobre o programa de reciclagem de sua comunidade. Muitas cidades têm, hoje em dia, pontos
-                de coleta e depósito de materiais recicláveis. No entanto, cada comunidade é diferente, então entre em
-                contato com a prefeitura e pergunte sobre quais facilidades e opções estão disponíveis em sua área.</p>
-            <p>Leve os plásticos diretamente ao local da reciclagem. Pesquise online ou telefone para autoridades locais
-                para encontrar os centros de sua área. Se um centro aceitar plástico, você pode muito bem levá-los
-                diretamente até ele.
-                Alguns estabelecimentos de reciclagem podem pagar algum dinheiro por item que você levar. Você pode
-                fazer algum dinheiro extra coletando material reciclável de amigos e vizinhos e levar aos pontos de
-                coleta.</p>
+            <p>1. Lave as embalagens plásticas que você e sua família usaram, incluindo potes de iogurte, embalagens longa vida, canudos, garrafas de suco e outros recipientes. Se possível, use água de reuso na limpeza.</p>
+            <p>2. Deixe-os secar antes de separá-los para reciclagem do plástico.</p>
+            <p>3. Deposite o seu plástico reciclável em um espaço próprio para a coleta do material.</p>
         </div>
     </div>
     <div class="block alt3">
@@ -145,54 +140,44 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
         <img src="{{asset('img/organicoreciclar.jpg')}}" class="attachment-full size-full wp-post-image" alt=""
             sizes="(max-width: 1500px) 100vw, 1500px" />
         <h3>Reciclar <strong>Orgânicos</strong></h3>
-        <p>Entende-se como reciclagem de vidro, o processo industrial de derretimento de resíduos de vidro.</p>
+        <p>O lixo orgânico pode ser transformado em adubo orgânico e utilizado na agricultura. Para isso acontecer é necessário fazer um processo de compostagem, que é uma espécie de reciclagem do lixo orgânico.</p>
 
         <a href="javascript:void(0)" class="openFive">&plus;</a>
     </div>
     <div class="overlay five alt4 ">
         <a href="javascript:void(0)" class="openFive close">&minus;</a>
         <div class="overlay-content">
-            <h3>Como reciclar garrafas de <strong>Vidro?</strong></h3>
-            <p>Na reciclagem de garrafas de vidro, se estiverem inteiras, elas devem ser lavadas. Se estiverem
-                quebradas, você pode utilizar uma garrafa PET para embalá-las. Para isso, retire o rótulo da garrafa PET
-                e descarte-o junto de outros plásticos recicláveis. Então corte a garrafa ao meio, insira os cacos da
-                garrafa de vidro quebrada, utilize a parte superior da garrafa PET para tampar o recipiente e coloque-o
-                dentro de uma sacola. Procure utilizar luvas ou pá e vassoura para não se ferir.Também recomenda-se que
-                os cacos de vidro não sejam misturados com terra ou sujeira.</p>
+            <h3>Como reciclar lixo orgânico e fazer <strong>compostagem</strong></h3>
+            <p>Há uma forma simples e barata de reciclar o lixo orgânico, fazendo a compostagem tradicional. Veja como:</p>
+            <p>1 pote de sorvete ou um balde</p>
+            <p>1 bacia rasa</p>
+            <p>2 tijolos ou pedaços de madeira</p>
+            <p>Matéria seca: folhas secas, papelão ou serragem</p>
+            <p>Material úmido: borra de café, cascas de frutas, sobras de verduras e legumes e resto de leite</p>
         </div>
     </div>
     <div class="block alt5">
         <img src="{{asset('img/toxicoreciclar.jpg')}}" class="attachment-full size-full wp-post-image" alt=""
             sizes="(max-width: 500px) 100vw, 500px" />
-        <h3>Reciclar <strong> Tóxicos</strong></h3>
-        <p>Reciclagem de alumínio é o processo pelo qual o alumínio pode ser reutilizado em determinados produtos, após
-            ter sido inicialmente produzido. </p>
+        <h3>Descartar lixo <strong> Tóxico</strong></h3>
+        <p>O lixo tóxico é um dos mais perigosos, pois contém substâncias nocivas e propriedades químicas. Os resíduos liberados por esse tipo de lixo podem se acumular nos primeiros níveis das cadeias e teias alimentares.</p>
         <a href="javascript:void(0)" class="openSix">&plus;</a>
     </div>
     <div class="overlay six alt5">
         <a href="javascript:void(0)" class="openSix close">&minus;</a>
         <div class="overlay-content">
             <h3>Confira o passo a passo da reciclagem do alumínio <strong>e gere renda</strong></h3>
-            <p> 1
-                Ao terminar de consumir o conteúdo,
-                retire toda a sobra que você conseguir.
-                2
-                Amasse as latinhas vazias
-                se precisar de mais espaço.
-                3
-                Evite separar o anel da abertura da lata,
-                para que ele não se perca pelo caminho.
-                4
-                Descarte a latinha de alumínio no lixo
-                reciclável ou no cesto destinado a metais
-                (quando houver), separado do lixo orgânico.</p>
-
+            <p>1. Pilhas e baterias: Independentemente do tipo ou do tamanho, elas possuem os metais cádmio, chumbo e mercúrio. Para descartá-las, envolva a pilha ou a bateria em um saco plástico, separando-o do lixo comum, e deposite em postos de coleta específicos.</p>
+            <p>2. óleo de Cozinha: A solução é coletá-lo em uma garrafa e, quando estiver cheia, direcioná-la aos postos de coleta autorizados ou produzir sabão caseiro.</p>
+            <p>3. Eletrônicos e eletrodomésticos: Para descartá-los, entre em contato com o fabricante e se informe como retornar o produto para ele.</p>
+            <p>4. Remédios: O descarte dos medicamentos vencidos deve ser feito, de preferência, com a própria embalagem e levados em Centros de Atendimento Públicos de Saúde ou farmácias.</p>
+            <p>5. Lâmpadas: Procure colocar as lâmpadas em caixas fechadas e separadas do lixo comum e procure um posto de coleta específico.</p>
         </div>
     </div>
     <div class="block alt6 ">
         <img src="{{asset('img/lixohospitalar.jpg')}}" class="attachment-full size-full wp-post-image" alt=""
             sizes="(max-width: 1600px) 100vw, 1600px" />
-        <h3 class="cor-alt6-titulo">Reciclar <strong>Hospitalar</strong></h3>
+        <h3 class="cor-alt6-titulo">Descartar lixo<strong>Hospitalar</strong></h3>
         <p class="cor-alt6">O lixo hospitalar, também chamado de resíduo hospitalar e de resíduo de serviços de saúde, é
             todo tipo de lixo proveniente do atendimento a pacientes ou de qualquer estabelecimento de saúde ou unidade
             que execute atividades de natureza de atendimento médico.</p>
@@ -201,15 +186,10 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
     <div class="overlay seven alt6 ">
         <a href="javascript:void(0)" class="openSeven close7">&minus;</a>
         <div class="overlay-content">
-            <h3 class="cor-alt6-titulo">Passo a passo de como reciclar <strong>plástico</strong></h3>
-            <p class="cor-alt6-titulo">Grupo A (potencialmente infectantes) - que tenham presença de agentes biológicos
-                que apresentem risco de infecção. Ex.: bolsas de sangue contaminado;</p>
-            <p class="cor-alt6-titulo">Leve os plásticos diretamente ao local da reciclagem. Pesquise online ou telefone
-                para autoridades locais para encontrar os centros de sua área. Se um centro aceitar plástico, você pode
-                muito bem levá-los diretamente até ele.
-                Alguns estabelecimentos de reciclagem podem pagar algum dinheiro por item que você levar. Você pode
-                fazer algum dinheiro extra coletando material reciclável de amigos e vizinhos e levar aos pontos de
-                coleta.</p>
+            <h3 class="cor-alt6-titulo">Instruções para descartar <strong>Lixo Hospitalar</strong></h3>
+            <p class="cor-alt6-titulo">O treinamento para a separação desse tipo de resíduo é uma exigência do Conselho Nacional do Meio Ambiente (CONAMA), que oferece subsídios para que os hospitais e clínicas elaborem planos de gerenciamento de resíduos do serviço de saúde. O objetivo é adequar a estrutura das unidades para o tratamento correto dos resíduos.</p>
+            <p class="cor-alt6-titulo">Segundo as normas sanitárias, o lixo hospitalar deve ser rigorosamente seperado e cada classe deve ter um tipo de coleta e destinação. De acordo com as normas, devem ser separadas conforme um sistema de classificação que inclui os resíduos infectantes – lixo <strong>classe A</strong>, como restos de material de laboratório, seringas, agulhas, hemoderivados, entre outros, perigosos – <strong>classe B</strong>, que são os produtos quimioterápicos, radioativos e medicamentos com validade vencida – e o lixo <strong>classe C</strong>, o mesmo produzido nas residências, que pode ser subdividido em material orgânico e reciclável.</p>
+
         </div>
     </div>
     <div class="block alt7">
