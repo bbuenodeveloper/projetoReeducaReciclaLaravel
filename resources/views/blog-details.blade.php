@@ -100,31 +100,37 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                         </h5>
                                         {{-- carroussel parceiros--}}
                                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                              <div class="carousel-item active">
-                                                <img class="d-block " src="{{asset('img/parceiros/trasix.png')}}" alt="Primeiro Slide">
-                                              </div>
-                                              <div class="carousel-item">
-                                                <img class="d-block " src="{{asset('img/parceiros/remakker.png')}}" alt="Segundo Slide">
-                                              </div>
-                                              <div class="carousel-item">
-                                                <img class="d-block " src="{{asset('img/parceiros/recolast.png')}}" alt="Terceiro Slide">
-                                              </div>
+                                                <ol class="carousel-indicators">
+                                                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                  <div class="carousel-item active">
+                                                    <img class="d-block " src="{{ ('img/parceiros/parceirosduplo1.jpg') }}" alt="Primeiro Slide">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img class="d-block " src="{{ ('img/parceiros/parceirosduplo2.jpg') }}" alt="Segundo Slide">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img class="d-block " src="{{ ('img/parceiros/parceirosduplo3.jpg') }}" alt="Terceiro Slide">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                        <img class="d-block " src="{{ ('img/parceiros/parceirosduplo4.jpg') }}" alt="Terceiro Slide">
+                                                      </div>
+                                                      <div class="carousel-item">
+                                                            <img class="d-block " src="{{ ('img/parceiros/parceirosduplo5.jpg') }}" alt="Terceiro Slide">
+                                                          </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Anterior</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Próximo</span>
+                                                </a>
                                             </div>
-                                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                              <span class="sr-only">Anterior</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                              <span class="sr-only">Próximo</span>
-                                            </a>
-                                        </div>
                                         {{-- fim carroussel --}}
 
 
