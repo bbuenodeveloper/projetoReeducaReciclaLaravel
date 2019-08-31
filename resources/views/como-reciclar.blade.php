@@ -195,7 +195,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             <h3 class="cor-alt6-titulo">Instruções para descartar <strong>Lixo Hospitalar</strong></h3>
             <p class="cor-alt6-titulo">O treinamento para a separação desse tipo de resíduo é uma exigência do Conselho Nacional do Meio Ambiente (CONAMA), que oferece subsídios para que os hospitais e clínicas elaborem planos de gerenciamento de resíduos do serviço de saúde. O objetivo é adequar a estrutura das unidades para o tratamento correto dos resíduos.</p>
             <p class="cor-alt6-titulo">Segundo as normas sanitárias, o lixo hospitalar deve ser rigorosamente seperado e cada classe deve ter um tipo de coleta e destinação. De acordo com as normas, devem ser separadas conforme um sistema de classificação que inclui os resíduos infectantes – lixo <strong>classe A</strong>, como restos de material de laboratório, seringas, agulhas, hemoderivados, entre outros, perigosos – <strong>classe B</strong>, que são os produtos quimioterápicos, radioativos e medicamentos com validade vencida – e o lixo <strong>classe C</strong>, o mesmo produzido nas residências, que pode ser subdividido em material orgânico e reciclável.</p>
-            <p class="font-postos">Encontre os postos de reciclagem mais próximos de você no mecanismo de busca gratuito do nosso site.</p>
+            <p class="font-postos cor-alt6-titulo">Encontre os postos de reciclagem mais próximos de você no mecanismo de busca gratuito do nosso site.</p>
 
         </div>
     </div>
