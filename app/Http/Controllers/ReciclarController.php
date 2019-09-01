@@ -19,6 +19,13 @@ class ReciclarController extends Controller
         }
 
     }
+
+    public function ondeReciclar(Request $request) {
+        if($request->isMethod('GET')){
+            return view('onde-reciclar');
+        }
+
+    }
 }
 
 

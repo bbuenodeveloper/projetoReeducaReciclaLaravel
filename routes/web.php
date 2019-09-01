@@ -46,6 +46,8 @@ Route::get('/como-reciclar', 'ReciclarController@comoReciclar');
 
 Route::get('/tabelaReciclaveis', 'ReciclarController@tabelaReciclar');
 
+Route::get('/onde-reciclar', 'ReciclarController@ondeReciclar');
+
 Route::get('/editar-userPerfil', 'UserPerfilController@userPerfil');
 
 Route::post('/editar-userPerfil', 'UserPerfilController@editarPerfil')->name('userPerfil.editar');

@@ -353,7 +353,13 @@
 
 </footer>
 
-<a href="#" id="scroll-top" class="scroll-top"><i class="fas fa-angle-up"></i></a>
+<div class="totop" style="display: block;">
+        <div class="gototop">
+            <a href="#">
+                <div class="arrowgototop"> </div>
+            </a>
+        </div>
+    </div>
 {{-- end footer  --}}
 
         <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Google Page Speed Insights") === false): ?>
@@ -399,7 +405,7 @@
 
         <script src="{{url('https://code.jquery.com/jquery-3.4.0.min.js')}}"></script>
         <script type='text/javascript' src="{{asset('js/jquery/jquery-migrate.min.js')}}"></script>
-
+        <script src="{{asset('js/voltarTopo.js')}}"></script>
         <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>

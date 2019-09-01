@@ -52,9 +52,19 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 <div class="meet-members">
     <div class="wrapper mx-auto">
         <h2>Aprenda como reciclar<b> cada tipo de material</b></h2>
-        <p>
+
+        <p>Acesse a Tabela de materiais que são ou não recicláveis, é só clicar aqui:<a href="/tabelaReciclaveis" class="btn">TABELA</a> </p>
+
+
+
+            <p>Quer começar a reciclar, em casa, no trabalho, na escola ou na universidade?</p>
+            <p> Clique no botão que te damos um passo a passo: <a href="/onde-reciclar" class="btn">ONDE VOCÊ VAI RECICLAR?</a></p>
+
+
             <p>Nos cards abaixo, você pode aprender como reciclar cada tipo de material, escolha o material, clique no
                 sinal de + e tenha todas as informações necessárias para reciclar de forma correta.</p>
+
+
     </div>
     <!--/wrapper -->
 </div><!-- /meet-members -->
