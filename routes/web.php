@@ -48,6 +48,8 @@ Route::get('/tabelaReciclaveis', 'ReciclarController@tabelaReciclar');
 
 Route::get('/editar-userPerfil', 'UserPerfilController@userPerfil');
 
+Route::post('/editar-userPerfil', 'UserPerfilController@editarPerfil')->name('userPerfil.editar');
+
 
 // Rotas loja
 
