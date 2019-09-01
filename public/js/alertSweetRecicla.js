@@ -2,10 +2,10 @@ function executeSweet(message){
     if(!message) {
         message = 'Cadastro realizado com sucesso!';
     }
-    Swal.fire({
+    return Swal.fire({
         type: 'success',
         text: message,
-    })
+    });
 }
 
 function executeSweetDelete(){

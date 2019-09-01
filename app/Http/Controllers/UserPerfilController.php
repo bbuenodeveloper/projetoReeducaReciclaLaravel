@@ -17,15 +17,22 @@ class UserPerfilController extends Controller
 
         $user->name = $request->name;
         $user->email = $request->email;
-        $user->password = Hash::make($request->password);
         $user->sobrenome = $request->sobrenome;
 
-        $caminhoPrivadoImg = $request['avatar']->store('avatars', ['disk' => 'public_uploads']);
-        $caminhoPublicoImg = "uploads/$caminhoPrivadoImg";
-        $user->img = $caminhoPublicoImg;
+        $avatar = $request['avatar'];
+        if ($avatar != null) {
+            $caminhoPrivadoImg = $avatar->store('avatars', ['disk' => 'public_uploads']);
+            $caminhoPublicoImg = "uploads/$caminhoPrivadoImg";
+            $user->img = $caminhoPublicoImg;
+        }
+
+        $password = $request->password;
+        if(strlen(trim($password)) != 0) {
+            $user->password = Hash::make($password);
+        }
 
         $user->save();
 
-        return view('/editar-userPerfil', ['authUser' => $user]);
+        return response()->json($user);
     }
 }
