@@ -404,10 +404,6 @@
         <link rel="stylesheet" href="{{asset('css/loja-stilo.css')}}">
         <link rel="stylesheet" href="{{asset('css/stylea721.css')}}" type="text/css" media='all' />
 
-
-
-
-
         <script src="{{url('https://code.jquery.com/jquery-3.4.0.min.js')}}"></script>
         <script type='text/javascript' src="{{asset('js/jquery/jquery-migrate.min.js')}}"></script>
         <script src="{{asset('js/voltarTopo.js')}}"></script>
@@ -415,7 +411,7 @@
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
-        <script src="{{asset('js/postnewsletter.js')}}"></script>
+        <script src="{{asset('js/postNewsletter.js')}}"></script>
 
         {{-- js menu --}}
         <script type='text/javascript' src="{{asset('plugins/superfish/js/superfish.js')}}"></script>
@@ -434,7 +430,7 @@
         <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
         <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->
         <script src="{{asset('js/recicla.min.js')}}"></script>
-
+        <script src="{{asset('js/ajaxEditaPerfil.js')}}"></script>
 
 
 

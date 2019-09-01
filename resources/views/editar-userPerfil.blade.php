@@ -10,7 +10,7 @@ $keywords = 'reciclamaps,reciclagem, reciclar, doar, descarte, consumo, conscien
 $description = $facebook_description = substr(strip_tags('<p>Você pode ajudar o meio ambiente com uma ação muito simples. O mapa interativo do ReciclaMaps mostra os pontos de coleta mais próximos a você.</p>'), 0, 200);
 $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
-<form action="{{ route('userPerfil.editar') }}" method="post" enctype="multipart/form-data" class="form-horizontal" role="form">
+<form id="formEditarPerfil" action="{{ route('userPerfil.editar') }}" method="post" enctype="multipart/form-data" class="form-horizontal" role="form">
 @csrf
 <div class="container mt-5">
     <h1>Editar Perfil</h1>
@@ -51,13 +51,13 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                 <div class="form-group">
                     <label class="col-md-3 control-label">Senha:</label>
                     <div class="col-md-8">
-                        <input type="password" name="password" id="editarUserSenha" class="form-control">
+                        <input type="password" name="password" id="password" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-3 control-label">Confirmar senha:</label>
                     <div class="col-md-8">
-                        <input type="password" id="editarUserConfirmSenha" class="form-control">
+                        <input type="password" name="passwordConfirm" id="passwordConfirm" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
