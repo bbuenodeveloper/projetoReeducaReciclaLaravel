@@ -410,7 +410,13 @@
 
                             </footer>
 
-
+                            <div class="totop" style="display: block;">
+                                    <div class="gototop">
+                                        <a href="#">
+                                            <div class="arrowgototop"> </div>
+                                        </a>
+                                    </div>
+                                </div>
 
 
 
@@ -424,7 +430,7 @@
         <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
-
+        <script src="{{asset('js/voltarTopo.js')}}"></script>
 
 
         {{-- js menu --}}
