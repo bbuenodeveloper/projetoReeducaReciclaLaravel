@@ -25,14 +25,14 @@ class HomeController extends Controller
     public function index()
     {
         return view('home', [
-            'ultimos' => Post::paginate(3)
+            'ultimos' => Post::take(3)->orderBy('id', 'DESC')->get()
         ]);
     }
 
     public function home()
     {
         return view('home', [
-            'ultimos' => Post::paginate(3)
+            'ultimos' => Post::take(3)->orderBy('id', 'DESC')->get()
         ]);
     }
 
