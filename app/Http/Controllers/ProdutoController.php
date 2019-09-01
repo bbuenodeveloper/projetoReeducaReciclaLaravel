@@ -43,7 +43,9 @@ class ProdutoController extends Controller
         $produto = new Produto();
         $produtos = $produto->paginate(9);
         $categorias = Categoria::all();
-        return view("loja",['produtos'=>$produtos, 'categorias'=>$categorias]);
+        return view("loja",['produtos'=>$produtos,
+         'categorias'=>$categorias,
+         'ultimosProdutos' => Produto::take(3)->orderBy('id', 'DESC')->get()]);
 
     }
 
