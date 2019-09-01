@@ -50,6 +50,8 @@ Route::get('/onde-reciclar', 'ReciclarController@ondeReciclar');
 
 Route::get('/editar-userPerfil', 'UserPerfilController@userPerfil');
 
+Route::post('/editar-userPerfil', 'UserPerfilController@editarPerfil')->name('userPerfil.editar');
+
 
 // Rotas loja
 

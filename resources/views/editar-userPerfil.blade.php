@@ -10,64 +10,68 @@ $keywords = 'reciclamaps,reciclagem, reciclar, doar, descarte, consumo, conscien
 $description = $facebook_description = substr(strip_tags('<p>Você pode ajudar o meio ambiente com uma ação muito simples. O mapa interativo do ReciclaMaps mostra os pontos de coleta mais próximos a você.</p>'), 0, 200);
 $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
-
+<form action="{{ route('userPerfil.editar') }}" method="post" enctype="multipart/form-data" class="form-horizontal" role="form">
+@csrf
 <div class="container mt-5">
     <h1>Editar Perfil</h1>
     <hr>
     <div class="row">
-        <!-- left column -->
-        <div class="col-md-3">
-            <div class="text-center">
-                <img src="{{asset('//placehold.it/100')}}" class="avatar img-circle" alt="avatar">
-                <h6>trocar foto...</h6>
-                <input type="file" class="form-control">
+            <!-- left column -->
+            <div class="col-md-3">
+                <div class="text-center">
+                @if(Auth::user()->img != null)
+                    <img src="{{ asset(Auth::user()->img) }}" id="editarUserAvatar" class="avatar img-circle" alt="avatar">
+                @else
+                    <img src="{{asset('//placehold.it/100')}}" id="editarUserAvatar" class="avatar img-circle" alt="avatar">
+                @endif
+                    <h6>trocar foto...</h6>
+                    <input type="file" name="avatar" class="form-control" >
+                </div>
             </div>
-        </div>
-        <div class="col-md-9 personal-info">
-            <h3>Informações Pessoais</h3>
-            <form class="form-horizontal" role="form">
+            <div class="col-md-9 personal-info">
+                <h3>Informações Pessoais</h3>
                 <div class="form-group">
                     <label class="col-lg-3 control-label">Nome:</label>
                     <div class="col-lg-8">
-                        <input class="form-control" type="text" id="editarUserName">
+                        <input type="text" name="name" id="editarUserName" value="{{ $authUser->name }}" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-3 control-label">Sobrenome:</label>
                     <div class="col-lg-8">
-                        <input class="form-control" type="text" id="editarUserSobrenome">
+                        <input type="text" name="sobrenome"  id="editarUserSobrenome" value="{{ $authUser->sobrenome }}" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-lg-3 control-label">Email:</label>
                     <div class="col-lg-8">
-                        <input class="form-control" type="text" id="editarUserEmail">
+                        <input type="text" name="email"  id="editarUserEmail" value="{{ $authUser->email }}" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-3 control-label">Senha:</label>
                     <div class="col-md-8">
-                        <input class="form-control" type="password" id="editarUserSenha">
+                        <input type="password" name="password" id="editarUserSenha" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-3 control-label">Confirmar senha:</label>
                     <div class="col-md-8">
-                        <input class="form-control" type="password" id="editarUserConfirmSenha">
+                        <input type="password" id="editarUserConfirmSenha" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-3 control-label"></label>
                     <div class="col-md-8">
-                        <input type="button" class="btn btn-primary" value="Salvar">
-                        <span></span>
+                        <input type="submit" class="btn btn-primary" value="Salvar">
                         <input type="reset" class="btn btn-default" value="Cancelar">
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>
+</form>
 <hr>
 
 @endsection
