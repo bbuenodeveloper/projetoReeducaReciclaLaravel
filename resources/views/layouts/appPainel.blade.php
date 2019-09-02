@@ -79,9 +79,7 @@
               </a>
               <div class="dropdown-menu dropdown-menu-right">
                 <nav class="nav">
-                  <a href="#" class="nav-link"><i class="fa fa-user"></i><span class="space-menu">Ver Perfil</span></a>
                   <a href="/editar-userPerfil" class="nav-link"><i class="fa fa-edit"></i><span class="space-menu">Editar Perfil</span></a>
-                  <a href="#" class="nav-link"><i class="fa fa-cog"></i><span class="space-menu">Configurações</span></a>
                   <a href="/home" class="nav-link"><i class="fa fa-sign-out"></i><span class="space-menu">Sair</span></a>
                 </nav>
               </div><!-- dropdown-menu -->
