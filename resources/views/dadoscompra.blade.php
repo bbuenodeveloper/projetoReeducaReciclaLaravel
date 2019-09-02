@@ -145,40 +145,14 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                                 </tr>
                                             </tbody>
                                         </table>
-
+                                        @foreach($pagamentos as $pagamento)
                                         <div class="border p-3 mb-3">
                                             <h3 class="h6 mb-0"><a class="d-block" data-toggle="collapse"
                                                     href="#collapsebank" role="button" aria-expanded="false"
-                                                    aria-controls="collapsebank">Forma de
-                                                    pagamento 1</a></h3>
-                                            <div class="collapse" id="collapsebank">
-                                                <div class="py-2">
-                                                    <p class="mb-0">Informações</p>
-                                                </div>
-                                            </div>
+                                                    aria-controls="collapsebank">{{$pagamento->modo_pagamento}}</a></h3>
                                         </div>
-                                        <div class="border p-3 mb-3">
-                                            <h3 class="h6 mb-0"><a class="d-block" data-toggle="collapse"
-                                                    href="#collapsecheque" role="button" aria-expanded="false"
-                                                    aria-controls="collapsecheque">Forma de
-                                                    pagamento 2</a></h3>
-                                            <div class="collapse" id="collapsecheque">
-                                                <div class="py-2">
-                                                    <p class="mb-0">Informações</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="border p-3 mb-5">
-                                            <h3 class="h6 mb-0"><a class="d-block" data-toggle="collapse"
-                                                    href="#collapsepaypal" role="button" aria-expanded="false"
-                                                    aria-controls="collapsepaypal">Forma de
-                                                    pagamento 3</a></h3>
-                                            <div class="collapse" id="collapsepaypal">
-                                                <div class="py-2">
-                                                    <p class="mb-0">Informações</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        @endforeach
+
                                         <div class="form-group">
                                             <button class="btn btn-primary btn-lg py-3 btn-block"
                                                 onclick="window.location='/finalizada'">FINALIZAR COMPRA</button>

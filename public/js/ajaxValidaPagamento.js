@@ -11,7 +11,7 @@ $(function(){
             return
         }
 
-        let modo_pagamento = new FormData(formPagamento);
+        let dados = new FormData(formPagamento);
 
         $.ajax({
             type: 'POST',

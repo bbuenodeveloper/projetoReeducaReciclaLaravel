@@ -43,7 +43,8 @@ class ProdutoController extends Controller
     }
 
     public function exibirProdutos(Request $request){
-        $produto = new Produto();
+        $produto = Produto::all();
+        var_dump($produto);
         $produtos = $produto->paginate(6);
         $categorias = Categoria::all();
         return view("loja",['produtos'=>$produtos,

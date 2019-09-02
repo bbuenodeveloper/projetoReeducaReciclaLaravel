@@ -13,7 +13,7 @@ class LojaController extends Controller
         //     return view('loja');
         // }
         $produto = new Produto();
-        $produtos = $produto->paginate(9);
+        $produtos = $produto->paginate(6);
         $categorias = Categoria::all();
         return view("loja",['produtos'=>$produtos,
          'categorias'=>$categorias,
