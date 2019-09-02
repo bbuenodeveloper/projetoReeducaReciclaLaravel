@@ -51,7 +51,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                             @foreach ($ultimosProdutos as $p)
                                             <div class="sidbar-blog-inner">
                                                 <div class="sidbar-blog-image">
-                                                    <a href="/internaProduto/{{$p->id}}"><img src="/storage/produtos/{{$p->imagem}}"
+                                                    <a href="/internaProduto/{{$p->id}}"><img src="/storage/img/{{$p->imagem}}"
                                                             alt=""></a>
                                                 </div>
                                                 <div class="sidbar-blog-content text-left">
@@ -177,7 +177,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <figure class="card card-product">
                                 <div class="img-wrap"><a href="/internaProduto/{{$produto->id}}">
-                                        <img src="/storage/produtos/{{$produto->imagem}}"></a>
+                                        <img src="/storage/img/{{$produto->imagem}}"></a>
                                 </div>
                                 <figcaption class="info-wrap text-center align-item-center">
                                     <h4 class="title">{{$produto->nome}}</h4>
