@@ -21,7 +21,7 @@
 	top: 57px;
 	bottom: 50px;
 	width: 350px;
-	height: 200px;
+	height: 212px;
 	background: #454853;
 	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -29,6 +29,24 @@
 	overflow: hidden;
     z-index: 10;
     color: #ffffff;
+}
+
+
+.panel.city_panel-city {
+	position: absolute;
+	left: 70%;
+	top: 156px;
+	bottom: 50px;
+	width: 350px;
+	height: 100%;
+	background: #454853;
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+    z-index: 10;
+    color: #ffffff;
+    text-align: center
 }
 
 .panel-titulo {
@@ -40,6 +58,7 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 18px;
+    margin: 0px;
 }
 
 .panel.city_panel-ins ul {
@@ -48,6 +67,7 @@
 
 .panel.city_panel-ins li {
     margin-bottom: 5px;
+    padding: 5px;
 }
 .panel.city_panel.point_panel{
 	display:none;

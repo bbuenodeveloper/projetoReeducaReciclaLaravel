@@ -2,7 +2,8 @@
 UIkit bootstrap-ecommerce.com
 ===================== */
 /* ==================== INCLUDE FONTS ======================= */
-@import url("../fonts/roboto/font.css");
+/*@import url("../fonts/roboto/font.css");  NOTA: arquivo css referenciado nao existe! */
+
 html {
   font-size: 15px; }
 

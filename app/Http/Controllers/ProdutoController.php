@@ -28,22 +28,22 @@ class ProdutoController extends Controller
             $file = $request->file('imagem');
             $extension = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extension;
-            $upload = $request->imagem->storeAs('produtos', $filename);
+            $file->move('storage/img/', $filename);
             $produto->imagem = $filename;
         }
         $produto->save();
 
 
-        return view('add-produto', [
-            'success' => "Cadastro realizado com sucesso!"
-        ]);
+
     }
 
     public function exibirProdutos(Request $request){
         $produto = new Produto();
-        $produtos = $produto->paginate(9);
+        $produtos = $produto->paginate(6);
         $categorias = Categoria::all();
-        return view("loja",['produtos'=>$produtos, 'categorias'=>$categorias]);
+        return view("loja",['produtos'=>$produtos,
+         'categorias'=>$categorias,
+         'ultimosProdutos' => Produto::take(3)->orderBy('id', 'DESC')->get()]);
 
     }
 
@@ -58,7 +58,7 @@ class ProdutoController extends Controller
             $file = $request->file('imagem');
             $extension = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extension;
-            $file->move('storage/produtos/', $filename);
+            $file->move('storage/img/', $filename);
             $produto->imagem = $filename;
         }
         $produto->save();

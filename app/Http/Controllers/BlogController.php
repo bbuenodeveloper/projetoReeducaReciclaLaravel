@@ -12,8 +12,10 @@ class BlogController extends Controller
         if($request->isMethod('GET')){
             return view('blog', [
                 'posts' => $posts,
-                'ultimos' => Post::paginate(3)
-            ]);        }
+                'postagens' => Post::orderBy('id', 'DESC')->paginate(6),
+                'ultimos' => Post::take(3)->orderBy('id', 'DESC')->get()
+            ]);
+        }
 }
 
     public function blogdetails(Request $request, $id) {
@@ -22,7 +24,8 @@ class BlogController extends Controller
         if($request->isMethod('GET')){
             return view('blog-details', [
                 'post' => $post,
-                'posts' => $posts
+                'posts' => $posts,
+                'ultimos' => Post::take(3)->orderBy('id', 'DESC')->get()
             ]);
         }
     }

@@ -31,6 +31,7 @@ class CreateEmpresasTable extends Migration
             $table->string('bairro', 200)->nullable()->default(null);
             $table->string('estado', 100)->nullable()->default(null);
             $table->string('telefone', 45)->nullable()->default(null);
+            $table->string('site', 100)->nullable()->default(null);
             $table->string('latitude', 200)->nullable()->default(null);
             $table->string('longitude', 50)->nullable()->default(null);
 

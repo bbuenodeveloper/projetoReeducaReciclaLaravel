@@ -11,6 +11,7 @@ $(function(){
         let bairro = document.querySelector('#bairro');
         let estado = document.querySelector('#estado');
         let telefone = document.querySelector('#telefone');
+        let site = document.querySelector('#site');
         let latitude = document.querySelector('#latitude');
         let longitude = document.querySelector('#longitude');
 
@@ -22,6 +23,7 @@ $(function(){
          || bairro.value == ""
          || estado.value == ""
          || telefone.value == ""
+         || site.value == ""
          || latitude.value == ""
          || longitude.value == "" ){
 

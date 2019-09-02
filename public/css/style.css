@@ -71,6 +71,69 @@ body .top-navigation-left {
 
 /* blog home */
 
+.boxCinza {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 33px;
+    font-size: 14px;
+}
+
+.boxCinza h5, .boxCinza h2 {
+    text-transform: none!important;
+    color: #008151;
+    font-weight: lighter;
+    padding: 21px 0;
+    margin: 0 0 20px 0!important;
+    font-size: 21px;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+
+.boxCinza h5 span, .boxCinza h2 span {
+    border-bottom: 2px solid #CCC;
+    padding-bottom: 17px;
+}
+
+.boxCinza h5 a, .boxCinza h2 a {
+    text-decoration: none;
+    color: #008151;
+}
+
+
+#asideOfertasLoja .btnVejaMais {
+    padding: 4px 6px!important;
+    position: relative;
+    margin: 20px 0!important;
+    display: block;
+    text-align: center;
+}
+
+.bRadiusRight5 {
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btnVejaMais {
+    text-transform: none;
+    text-decoration: none;
+    font-size: 12px!important;
+    padding: 2px 6px!important;
+    margin-top: -2px!important;
+    margin-left: 20px!important;
+    background: transparent;
+    color: #008151;
+    border: 1px solid #008251;
+    position: absolute;
+    line-height: 18px!important;
+}
+
+
+
+
 .section-title {
     margin-bottom: 30px;
     text-align: center;
@@ -713,9 +776,9 @@ img.responsivo{
     margin-top: 30px;
 }
 
-.text-success {
+/* .text-success {
     margin-bottom: 20px;
-}
+} */
 
 .text-label {
     font-family: 'Poppins', sans-serif;
@@ -1923,9 +1986,11 @@ a.efeitoTransicaoLoja:hover {
     }
 
     .estiloPainel li a {
+        display: block;
         color: white;
         font-family: 'Poppins', sans-serif;
         text-transform: capitalize;
+        width: 160px;
 
     }
 
@@ -1941,6 +2006,13 @@ a.efeitoTransicaoLoja:hover {
 
     .titulo-painel {
         margin-left: 6.5rem;
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-weight: 600;
+    }
+
+    .titulo-lista {
+        text-align: center;
         font-family: 'Poppins', sans-serif;
         color: black;
         font-weight: 600;
@@ -2128,7 +2200,7 @@ a.efeitoTransicaoLoja:hover {
 }
 
 .section-ptb {
-    padding: 110px 0;
+    padding: 5px 0;
 }
 
   .blog-sidebar-wrap {
@@ -2468,7 +2540,8 @@ a.efeitoTransicaoLoja:hover {
     width: 100%;
   }
   .sidbar-blog-inner .sidbar-blog-content h3 {
-    font-size: 16px;
+    text-transform: capitalize;
+    font-size: 13px;
     font-weight: 500;
     line-height: 23px;
     font-family: "Lato", sans-serif;
@@ -2562,4 +2635,170 @@ a.efeitoTransicaoLoja:hover {
 
 .scroll-top i {
     line-height: 57px;
+}
+
+
+/* configuração relatorios */
+
+.pagination {
+    justify-content: center;
+}
+
+
+.font-postos {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+/* tabela reciclaveis */
+
+.article-content {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.tg .tg-tq8n {
+    font-weight: bold;
+    background-color: #bfbfbf;
+    text-align: center;
+    vertical-align: top;
+}
+
+.tg .tg-cvx0 {
+    font-weight: bold;
+    background-color: #96b4d6;
+    text-align: center;
+    vertical-align: top;
+}
+
+.tg .tg-whg9 {
+    font-weight: bold;
+    background-color: #d99695;
+    text-align: center;
+    vertical-align: top;
+}
+
+.tg .tg-kc6g {
+    font-weight: bold;
+    background-color: #fffe8f;
+    text-align: center;
+    vertical-align: top;
+}
+.tg .tg-zk3q {
+    font-weight: bold;
+    background-color: #c4d69e;
+    text-align: center;
+    vertical-align: top;
+}
+
+.tg .tg-vzrn {
+    background-color: #dce6f1;
+    vertical-align: top;
+}
+
+.tg .tg-h2ec {
+    background-color: #f2f2f2;
+    vertical-align: middle;
+}
+
+.tg .tg-b1z4 {
+    background-color: #f1dcdb;
+    vertical-align: top;
+}
+
+.tg .tg-bmil {
+    background-color: #fffee1;
+    vertical-align: top;
+}
+
+.tg .tg-zkv2 {
+    background-color: #ebf1df;
+    vertical-align: top;
+}
+
+.tg .tg-bfah {
+    background-color: #d9d9d9;
+    vertical-align: middle;
+}
+
+.tg .tg-4jib {
+    background-color: #b9cce3;
+    vertical-align: top;
+}
+
+.tg .tg-6l7w {
+    background-color: #e5b8b8;
+    vertical-align: top;
+}
+
+.tg .tg-b8mg {
+    background-color: #fffec4;
+    vertical-align: top;
+}
+
+.tg .tg-s9lv {
+    background-color: #d8e3be;
+    vertical-align: top;
+}
+
+.article-content table td {
+    border: 1px solid #e6e6e6;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    margin: 0;
+    padding: 8px 5px 4px 5px;
+}
+
+.tg td {
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    padding: 11px 5px;
+    overflow: hidden;
+    word-break: normal;
+    border: 2px solid #FFF;
+}
+
+.article-content table {
+    width: 100%;
+    border: 1px solid #CCC;
+    border-right: 0;
+    border-left: 0;
+    padding: 1%;
+    margin: 4% 0;
+}
+.tg {
+    border-collapse: collapse;
+    border-spacing: 2;
+}
+
+
+ .totop {
+    position: fixed;
+    z-index: 99;
+    bottom: 20px;
+    right: 20px;
+}
+
+.gototop {
+    background: #94bb54;
+    height: 50px;
+    width: 50px;
+    z-index: 9;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 4px solid #80a93d;
+}
+
+.arrowgototop {
+    background: url(/img/goToTopArrow.png) no-repeat;
+    position: relative;
+    left: 19px;
+    top: 21px;
+    width: 28px;
+    height: 90px;
+    z-index: 10;
 }

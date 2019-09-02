@@ -5,13 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Newsletter;
 use Illuminate\Support\Facades\Validator;
+use App\Post;
 
 class NewsletterController extends Controller
 {
 
     public function home(Request $request){
         if($request->isMethod('GET')){
-            return view("home");
+            return view("home",[
+                'ultimos' => Post::paginate(3)
+            ]);
         }
 
         $messages = [

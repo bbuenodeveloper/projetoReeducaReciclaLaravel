@@ -39,11 +39,18 @@ Route::get('/termos', 'TermosController@termos');
 Route::get('/blog', 'BlogController@blog');
 
 Route::get('/blog-details/{id}', 'BlogController@blogdetails');
+
 Route::get('/post/{id}', 'BlogController@blogdetails');
 
 Route::get('/como-reciclar', 'ReciclarController@comoReciclar');
 
+Route::get('/tabelaReciclaveis', 'ReciclarController@tabelaReciclar');
+
+Route::get('/onde-reciclar', 'ReciclarController@ondeReciclar');
+
 Route::get('/editar-userPerfil', 'UserPerfilController@userPerfil');
+
+Route::post('/editar-userPerfil', 'UserPerfilController@editarPerfil')->name('userPerfil.editar');
 
 
 // Rotas loja
@@ -59,6 +66,8 @@ Route::get('/internaProduto/{id}', 'InternaLojaController@exibirProdutoUnico');
 Route::get('/carrinho/{id}', 'CarrinhoController@carrinhoProduto');
 
 Route::get('/dadoscompra/{id}', 'DadosCompraController@dadosProduto')->middleware('acesso');
+
+Route::get('/adicionarCarrinho/{id}', 'CarrinhoController@addCarrinho');
 
 
 // rotas internas do mapa de acesso ao banco de dados
@@ -87,7 +96,9 @@ Route::get('/add-postagens', 'BlogController@addPostagem');
 
 Route::get('/add-tagBlog', 'BlogController@addTag');
 
-Route::get('/registerPainel','Auth\RegisterController@addUser');
+Route::get('/add-pagamento', 'PagamentoController@addPagamento');
+
+//Route::get('/registerPainel','Auth\RegisterController@addUser');
 
 Route::get('/add-admin','AdminController@addAdmin')->middleware('acesso');
 
@@ -116,6 +127,8 @@ Route::post('/cadastrarAdmin','AdminController@cadastrarAdmin')->name('admin.cad
 Route::post('/cadastrarcategoria','CategoriaController@cadastrarCategoria')->name('categoria.cadastrar')->middleware('acesso');
 
 Route::post('/cadastrarusuario','RegisterController@create')->middleware('acesso');
+
+Route::post('/cadastrarPagamento', 'PagamentoController@cadastrarPagamento')->name('pagamento.cadastrar');
 
 
 // rotas deletar registros
@@ -223,13 +236,13 @@ Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallb
 
 
 //Rotas Socialite Google
-Route::get('redirect/{driver}', 'Auth\LoginController@redirectToProvider')
-    ->name('login.provider')
-    ->where('driver', implode('|', config('auth.socialite.drivers')));
+// Route::get('redirect/{driver}', 'Auth\LoginController@redirectToProvider')
+//     ->name('login.provider')
+//     ->where('driver', implode('|', config('auth.socialite.drivers')));
 
-Route::get('{driver}/callback', 'Auth\LoginController@handleProviderCallback')
-    ->name('login.callback')
-    ->where('driver', implode('|', config('auth.socialite.drivers')));
+// Route::get('{driver}/callback', 'Auth\LoginController@handleProviderCallback')
+//     ->name('login.callback')
+//     ->where('driver', implode('|', config('auth.socialite.drivers')));
 
 
 //Rota adminlista apenas teste
