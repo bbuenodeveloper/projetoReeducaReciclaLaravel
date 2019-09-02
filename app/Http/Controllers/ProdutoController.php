@@ -58,7 +58,7 @@ class ProdutoController extends Controller
             $file = $request->file('imagem');
             $extension = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extension;
-            $file->move('storage/produtos/', $filename);
+            $file->move('storage/img/', $filename);
             $produto->imagem = $filename;
         }
         $produto->save();
