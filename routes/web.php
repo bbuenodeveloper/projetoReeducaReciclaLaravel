@@ -176,6 +176,8 @@ Route::post('/editar-user/{id}', 'Auth\RegisterController@editarUser')->middlewa
 
 Route::get('/editar-produto/{id}', 'ProdutoController@viewEditarProduto');
 
+Route::get('/editar-categoria/{id}', 'CategoriaController@viewEditarCategoria');
+
 
 
 
@@ -194,6 +196,8 @@ Route::post('/editadopost/{id}','BlogController@editarPost');
 Route::post('/editar-news/{id}', 'NewsletterController@editarNews');
 
 Route::post('/editadoProduto/{id}', 'ProdutoController@editarProduto');
+
+Route::post('/editadoCategoria/{id}', 'CategoriaController@editarCategoria');
 
 
 

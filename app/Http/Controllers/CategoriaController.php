@@ -26,4 +26,21 @@ class CategoriaController extends Controller
         return redirect('relatorio-Categorias');
     }
 
+    public function viewEditarCategoria (Request $request, $id){
+        if($request->isMethod('GET')){
+            $categoria = Categoria::find($id);
+            return view('editar-categoria',['categoria'=>$categoria]);
+        }
+    }
+
+    public function editarCategoria(Request $request, $id){
+
+        $categoria = Categoria::find($id);
+        $categoria->categoria = strtoupper($request->categoria);
+        //$cidade->imagem = 'https://dummyimage.com/75x76/b8b8b8/fff/?text='.$request->cidade;
+        $categoria->save();
+
+        return redirect('relatorio-Categorias');
+    }
+
 }
