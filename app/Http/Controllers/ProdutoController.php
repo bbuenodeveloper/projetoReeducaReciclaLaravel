@@ -28,13 +28,13 @@ class ProdutoController extends Controller
             $file = $request->file('imagem');
             $extension = $file->getClientOriginalExtension();
             $filename = time() . '.' . $extension;
-            $upload = $request->imagem->storeAs('produtos', $filename);
+            $file->move('storage/img/', $filename);
             $produto->imagem = $filename;
         }
         $produto->save();
 
 
-       
+
     }
 
     public function exibirProdutos(Request $request){
