@@ -27,7 +27,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         <div class=" mt-5">
                             <label for="descricao" class="font-weight-light">Descrição do Produto</label>
                             <textarea class="form-control" id="descricao" name="descricao" rows="3" required></textarea>
-                            
+
                         </div>
                         <div class="md-form mt-5">
                             <input type="number" step="0.01" class="form-control" id="preco" name="preco" required>
@@ -43,16 +43,16 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             <select class="custom-select" id="categorias_id" name="categorias_id"
                                 aria-label="Example select with button addon" required>
                                 <option selected disabled>Selecione</option>
-                                <option value="1">Categoria 1</option>
-                                <option value="2">Categoria 2</option>
-                                <option value="3">Categoria 3</option>
+                                @foreach ($categorias as $categoria)
+                                    <option value="{{$categoria->id}}">{{$categoria->nome_categoria}}</option>
+                                @endforeach
                             </select>
-                            
+
                         </div>
                         <div class="mt-5 mb-5">
                             <label for="imagem" class="font-weight-light">Imagem do produto</label>
                             <input type="file" class="form-control-file" id="imagem" name="imagem" required>
-                            
+
                         </div>
                         <button type="submit"
                             class="btn btn-success btn-rounded waves-effect waves-light">CADASTRAR</button>

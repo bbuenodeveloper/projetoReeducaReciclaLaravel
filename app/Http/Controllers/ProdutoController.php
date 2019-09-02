@@ -10,8 +10,13 @@ use App\Categoria;
 class ProdutoController extends Controller
 {
     public function addProduto(Request $request){
-        return view ('add-produto');
+        return view ('add-produto', [
+            'categorias' => categoria::All()
+        ]);
+
     }
+
+
 
     public function cadastrarProduto(Request $request){
         $produto = new Produto();
