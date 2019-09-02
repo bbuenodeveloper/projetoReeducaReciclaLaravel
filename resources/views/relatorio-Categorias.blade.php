@@ -26,11 +26,11 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                     @foreach ($categorias as $categoria)
                     <tr>
                         <td>{{$categoria->id}}</td>
-                        <td>{{$categoria->nome}}</td>
+                        <td>{{$categoria->nome_categoria}}</td>
                         <td><a href="/editar-categoria/{{$categoria->id}}"><button
                                     class="btn btn-success">Editar</button></a></td>
                         <td><button class="btn btn-danger" id="deletaCategoria"
-                                onclick="deletaEmpresa({{$categoria->id}})">Apagar</button></td>
+                                onclick="deletaCategoria({{$categoria->id}})">Apagar</button></td>
                     </tr>
                     @endforeach
                 </tbody>

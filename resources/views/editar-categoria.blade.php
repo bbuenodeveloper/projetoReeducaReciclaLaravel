@@ -23,13 +23,13 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         <div>
                 </center>
                 <h1 class="text-center mb-2">Editar Categoria</h1>
-                <form action="/editadocidade/{{$cidade->id}}" method="post" class="user-info-setting-form"
+                <form action="/editadocategoria/{{$categoria->id}}" method="post" class="user-info-setting-form"
                     enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <label for="categoria">Categoria</label>
                         <input type="text" name="categoria" id="categoria" class="form-control"
-                            value="{{ $categoria->nome }}">
+                            value="{{ $categoria->nome_categoria }}">
                     </div>
                     <button type="submit" class="btn btn-success">CADASTRAR</button>
                 </form>

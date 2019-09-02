@@ -16,13 +16,13 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             <div class="jumbotron border rounded border-success">
                 <center>
                     <div class="logoRegister mb-4">
-                        <a href="/add-cidade">
+                        <a href="/add-produto">
                             <img class="logoRegister mb-3" src="{{asset('img/logologin.png')}}" alt>
                         </a>
                         <div>
                 </center>
                 <h1 class="text-center mb-2">Editar Produto</h1>
-                <form action="/editadoproduto/{{$produto->id}}" method="post" class="user-info-setting-form"
+                <form action="/editadoProduto/{{$produto->id}}" method="post" class="user-info-setting-form"
                     enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
@@ -36,7 +36,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             value="{{ $produto->descricao }}">
                     </div>
                     <div class="form-group">
-                        <label for="precoo">Preço</label>
+                        <label for="preco">Preço</label>
                         <input type="text" name="preco" id="preco" class="form-control"
                             value="{{ $produto->preco }}">
                     </div>
