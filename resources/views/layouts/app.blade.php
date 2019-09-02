@@ -86,7 +86,7 @@
                                 <li class="nav-item dropdown">
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     @if(Auth::user()->img != null)
-                                        <img src="{{ asset(Auth::user()->img) }}" style="width:30px">
+                                        <img src="{{ asset(Auth::user()->img) }}" style="width: 45px; height: 45px; padding: 3px;border: 1px solid #1b84e7; border-radius: 100%;">
                                     @else
                                         <i class="fas fa-user text-white p-2"></i>
                                     @endif
