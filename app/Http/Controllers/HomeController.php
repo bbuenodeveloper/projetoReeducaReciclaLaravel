@@ -27,7 +27,7 @@ class HomeController extends Controller
         $posts = Post::All();
         return view('home', [
             'posts' => $posts,
-            'ultimos' => Post::take(4)->orderBy('id', 'DESC')->get()
+            'ultimos' => Post::take(3)->orderBy('id', 'DESC')->get()
         ]);
     }
 
