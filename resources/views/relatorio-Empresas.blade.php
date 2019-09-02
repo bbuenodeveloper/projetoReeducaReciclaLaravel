@@ -25,7 +25,6 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         <th>Bairro</th>
                         <th>Estado</th>
                         <th>Telefone</th>
-                        <th>Site</th>
                         <th>Latitude</th>
                         <th>longitude</th>
                         <th>Editar</th>
@@ -44,7 +43,6 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         <td>{{$empresa->bairro}}</td>
                         <td>{{$empresa->estado}}</td>
                         <td>{{$empresa->telefone}}</td>
-                        <td>{{$empresa->site}}</td>
                         <td>{{$empresa->latitude}}</td>
                         <td>{{$empresa->longitude}}</td>
                         <td><a href="/editar-empresa/{{$empresa->id}}"><button
