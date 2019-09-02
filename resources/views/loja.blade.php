@@ -41,7 +41,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                     <h5 id="asideOfertasLojaTitulo">
                                         <span>
                                             <a href="/loja" target="_blank">
-                                                <i class="far fa-handshake"></i> Mais Vendidos
+                                                <i class="fa fa-shopping-cart"></i> Mais Vendidos
                                             </a>
                                         </span>
                                     </h5>
@@ -71,7 +71,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             <h5 id="asideOfertasLojaTitulo">
                                 <span>
                                     <a href="/loja" target="_blank">
-                                        <i class="fa fa-shopping-cart"></i> Loja ReciclaMaps
+                                        <i class="far fa-newspaper"></i> Números e Curiosidades
                                     </a>
                                 </span>
                             </h5>
@@ -81,20 +81,25 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img class="d-block w-100" src="{{asset('img/produtos_loja/prod1.jpg') }}"
+                                        <img class="d-block w-100" src="{{asset('img/banners/curiosidade1.jpg') }}"
                                             alt="Primeiro Slide">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{asset('img/produtos_loja/prod2.jpg') }}"
+                                        <img class="d-block w-100" src="{{asset('img/banners/curiosidade2.jpg') }}"
                                             alt="Segundo Slide">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block w-100" src="{{asset('img/produtos_loja/prod3.jpg') }}"
+                                        <img class="d-block w-100" src="{{asset('img/banners/curiosidade3.jpg') }}"
                                             alt="Terceiro Slide">
                                     </div>
+                                    <div class="carousel-item">
+                                            <img class="d-block w-100" src="{{asset('img/banners/curiosidade4.jpg') }}"
+                                                alt="Terceiro Slide">
+                                        </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
                                     data-slide="prev">
@@ -108,12 +113,6 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 </a>
                             </div>
                             {{-- fim carroussel --}}
-                            <div class="mb-2">
-                                <center>
-                                    <a href="/loja" target="_blank" class="btn btn-success">Já conhece nossa loja?
-                                        Confira!</a>
-                                    <center>
-                            </div>
 
                         </div>
                         <div id="asideOfertasLoja" class="boxCinza mt-3 text-center">

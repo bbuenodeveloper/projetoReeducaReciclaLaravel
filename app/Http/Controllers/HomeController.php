@@ -26,7 +26,6 @@ class HomeController extends Controller
     {
         $posts = Post::All();
         return view('home', [
-            'post' => $post,
             'posts' => $posts,
             'ultimos' => Post::take(3)->orderBy('id', 'DESC')->get()
         ]);
@@ -36,13 +35,12 @@ class HomeController extends Controller
     {
         $posts = Post::All();
         return view('home', [
-            'post' => $post,
             'posts' => $posts,
             'ultimos' => Post::take(3)->orderBy('id', 'DESC')->get()
         ]);
     }
 
-    
-    
+
+
 
 }

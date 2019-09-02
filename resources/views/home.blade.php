@@ -179,16 +179,16 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         </div>
                     </div>
                     <div class="row latest-blog-active">
-                            @foreach ($ultimos as $post)
+                            @foreach ($ultimos as $p)
                         <div class="col-lg-4">
                             <!-- single-latest-blog Start -->
                             <div class="single-latest-blog mb--30 mt--30">
                                 <div class="latest-blog-image">
-                                    <a href="/post/{{ $post->id }}"><img src="/storage/img/{{ $post->imagem }}" alt=""></a>
+                                    <a href="/post/{{ $p->id }}"><img src="/storage/img/{{ $p->imagem }}" alt=""></a>
                                 </div>
                                 <div class="latest-blog-cont">
-                                    <h3><a href="/post/{{ $post->id }}" >{{ $post->titulo }}</a></h3>
-                                    
+                                    <h3><a href="/post/{{ $p->id }}" >{{ $p->titulo }}</a></h3>
+
                                 </div>
                             </div>
                             <!--// single-latest-blog End -->
