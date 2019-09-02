@@ -32,7 +32,7 @@
         <div class="col-4 mb-5">
             <figure class="card card-product">
                 <div class="img-wrap"><a href="/internaProduto/{{$produto->id}}"><img src="/storage/produtos/{{$produto->imagem}}"></a></div>
-                <figcaption class="info-wrap">
+                <figcaption class="info-wrap justify-content-center">
                     <h4 class="title">{{$produto->nome}}</h4>
                 </figcaption>
                 <div class="bottom-wrap">
