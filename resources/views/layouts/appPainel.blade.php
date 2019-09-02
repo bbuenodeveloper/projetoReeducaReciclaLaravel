@@ -149,7 +149,7 @@
                     <ul>
                       <li><a href="/relatorio-Produtos">Relatorio de Produtos</a></li>
                       <li><a href="/relatorio-Categorias">Relatorio de Categorias</a></li>
-                      <li><a href="#">Relatorio de Forma de Pagamento</a></li>
+                      <li><a href="/relatorio-Pagamentos">Relatorio de Forma de Pagamento</a></li>
                     </ul>
                   </li>
 
@@ -249,6 +249,7 @@
         <script src="{{asset('js/ajaxDeletaNews.js')}}"></script>
         <script src="{{asset('js/ajaxDeletaProduto.js')}}"></script>
         <script src="{{asset('js/ajaxDeletaCategoria.js')}}"></script>
+        <script src="{{asset('js/ajaxDeletaPagamento.js')}}"></script>
 
         <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
@@ -258,6 +259,7 @@
         <script src="{{asset('js/ajaxValidaCategoria.js')}}"></script>
         <script src="{{asset('js/ajaxValidaCidade.js')}}"></script>
         <script src="{{asset('js/ajaxValidaMaterial.js')}}"></script>
+        <script src="{{asset('js/ajaxValidaPagamento.js')}}"></script>
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
         <script src="{{asset('js/postNewsletterAdmin.js')}}"></script>
         {{-- <script src="{{asset('js/postNewsletterAdminEdit.js')}}"></script> --}}

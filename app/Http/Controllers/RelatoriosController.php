@@ -11,6 +11,7 @@ use App\Newsletter;
 use App\Post;
 use App\Produto;
 use App\Categoria;
+use App\Pagamento;
 
 class RelatoriosController extends Controller
 {
@@ -61,6 +62,11 @@ class RelatoriosController extends Controller
     public function relatorioCategorias (Request $request){
         $categorias = Categoria::paginate(5);
             return view('relatorio-Categorias', ['categorias'=>$categorias]);
+    }
+
+    public function relatorioPagamentos (Request $request){
+        $pagamentos = Pagamento::paginate(5);
+            return view('relatorio-Pagamentos', ['pagamentos'=>$pagamentos]);
     }
 
 }

@@ -152,6 +152,8 @@ Route::get('/apagarProduto/{id}', 'ProdutoController@apagarProduto');
 
 Route::get('/apagarCategoria/{id}', 'CategoriaController@apagarCategoria');
 
+Route::get('/apagarPagamento/{id}', 'PagamentoController@apagarPagamento');
+
 
 // rotas editar registros Get
 
@@ -178,6 +180,8 @@ Route::get('/editar-produto/{id}', 'ProdutoController@viewEditarProduto');
 
 Route::get('/editar-categoria/{id}', 'CategoriaController@viewEditarCategoria');
 
+Route::get('/editar-Pagamento/{id}', 'PagamentoController@viewEditarPagamento');
+
 
 
 
@@ -198,6 +202,8 @@ Route::post('/editar-news/{id}', 'NewsletterController@editarNews');
 Route::post('/editadoProduto/{id}', 'ProdutoController@editarProduto');
 
 Route::post('/editadoCategoria/{id}', 'CategoriaController@editarCategoria');
+
+Route::post('/editadoPagamento/{id}', 'PagamentoController@editarPagamento');
 
 
 
@@ -222,6 +228,7 @@ Route::get('/relatorio-Produtos', 'RelatoriosController@relatorioProdutos');
 
 Route::get('/relatorio-Categorias', 'RelatoriosController@relatorioCategorias');
 
+Route::get('/relatorio-Pagamentos', 'RelatoriosController@relatorioPagamentos');
 
 // Rotas de autenticação
 
