@@ -253,6 +253,7 @@
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
         <script src="{{asset('js/ajaxValidaPostagem.js')}}"></script>
         <script src="{{asset('js/ajaxValidaEmpresa.js')}}"></script>
+        <script src="{{asset('js/ajaxValidaProduto.js')}}"></script>
         <script src="{{asset('js/ajaxValidaCidade.js')}}"></script>
         <script src="{{asset('js/ajaxValidaMaterial.js')}}"></script>
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
