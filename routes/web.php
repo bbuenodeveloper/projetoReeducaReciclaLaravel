@@ -150,6 +150,9 @@ Route::get('/apagarUser/{id}', 'Auth\RegisterController@deletarUser')->middlewar
 
 Route::get('/apagarProduto/{id}', 'ProdutoController@apagarProduto');
 
+Route::get('/apagarCategoria/{id}', 'CategoriaController@apagarCategoria');
+
+
 // rotas editar registros Get
 
 

@@ -16,7 +16,14 @@ class CategoriaController extends Controller
             $categoria->nome_categoria = $request->nome_categoria;
             $categoria->save();
 
-           
+
+    }
+
+    public function apagarCategoria(Request $request, $id){
+        $categoria = Categoria::find($id);
+        $categoria->delete();
+
+        return redirect('relatorio-Categorias');
     }
 
 }

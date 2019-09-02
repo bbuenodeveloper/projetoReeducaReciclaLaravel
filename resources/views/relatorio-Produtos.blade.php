@@ -38,7 +38,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         <td><a href="/editar-produto/{{$produto->id}}"><button
                                     class="btn btn-success">Editar</button></a></td>
                         <td><button class="btn btn-danger" id="deletaProduto"
-                                onclick="deletaEmpresa({{$produto->id}})">Apagar</button></td>
+                                onclick="deletaProduto({{$produto->id}})">Apagar</button></td>
                     </tr>
                     @endforeach
                 </tbody>

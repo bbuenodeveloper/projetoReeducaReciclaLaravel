@@ -73,6 +73,13 @@ class ProdutoController extends Controller
         }
     }
 
+    public function apagarProduto(Request $request, $id){
+        $produto = Produto::find($id);
+        $produto->delete();
+
+        return redirect('relatorio-Produtos');
+    }
+
 }
 
 
