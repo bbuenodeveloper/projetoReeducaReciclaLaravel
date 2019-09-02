@@ -60,7 +60,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                             </div>
                                             @endforeach
                                         </div>
-                                    {{-- fim carroussel --}}
+                                    <!-- fim carroussel -->
                             </div>
 
                         <div class="largeRectangleBanner" style="height:auto!important;">
@@ -184,13 +184,9 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                     <h4 class="title">{{$produto->nome}}</h4>
                                 </figcaption>
                                 <div class="bottom-wrap">
-
-                                            <a href="/adicionarCarrinho/{{$produto->id}}" class="float-right mr-3">
-                                            <button type="button" class="btn btn-primary">COMPRAR<span class="btn-icon-right">
-                                            <i class="fa fa-shopping-cart"></i></span></a>
-                                            </button>
-                                            <span class="price-new float-right">R${{$produto->preco}}</span>
-
+                                        <span class="price-new float-right">R${{$produto->preco}}</span>
+                                        <button type="button" class="btn btn-primary">COMPRAR</button>
+                                        <a href="/adicionarCarrinho/{{$produto->id}}" class="btn btn-outline-primary"><i class="fa fa-shopping-cart"></i></a>
                                 </div> <!-- bottom-wrap.// -->
                             </figure>
                         </div>

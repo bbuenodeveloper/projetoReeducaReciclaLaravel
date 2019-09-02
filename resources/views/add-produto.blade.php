@@ -16,7 +16,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             <div class="card">
                 <div class="card-body">
                     <h1 class="text-center mb-2">Cadastro de Produtos</h1>
-                    <form action="{{ route('produto.cadastrar') }}" method="post" id="formProdutos"
+                    <form dataroute="{{ route('produto.cadastrar') }}" method="post" id="formProdutos"
                         class="user-info-setting-form" enctype="multipart/form-data">
                         @csrf
                         <div class="md-form mt-5">
@@ -24,9 +24,10 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             <label for="nome" class="font-weight-light">Nome do Produto</label>
                         </div>
 
-                        <div class="md-form mt-5">
-                            <textarea class="form-control" id="descricao" name="descricao" rows="3" required></textarea>
+                        <div class=" mt-5">
                             <label for="descricao" class="font-weight-light">Descrição do Produto</label>
+                            <textarea class="form-control" id="descricao" name="descricao" rows="3" required></textarea>
+                            
                         </div>
                         <div class="md-form mt-5">
                             <input type="number" step="0.01" class="form-control" id="preco" name="preco" required>
@@ -37,7 +38,8 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 required>
                             <label for="quantidade_estoque" class="font-weight-light">Quantidade em estoque</label>
                         </div>
-                        <div class="md-form mt-5">
+                        <div class="mt-5">
+                            <label for="categorias_id" class="font-weight-light">Categoria do Produto</label>
                             <select class="custom-select" id="categorias_id" name="categorias_id"
                                 aria-label="Example select with button addon" required>
                                 <option selected disabled>Selecione</option>
@@ -45,11 +47,12 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 <option value="2">Categoria 2</option>
                                 <option value="3">Categoria 3</option>
                             </select>
-                            <label for="categorias_id" class="font-weight-light">Categoria do Produto</label>
+                            
                         </div>
-                        <div class="md-form mb-5">
-                            <input type="file" class="form-control-file" id="imagem" name="imagem" required>
+                        <div class="mt-5 mb-5">
                             <label for="imagem" class="font-weight-light">Imagem do produto</label>
+                            <input type="file" class="form-control-file" id="imagem" name="imagem" required>
+                            
                         </div>
                         <button type="submit"
                             class="btn btn-success btn-rounded waves-effect waves-light">CADASTRAR</button>

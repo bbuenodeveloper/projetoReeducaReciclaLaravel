@@ -16,11 +16,11 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 	<div class="clearfix"></div>
 
-	<div class="row mt-3 px-3">
+	<div class="row mt-3 px-3 mb-5">
 
-		<div class="col-12 col-md-6 mt-5 ">
+		<div class="col-12 col-md-6 ">
 
-			<img src="{{asset('img/mapahome.png')}}" alt="" class="img-fluid">
+			<img src="{{asset('img/mapahome.png')}}" alt="" class="img-fluid ">
 
 		</div>
 
@@ -52,7 +52,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 <main class="container-fluid no-gutters main-pag-home background-home">
 
 
-		<div class="row no-gutters recicla-texto px-3">
+		<div class="row no-gutters recicla-texto px-3 ">
 
 
 			<div class="col-md-6 order-2 order-md-1 order-sm-1 order-lg-1 order-xl-1 texto-info-home px-3 d-block d-sm-block d-md-block d-lg-block d-xl-block px-3">
@@ -74,7 +74,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 <main class="container-fluid ">
 	<!-- inicio reciclagem divulgaçao -->
 
-	<div class="row no-gutters recicla-texto">
+	<div class="row no-gutters recicla-texto ">
 		<div class="col-md-6 texto-info-home px-3">
                 <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
                         <div class="carousel-inner">
@@ -102,7 +102,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         </a>
                     </div>
 		</div>
-		<div class="col-12 col-md-6 ">
+		<div class="col-12 col-md-6">
 			<article>
 				<h1 class="titulo-card-home d-none d-sm-none d-md-block d-lg-block d-xl-block ">Nossos <span class="color-title">Parceiros!</span>
 				</h1>
@@ -119,7 +119,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 
 <main class="container-fluid background-home d-none d-sm-block d-md-block d-lg-block d-xl-block">
-        <div class="row no-gutters">
+        <div class="row no-gutters ">
             <div class="col-md-6">
                     <div class="client-item">
                             <div class="client-icon">
@@ -188,7 +188,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 </div>
                                 <div class="latest-blog-cont">
                                     <h3><a href="/post/{{ $post->id }}" >{{ $post->titulo }}</a></h3>
-                                    {{-- <p>{!! substr(strip_tags($post->texto), 0, 140) !!}</p> --}}
+                                    
                                 </div>
                             </div>
                             <!--// single-latest-blog End -->

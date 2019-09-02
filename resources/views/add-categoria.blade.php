@@ -12,23 +12,18 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 <div class="container">
     <div class="row">
-        <div class="col-12 mt-5 mb-5">
-            <div class="jumbotron border rounded border-success">
-                <center>
-                    <div class="logoRegister mb-4">
-                        <a href="/add-cidade">
-                            <img class="logoRegister mb-3" src="{{asset('img/logologin.png')}}" alt>
-                        </a>
-                        <div>
-                </center>
+        <div class="col-12 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="text-center mb-2">Cadastro de Categoria</h1>
 
                 <form action="{{ route('categoria.cadastrar')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <h1 class="mb-4">Cadastro de Categorias</h1>
-                    <div class="form-group">
+                    <div class="md-form mt-5">
                         <label for="nome_categoria">Nome da Categoria</label>
                         <input type="text" class="form-control" id="nome_categoria" name="nome_categoria"
-                            placeholder="Nome da categoria" required>
+                             required>
                     </div>
                     <button type="submit" class="btn btn-success pull-right widthHeightBtn">CADASTRAR CATEGORIA</button>
                 </form>

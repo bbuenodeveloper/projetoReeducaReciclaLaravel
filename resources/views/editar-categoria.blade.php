@@ -31,11 +31,6 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         <input type="text" name="categoria" id="categoria" class="form-control"
                             value="{{ $categoria->nome }}">
                     </div>
-                    <div class="form-group">
-                        <label for="imagem">Imagem</label>
-                        <input type="file" name="imagem" id="imagem" class="form-control"
-                            value="{{ $categoria->imagem }}">
-                    </div>
                     <button type="submit" class="btn btn-success">CADASTRAR</button>
                 </form>
             </div>

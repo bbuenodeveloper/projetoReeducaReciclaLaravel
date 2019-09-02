@@ -24,16 +24,25 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $posts = Post::All();
         return view('home', [
+            'post' => $post,
+            'posts' => $posts,
             'ultimos' => Post::take(3)->orderBy('id', 'DESC')->get()
         ]);
     }
 
     public function home()
     {
+        $posts = Post::All();
         return view('home', [
+            'post' => $post,
+            'posts' => $posts,
             'ultimos' => Post::take(3)->orderBy('id', 'DESC')->get()
         ]);
     }
+
+    
+    
 
 }

@@ -26,14 +26,29 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                     enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="produto">Produto</label>
-                        <input type="text" name="produtoe" id="produto" class="form-control"
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" class="form-control"
                             value="{{ $produto->nome }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" name="descricao" id="descricao" class="form-control"
+                            value="{{ $produto->descricao }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="precoo">Preço</label>
+                        <input type="text" name="preco" id="preco" class="form-control"
+                            value="{{ $produto->preco }}">
                     </div>
                     <div class="form-group">
                         <label for="imagem">Imagem</label>
                         <input type="file" name="imagem" id="imagem" class="form-control"
                             value="{{ $produto->imagem }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="quantidade_estoque">Quantidade em estoque</label>
+                        <input type="text" name="quantidade_estoque" id="quantidade_estoque" class="form-control"
+                            value="{{ $produto->quantidade_estoque }}">
                     </div>
                     <button type="submit" class="btn btn-success">CADASTRAR</button>
                 </form>

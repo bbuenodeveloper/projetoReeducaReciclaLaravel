@@ -34,9 +34,7 @@ class ProdutoController extends Controller
         $produto->save();
 
 
-        return view('add-produto', [
-            'success' => "Cadastro realizado com sucesso!"
-        ]);
+       
     }
 
     public function exibirProdutos(Request $request){
