@@ -24,15 +24,7 @@ class CreatePagamentosTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('modo_pagamento', 200)->nullable()->default(null);
-            $table->unsignedInteger('compra_id');
 
-            $table->index(["compra_id"], 'fk_pagamento_compra1_idx');
-
-
-            $table->foreign('compra_id', 'fk_pagamento_compra1_idx')
-                ->references('id')->on('compras')
-                ->onDelete('no action')
-                ->onUpdate('no action');
         });
     }
 

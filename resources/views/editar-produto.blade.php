@@ -13,39 +13,44 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 <div class="container">
     <div class="row">
         <div class="col-12 mx-auto">
-            <div class="jumbotron border rounded border-success">
-                <center>
-                    <div class="logoRegister mb-4">
-                        <a href="/add-produto">
-                            <img class="logoRegister mb-3" src="{{asset('img/logologin.png')}}" alt>
-                        </a>
-                        <div>
-                </center>
-                <h1 class="text-center mb-2">Editar Produto</h1>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="text-center mb-2">Editar Produtos</h1>
                 <form action="/editadoProduto/{{$produto->id}}" method="post" class="user-info-setting-form"
                     enctype="multipart/form-data">
                     @csrf
-                    <div class="form-group">
+                    <div class="md-form mt-5">
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" id="nome" class="form-control"
                             value="{{ $produto->nome }}">
                     </div>
-                    <div class="form-group">
+                    <div class="md-form mt-5">
                         <label for="descricao">Descrição</label>
                         <input type="text" name="descricao" id="descricao" class="form-control"
                             value="{{ $produto->descricao }}">
                     </div>
-                    <div class="form-group">
+                    <div class="md-form mt-5">
                         <label for="preco">Preço</label>
                         <input type="text" name="preco" id="preco" class="form-control"
                             value="{{ $produto->preco }}">
                     </div>
-                    <div class="form-group">
+                    <div class="mt-5">
+                        <label for="categorias_id" class="font-weight-light">Categoria do Produto</label>
+                        <select class="custom-select" id="categorias_id" name="categorias_id"
+                            aria-label="Example select with button addon" required>
+                            <option selected disabled>Selecione</option>
+                            <option value="1">Categoria 1</option>
+                            <option value="2">Categoria 2</option>
+                            <option value="3">Categoria 3</option>
+                        </select>
+
+                    </div>
+                    <div class="mt-5">
                         <label for="imagem">Imagem</label>
                         <input type="file" name="imagem" id="imagem" class="form-control"
                             value="{{ $produto->imagem }}">
                     </div>
-                    <div class="form-group">
+                    <div class="md-form mt-5">
                         <label for="quantidade_estoque">Quantidade em estoque</label>
                         <input type="text" name="quantidade_estoque" id="quantidade_estoque" class="form-control"
                             value="{{ $produto->quantidade_estoque }}">
