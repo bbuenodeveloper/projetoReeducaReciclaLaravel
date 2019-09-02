@@ -50,8 +50,13 @@ class ProdutoController extends Controller
     public function editarProduto(Request $request, $id){
 
         $produto = Produto::find($id);
-        $produto->produto = $request->produto;
-        //$cidade->imagem = 'https://dummyimage.com/75x76/b8b8b8/fff/?text='.$request->cidade;
+        $produto->nome = $request->nome;
+        $produto->descricao = $request->descricao;
+        $produto->preco = $request->preco;
+        $produto->imagem = $request->imagem;
+        $produto->quantidade_estoque = $request->quantidade_estoque;
+        $produto->categorias_id = $request->categorias_id;
+        $produto->save();
 
         if($request->hasfile('imagem'))
         {
@@ -62,7 +67,6 @@ class ProdutoController extends Controller
             $produto->imagem = $filename;
         }
         $produto->save();
-
         return redirect('relatorio-Produtos');
     }
 
