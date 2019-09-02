@@ -19,7 +19,6 @@ $(function(){
         if(nome.value == ""
          || endereco.value == ""
          || numero.value == ""
-         || complemento.value == ""
          || cep.value == ""
          || bairro.value == ""
          || estado.value == ""
