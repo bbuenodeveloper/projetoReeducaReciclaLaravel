@@ -3,13 +3,11 @@
 @section('content')
 
 <?php
-
-$root = 'http://localhost/projetoreeducarecicla/';
+$root = 'http://www.reciclamaps.com.br';
 $foto = 'mapahome.png';
-
 $title = $facebook_title = "Home";
-$keywords = 'recicla,palavras,chave,separadas,por,virgula';
-$description = $facebook_description = substr(strip_tags('<p>A Recicla, por sua atitude empresarial e pela qualidade das relações que busca desenvolver com os diversos agentes que articula, expressa sua marca na identidade com pessoas e empresas que se comprometem a atuar de maneira efetiva na colaboração por um mundo mais saudável para se habitar, em respeito ao meio ambiente do qual fazem parte e responsabilidade para com as gerações por vir.</p>'), 0, 200);
+$keywords = 'reciclamaps,reciclagem, reciclar, doar, descarte, consumo, consciente, descartar, como, descartar, Construção e Demolição, Diversos, Eletrodomésticos, Eletrônicos, Embalagens longa vida, Lâmpadas, Líquidos e Produtos Químicos, Materiais Orgânicos, Metais, Móveis, Óleos, Papel e Papelão, Pilhas e Baterias, Plástico, Veículos, Vestuário, Vidro';
+$description = $facebook_description = substr(strip_tags('<p>Você pode ajudar o meio ambiente com uma ação muito simples. O mapa interativo do ReciclaMaps mostra os pontos de coleta mais próximos a você.</p>'), 0, 200);
 $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 <section class="container-fluid">
@@ -18,24 +16,28 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 	<div class="clearfix"></div>
 
-	<div class="row mt-3 px-3">
+	<div class="row mt-3 px-3 mb-5">
 
-		<div class="col-12 col-md-6 mt-5 ">
+		<div class="col-12 col-md-6 ">
 
-			<img src="{{asset('img/mapahome.png')}}" alt="" class="img-fluid">
+			<img src="{{asset('img/mapahome.png')}}" alt="" class="img-fluid ">
 
 		</div>
 
 		<div class="col-12 col-md-6 px-3">
 
 			<h1 class="card-title titulo-card-home">Vai descartar seus <span class="color-title">resíduos?</span></h1>
-			<p class="card-text-sem-margem" >Você pode ajudar o meio ambiente com uma ação muito simples. O mapa interativo do ReciclaMaps mostra os pontos de coleta mais próximos a você.
+			<p class="card-text-sem-margem " >
+            <i class="fa fa-recycle" style="color:green" > </i> O mapa interativo do ReciclaMaps mostra os pontos de coleta mais próximos de você.</p>
 
-			<p class="card-text ">
-			É só escolher sua cidade na caixa de pesquisa e o mapa mostrará os pontos de coleta de acordo com tipo de resíduo que você quer descartar.</p>
-			</p>
+			<p class="card-text-sem-margem ">
+            <i class="fa fa-recycle" style="color:green" > </i>
+			É só selecionar sua cidade e o tipo de resíduo para descarte na caixa de pesquisa e o mapa mostrará os pontos de coleta.</p>
+
+            <p class="card-text">
+            <i class="fa fa-recycle" style="color:green" > </i> Para acessar o mapa NÃO é necessário cadastro, basta clicar no botão abaixo.</p>
 			<!-- <h5>Saiba onde descartar seus resíduos</h5> -->
-			<p></p>
+
 			<a href="\mapa" class="btn btn-success btn-card">ACESSAR O MAPA</a>
 
 		</div>
@@ -50,7 +52,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 <main class="container-fluid no-gutters main-pag-home background-home">
 
 
-		<div class="row no-gutters recicla-texto px-3">
+		<div class="row no-gutters recicla-texto px-3 ">
 
 
 			<div class="col-md-6 order-2 order-md-1 order-sm-1 order-lg-1 order-xl-1 texto-info-home px-3 d-block d-sm-block d-md-block d-lg-block d-xl-block px-3">
@@ -72,8 +74,35 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 <main class="container-fluid ">
 	<!-- inicio reciclagem divulgaçao -->
 
-	<div class="row no-gutters recicla-texto">
+	<div class="row no-gutters recicla-texto ">
 		<div class="col-md-6 texto-info-home px-3">
+                <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="{{asset('img/parceiros1.png')}}" alt="Primeiro Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="{{asset('img/parceiros2.png')}}" alt="Segundo Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="{{asset('img/parceiros3.png')}}" alt="Segundo Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="{{asset('img/parceiros4.png')}}" alt="Segundo Slide">
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon carrousel-icone" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+		</div>
+		<div class="col-12 col-md-6">
 			<article>
 				<h1 class="titulo-card-home d-none d-sm-none d-md-block d-lg-block d-xl-block ">Nossos <span class="color-title">Parceiros!</span>
 				</h1>
@@ -83,33 +112,6 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 			</article>
 		</div>
-		<div class="col-12 col-md-6 ">
-			<div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img class="d-block w-100" src="{{asset('img/parceiros1.png')}}" alt="Primeiro Slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="{{asset('img/parceiros2.png')}}" alt="Segundo Slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="{{asset('img/parceiros3.png')}}" alt="Segundo Slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" src="{{asset('img/parceiros4.png')}}" alt="Segundo Slide">
-					</div>
-
-				</div>
-				<a class="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon carrousel-icone" aria-hidden="true"></span>
-					<span class="sr-only">Anterior</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Próximo</span>
-				</a>
-			</div>
-		</div>
 
     </div>
 
@@ -117,46 +119,46 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 
 <main class="container-fluid background-home d-none d-sm-block d-md-block d-lg-block d-xl-block">
-        <div class="row no-gutters">
+        <div class="row no-gutters ">
             <div class="col-md-6">
                     <div class="client-item">
                             <div class="client-icon">
                                 <div class="border-img">
                                     <a href="team.html"><div class="window-tabs">
-                                        <div class="overflow-block"></div><img src="img/img-team-1.png" alt></div>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3>Nossa<span> Visão</span></h3>
-                            <p>A Reeduca, por sua atitude empresarial e pela qualidade das relações que busca desenvolver com os diversos agentes que articula, expressa sua marca na identidade com pessoas e empresas que se comprometem a atuar de maneira efetiva na colaboração </p>
-                    </div>
-                    <div class="client-item">
-                            <div class="client-icon">
-                                <div class="border-img">
-                                    <a href="team.html"><div class="window-tabs">
-                                        <div class="overflow-block"></div><img src="img/img-team-2.png" alt></div>
+                                        <div class="overflow-block"></div><img src="{{asset('img/img-team-1.png')}}" alt></div>
                                     </a>
                                 </div>
                             </div>
                             <h3>Nossa<span> Missão</span></h3>
-                            <p>Nosso compromisso é criar e oferecer conteúdo, serviços e produtos que contribuam para a ampliação da consciência dos indivíduos em suas ações de consumo rumo a uma relação mais equilibrada e harmoniosa consigo mesmo, com o outro e com o meio ambiente</p>
+                            <p>Temos a missão de facilitar o processo de busca por pontos adequados de coleta e mostrar qual a melhor maneira de descartar cada resíduo. Dessa forma, contribuir com um modelo de consumo sustentável e mais consciente. </p>
                     </div>
                     <div class="client-item">
                             <div class="client-icon">
                                 <div class="border-img">
                                     <a href="team.html"><div class="window-tabs">
-                                        <div class="overflow-block"></div><img src="img/img-team-3.png" alt></div>
+                                        <div class="overflow-block"></div><img src="{{asset('img/img-team-2.png')}}" alt></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3>Nossa<span> Visão</span></h3>
+                            <p>Tornar-se o principal canal de busca por pontos de coleta e reciclagem, possibilitando que todos tenham fácil acesso a pontos de descarte próximos e seguros, além de proporcionar maior integração e eficácia à gestão ambiental local.</p>
+                    </div>
+                    <div class="client-item">
+                            <div class="client-icon">
+                                <div class="border-img">
+                                    <a href="team.html"><div class="window-tabs">
+                                        <div class="overflow-block"></div><img src="{{asset('img/img-team-3.png')}}" alt></div>
                                     </a>
                                 </div>
                             </div>
                             <h3>Nossos<span> Valores</span></h3>
-                            <p>Acreditamos na capacidade das pessoas e empresas para, na dinâmica de suas relações, promoverem alternativas e adotarem escolhas que contribuam para o desenvolvimento de uma sociedade sustentável, alcançável através do desenvolvimento de um padrão </p>
+                            <p>Acreditamos que todos têm direito e responsabilidade em relação ao descarte adequado de resíduos. Por isso, temos o compromisso de oferecer uma alternativa de serviço sustentável com qualidade e confiança. </p>
                     </div>
             </div>
             <div class="col-md-6">
                     <div class="grid-col-4 title-innovation">
-                            <div class="innovation-header">Sobre nós
-                            <div class="slash-line"></div></div>
+                            <div class="titulo-card-home-loja"><h1>Sobre <span class="color-title">Nós </span></h1>
+
                         </div>
             </div>
 
@@ -177,45 +179,22 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                         </div>
                     </div>
                     <div class="row latest-blog-active">
+                            @foreach ($ultimos as $p)
                         <div class="col-lg-4">
                             <!-- single-latest-blog Start -->
                             <div class="single-latest-blog mb--30 mt--30">
                                 <div class="latest-blog-image">
-                                    <a href="/blog-details"><img src="img/blog-image1.jpg" alt=""></a>
+                                    <a href="/post/{{ $p->id }}"><img src="/storage/img/{{ $p->imagem }}" alt=""></a>
                                 </div>
                                 <div class="latest-blog-cont">
-                                    <h3><a href="/blog-details" >Cargill instala linha de envase mais eficiente e sustentável</a></h3>
+                                    <h3><a href="/post/{{ $p->id }}" >{{ $p->titulo }}</a></h3>
 
                                 </div>
                             </div>
                             <!--// single-latest-blog End -->
                         </div>
-                        <div class="col-lg-4">
-                            <!-- single-latest-blog Start -->
-                            <div class="single-latest-blog mb--30 mt--30">
-                                <div class="latest-blog-image">
-                                    <a href="/blog-details"><img src="img/blog-image2.jpg" alt=""></a>
-                                </div>
-                                <div class="latest-blog-cont">
-                                    <h3><a href="/blog-details" >Gestora de recursos investe em inovação na área ambiental</a></h3>
+                        @endforeach
 
-                                </div>
-                            </div>
-                            <!--// single-latest-blog End -->
-                        </div>
-                        <div class="col-lg-4">
-                            <!-- single-latest-blog Start -->
-                            <div class="single-latest-blog mb--30 mt--30">
-                                <div class="latest-blog-image">
-                                    <a href="/blog-details"><img src="img/blog-image3.jpg" alt=""></a>
-                                </div>
-                                <div class="latest-blog-cont">
-                                    <h3><a href="/blog-details" >O benefício do plástico reciclado</a></h3><br>
-
-                                </div>
-                            </div>
-                            <!--// single-latest-blog End -->
-                        </div>
 
                     </div>
                 </div>

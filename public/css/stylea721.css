@@ -43,8 +43,8 @@
 
      /* Video */
      .homePageVideo {clear:both; border: 0;}
-          .homePageVideo .title {position:absolute; z-index:2; bottom:0px; left:0px; background:rgba(255,255,255,0.5); width:100%; display:block;}
-          .homePageVideo .title a {padding:1em 1.5em; background:#b5b700; color:white; font-weight:bold; display:inline-block; font-size:125%;}
+          .homePageVideo .titleReciclar {position:absolute; z-index:2; bottom:0px; left:0px; background:rgba(255,255,255,0.5); width:100%; display:block;}
+          .homePageVideo .titleReciclar a {padding:1em 1.5em; background:#b5b700; color:white; font-weight:bold; display:inline-block; font-size:125%;}
 
           @media screen and (max-width:768px){
                .homePageVideo .title a {font-size:100%;}
@@ -53,6 +53,17 @@
      /* Meet Members */
      .meet-members {display:block; clear:both; text-align:center; padding:4em 0; background:white;}
 
+     .meet-members .btn {
+        /* margin-top: 1em; */
+        margin-left: 8px;
+        color: #b5b700;
+        border-color: #b5b700;
+    }
+
+    .meet-members .btn:hover {
+        color: white;
+        background: #b5b700;
+    }
 
 
 
@@ -167,6 +178,115 @@
 /* strong, b {
     font-weight: 700;
 } */
+
+
+/* onde reciclar */
+
+.title-block {
+    display: block;
+    clear: both;
+    text-align: center;
+    padding: 0;
+    background: white;
+}
+
+.content-block {
+    display: block;
+    clear: both;
+    padding: 4em 0;
+    background: white;
+    text-align: left;
+    float: left;
+    width: 1
+
+}
+
+.blue {
+    background: #609ed3;
+    color: white;
+}
+
+.green {
+    background: #b5b700;
+    color: white;
+}
+
+.blue h3, .blue h4 {
+    color: white;
+}
+
+.content-block ul, article ul {
+    list-style-type: disc;
+    margin: 1em;
+    line-height: 150%;
+}
+
+.green .downloads, .blue .downloads {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+.downloads {
+    background: #b6b701;
+    display: block;
+    padding: 2em;
+    margin-top: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+.green .downloads a, .blue .downloads a {
+    color: white;
+}
+.downloads a[href$=".pdf"] {
+    background: url(/img/downloadbutton_2x.png) left center no-repeat;
+    background-size: 40px;
+}
+.downloads a {
+    padding-left: 55px;
+    width: calc(32.5% - 55px);
+    background: url(/img/link.png) left center no-repeat;
+    background-size: 40px;
+}
+.downloads a {
+    color: white;
+    display: inline-block;
+    width: 28%;
+    padding: 0.6em 0 0.6em 5%;
+    margin: 0.5em 0;
+    vertical-align: top;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 115%;
+}
+
+.green h3, .green h4 {
+    color: white;
+}
+
+.content-block h3 {
+    font-weight: bold;
+}
+
+.em-casa p {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+}
+
+.em-casa ul li {
+    list-style-type: disc !important;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding: 5px;
+
+}
+
+.em-casa ul {
+    padding: 37px;
+}
 
 
 

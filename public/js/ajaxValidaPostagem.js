@@ -2,7 +2,7 @@ $(function(){
     $('#formPostagem').submit(function(e){
         e.preventDefault();
         var route = document.querySelector('#formPostagem').attributes.dataroute.value;
-        var myform = document.querySelector('#formPostagem');
+        var formPostagem = document.querySelector('#formPostagem');
         let data = document.querySelector('#data');
         let titulo = document.querySelector('#titulo');
         let texto = document.querySelector('#ck_editor');
@@ -30,6 +30,7 @@ $(function(){
         });
 
         document.getElementById("formPostagem").reset();
+
     });
 
 

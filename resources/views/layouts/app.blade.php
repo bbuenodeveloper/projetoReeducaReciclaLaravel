@@ -5,10 +5,11 @@
 
 <head>
 
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=yes">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="theme-color" content="#000000">
-        <link rel="icon" href="img/favicon.png" sizes="16x16 32x32" type="image/jpg">
+        <link rel="icon" href="{{asset('img/favicon.png')}}" sizes="16x16 32x32" type="image/jpg">
 
         <!-- Metas para o Google -->
         <title><?php @print($title); ?></title>
@@ -60,13 +61,6 @@
                                         Bem Vindo à Recicla Maps </div>
                             </div>
 
-
-                        {{-- fim left --}}
-
-                        {{-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                            <span class="navbar-toggler-icon"></span>
-                        </button> --}}
-
                         <div class="top-navigation-right " id="navbarSupportedContent">
 
                             <!-- Right Side Of Navbar -->
@@ -90,15 +84,17 @@
                                 @endif
                                 @else
                                 <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     @if(Auth::user()->img != null)
                                         <img src="{{ asset(Auth::user()->img) }}" style="width:30px">
+                                    @else
+                                        <i class="fas fa-user text-white p-2"></i>
                                     @endif
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><i class="fas fa-user text-white p-2"></i>
                                     {{Auth::user()->name}}<span class="caret"></span>
                                     </a>
 
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        @if (Auth::user()->nivel_user === 0)
+                                        @if (Auth::user()->nivel_user == 0)
                                         <a class="dropdown-item" href="{{ route('painel') }}"><i class="fa fa-cog"></i><span class="space-menu"> {{ __('Painel Admin') }} </span></a>
                                         @endif
                                         <a href="/editar-userPerfil" class="dropdown-item"><i class="fa fa-user"></i><span class="space-menu"> {{ __('Ver Perfil') }} </span></a>
@@ -229,7 +225,7 @@
          <div class="col-md-12">
              <div class="emergency">
 
-            <img src="img/logo_branco.png" width="200" alt="">
+            <img src="{{asset('img/logo_branco.png') }}" width="200" alt="">
              </div>
          </div>
      </div>
@@ -296,28 +292,7 @@
                              </div>
 
                          </div>
-                         {{-- @if ($errors->any())
 
-                         <div class="alert alert-danger">
-                             <ul>
-                                 @foreach ($errors->all() as $error)
-                                 <li>{{ $error }}</li>
-                                 @endforeach
-                             </ul>
-
-                         </div>
-                         @endif
-
-                         @if(isset($resultado))
-                         @if($resultado) --}}
-
-                        {{-- <div class="alert alert-success">
-                             <h1>E-mail cadastrado com sucesso</h1>
-                         </div>
-                         @else
-                         <h1>erro</h1>
-                         @endif
-                         @endif --}}
 
                  </div>
 
@@ -365,9 +340,9 @@
 
                     <div class="col-md-6 mt-3">
                            <ul>
-                               <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-facebook"></i></a></li>
-                               <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-twitter"></i></a></li>
-                               <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-instagram"></i></a></li>
+                               <li class="list-inline-item m-t-10"><a href="https://www.facebook.com/reciclamaps/" target="_blank" class="socialIcon"><i class="fab fa-facebook"></i></a></li>
+                               <li class="list-inline-item m-t-10"><a href="https://twitter.com/ReciclaMaps" target="_blank" class="socialIcon"><i class="fab fa-twitter"></i></a></li>
+                               <li class="list-inline-item m-t-10"><a href="https://www.instagram.com/reciclamaps/" target="_blank" class="socialIcon"><i class="fab fa-instagram"></i></a></li>
                                <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                     </div>
@@ -378,7 +353,13 @@
 
 </footer>
 
-<a href="#" id="scroll-top" class="scroll-top"><i class="fas fa-angle-up"></i></a>
+<div class="totop" style="display: block;">
+        <div class="gototop">
+            <a href="#">
+                <div class="arrowgototop"> </div>
+            </a>
+        </div>
+    </div>
 {{-- end footer  --}}
 
         <?php if (strpos($_SERVER['HTTP_USER_AGENT'], "Google Page Speed Insights") === false): ?>
@@ -420,20 +401,17 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
         <link rel="stylesheet" href="{{asset('css/loja.css')}}">
+        <link rel="stylesheet" href="{{asset('css/loja-stilo.css')}}">
         <link rel="stylesheet" href="{{asset('css/stylea721.css')}}" type="text/css" media='all' />
-
-
-
-
 
         <script src="{{url('https://code.jquery.com/jquery-3.4.0.min.js')}}"></script>
         <script type='text/javascript' src="{{asset('js/jquery/jquery-migrate.min.js')}}"></script>
-
+        <script src="{{asset('js/voltarTopo.js')}}"></script>
         <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <script src="{{asset('sweetalert/dist/sweetalert2.min.js')}}"></script>
         <script src="{{asset('js/alertSweetRecicla.js')}}"></script>
-        <script src="{{asset('js/postnewsletter.js')}}"></script>
+        <script src="{{asset('js/postNewsletter.js')}}"></script>
 
         {{-- js menu --}}
         <script type='text/javascript' src="{{asset('plugins/superfish/js/superfish.js')}}"></script>
@@ -452,7 +430,7 @@
         <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
         <script src="{{asset('js/gmaps.js')}}"></script> <!-- plugin para google maps api -->
         <script src="{{asset('js/recicla.min.js')}}"></script>
-
+        <script src="{{asset('js/ajaxEditaPerfil.js')}}"></script>
 
 
 

@@ -25,7 +25,7 @@ class CidadeController extends Controller
     public function cadastrarCidade(Request $request){
 
         $cidade = new cidade();
-        $cidade->cidade = strtoupper($request->cidade);
+        $cidade->cidade = $request->cidade;
         //$cidade->imagem = 'https://dummyimage.com/75x76/b8b8b8/fff/?text='.$request->cidade;
 
         if($request->hasfile('imagem'))
@@ -42,7 +42,7 @@ class CidadeController extends Controller
     public function editarCidade(Request $request, $id){
 
         $cidade = Cidade::find($id);
-        $cidade->cidade = strtoupper($request->cidade);
+        $cidade->cidade = $request->cidade;
         //$cidade->imagem = 'https://dummyimage.com/75x76/b8b8b8/fff/?text='.$request->cidade;
 
         if($request->hasfile('imagem'))

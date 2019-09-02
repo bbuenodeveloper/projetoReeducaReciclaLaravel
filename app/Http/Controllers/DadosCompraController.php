@@ -13,7 +13,7 @@ class DadosCompraController extends Controller
 
     public function dadosProduto(Request $request, $id){
         $produto = Produto::find($id);
-        return view("dadosCompra",['produto'=>$produto]);
+        return view("dadoscompra",['produto'=>$produto]);
 
 }
 }

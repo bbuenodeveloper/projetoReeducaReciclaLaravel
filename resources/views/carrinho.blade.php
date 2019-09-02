@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+<?php
+$root = 'http://www.reciclamaps.com.br';
+$foto = 'mapahome.png';
+$title = $facebook_title = "Carrinho";
+$keywords = 'reciclamaps,reciclagem, reciclar, doar, descarte, consumo, consciente, descartar, como, descartar, Construção e Demolição, Diversos, Eletrodomésticos, Eletrônicos, Embalagens longa vida, Lâmpadas, Líquidos e Produtos Químicos, Materiais Orgânicos, Metais, Móveis, Óleos, Papel e Papelão, Pilhas e Baterias, Plástico, Veículos, Vestuário, Vidro';
+$description = $facebook_description = substr(strip_tags('<p>Você pode ajudar o meio ambiente com uma ação muito simples. O mapa interativo do ReciclaMaps mostra os pontos de coleta mais próximos a você.</p>'), 0, 200);
+$facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 <div class="container">
     <div class="mb-5 mt-5">
@@ -20,9 +27,7 @@
                             <figure class="media">
                                 <div class="img-wrap"><img src="/storage/produtos/{{$produto->imagem}}"
                                         class="img-thumbnail img-sm"></div>
-
                                 <h3 class="title text-truncate">{{$produto->nome}}</h6>
-
                             </figure>
                         </td>
                         <td>
@@ -35,14 +40,13 @@
                         </td>
                         <td>
                             <div class="price-wrap">
-                                <var class="price">R$ {{$produto->preco}}</var>
+                                <var class="price">R$ {{$produto->preco}} </var>
                             </div> <!-- price-wrap .// -->
                         </td>
                         <td class="text-right">
                             <a href="" class="btn btn-outline-danger"> × Remover</a>
                         </td>
                     </tr>
-
                 </tbody>
             </table>
         </div> <!-- card.// -->

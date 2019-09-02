@@ -5,6 +5,7 @@
 
 <head>
 
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=yes">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="theme-color" content="#000000">
@@ -132,9 +133,10 @@
                                                         </a>
 
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                                            @if (Auth::user()->nivel_user === 0)
+                                                            @if (Auth::user()->nivel_user == 0)
                                                             <a class="dropdown-item" href="{{ route('painel') }}"><i class="fa fa-cog"></i><span class="space-menu"> {{ __('Painel Admin') }} </span></a>
                                                             @endif
+                                                            <a href="/editar-userPerfil" class="dropdown-item"><i class="fa fa-user"></i><span class="space-menu"> {{ __('Ver Perfil') }} </span></a>
                                                             <a class="dropdown-item" href="{{ route('logout') }}"
                                                             onclick="event.preventDefault();
                                                             document.getElementById('logout-form').submit();">
@@ -395,9 +397,9 @@
 
                                          <div class="col-md-6 mt-3">
                                                 <ul>
-                                                    <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-facebook"></i></a></li>
-                                                    <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-twitter"></i></a></li>
-                                                    <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-instagram"></i></a></li>
+                                                    <li class="list-inline-item m-t-10"><a href="https://www.facebook.com/reciclamaps/" target="_blank" class="socialIcon"><i class="fab fa-facebook"></i></a></li>
+                                                    <li class="list-inline-item m-t-10"><a href="https://twitter.com/ReciclaMaps" target="_blank" class="socialIcon"><i class="fab fa-twitter"></i></a></li>
+                                                    <li class="list-inline-item m-t-10"><a href="https://www.instagram.com/reciclamaps/" target="_blank" class="socialIcon"><i class="fab fa-instagram"></i></a></li>
                                                     <li class="list-inline-item m-t-10"><a href="#" target="_blank" class="socialIcon"><i class="fab fa-youtube"></i></a></li>
                                                  </ul>
                                          </div>
@@ -408,7 +410,13 @@
 
                             </footer>
 
-
+                            <div class="totop" style="display: block;">
+                                    <div class="gototop">
+                                        <a href="#">
+                                            <div class="arrowgototop"> </div>
+                                        </a>
+                                    </div>
+                                </div>
 
 
 
@@ -422,7 +430,7 @@
         <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <script src="https://kit.fontawesome.com/edcfdf1ead.js"></script>
-
+        <script src="{{asset('js/voltarTopo.js')}}"></script>
 
 
         {{-- js menu --}}
