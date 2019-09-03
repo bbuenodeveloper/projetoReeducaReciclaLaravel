@@ -60,6 +60,11 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Projeto Recicla Maps'),
     ],
 
+    'to' => [
+        'address' => env('MAIL_TO_ADDRESS', 'contato@reciclamaps.com.br'),
+    ],
+
+
     /*
     |--------------------------------------------------------------------------
     | E-Mail Encryption Protocol

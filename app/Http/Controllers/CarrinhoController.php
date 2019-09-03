@@ -20,16 +20,11 @@ class CarrinhoController extends Controller
     }
 
     public function addCarrinho(Request $request, $id) {
-        if ($request->session() ->has('carrinho')) {
-            $carrinho = session() ->get('carrinho');
+        $carrinho = $request->session()->has('carrinho') ? $request->session()->get('carrinho') : [];
+        if(array_search($carrinho, $id) === false) {
             $carrinho[] = $id;
             $request->session() ->put('carrinho', $carrinho);
-        } else {
-
-            $carrinho [] = $id;
-            $request->session() ->put('carrinho', $carrinho);
         }
-
         return redirect('/carrinho');
     }
 
