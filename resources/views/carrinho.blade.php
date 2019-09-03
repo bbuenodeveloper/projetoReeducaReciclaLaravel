@@ -58,7 +58,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
     <div class="row">
         <div class="col-12 mb-5">
             <a href="/loja" class="btn  btn-outline-primary"> <i class="fas fa-shopping-cart"></i> CONTINUAR COMPRANDO</a>
-            <a href="/dadoscompra/{{$produto->id}}" class="btn  btn-primary">FINALIZAR COMPRA</a>
+            <a href="/dadoscompra" class="btn  btn-primary">FINALIZAR COMPRA</a>
         </div>
     </div>
 </div>
