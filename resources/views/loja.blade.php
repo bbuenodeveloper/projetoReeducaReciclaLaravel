@@ -33,7 +33,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
     <div class="blog-details-area bg-grey section-ptb">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 order-2 order-lg-1">
+                <div class="col-lg-4 order-2 order-lg-1 d-none d-sm-none d-md-block d-lg-block d-xl-block">
                     <!-- shop-sidebar-wrap start -->
                     <div class="blog-sidebar-wrap">
 

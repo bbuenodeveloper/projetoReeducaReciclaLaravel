@@ -53,15 +53,15 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
     <div class="wrapper mx-auto">
         <h2>Aprenda como reciclar<b> cada tipo de material</b></h2>
 
-        <p>Acesse a Tabela de materiais que são ou não recicláveis, é só clicar aqui:<a href="/tabelaReciclaveis" class="btn">TABELA</a> </p>
+        <p class="d-none d-sm-none d-md-block d-lg-block d-xl-block">Acesse a Tabela de materiais que são ou não recicláveis, é só clicar aqui:<a href="/tabelaReciclaveis" class="btn">TABELA</a> </p>
 
 
 
-            <p>Quer começar a reciclar, em casa, no trabalho, na escola ou na universidade?</p>
-            <p> Clique no botão que te damos um passo a passo: <a href="/onde-reciclar" class="btn">ONDE VOCÊ VAI RECICLAR?</a></p>
+            <p class="d-none d-sm-none d-md-block d-lg-block d-xl-block">Quer começar a reciclar, em casa, no trabalho, na escola ou na universidade?</p>
+            <p class="d-none d-sm-none d-md-block d-lg-block d-xl-block"> Clique no botão que te damos um passo a passo: <a href="/onde-reciclar" class="btn">ONDE VOCÊ VAI RECICLAR?</a></p>
 
 
-            <p>Nos cards abaixo, você pode aprender como reciclar cada tipo de material, escolha o material, clique no
+            <p class="p-2">Nos cards abaixo, você pode aprender como reciclar cada tipo de material, escolha o material, clique no
                 sinal de + e tenha todas as informações necessárias para reciclar de forma correta.</p>
 
 
@@ -233,9 +233,9 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
     </div>
 </div>
 <!-- fim cards -->
-<div class="more-news"><a href="#">ASSISTA NOSSO CANAL NO YOUTUBE</a>
+<div class="more-news d-none d-sm-none d-md-block d-lg-block d-xl-block"><a href="#">ASSISTA NOSSO CANAL NO YOUTUBE</a>
 </div>
-<div class="homePageVideo">
+<div class="homePageVideo d-none d-sm-none d-md-block d-lg-block d-xl-block">
     <div class="videoWrapper">
         <iframe width="560" height="315"
             src="https://www.youtube.com/embed/pknTQ5L2VbE/?rel=0&amp;controls=0&amp;showinfo=0"> frameborder="0"

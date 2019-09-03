@@ -12,7 +12,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
 
 <div class="container-fluid no-gutters p-0">
     <!-- Banner topo -->
-    <div class="card card-banner">
+    <div class="card card-banner d-none d-sm-none d-md-block d-lg-block d-xl-block">
         <img src="{{asset('img/bannercontato1900x320.jpg')}}" class="card-img" alt="...">
         <div class="card-img-overlay">
         </div>
@@ -52,7 +52,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             </div>
             <!-- Fim Formulario -->
             <!-- Imagem Abaixo formulario -->
-            <div class="col-md-8 col-xs-12" id="imgform">
+            <div class="col-md-8 col-xs-12 d-none d-sm-none d-md-block d-lg-block d-xl-block" id="imgform">
                 <img src="{{asset('img/nature.jpg')}}" class="img-fluid">
             </div>
         </div>
