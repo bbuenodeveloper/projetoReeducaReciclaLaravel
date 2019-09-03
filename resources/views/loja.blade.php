@@ -183,9 +183,10 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                     <h4 class="title">{{$produto->nome}}</h4>
                                 </figcaption>
                                 <div class="bottom-wrap">
-                                        <span class="price-new float-right">R${{$produto->preco}}</span>
-                                        <button type="button" class="btn btn-primary">COMPRAR</button>
-                                        <a href="/adicionarCarrinho/{{$produto->id}}" class="btn btn-outline-primary"><i class="fa fa-shopping-cart"></i></a>
+
+                                        <button type="button" class="btn btn-primary float-right">COMPRAR</button>
+                                        <a href="/adicionarCarrinho/{{$produto->id}}" class="btn btn-outline-primary float-right mr-1"><i class="fa fa-shopping-cart"></i></a>
+                                        <span class="price-new float-left" style="font-weight: 900; color: #008251; font-size: 22px;">R${{$produto->preco}}</span>
                                 </div> <!-- bottom-wrap.// -->
                             </figure>
                         </div>

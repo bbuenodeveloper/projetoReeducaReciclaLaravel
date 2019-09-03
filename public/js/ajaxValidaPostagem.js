@@ -23,6 +23,8 @@ $(function(){
             data: dados,
             success: function() {
                 executeSweet();
+
+
             },
             error : function() {
                 executeSweetError();
@@ -30,6 +32,8 @@ $(function(){
         });
 
         document.getElementById("formPostagem").reset();
+
+
 
     });
 
