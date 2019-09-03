@@ -19,12 +19,12 @@ class ContatoController extends Controller
 
         $msgRetorno = null;
         try {
-            $objMailTo = Mail::to('reeduca@reeduca.com');
+            $objMailTo = Mail::to('contato@reciclamaps.com.br');
             $mailable = new MsgContactMailable($name, $email, $message);
             $objMailTo->send($mailable);
             $msgRetorno ="Email enviado com sucesso, obrigado!";
-
         } catch (\Exception $e) {
+            dd($e);
             $msgRetorno = "Ocorreu um erro ao tentar enviar sua mensagem. Por favor, tente novamente mais tarde";
         }
         return view('contato', ['msg' => $msgRetorno]);

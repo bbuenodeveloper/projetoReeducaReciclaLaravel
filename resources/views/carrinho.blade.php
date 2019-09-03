@@ -22,18 +22,19 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach ($produtos as $produto)
                     <tr>
                         <td>
                             <figure class="media">
-                                <div class="img-wrap"><img src="/storage/produtos/{{$produto->imagem}}"
-                                        class="img-thumbnail img-sm"></div>
-                                <h3 class="title text-truncate">{{$produto->nome}}</h6>
-                            </figure>
-                        </td>
-                        <td>
-                            <select class="form-control">
-                                <option>1</option>
-                                <option>2</option>
+                                <div class="img-wrap"><img src="/storage/img/{{$produto->imagem}}"
+                                    class="img-thumbnail img-sm"></div>
+                                    <h3 class="title text-truncate">{{$produto->nome}}</h6>
+                                    </figure>
+                                </td>
+                                <td>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
                             </select>
@@ -44,9 +45,10 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                             </div> <!-- price-wrap .// -->
                         </td>
                         <td class="text-right">
-                            <a href="" class="btn btn-outline-danger"> × Remover</a>
+                            <a href="carrinho/remover/{{  $produto->id }}" class="btn btn-outline-danger"> × Remover</a>
                         </td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div> <!-- card.// -->

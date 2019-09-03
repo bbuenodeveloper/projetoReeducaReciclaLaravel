@@ -19,8 +19,11 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
             <div class="col-6"><a href="/home">Home</a> <span class="mx-2 mb-0">/</span> <strong
                     class="text-black">Loja</strong>
             </div>
-            <div class="col-6"><a href="/carrinho"><img src="{{asset('img/produtos_loja/carrinho.png')}}"
-                        class="sizeCarrinho float-right" alt=""></a>
+            <div class="col-6">
+                <a href="/carrinho" class="float-right">
+                <img src="{{asset('img/produtos_loja/carrinho.png')}}" class="sizeCarrinho" alt="">
+                <div class="badge">{{  $carrinhoCount }}</div>
+                    </a>
             </div>
         </div>
     </div>
@@ -184,7 +187,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 </figcaption>
                                 <div class="bottom-wrap">
 
-                                        <button type="button" class="btn btn-primary float-right">COMPRAR</button>
+                                    <a href="/internaProduto/{{$produto->id}}" class="btn btn-primary float-right ">COMPRAR</a>
                                         <a href="/adicionarCarrinho/{{$produto->id}}" class="btn btn-outline-primary float-right mr-1"><i class="fa fa-shopping-cart"></i></a>
                                         <span class="price-new float-left" style="font-weight: 900; color: #008251; font-size: 22px;">R${{$produto->preco}}</span>
                                 </div> <!-- bottom-wrap.// -->
