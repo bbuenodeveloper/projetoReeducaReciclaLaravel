@@ -91,6 +91,13 @@
 		height: auto;
 		display: table;
 		top: 277px;
+    }
+
+    .panel.city_panel-ins {
+		width: 96%;
+		height: auto;
+		display: table;
+		top: 57px;
 	}
 }
 /* sm */
