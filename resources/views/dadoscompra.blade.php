@@ -33,26 +33,26 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
     <div class="site-section">
         <div class="container">
             <div class="row">
-                <div class="col-6 mb-5 mt-5 mb-md-0">
+                <div class="col-12 mb-5 mt-5 mb-md-0">
                     <h2 class="h3 mb-3 text-black">Dados de compra</h2>
                     <div class="p-3 p-lg-5 border">
 
                         <div class="form-group row">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <label for="c_fname" class="text-black">Primeiro Nome<span
                                         class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="c_fname" name="c_fname">
+                                <input type="text" class="form-control" id="c_fname" name="c_fname" required>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-12">
                                 <label for="c_lname" class="text-black">Último Nome<span
                                         class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="c_lname" name="c_lname">
+                                <input type="text" class="form-control" id="c_lname" name="c_lname" required>
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-12">
                                 <label for="c_companyname" class="text-black">CEP</label>
-                                <input type="text" class="form-control" id="c_companyname" name="c_companyname">
+                                <input type="text" class="form-control" id="c_companyname" name="c_companyname" required>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -60,39 +60,39 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 <label for="c_address" class="text-black">Endereço<span
                                         class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="c_address" name="c_address"
-                                    placeholder="Endereço da rua">
+                                    placeholder="Endereço da rua" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Número">
+                            <input type="text" class="form-control" placeholder="Número" required>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Complemento">
+                            <input type="text" class="form-control" placeholder="Complemento" required>
                         </div>
                         <div class="form-group row">
                             <div class="col-6">
                                 <label for="c_state_country" class="text-black">Estado<span
                                         class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="c_state_country" name="c_state_country">
+                                <input type="text" class="form-control" id="c_state_country" name="c_state_country" required>
                             </div>
                             <div class="col-6">
                                 <label for="c_postal_zip" class="text-black">Cidade<span
                                         class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="c_postal_zip" name="c_postal_zip">
+                                <input type="text" class="form-control" id="c_postal_zip" name="c_postal_zip" required>
                             </div>
                         </div>
                         <div class="form-group row mb-5">
                             <div class="col-6">
                                 <label for="c_email_address" class="text-black">Endereço de email<span
                                         class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="c_email_address" name="c_email_address">
+                                <input type="text" class="form-control" id="c_email_address" name="c_email_address" required>
                             </div>
                             <div class="col-6">
                                 <label for="c_phone" class="text-black">Telefone/Celular<span
                                         class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="c_phone" name="c_phone"
-                                    placeholder="Número do telefone/celular">
+                                    placeholder="Número do telefone/celular" required>
                             </div>
                         </div>
 
