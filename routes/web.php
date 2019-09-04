@@ -55,17 +55,17 @@ Route::post('/editar-userPerfil', 'UserPerfilController@editarPerfil')->name('us
 
 // Rotas loja
 
-Route::get('/carrinho', 'CarrinhoController@carrinho');
+Route::get('/carrinho', 'CarrinhoController@carrinhoProduto');
 
 Route::get('/finalizada', 'FinalizadaController@finalizada');
-
-Route::get('/dadoscompra', 'DadosCompraController@dadoscompra');
 
 Route::get('/internaProduto/{id}', 'InternaLojaController@exibirProdutoUnico');
 
 Route::get('/carrinho/{id}', 'CarrinhoController@carrinhoProduto');
 
-Route::get('/dadoscompra/{id}', 'DadosCompraController@dadosProduto')->middleware('acesso');
+Route::get('/carrinho/remover/{id}', 'CarrinhoController@remover');
+
+Route::get('/dadoscompra', 'DadosCompraController@dadosCompra')->middleware('acesso');
 
 Route::get('/adicionarCarrinho/{id}', 'CarrinhoController@addCarrinho');
 

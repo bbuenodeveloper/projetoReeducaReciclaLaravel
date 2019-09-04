@@ -29,7 +29,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'host' => env('MAIL_HOST', 'smtp.reciclamaps.com.br'),
+=======
+    'host' => env('MAIL_HOST', 'email-ssl.com.br'),
+>>>>>>> e0060e409d762f00e59db548a79e2b23cb241e7c
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +46,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -57,8 +61,17 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'contato@reciclamaps.com.br'),
+<<<<<<< HEAD
         'name' => env('MAIL_FROM_NAME', 'Contato'),
+=======
+        'name' => env('MAIL_FROM_NAME', 'Projeto Recicla Maps'),
+>>>>>>> e0060e409d762f00e59db548a79e2b23cb241e7c
     ],
+
+    'to' => [
+        'address' => env('MAIL_TO_ADDRESS', 'contato@reciclamaps.com.br'),
+    ],
+
 
     /*
     |--------------------------------------------------------------------------
@@ -71,7 +84,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +97,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    'username' => env('contato@reciclamaps.com.br'),
 
-    'password' => env('MAIL_PASSWORD'),
+    'password' => env('Reciclafs3#'),
 
     /*
     |--------------------------------------------------------------------------

@@ -8,16 +8,17 @@ use App\Pagamento;
 
 class DadosCompraController extends Controller
 {
-    public function dadoscompra(Request $request){
-        return view('dadoscompra');
 
-    }
 
-    public function dadosProduto(Request $request, $id){
-        $produto = Produto::find($id);
+    public function dadosCompra(Request $request){
+
+        if(!session()->has('carrinho')) return redirect('/');
+
         $pagamentos = Pagamento::all();
-        return view("dadoscompra",['produto'=>$produto,
-        'pagamentos' => $pagamentos
+        return view("dadoscompra",[
+            'produtos'=> Produto::all()->whereIn('id', session()->get('carrinho')) ,
+        'pagamentos' => $pagamentos,
+        'carrinhoCount' => session()->has('carrinho') ? sizeof(session()->get('carrinho')) : 0,
         ]);
 
 }

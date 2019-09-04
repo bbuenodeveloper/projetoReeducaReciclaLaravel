@@ -19,8 +19,11 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                     <a href="/loja">Loja</a><span class="mx-2 mb-0">/</span>
                     <a href="/carrinho">Carrinho</a><span class="mx-2 mb-0">/</span>
                     <strong class="text-black">Dados da Compra</strong></div>
-                <div class="col-6 mb-0"><a href="/carrinho"><img src="{{asset('img/produtos_loja/carrinho.png')}}"
-                            class="sizeCarrinho pull-right" alt=""></a>
+                <div class="col-6 mb-0">
+                        <a href="/carrinho" class="float-right">
+                            <img src="{{asset('img/produtos_loja/carrinho.png')}}" class="sizeCarrinho" alt="">
+                            <div class="badge">{{  $carrinhoCount }}</div>
+                                </a>
                 </div>
             </div>
         </div>
@@ -127,10 +130,14 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                                 <th>Total</th>
                                             </thead>
                                             <tbody>
+                                                <?php $soma = 0; ?>
+                                                @foreach ($produtos as $produto)
+                                                <?php $soma += $produto->preco ?>
                                                 <tr>
                                                     <td>{{$produto->nome}}<strong class="mx-2">x</strong>1</td>
                                                     <td>{{$produto->preco}}</td>
                                                 </tr>
+                                                @endforeach
                                                 <tr>
                                                     <td class="text-black font-weight-bold">
                                                         <strong>Subtotal</strong></td>
@@ -140,7 +147,7 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                                     <td class="text-black font-weight-bold"><strong>Total</strong>
                                                     </td>
                                                     <td class="text-black font-weight-bold">
-                                                        <strong>R${{$produto->preco}}</strong>
+                                                        <strong>R$ {{$soma}}</strong>
                                                     </td>
                                                 </tr>
                                             </tbody>

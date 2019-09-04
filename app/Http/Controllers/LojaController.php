@@ -17,7 +17,8 @@ class LojaController extends Controller
         $categorias = Categoria::all();
         return view("loja",['produtos'=>$produtos,
          'categorias'=>$categorias,
-         'ultimosProdutos' => Produto::take(3)->orderBy('id', 'DESC')->get()
+         'ultimosProdutos' => Produto::take(3)->orderBy('id', 'DESC')->get(),
+         'carrinhoCount' => session()->has('carrinho') ? sizeof(session()->get('carrinho')) : 0,
          ]);
 
     }
