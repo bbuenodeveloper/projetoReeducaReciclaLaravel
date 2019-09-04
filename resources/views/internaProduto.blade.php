@@ -29,13 +29,13 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                 <article class="gallery-wrap">
                     <div class="img-big-wrap">
                         <div> <a href="images/items/1.jpg" data-fancybox=""><img
-                                    src="/storage/produtos/{{$produto->imagem}}"></a></div>
+                                    src="/storage/img/{{$produto->imagem}}"></a></div>
                     </div> <!-- slider-product.// -->
                     <div class="img-small-wrap">
-                        <div class="item-gallery"> <img src="/storage/produtos/{{$produto->imagem}}"></div>
-                        <div class="item-gallery"> <img src="/storage/produtos/{{$produto->imagem}}"></div>
-                        <div class="item-gallery"> <img src="/storage/produtos/{{$produto->imagem}}"></div>
-                        <div class="item-gallery"> <img src="/storage/produtos/{{$produto->imagem}}"></div>
+                        <div class="item-gallery"> <img src="/storage/img/{{$produto->imagem}}"></div>
+                        <div class="item-gallery"> <img src="/storage/img/{{$produto->imagem}}"></div>
+                        <div class="item-gallery"> <img src="/storage/img/{{$produto->imagem}}"></div>
+                        <div class="item-gallery"> <img src="/storage/img/{{$produto->imagem}}"></div>
                     </div> <!-- slider-nav.// -->
                 </article> <!-- gallery-wrap .end// -->
             </aside>
