@@ -26,12 +26,12 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne"
                                     aria-expanded="false" aria-controls="collapseOne">
                                     <i class="fa" aria-hidden="true"></i>
-                                    Qual o objetivo da Reeduca Recicla?
+                                    Qual o objetivo da ReciclaMaps?
                                 </h5>
                             </div>
                             <div id="collapseOne" class="collapse" data-parent="#accordion-one" style="">
                                 <div class="card-body">
-                                    <p> O principal objetivo do Reeduca Recicla é fornecer uma ferramenta digital
+                                    <p> O principal objetivo do ReciclaMaps é fornecer uma ferramenta digital
                                         que facilite a busca por pontos de coleta apropriados ao descarte de
                                         resíduos. </p>
                                 </div>
@@ -62,12 +62,12 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree"
                                     aria-expanded="false" aria-controls="collapseThree">
                                     <i class="fa" aria-hidden="true"></i>
-                                    Quais as vantagens de comprar com as lojas parceiras da Reeduca?
+                                    Quais as vantagens de comprar com as lojas parceiras da ReciclaMaps?
                                 </h5>
                             </div>
                             <div id="collapseThree" class="collapse" data-parent="#accordion-one" style="">
                                 <div class="card-body">
-                                    <p>Nossos parceiros são empresas com os mesmos valores do ReeducaRecicla,
+                                    <p>Nossos parceiros são empresas com os mesmos valores do ReciclaMaps,
                                         acreditam que a reciclagem é a alternativa para diminuir o ritmo do consumo
                                         de recursos naturais. Por isso, ao comprar com nossos parceiros você
                                         contribui com o planeta e consome de forma mais sustentável.</p>
@@ -96,12 +96,12 @@ $facebook_image = htmlentities($root . 'img/' . $foto);?>
                                 <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFive"
                                     aria-expanded="false" aria-controls="collapseFive">
                                     <i class="fa" aria-hidden="true"></i>
-                                    Como faço para fechar uma parceria com a Reeduca Recicla?
+                                    Como faço para fechar uma parceria com a ReciclaMaps?
                                 </h5>
                             </div>
                             <div id="collapseFive" class="collapse" data-parent="#accordion-one">
                                 <div class="card-body">
-                                    <p> Para se tornar parceiro do Reeducca Recicla é muito simples. Basta enviar
+                                    <p> Para se tornar parceiro do ReciclaMaps é muito simples. Basta enviar
                                         uma mensagem em nossa página Contato e nós responderemos informando as
                                         modalidades de parceria.</p>
                                 </div>
